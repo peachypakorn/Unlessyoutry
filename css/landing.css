@@ -1,0 +1,74 @@
+
+* {
+  -webkit-box-sizing: border-box;
+     -moz-box-sizing: border-box;
+      -ms-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  background: #000;
+}
+.relative{
+	position: relative;
+}
+@font-face {
+    font-family: 'GothamMed';
+    src: url('../vender/gothamFont/GOTHAM-MEDIUM.TTF');
+}
+
+video#landbg { 
+    position:fixed;
+    top: 50%;
+    left: 50%;
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    z-index: -100;
+    /*z-index: -100;*/
+    -ms-transform: translateX(-50%) translateY(-50%);
+    -moz-transform: translateX(-50%) translateY(-50%);
+    -webkit-transform: translateX(-50%) translateY(-50%);
+    transform: translateX(-50%) translateY(-50%);
+    background: url(./img/landing.png) no-repeat;
+    background-size: cover; 
+    -webkit-filter: brightness(50%); /* Chrome, Safari, Opera */
+    filter: brightness(50%);
+}
+
+#landinglogo{
+	position: absolute;
+	top: 40%;
+	left: 38%;
+	/*z-index: -1;*/
+	height:35%;
+	width: auto;
+	overflow: hidden;
+}
+
+p {
+  position: absolute;
+  	top: 35%;
+	left: 30%;
+  color: white; 
+  font-family: 'GothamMed';
+  font-size: 15px;
+  /*margin: 10px 0 0 10px;*/
+  white-space: nowrap;
+  overflow: hidden;
+  width: 40em;
+	 -webkit-animation: fadein 4s; /* Safari, Chrome and Opera > 12.1 */
+       	    animation: fadein 4s;
+}
+
+@keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
+/* Safari, Chrome and Opera > 12.1 */
+@-webkit-keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
