@@ -1,0 +1,128 @@
+body {
+  background: #000;
+}
+.fixed{
+	position: fixed;
+	/*width: 512px;*/
+}
+
+@font-face {
+    font-family: 'GothamMed';
+    src: url('../vender/gothamFont/GOTHAM-MEDIUM.TTF');
+}
+@font-face {
+    font-family: 'GothamLight';
+    src: url('../vender/gothamFont/GOTHAM-LIGHT.TTF');
+}
+p{
+	font-family: 'GothamLight';
+	color:white;
+	text-align: center;
+}
+video.banner{
+	position: absolute;
+	background-position: left;
+	/*clip: rect(0px,1000px,720px,900px);*/
+    top: -75px;
+    left: -500px;/*
+    min-width: 100%;
+    min-height: 50%;*/
+    width: 1900px;
+    height: 800px;
+    /*height: auto;*/
+    z-index: -1;
+    /*z-index: -100;*/
+    /*-ms-transform: translateX(-50%) translateY(-50%);*/
+    /*-moz-transform: translateX(-50%) translateY(-50%);*/
+    /*-webkit-transform: translateX(-50%) translateY(-50%);*/
+    /*transform: translateX(-50%) translateY(-50%);*/
+    background: url(../img/bg.gif) no-repeat;
+    background-size: cover; 
+}
+
+.clear{
+	position: absolute;
+	background-color: black;
+	left: 130%;
+	width: 1000px;
+	height: 1000px;
+
+}
+
+.menu {
+	position: absolute;
+	top: 10px;
+	left: 10px;
+	width: 10%;
+}
+.profile {
+	position: absolute;
+	top: 10px;
+	left: 115%;
+	width: 10%;
+}
+
+.yellow {
+	-webkit-filter: grayscale(100%) brightness(200%);
+
+	 -webkit-transition: all 0.1s ease;
+    		transition: all 0.1s ease; 
+}
+ 
+.yellow:hover {
+  -webkit-filter: grayscale(0%)brightness(100%);
+
+	
+}
+.texth {
+	color: white;
+	 -webkit-transition: all 0.1s ease;
+    		transition: all 0.1s ease; 
+}
+.texth:hover{
+	color: #FFAA21;
+}
+#home{
+	position: absolute;
+	color: white;
+	font-family: 'GothamMed';
+	top: 25px;
+	left: 26%;
+}
+
+#act{
+	position: absolute;
+	color: white;
+	font-family: 'GothamMed';
+	top: 25px;
+	left: 54%;
+}
+
+#idea{
+	position: absolute;
+	color: white;
+	font-family: 'GothamMed';
+	top: 25px;
+	left: 90%;
+}
+
+#logo1{
+	position: absolute;
+	top: 60px;
+	left: 40%;
+	width: 230px;
+}
+
+#hashtag{
+	position: absolute;
+	font-family: 'GothamMed';
+	top: 310px;
+	left: 55%;
+}
+
+#sen1{
+	position: absolute;
+	top: 270px;
+	left: 22%;
+	width: 30em;
+}
