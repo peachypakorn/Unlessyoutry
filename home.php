@@ -12,9 +12,9 @@ $("p").hide();
 $(document).ready(function(){
     $("img.menu").click(function(){
     	if($("p#home").css("margin-left")=="-50px"){
-    		$("p#home").animate({"margin-left": '+=164'});
-    		$("p#act").animate({"margin-left": '+=339'});
-    		$("p#idea").animate({"margin-left": '+=504'});
+    		$("p#home").animate({"margin-left": '+=167'});
+    		$("p#act").animate({"margin-left": '+=342'});
+    		$("p#idea").animate({"margin-left": '+=507'});
     	    	}
     	else{
     		$("p#home").animate({"margin-left": '-50'});
@@ -62,11 +62,11 @@ $(document).ready(function(){
     });
     $("p#cont").click(function(){
     	if($("div.in").is(":visible")){
-    		$("p#cont").animate({"margin-top": '+=96'});
+    		$("p#cont").animate({"margin-top": '+=100'});
     		$("div.in").hide(500);
     	}
     	else{
-    		$("p#cont").animate({"margin-top": '-=96'});
+    		$("p#cont").animate({"margin-top": '-=100'});
     		$("div.in").fadeIn(2500);
     	}
     });
