@@ -67,7 +67,7 @@ $(document).ready(function(){
     	}
     	else{
     		$("p#cont").animate({"margin-top": '-=100'});
-    		$("div.in").show(2500);
+    		$("div.in").fadeIn(2500);
     	}
     });
 });
@@ -78,7 +78,7 @@ $(document).ready(function(){
 			<div class="col-sm-4 fix" >
 				<div class = "wrap">
 				<!-- <h2>Touch and Bonus Yeah!!!!!!!</h2> -->
-				<video autoplay loop poster="./img/video/LandingVid.png" id="bgvid" class = "banner" >
+				<video autoplay loop poster muted="./img/video/LandingVid.png" id="bgvid" class = "banner" >
 		    	  	<source src="./img/video/mainVideo.mp4" type= "video/mp4">
 				</video>
 				<div class = "clear">
