@@ -1,16 +1,10 @@
 
-* {
-  -webkit-box-sizing: border-box;
-     -moz-box-sizing: border-box;
-      -ms-box-sizing: border-box;
-          box-sizing: border-box;
-}
-
 body {
   background: #000;
 }
 .relative{
-	position: relative;
+	position: fixed;
+  /*width: 100%;*/
 }
 @font-face {
     font-family: 'GothamMed';
@@ -18,26 +12,18 @@ body {
 }
 
 video#landbg { 
-    position:fixed;
-    top: 50%;
-    left: 50%;
-    min-width: 100%;
-    min-height: 100%;
-    width: auto;
-    height: auto;
-    z-index: -100;
-    overflow: hidden;
-    /*z-index: -100;*/
-    -ms-transform: translateX(-50%) translateY(-50%);
+    position:relative;
+    top: 0%;
+    left: 0%;
+    width: 100%;
+ /*   -ms-transform: translateX(-50%) translateY(-50%);
     -moz-transform: translateX(-50%) translateY(-50%);
     -webkit-transform: translateX(-50%) translateY(-50%);
-    transform: translateX(-50%) translateY(-50%);
+    transform: translateX(-50%) translateY(-50%);*/
     background: url(../img/landing.png) no-repeat;
     background-size: cover; 
-    -webkit-filter: brightness(50%); /* Chrome, Safari, Opera */
-    filter: brightness(50%);
-}
-
+    }
+/*not in use*/
 video#landinglogo{
 	position: fixed;
 	top: 50%;
@@ -54,32 +40,60 @@ video#landinglogo{
     opacity: 0.5;
 }
 
+#logoLanding{
+  position: absolute;
+  top: 33.5%;
+  left: 38.25%;
+  height: 31.5%;
+  opacity: 0;
+  -webkit-transition: all 0.1s ease;
+        transition: all 0.1s ease; 
+}
+#logoLanding:hover{
+  opacity: 1;
+}
+
 p {
   position: absolute;
-  	top: 30%;
+  	top: 28%;
 	left: 33%;
   color: white; 
   font-family: 'GothamMed';
-  font-size: 15px;
+  font-size: 12px;
   /*margin: 10px 0 0 10px;*/
   white-space: nowrap;
   overflow: hidden;
   width: 40em;
-	 -webkit-animation: fadein 4s; /* Safari, Chrome and Opera > 12.1 */
-       	    animation: fadein 4s;
+	 -webkit-animation: fadein 9s ; /* Safari, Chrome and Opera > 12.1 */
+       	    animation: fadein 9s;
+      opacity: 0;
 }
 
 @keyframes fadein {
-    from { opacity: 0; }
-    to   { opacity: 1; }
+    0% { opacity: 0; }
+    30% { opacity: 1; }
+    75% { opacity: 1; }
+    100% { opacity: 0; } 
 }
 
 /* Safari, Chrome and Opera > 12.1 */
 @-webkit-keyframes fadein {
-    from { opacity: 0; }
-    to   { opacity: 1; }
+    0% { opacity: 0; }
+    25% { opacity: 1; }
+    100% { opacity: 0; } 
 }
 
+
+@keyframes fadeout {
+    from { opacity: 1; }
+    to   { opacity: 0; }
+}
+
+/* Safari, Chrome and Opera > 12.1 */
+@-webkit-keyframes fadeout {
+    from { opacity: 1; }
+    to   { opacity: 0; }
+}
   /*<!--  <div class="embeddedVideo">
           <object classid='clsid:02BF25D5-8C17-4B23-BC80-D3488ABDDC6B'
               <!-- width="600" height="400" -->
