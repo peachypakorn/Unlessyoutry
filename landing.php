@@ -7,7 +7,7 @@
 </head>
 
 <body>
-	<div class = "relative">
+	<div class = "fixed">
 		<video autoplay loop poster="./img/video/LandingVid.png" id="landbg">
     	<source src="./img/video/LandingVid.mp4" type="video/mp4">
 		</video>

@@ -23,19 +23,18 @@ p{
 video.banner{
 	position: absolute;
 	background-position: left;
-	/*clip: rect(0px,1000px,720px,900px);*/
-    top: 0px;
-    left: -500px;
-    min-width: 250%;
+	top: 0px;
+    left: -110px;
+    min-width: 200%;
     min-height: 100%;
-    width: 250%;
+    width: 200%;
     height: auto;
-    max-width: 250%;
+    max-width: 200%;
     z-index: -1;
-    background: url(../img/bg.gif) no-repeat;
+    background: url(./img/video/LandingVid.png) no-repeat;
     background-size: cover;
-    -webkit-filter: brightness(50%);
-    filter: brightness(50%); 
+    -webkit-filter: brightness(70%);
+    filter: brightness(70%); 
 }
 .wrap{
 	width: 130%;
@@ -54,40 +53,39 @@ video.banner{
 }
 .clear{
 	position: absolute;
-	background-color: red;
+	background-color: gray;
 	left: 100%;
-	width: 1000px;
-	min-width: 1000px;
-	max-width: 1000px;
-	height: 1000px;
-	min-height: 1000px;
-	max-height: 1000px;
+	width: 2000px;
+	min-width: 2000px;
+	max-width: 2000px;
+	height: 2000px;
+	min-height: 2000px;
+	max-height: 2000px;
 }
 
 .menu {
 	position: absolute;
 	/*top: 10%;*/
 	/*left: 10%;*/
-	margin: 1%;
-	width: 7%;
-	min-width:7%; 
-	max-width:7%;
+	margin: 2%;
+	width: 5%;
+	min-width:5%; 
+	max-width:5%;
 }
 .profile {
 	position: absolute;
-	margin: 1%;
+	margin: 2%;
 	/*top: 10px;*/
 	left: 90%;
-	width: 7%;
-	min-width:7%; 
-	max-width:7%;
+	width: 6%;
+	min-width:6%; 
+	max-width:6%;
 }
 
 .yellow {
 	-webkit-filter: grayscale(100%) brightness(200%);
-
-	 -webkit-transition: all 0.1s ease;
-    		transition: all 0.1s ease; 
+	 -webkit-transition: all 0.3s ease;
+    		transition: all 0.3s ease; 
 }
  
 .yellow:hover {
@@ -97,8 +95,8 @@ video.banner{
 }
 .texth {
 	color: white;
-	 -webkit-transition: all 0.1s ease;
-    		transition: all 0.1s ease; 
+	 -webkit-transition: all 0.5s ease;
+    		transition: all 0.5s ease; 
 }
 .texth:hover{
 	color: #FFAA21;
@@ -107,8 +105,8 @@ video.banner{
 	position: absolute;
 	color: white;
 	font-family: 'GothamMed';
-	top: 15px;
-	left: 20%;
+	margin: 2.5%;
+	left: -20%;
 	font-size: 15px;
 	/*width: 100%;*/
 	/*max-width: 100%;*/
@@ -119,8 +117,8 @@ video.banner{
 	position: absolute;
 	color: white;
 	font-family: 'GothamMed';
-	top: 15px;
-	left: 45%;
+	margin: 2.5%;
+	left: -20%;
 	font-size: 15px;
 	}
 
@@ -128,8 +126,8 @@ video.banner{
 	position: absolute;
 	color: white;
 	font-family: 'GothamMed';
-	top: 15px;
-	left: 80%;
+	margin: 2.5%;
+	left: -20%;
 	font-size: 15px;
 }
 

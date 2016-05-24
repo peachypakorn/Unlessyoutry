@@ -2,7 +2,7 @@
 body {
   background: #000;
 }
-.relative{
+.fixed{
 	position: fixed;
   /*width: 100%;*/
 }
@@ -20,7 +20,7 @@ video#landbg {
     -moz-transform: translateX(-50%) translateY(-50%);
     -webkit-transform: translateX(-50%) translateY(-50%);
     transform: translateX(-50%) translateY(-50%);*/
-    background: url(../img/landing.png) no-repeat;
+    background: url(./img/video/LandingVid.png) no-repeat;
     background-size: cover; 
     }
 /*not in use*/
