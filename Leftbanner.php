@@ -46,7 +46,8 @@ $(document).ready(function(){
 <body>
 	<div class ="container-fluid">
 		<div class="row" >
-			<div class="col-sm-4 fixed" >
+			<div class="col-sm-4 fix" >
+				<div class = "wrap">
 				<!-- <h2>Touch and Bonus Yeah!!!!!!!</h2> -->
 				<video autoplay loop poster="../img/bg.gif" id="bgvid" class = "banner" >
 		    	<!-- <source src="polina.webm" type="video/webm"> -->
@@ -71,6 +72,7 @@ $(document).ready(function(){
 				$("p#idea").hide();
 				</script>
 			</div>
+		</div>
 
 		</div>	
 	</div>
