@@ -10,15 +10,26 @@
 $("p").hide();
 $(document).ready(function(){
     $("img.menu").click(function(){
-    	$("p#home").slideToggle(function(){
-    		$("p#home").slideLeft(200);
-    	});
-    	$("p#act").slideToggle(function(){
-    		$("p#act").animate({left: '38%'});
-    	});	
-    	$("p#idea").slideToggle(function(){
-    		$("p#idea").animate({left: '67%'});
-    	});	
+    	if($("p#home").css("margin-left")=="-50px"){
+    		$("p#home").animate({"margin-left": '+=155'});
+    		$("p#act").animate({"margin-left": '+=330'});
+    		$("p#idea").animate({"margin-left": '+=495'});
+    	    	}
+    	else{
+    		$("p#home").animate({"margin-left": '-50'});
+    		$("p#act").animate({"margin-left": '-100'});
+    		$("p#idea").animate({"margin-left": '-100'});
+    	
+    	}
+    	// $("p#home").slideToggle(""function(){
+    		//$("p#home").slideLeft(200);
+    	// });
+    	// $("p#act").slideToggle(function(){
+    	// 	$("p#act").animate({left: '38%'});
+    	// });	
+    	// $("p#idea").slideToggle(function(){
+    		// $("p#idea").animate({left: '67%'});
+    	// });	
 
         // $("p#home").toggle();
         // $("p#act").toggle();
@@ -61,16 +72,30 @@ $(document).ready(function(){
 				</video>
 				<div class = "clear">
 				</div>
-				<!-- <img class="absolute" src="../img/bg.gif" alt="touch"> -->
-				<!-- <img id="logo" src="../img/unlessyoutry.png" alt="unless Logo"> -->
 				<img class="menu yellow" src="./img/icon/Menu.png" alt="menu">
 				<img class="profile yellow" src="./img/icon/Profile.png" alt="prfile">
 				<p  id = "home">HOME</p>
 				<p  id = "act">ACTIVITIES</p>
 				<p  id = "idea">IDEAS</p>
-				<img id="logo1" src="../img/logoWhite.png" alt="logoW">
+				<img id="logo1" src="./img/header/logo.png" alt="logoW">
 				<p id = "sen1">  YOU WILL NEVER UNDERSTAND WHAT IT'S LIKE,<br>WHAT IT'S FOR, HOW IT FEELS TO DO SOMETHING</p>
 				<p id = "hashtag">#UNLESSYOUTRY</p>
+				<div class = "h">
+				<img id="video" src="./img/icon/Video.png" alt="video">
+				<p id = "watch">WATCH OUR VIDEO</p>
+			</div>
+				<p id = "cont">CONTACT</p>
+				<p id = "cont1">46 MOO 9 PANJASAP VILLAGE TAWEEWATTANA<br>
+								KANJANAPISEK ROAD 10170 BANGKOK</p>
+				<p id = "cont2">081-835-8398</p>
+				<p id = "cont3">UNLESSYOUTRY@GMAIL.COM</p>
+				<img id="address" src="./img/icon/Adr.png" alt="video">
+				<img id="phone" src="./img/icon/Phone.png" alt="video">
+				<img id="mail" src="./img/icon/Mail.png" alt="video">
+				<img id="fb" class="yellow" src="./img/icon/Fb.png" alt="video">
+				<img id="ig" class="yellow" src="./img/icon/Ig.png" alt="video">
+				<img id="tw" class="yellow" src="./img/icon/Tw.png" alt="video">
+				
 				<script>
 				// $("p#home").hide();
 				$("p#home").css("color","#FFAA21");
