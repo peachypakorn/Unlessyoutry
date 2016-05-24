@@ -4,6 +4,7 @@
 <?php include 'header.php';?>
 <link href="header.php">
 <link rel="stylesheet" type="text/css" href="./css/Leftbanner.css">
+<link rel="stylesheet" type="text/css" href="./css/home.css">
 </head>
 
 <script>
@@ -59,6 +60,16 @@ $(document).ready(function(){
        $("p#act").css("color","white");
        $("p#idea").css("color","white");
     });
+    $("p#cont").click(function(){
+    	if($("div.in").is(":visible")){
+    		$("p#cont").animate({"margin-top": '+=100'});
+    		$("div.in").hide(500);
+    	}
+    	else{
+    		$("p#cont").animate({"margin-top": '-=100'});
+    		$("div.in").show(2500);
+    	}
+    });
 });
 </script>
 <body>
@@ -85,20 +96,23 @@ $(document).ready(function(){
 				<p id = "watch">WATCH OUR VIDEO</p>
 			</div>
 				<p id = "cont">CONTACT</p>
+				<div class ="in">
+				<img id="address" src="./img/icon/Adr.png" alt="video">
+				<img id="phone" src="./img/icon/Phone.png" alt="video">
+				<img id="mail" src="./img/icon/Mail.png" alt="video">
 				<p id = "cont1">46 MOO 9 PANJASAP VILLAGE TAWEEWATTANA<br>
 								KANJANAPISEK ROAD 10170 BANGKOK</p>
 				<p id = "cont2">081-835-8398</p>
 				<p id = "cont3">UNLESSYOUTRY@GMAIL.COM</p>
-				<img id="address" src="./img/icon/Adr.png" alt="video">
-				<img id="phone" src="./img/icon/Phone.png" alt="video">
-				<img id="mail" src="./img/icon/Mail.png" alt="video">
+				</div>
 				<img id="fb" class="yellow" src="./img/icon/Fb.png" alt="video">
 				<img id="ig" class="yellow" src="./img/icon/Ig.png" alt="video">
 				<img id="tw" class="yellow" src="./img/icon/Tw.png" alt="video">
 				
 				<script>
 				// $("p#home").hide();
-				$("p#home").css("color","#FFAA21");
+				// $("p#home").css("color","#FFAA21");
+				$("div.in").hide();
 				// $("p#act").hide();
 				// $("p#idea").hide();
 				</script>
