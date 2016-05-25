@@ -121,7 +121,7 @@ $(document).ready(function(){
 								hiiii
 							</div>
 						</div>
-<!-- 					<div class="grow pic bw" id = "pic2">
+					<div class="grow pic bw" id = "pic2">
 							<img  src="./img/homePic/Touch.jpg" alt="touch">
 							<div class = "text">
 								hiiii
@@ -132,7 +132,7 @@ $(document).ready(function(){
 							<div class = "text">
 								hiiii
 							</div>
-						</div> -->
+						</div>
 			</div>
 		</div>	
 	</div>
