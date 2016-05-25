@@ -7,37 +7,36 @@
   left: 0.004%; 
    width: 33.33%;
    height: 33.33%;
-  min-height: 33.33%;
-  min-width:  33.33%;
-  max-width: 33.33%;
-  max-height: 33.33%;
+  min-height: 24.99%;
+  min-width:  24.99%;
+  max-width: 49.99%;
+  max-height: 49.99%;
   float: left;
    margin: 0px;
-
+   padding: 0px;
+   overflow: hidden;
  }
 
  /*GROW*/
 .grow img {
   height: 100%;
   width:  100%;
-    overflow: hidden;
-  -webkit-transition: all 1s ease;
+   -webkit-transition: all 0.5s ease;
      -moz-transition: all 1s ease;
        -o-transition: all 1s ease;
       -ms-transition: all 1s ease;
-          transition: all 1s ease; 
+          transition: all 0.5s ease; 
 }
  
 .grow img:hover {
-  width: 350px;
-  height: 350px;
+transform: scale(1.05);
 }
 
 /*B&W*/
 .bw {
 	-webkit-filter: grayscale(100%);
-	 -webkit-transition: all 1.5s ease;
-    		transition: all 1.5s ease; 
+	 -webkit-transition: all 0.5s ease;
+    		transition: all 0.5s ease; 
 }
  
 .bw:hover {
@@ -65,7 +64,7 @@
         padding:30px; 
 }
 .check{
-  /*position: relative;*/
+  position: relative;
   background-color: gray;
   /*float: left;*/
   /*z-index: -1;*/
@@ -73,8 +72,9 @@
     /*p {clip: top, right, bottom, left;}*/
   left: 40%;
   width: 60%;
-  height: 100%;
-    overflow: hidden;
+  /*height: 100%;*/
+
+    /*overflow: hidden;*/
     padding: 0px;
     margin: 0px;  
 }
