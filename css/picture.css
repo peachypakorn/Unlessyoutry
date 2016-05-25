@@ -1,3 +1,12 @@
+@font-face {
+    font-family: 'GothamMed';
+    src: url('../vender/gothamFont/GOTHAM-MEDIUM.TTF');
+}
+@font-face {
+    font-family: 'GothamLight';
+    src: url('../vender/gothamFont/GOTHAM-LIGHT.TTF');
+}
+
 .pic {
   position: relative;
   /*clip: rect(0px,280px,272px,30px);*/
@@ -42,25 +51,23 @@ transform: scale(1.05);
 }
 .text{ 
   position :absolute;
-  left: 150px;
+  left: 300px;
   top:  150px;
-    /*z-index: -1;*/
-    overflow: hidden;
-  width:300px;
-  height:300px;
+  overflow: hidden;
+  width:120px;
+  height:120px;
   background:#000;
   opacity:0; 
-} 
 
-  .pic:hover .text { 
-    opacity:0.5;
-    text-align:justify;
-    color: black;
-     font-size:20px;
-      font-weight:700;
-       font-family:"Times New Roman", Times, serif;
-        padding:30px; 
+} 
+.text2{
+    font-family: 'GothamMed';
+  color:white;
+  text-align: center;
+  font-size: 11px;
 }
+
+
 .check{
   position: relative;
   background-color: gray;

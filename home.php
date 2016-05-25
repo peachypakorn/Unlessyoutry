@@ -4,6 +4,7 @@
 <?php include 'header.php';?>
 <link href="header.php">
 <link rel="stylesheet" type="text/css" href="./css/Leftbanner.css">
+<script src="./vender/typed/js/typed.js"></script>
 <link rel="stylesheet" type="text/css" href="./css/home.css">
 <link rel="stylesheet" type="text/css" href="./css/picture.css">
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
@@ -74,14 +75,28 @@ $(document).ready(function(){
     });
 
     //pic JS Part
-    $("p#act").hover(function(){
-       $("p#home").css("color","white");
-       $("p#act").css("color","#FFAA21");
-       $("p#idea").css("color","white");
+    $(".pic").hover(function(){
+    	$(this).find(".text").animate({
+        left: '150px',
+        opacity: '0.5',
+        height: '120px',
+        width: '120px'
+    });
+    	$(this).find(".text2").typed({
+        strings: ["First sentence."],
+        typeSpeed: 200
+      });
        }, function(){
-       $("p#home").css("color","#FFAA21");
-       $("p#act").css("color","white");
-       $("p#idea").css("color","white");
+		$(this).find(".text").animate({
+        left: '300px',
+        opacity: '0.5',
+        height: '120px',
+        width: '120px'
+    });
+		$(this).find(".text2").typed({
+        strings: [" "],
+        typeSpeed: 0
+      });
     });
 });
 </script>
@@ -128,13 +143,13 @@ $(document).ready(function(){
 			<div class="col-sm-8 check"  >
 					<div class="grow pic bw" id = "pic1">
 							<img  src="./img/homePic/Phum.jpg" alt="touch">
-							<div class = "text">
+							<div class = "text text2">
 								hiiii
 							</div>
 						</div>
 					<div class="grow pic bw" id = "pic2">
 							<img  src="./img/homePic/Touch.jpg" alt="touch">
-							<div class = "text">
+							<div class = "text text2">
 								hiiii
 							</div>
 						</div>						
