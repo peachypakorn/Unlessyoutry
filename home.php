@@ -44,9 +44,9 @@ $(document).ready(function(){
        $("p#idea").css("color","white");
 
     });
-    $("p#act").delay("slow").hover(function(){
+    $("p#act").hover(function(){
        $("p#home").css("color","white");
-       $("p#act").delay(4000).css("color","#FFAA21");
+       $("p#act").css("color","#FFAA21");
        $("p#idea").css("color","white");
        }, function(){
        $("p#home").css("color","#FFAA21");
@@ -65,12 +65,23 @@ $(document).ready(function(){
     $("p#cont").click(function(){
     	if($("div.in").is(":visible")){
     		$("p#cont").animate({"margin-top": '+=100'});
-    		$("div.in").hide(500);
+    		$("div.in").hide(100);
     	}
     	else{
     		$("p#cont").animate({"margin-top": '-=100'});
     		$("div.in").fadeIn(2500);
     	}
+    });
+
+    //pic JS Part
+    $("p#act").hover(function(){
+       $("p#home").css("color","white");
+       $("p#act").css("color","#FFAA21");
+       $("p#idea").css("color","white");
+       }, function(){
+       $("p#home").css("color","#FFAA21");
+       $("p#act").css("color","white");
+       $("p#idea").css("color","white");
     });
 });
 </script>

@@ -1,5 +1,3 @@
-
-
 .pic {
   position: relative;
   /*clip: rect(0px,280px,272px,30px);*/
@@ -50,14 +48,14 @@ transform: scale(1.05);
     overflow: hidden;
   width:300px;
   height:300px;
-  background:#FFF;
+  background:#000;
   opacity:0; 
 } 
 
   .pic:hover .text { 
-    opacity:0.6;
+    opacity:0.5;
     text-align:justify;
-    color: gray;
+    color: black;
      font-size:20px;
       font-weight:700;
        font-family:"Times New Roman", Times, serif;
@@ -66,15 +64,8 @@ transform: scale(1.05);
 .check{
   position: relative;
   background-color: gray;
-  /*float: left;*/
-  /*z-index: -1;*/
-  /*clip: rect(0px,40.5%,1000px,3%);*/
-    /*p {clip: top, right, bottom, left;}*/
   left: 40%;
   width: 60%;
-  /*height: 100%;*/
-
-    /*overflow: hidden;*/
-    padding: 0px;
-    margin: 0px;  
+  padding: 0px;
+  margin: 0px;  
 }
