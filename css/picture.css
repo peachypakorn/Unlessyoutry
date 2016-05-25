@@ -4,23 +4,23 @@
   position: relative;
   /*clip: rect(0px,280px,272px,30px);*/
   /*border: 0px solid #fff;  */
-  /*left: 0.003%; */
+  left: 0.004%; 
    width: 33.33%;
    height: 33.33%;
- 
-/*  min-height: 272px;
-  min-width:  272px;
-  max-width: 272px;
-  max-height: 272px;*/
+  min-height: 33.33%;
+  min-width:  33.33%;
+  max-width: 33.33%;
+  max-height: 33.33%;
   float: left;
-   /*margin: 0px;*/
-  overflow: hidden;
+   margin: 0px;
+
  }
 
  /*GROW*/
 .grow img {
-  /*height: 272px;*/
-  /*width: 272px;*/
+  height: 100%;
+  width:  100%;
+    overflow: hidden;
   -webkit-transition: all 1s ease;
      -moz-transition: all 1s ease;
        -o-transition: all 1s ease;
