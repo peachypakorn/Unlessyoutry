@@ -1,0 +1,73 @@
+
+
+.pic {
+  position: relative;
+  /*clip: rect(0px,280px,272px,30px);*/
+  /*border: 0px solid #fff;  */
+  left: -2%;   
+  height: 272px;
+  width: 272px;
+  min-height: 272px;
+  min-width:  272px;
+  max-width: 272px;
+  max-height: 272px;
+  float: left;
+  /*margin: 0px;*/
+  overflow: hidden;
+ }
+
+ /*GROW*/
+.grow img {
+  height: 272px;
+  width: 272px;
+  -webkit-transition: all 1s ease;
+     -moz-transition: all 1s ease;
+       -o-transition: all 1s ease;
+      -ms-transition: all 1s ease;
+          transition: all 1s ease; 
+}
+ 
+.grow img:hover {
+  width: 350px;
+  height: 350px;
+}
+
+/*B&W*/
+.bw {
+	-webkit-filter: grayscale(100%);
+	 -webkit-transition: all 1.5s ease;
+    		transition: all 1.5s ease; 
+}
+ 
+.bw:hover {
+  -webkit-filter: grayscale(0%);
+}
+.text{ 
+  position :absolute;
+  left: 150px;
+  top:  150px;
+    /*z-index: -1;*/
+    overflow: hidden;
+  width:300px;
+  height:300px;
+  background:#FFF;
+  opacity:0; 
+} 
+
+  .pic:hover .text { 
+    opacity:0.6;
+    text-align:justify;
+    color: gray;
+     font-size:20px;
+      font-weight:700;
+       font-family:"Times New Roman", Times, serif;
+        padding:30px; 
+}
+.check{
+  position: relative;
+  background-color: red;
+  clip: rect(0px,40.5%,1000px,3%);
+    /*p {clip: top, right, bottom, left;}*/
+  left: 40.6%;
+  width: 62.5%;
+}

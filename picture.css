@@ -1,0 +1,37 @@
+.pic {
+  position: relative;
+  /*clip: rect(0px,280px,260px,30px);*/
+  border: 0px solid #fff;  
+  left: 109px;   
+  height: 260px;
+  width: 260px;
+  margin: 0px;
+  overflow: hidden;
+ }
+
+ /*GROW*/
+.grow img {
+  height: 260px;
+  width: 260px;
+  -webkit-transition: all 1s ease;
+     -moz-transition: all 1s ease;
+       -o-transition: all 1s ease;
+      -ms-transition: all 1s ease;
+          transition: all 1s ease; 
+}
+ 
+.grow img:hover {
+  width: 350px;
+  height: 350px;
+}
+
+/*B&W*/
+.bw {
+	-webkit-filter: grayscale(100%);
+	 -webkit-transition: all 1.5s ease;
+    		transition: all 1.5s ease; 
+}
+ 
+.bw:hover {
+  -webkit-filter: grayscale(0%);
+}

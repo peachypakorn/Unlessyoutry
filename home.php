@@ -5,6 +5,8 @@
 <link href="header.php">
 <link rel="stylesheet" type="text/css" href="./css/Leftbanner.css">
 <link rel="stylesheet" type="text/css" href="./css/home.css">
+<link rel="stylesheet" type="text/css" href="./css/picture.css">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
 </head>
 
 <script>
@@ -110,15 +112,30 @@ $(document).ready(function(){
 				<img id="tw" class="yellow" src="./img/icon/Tw.png" alt="video">
 				
 				<script>
-				// $("p#home").hide();
-				// $("p#home").css("color","#FFAA21");
 				$("div.in").hide();
-				// $("p#act").hide();
-				// $("p#idea").hide();
 				</script>
 			</div>
 		</div>
-
+			<div class="col-sm-8 check"  >
+					<div class="grow pic bw" id = "pic1">
+							<img  src="./img/homePic/Phum.jpg" alt="touch">
+							<div class = "text">
+								hiiii
+							</div>
+						</div>
+					<div class="grow pic bw" id = "pic2">
+							<img  src="./img/homePic/Touch.jpg" alt="touch">
+							<div class = "text">
+								hiiii
+							</div>
+						</div>						
+					<div class="grow pic bw" id = "pic3">
+							<img  src="./img/homePic/Bonus.jpg" alt="touch">
+							<div class = "text">
+								hiiii
+							</div>
+						</div>
+			</div>
 		</div>	
 	</div>
 </body>
