@@ -4,15 +4,16 @@
   position: relative;
   /*clip: rect(0px,280px,272px,30px);*/
   /*border: 0px solid #fff;  */
-  left: -2%;   
-  height: 272px;
-  width: 272px;
-  min-height: 272px;
+  left: -2%; 
+   width: 33%;
+   height: 33%;
+ 
+/*  min-height: 272px;
   min-width:  272px;
   max-width: 272px;
-  max-height: 272px;
+  max-height: 272px;*/
   float: left;
-  /*margin: 0px;*/
+   /*margin: 0px;*/
   overflow: hidden;
  }
 
@@ -64,10 +65,14 @@
         padding:30px; 
 }
 .check{
-  position: relative;
+  /*position: relative;*/
   background-color: red;
-  clip: rect(0px,40.5%,1000px,3%);
+  /*float: left;*/
+  /*z-index: -1;*/
+  /*clip: rect(0px,40.5%,1000px,3%);*/
     /*p {clip: top, right, bottom, left;}*/
-  left: 40.6%;
-  width: 62.5%;
+  left: 40.5%;
+  width: 59.5%;
+  height: 100%;
+    overflow: hidden;
 }

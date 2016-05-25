@@ -83,8 +83,6 @@ $(document).ready(function(){
 				<video autoplay loop poster muted="./img/video/LandingVid.png" id="bgvid" class = "banner" >
 		    	  	<source src="./img/video/mainVideo.mp4" type= "video/mp4">
 				</video>
-				<div class = "clear">
-				</div>
 				<img class="menu yellow" src="./img/icon/Menu.png" alt="menu">
 				<img class="profile yellow" src="./img/icon/Profile.png" alt="prfile">
 				<p  id = "home">HOME</p>
@@ -123,7 +121,7 @@ $(document).ready(function(){
 								hiiii
 							</div>
 						</div>
-					<div class="grow pic bw" id = "pic2">
+<!-- 					<div class="grow pic bw" id = "pic2">
 							<img  src="./img/homePic/Touch.jpg" alt="touch">
 							<div class = "text">
 								hiiii
@@ -134,7 +132,7 @@ $(document).ready(function(){
 							<div class = "text">
 								hiiii
 							</div>
-						</div>
+						</div> -->
 			</div>
 		</div>	
 	</div>

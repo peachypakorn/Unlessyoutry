@@ -30,7 +30,7 @@ video.banner{
     width: 205%;
     height: auto;
     max-width: 205%;
-    z-index: -1;
+    z-index: -1z;
     background: url(./img/video/LandingVid.png) no-repeat;
     background-size: cover;
     -webkit-filter: brightness(70%);
