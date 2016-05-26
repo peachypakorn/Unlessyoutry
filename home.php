@@ -140,9 +140,12 @@ $(document).ready(function(){
 				<p id = "cont3">UNLESSYOUTRY@GMAIL.COM</p>
 				</div>
 				<img id="fb" class="yellow" src="./img/icon/Fb.png" alt="video">
-				<img id="ig" class="yellow" src="./img/icon/Ig.png" alt="video">
+				<a href="https://www.instagram.com/unlessyoutry.campaign/" target="_blank">
+					<img id="ig" class="yellow" src="./img/icon/Ig.png" alt="video">
+				</a>
+				<a href="https://twitter.com/UnlessYouTryCP/" target="_blank">
 				<img id="tw" class="yellow" src="./img/icon/Tw.png" alt="video">
-				
+				</a>
 				<script>
 				$("div.in").hide();
 				</script>
@@ -237,7 +240,7 @@ $(document).ready(function(){
 
   <!-- Modal content -->
   <!-- <div class="modal-content"> -->
-			  	<video autoplay loop poster control="./img/video/LandingVid.png" id="bgvid" class = "viral-video" >
+			  	<video autoplay loop poster controller="./img/video/LandingVid.png" id="bgvid" class = "viral-video" >
 		    	  	<source src="./img/video/viral.mp4" type= "video/mp4">
 				</video>
     <!-- <span class="close">x</span> -->
