@@ -69,10 +69,11 @@ transform: scale(1.05);
     font-family: 'GothamBold';
   color:white;
   left: 57%;
-  top:  57%;
+  top:  63%;
   text-align: right;
+  /*top :10px;*/
+  right: 15px; 
   font-size: 17px;
-    margin: 16px; 
   padding: -10px;
 
 }
@@ -82,18 +83,17 @@ transform: scale(1.05);
     font-family: 'GothamLight';
   color:#FFAA21;
   left: 57%;
-  top:  57%;
+  top:  63%;
   text-align: right;
   font-size: 17px;
-    margin: 16px;
-    margin-left: 40px; 
+   right: 15px;
   padding: -10px;
 }
 
 
 .check{
   position: relative;
-  background-color: gray;
+  background-color: black;
   left: 40%;
   width: 60%;
   padding: 0px;
