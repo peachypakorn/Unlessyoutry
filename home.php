@@ -88,10 +88,10 @@ $(document).ready(function(){
       });
        }, function(){
 		$(this).find(".text").animate({
-        left: '300px',
-        opacity: '0.5',
-        height: '120px',
-        width: '120px'
+        left: '57%',
+        opacity: '0',
+        height: '43%',
+        width: '43%'
     });
 		$(this).find(".text2").typed({
         strings: [" "],

@@ -51,7 +51,7 @@ transform: scale(1.05);
 }
 .text{ 
   position :absolute;
-  left: 57%;
+  left: 100%;
   top:  57%;
   overflow: hidden;
   width:43%;
