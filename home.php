@@ -88,7 +88,7 @@ $(document).ready(function(){
       });
        }, function(){
 		$(this).find(".text").animate({
-        left: '57%',
+        left: '100%',
         opacity: '0',
         height: '43%',
         width: '43%'
