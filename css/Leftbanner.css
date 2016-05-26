@@ -55,7 +55,7 @@ video.banner{
 }
 .clear{
 	position: absolute;
-	background-color: gray;
+	background-color: black;
 	left: 100%;
 	width: 2000px;
 	min-width: 2000px;

@@ -107,6 +107,7 @@ $(document).ready(function(){
 		<div class="row" >
 			<div class="col-sm-4 fix" >
 				<div class = "wrap">
+					<div class = "clear"></div>
 				<!-- <h2>Touch and Bonus Yeah!!!!!!!</h2> -->
 				<video autoplay loop poster muted="./img/video/LandingVid.png" id="bgvid" class = "banner" >
 		    	  	<source src="./img/video/mainVideo.mp4" type= "video/mp4">
@@ -153,9 +154,12 @@ $(document).ready(function(){
 						</div>
 					<div class="grow pic bw" id = "pic2">
 							<img  src="./img/homePic/Touch.jpg" alt="touch">
-							<div class = "text text2">
-								hiiii
+								<div class = "text">
 							</div>
+							<p class = "text2" >TOUCH<br>BEING<br>GAY</p>
+							<p class = "text3" ><br><br><br>15.03.16</p>
+							
+
 						</div>						
 					<div class="grow pic bw" id = "pic3">
 							<img  src="./img/homePic/Bonus.jpg" alt="touch">
