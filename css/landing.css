@@ -15,8 +15,8 @@ video#landbg {
     position:relative;
     top: 0%;
     left: 0%;
-    height: 120%;
-    /*width: 100%;*/
+    /*height: 100%;*/
+    width: 120%;
     
  /*   -ms-transform: translateX(-50%) translateY(-50%);
     -moz-transform: translateX(-50%) translateY(-50%);
