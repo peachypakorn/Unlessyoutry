@@ -240,7 +240,7 @@ $(document).ready(function(){
 
   <!-- Modal content -->
   <!-- <div class="modal-content"> -->
-			  	<video autoplay loop poster controller="./img/video/LandingVid.png" id="bgvid" class = "viral-video" >
+			  	<video autoplay loop poster controls="./img/video/LandingVid.png" id="bgvid" class = "viral-video" >
 		    	  	<source src="./img/video/viral.mp4" type= "video/mp4">
 				</video>
     <!-- <span class="close">x</span> -->
