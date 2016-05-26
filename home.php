@@ -77,10 +77,10 @@ $(document).ready(function(){
     //pic JS Part
     $(".pic").hover(function(){
     	$(this).find(".text").animate({
-        left: '150px',
+        left: '57%',
         opacity: '0.5',
-        height: '120px',
-        width: '120px'
+        height: '43%',
+        width: '43%'
     });
     	$(this).find(".text2").typed({
         strings: ["First sentence."],

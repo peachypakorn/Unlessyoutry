@@ -51,11 +51,11 @@ transform: scale(1.05);
 }
 .text{ 
   position :absolute;
-  left: 300px;
-  top:  150px;
+  left: 57%;
+  top:  57%;
   overflow: hidden;
-  width:120px;
-  height:120px;
+  width:43%;
+  height:43%;
   background:#000;
   opacity:0; 
 
