@@ -37,18 +37,19 @@
 	font-family: 'GothamMed';
 	margin-top: 68%;
 	left: 41.5%;
-	
+	color: #FFAA21;
+	-webkit-filter: grayscale(100%) brightness(200%);
 }
-.h{
-	 -webkit-transition: all 0.3s ease;
-    		transition: all 0.3s ease; 
+.h #video,#watch{
+	 -webkit-transition: all 0.5s ease;
+    		transition: all 0.5s ease; 
 }
 .h:hover #video{
 -webkit-filter: grayscale(0%) brightness(100%);
 }
 .h:hover #watch{
 	-webkit-filter: grayscale(0%) brightness(100%);
-	color: #FFAA21;
+	/*color: #FFAA21;*/
 }
 
 #cont{
