@@ -14,7 +14,7 @@ body {
 video#landbg { 
     position:relative;
     top: 0%;
-    left: 0%;
+    left: -4%;
     /*height: 100%;*/
     width: 110%;
     
@@ -44,8 +44,8 @@ video#landinglogo{
 
 #logoLanding{
   position: absolute;
-  top: 33.6%;
-  left: 38.25%;
+  top: 33.7%;
+  left: 38.05%;
   height: 31.5%;
   opacity: 0;
   -webkit-transition: all 0.1s ease;
