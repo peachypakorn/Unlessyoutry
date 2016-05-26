@@ -170,21 +170,25 @@
 }
 
 /* The Close Button */
-.close {
-    color: #aaa;
+.close-modal {
+	position: absolute;
     float: right;
-    font-size: 28px;
-    font-weight: bold;
+    top:2%;
+    right: 2%;
+    width: 2%;
+    z-index: 2;
+    cursor: pointer;
+    opacity: 0.5;
 }
 
-.close:hover,
+/*.close:hover,
 .close:focus {
     color: black;
     text-decoration: none;
-    cursor: pointer;
-}
+   
+}*/
 
-video.viral-video{
+video#viral-video{
 	background-position: left;
     min-width: 100%;
     /*min-height: 100%;*/

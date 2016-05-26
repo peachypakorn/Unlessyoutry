@@ -237,18 +237,18 @@ $(document).ready(function(){
 			</div>
 <!-- The Modal -->
 <div id="myModal" class="modal">
-
-  <!-- Modal content -->
-  <!-- <div class="modal-content"> -->
-			  	<video autoplay loop poster controls="./img/video/LandingVid.png" id="bgvid" class = "viral-video" >
+			  	<video autoplay loop poster controls="./img/video/LandingVid.png" id="viral-video" >
 		    	  	<source src="./img/video/viral.mp4" type= "video/mp4">
 				</video>
+				<img class="yellow close-modal" src="./img/icon/Close.png" alt="close">
     <!-- <span class="close">x</span> -->
   <!-- </div> -->
 
 </div>
 				<script>
 //modal part
+
+var viralvid = document.getElementById("viral-video"); 
 // Get the modal
 var modal = document.getElementById('myModal');
 
@@ -256,16 +256,21 @@ var modal = document.getElementById('myModal');
 var btn = document.getElementById("video");
 
 // Get the <span> element that closes the modal
-var span = document.getElementsByClassName("close")[0];
-
+var span = document.getElementsByClassName("close-modal")[0];
+viralvid.pause();
 // When the user clicks on the button, open the modal 
 btn.onclick = function() {
     modal.style.display = "block";
+    viralvid.play();
+    viralvid.currentTime = 0;
 }
 
 // When the user clicks on <span> (x), close the modal
 span.onclick = function() {
     modal.style.display = "none";
+    viralvid.pause();
+    viralvid.currentTime = 0;
+
 }
 
 // When the user clicks anywhere outside of the modal, close it
