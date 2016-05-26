@@ -82,8 +82,6 @@ $(document).ready(function(){
         height: '43%',
         width: '43%'
     });
-    // $(this).find("p.text2").fadeIn(700);
-    // $(this).find("p.text3").fadeIn(700);
         	$(this).find("p.text2").animate({
         opacity: '1'
          });
@@ -91,8 +89,6 @@ $(document).ready(function(){
         opacity: '1'
         },1000);
        }, function(){
-  //      	$(this).find("p.text2").hide();
-		// $(this).find("p.text3").hide();
         	$(this).find("p.text2").animate({
         opacity: '0'
         },10);
@@ -108,6 +104,8 @@ $(document).ready(function(){
 
     });
 });
+
+
 </script>
 <body>
 	<div class ="container-fluid">
@@ -119,7 +117,7 @@ $(document).ready(function(){
 				<video autoplay loop poster muted="./img/video/LandingVid.png" id="bgvid" class = "banner" >
 		    	  	<source src="./img/video/mainVideo20.mp4" type= "video/mp4">
 				</video>
-				<img class="menu yellow" src="./img/icon/Menu.png" alt="menu">
+				<img class="menu yellow pointer" src="./img/icon/Menu.png" alt="menu">
 				<img class="profile yellow" src="./img/icon/Profile.png" alt="prfile">
 				<p  id = "home">HOME</p>
 				<p  id = "act">ACTIVITIES</p>
@@ -127,11 +125,11 @@ $(document).ready(function(){
 				<img id="logo1" src="./img/header/logo.png" alt="logoW">
 				<p id = "sen1">  YOU WILL NEVER UNDERSTAND WHAT IT'S LIKE,<br>WHAT IT'S FOR, HOW IT FEELS TO DO SOMETHING</p>
 				<p id = "hashtag">#UNLESSYOUTRY</p>
-				<div class = "h">
+				<div class = "h pointer">
 				<img id="video" src="./img/icon/Video.png" alt="video">
 				<p id = "watch">WATCH OUR VIDEO</p>
 			</div>
-				<p id = "cont">CONTACT</p>
+				<p class = "pointer" id = "cont">CONTACT</p>
 				<div class ="in">
 				<img id="address" src="./img/icon/Adr.png" alt="video">
 				<img id="phone" src="./img/icon/Phone.png" alt="video">
@@ -234,10 +232,43 @@ $(document).ready(function(){
 						</div>	
 
 			</div>
+<!-- The Modal -->
+<div id="myModal" class="modal">
 
+  <!-- Modal content -->
+  <div class="modal-content">
+    <span class="close">x</span>
+    <p>Some text in the Modal..</p>
+  </div>
+
+</div>
 				<script>
-				//$("p.text2").hide();
-				//$("p.text3").hide();
+//modal part
+// Get the modal
+var modal = document.getElementById('myModal');
+
+// Get the button that opens the modal
+var btn = document.getElementById("video");
+
+// Get the <span> element that closes the modal
+var span = document.getElementsByClassName("close")[0];
+
+// When the user clicks on the button, open the modal 
+btn.onclick = function() {
+    modal.style.display = "block";
+}
+
+// When the user clicks on <span> (x), close the modal
+span.onclick = function() {
+    modal.style.display = "none";
+}
+
+// When the user clicks anywhere outside of the modal, close it
+window.onclick = function(event) {
+    if (event.target == modal) {
+        modal.style.display = "none";
+    }
+}
 				 </script>
 
 		</div>	
