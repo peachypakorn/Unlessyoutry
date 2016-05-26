@@ -82,10 +82,11 @@ $(document).ready(function(){
         height: '43%',
         width: '43%'
     });
-    	$(this).find(".text2").typed({
-        strings: ["First sentence."],
-        typeSpeed: 200
-      });
+    	$(this).find(".text2").fadeIn(1200);
+    	// $(this).find(".text2").typed({
+     //    strings: ["First"," c"],
+     //    typeSpeed: 400
+     //  });
        }, function(){
 		$(this).find(".text").animate({
         left: '100%',
@@ -93,10 +94,11 @@ $(document).ready(function(){
         height: '43%',
         width: '43%'
     });
-		$(this).find(".text2").typed({
-        strings: [" "],
-        typeSpeed: 0
-      });
+		$(this).find(".text2").fadeOut(10);
+		// $(this).find(".text2").type({
+  //       strings: ["kdflkj"],
+  //       typeSpeed: 10
+  //     });
     });
 });
 </script>
@@ -143,9 +145,11 @@ $(document).ready(function(){
 			<div class="col-sm-8 check"  >
 					<div class="grow pic bw" id = "pic1">
 							<img  src="./img/homePic/Phum.jpg" alt="touch">
-							<div class = "text text2">
-								hiiii
+							<div class = "text">
 							</div>
+							<p class = "text2" >PPP<br>PHUM<br>CONCERT</p>
+							<p class = "text3" ><br><br><br>15.03.16</p>
+							
 						</div>
 					<div class="grow pic bw" id = "pic2">
 							<img  src="./img/homePic/Touch.jpg" alt="touch">

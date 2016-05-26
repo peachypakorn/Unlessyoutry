@@ -6,6 +6,10 @@
     font-family: 'GothamLight';
     src: url('../vender/gothamFont/GOTHAM-LIGHT.TTF');
 }
+@font-face {
+    font-family: 'GothamBold';
+    src: url('../vender/gothamFont/GOTHAM-BOLD.TTF');
+}
 
 .pic {
   position: relative;
@@ -61,10 +65,29 @@ transform: scale(1.05);
 
 } 
 .text2{
-    font-family: 'GothamMed';
+   position :absolute;
+    font-family: 'GothamBold';
   color:white;
-  text-align: center;
-  font-size: 11px;
+  left: 57%;
+  top:  57%;
+  text-align: right;
+  font-size: 17px;
+    margin: 16px; 
+  padding: -10px;
+
+}
+
+.text3{
+   position :absolute;
+    font-family: 'GothamLight';
+  color:#FFAA21;
+  left: 57%;
+  top:  57%;
+  text-align: right;
+  font-size: 17px;
+    margin: 16px;
+    margin-left: 40px; 
+  padding: -10px;
 }
 
 
