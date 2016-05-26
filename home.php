@@ -104,7 +104,7 @@ $(document).ready(function(){
 					<div class = "clear"></div>
 				<!-- <h2>Touch and Bonus Yeah!!!!!!!</h2> -->
 				<video autoplay loop poster muted="./img/video/LandingVid.png" id="bgvid" class = "banner" >
-		    	  	<source src="./img/video/mainVideo.mp4" type= "video/mp4">
+		    	  	<!-- <source src="./img/video/mainVideo.mp4" type= "video/mp4"> -->
 				</video>
 				<img class="menu yellow" src="./img/icon/Menu.png" alt="menu">
 				<img class="profile yellow" src="./img/icon/Profile.png" alt="prfile">
