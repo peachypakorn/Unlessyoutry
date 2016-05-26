@@ -30,7 +30,7 @@ video.banner{
     width: 205%;
     height: auto;
     max-width: 205%;
-    z-index: -1z;
+    z-index: -100;
     background: url(./img/video/LandingVid.png) no-repeat;
     background-size: cover;
     /*overflow: hidden;*/
