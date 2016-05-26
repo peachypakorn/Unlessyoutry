@@ -236,10 +236,12 @@ $(document).ready(function(){
 <div id="myModal" class="modal">
 
   <!-- Modal content -->
-  <div class="modal-content">
-    <span class="close">x</span>
-    <p>Some text in the Modal..</p>
-  </div>
+  <!-- <div class="modal-content"> -->
+			  	<video autoplay loop poster control="./img/video/LandingVid.png" id="bgvid" class = "viral-video" >
+		    	  	<source src="./img/video/viral.mp4" type= "video/mp4">
+				</video>
+    <!-- <span class="close">x</span> -->
+  <!-- </div> -->
 
 </div>
 				<script>
