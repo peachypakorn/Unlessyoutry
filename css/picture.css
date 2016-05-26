@@ -75,7 +75,7 @@ transform: scale(1.05);
   right: 15px; 
   font-size: 17px;
   padding: -10px;
-
+  opacity: 0;
 }
 
 .text3{
@@ -88,6 +88,7 @@ transform: scale(1.05);
   font-size: 17px;
    right: 15px;
   padding: -10px;
+  opacity: 0;
 }
 
 

@@ -82,11 +82,23 @@ $(document).ready(function(){
         height: '43%',
         width: '43%'
     });
-    $(this).find("p.text2").fadeIn(700);
-    $(this).find("p.text3").fadeIn(700);
+    // $(this).find("p.text2").fadeIn(700);
+    // $(this).find("p.text3").fadeIn(700);
+        	$(this).find("p.text2").animate({
+        opacity: '1'
+         });
+        	$(this).find("p.text3").animate({
+        opacity: '1'
+        },1000);
        }, function(){
-       	$(this).find("p.text2").hide();
-		$(this).find("p.text3").hide();
+  //      	$(this).find("p.text2").hide();
+		// $(this).find("p.text3").hide();
+        	$(this).find("p.text2").animate({
+        opacity: '0'
+        },10);
+        	$(this).find("p.text3").animate({
+        opacity: '0'
+        },10);
 		$(this).find(".text").animate({
         left: '100%',
         opacity: '0',
@@ -224,9 +236,9 @@ $(document).ready(function(){
 			</div>
 
 				<script>
-				$("p.text2").hide();
-				$("p.text3").hide();
-				</script>
+				//$("p.text2").hide();
+				//$("p.text3").hide();
+				 </script>
 
 		</div>	
 	</div>

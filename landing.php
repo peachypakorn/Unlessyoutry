@@ -8,7 +8,7 @@
 
 <body>
 	<div class = "fixed">
-		<video autoplay loop poster="./img/video/LandingVid.png" id="landbg">
+		<video autoplay loop  id="landbg">
     	<source src="./img/video/LandingVid.mp4" type="video/mp4">
 		</video>
 		<!-- <img class="absolute" src="../img/bg.gif" alt="touch"> -->
