@@ -92,11 +92,3 @@ transform: scale(1.05);
 }
 
 
-.check{
-  position: relative;
-  background-color: black;
-  left: 40%;
-  width: 60%;
-  padding: 0px;
-  margin: 0px;  
-}

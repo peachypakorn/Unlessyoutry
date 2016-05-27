@@ -151,7 +151,8 @@ $(document).ready(function(){
 				</script>
 			</div>
 		</div>
-			<div class="col-sm-8 check"  >
+			<div class="check"  >
+					<a href="phum-story.php">
 					<div class="grow pic bw" id = "pic1">
 							<img  src="./img/homePic/Phum.jpg" alt="phumConcert">
 							<div class = "text">
@@ -160,6 +161,7 @@ $(document).ready(function(){
 							<p class = "text3" ><br><br><br>15.03.16</p>
 							
 						</div>
+					</a>
 					<div class="grow pic bw" id = "pic2">
 							<img  src="./img/homePic/Cindy.jpg" alt="Cindy">
 								<div class = "text">

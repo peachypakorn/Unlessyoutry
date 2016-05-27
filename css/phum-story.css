@@ -1,0 +1,9 @@
+#logo2{
+	position: absolute;
+	margin-top: 18%;
+	left: 50%;
+	width: 15%;
+	min-width: 15%;
+	max-width: 15%;
+	-webkit-filter: grayscale(100%) brightness(200%);
+}

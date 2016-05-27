@@ -3,9 +3,17 @@ body {
 }
 .fix{
 	position: fixed;
-	/*width: 512px;*/
+	/*width: 40%;*/
+	
 }
-
+.check{
+  position: relative;
+  background-color: black;
+  left: 40%;
+  width: 60%;
+  padding: 0px;
+  margin: 0px;  
+}
 @font-face {
     font-family: 'GothamMed';
     src: url('../vender/gothamFont/GOTHAM-MEDIUM.TTF');
@@ -37,6 +45,23 @@ video.banner{
     -webkit-filter: brightness(70%);
     filter: brightness(70%); 
 }
+img.banner-pic{
+	position: absolute;
+	background-position: left;
+	top: -5px;
+    left: -110px;
+    min-width: 205%;
+    /*min-height: 100%;*/
+    width: 205%;
+    height: auto;
+    max-width: 205%;
+    z-index: -100;
+    background: url(./img/video/LandingVid.png) no-repeat;
+    background-size: cover;
+    /*overflow: hidden;*/
+    -webkit-filter: brightness(70%);
+    filter: brightness(70%); 
+}
 .wrap{
 	width: 130%;
 	max-width: 130%;
@@ -45,7 +70,7 @@ video.banner{
 	min-width: 130%;
 	/*height: auto;*/
 	/*background-position: top left;*/
-	/*background-color: red;*/
+	background-color: red;
 	position:relative;
     margin-left:0px;
     left: -15px;
@@ -55,7 +80,7 @@ video.banner{
 }
 .clear{
 	position: absolute;
-	background-color: black;
+	background-color: red;
 	left: 98.9%;
 	width: 2000px;
 	min-width: 2000px;
