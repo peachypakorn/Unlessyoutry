@@ -11,10 +11,11 @@
 
 <script>
 
-$("p").hide();
+// $("p").hide();
 $(document).ready(function(){
-    $("img.menu").click(function(){
+    $("img#menu").click(function(){
     	if($("p#home").css("margin-left")=="-50px"){
+        $("p#home").css("color","white");
     		$("p#home").animate({"margin-left": '+=167'});
     		$("p#act").animate({"margin-left": '+=342'});
     		$("p#idea").animate({"margin-left": '+=507'});
@@ -52,18 +53,29 @@ $(document).ready(function(){
     });
 });
 </script>
+
 <body>
     <div class = "left-banner">
         <div class = "wrap">
-          <video autoplay loop poster muted="../img/video/LandingVid.png" id="bgvid" class = "banner" >
-              <source src="./img/video/mainVideo20.mp4" type= "video/mp4">
-          </video>
+          <img id="ibanner" src="../img/phum-story/banner.jpg" alt="phum-banner">
           <div class = "clear-bg"></div>
           <img id= "menu"class="yellow pointer" src="../img/icon/Menu.png" alt="menu">
           <img id = "profile" class="yellow" src="../img/icon/Profile.png" alt="prfile">
           <p  id = "home">HOME</p>
           <p  id = "act">ACTIVITIES</p>
           <p  id = "idea">IDEAS</p>
+          <img id= "menu"class="yellow pointer" src="../img/icon/Menu.png" alt="menu">
+          <img id="story-logo" src="../img/header/Story.png" alt="story-logo">
+          <img id="phum-topic" src="../img/phum-story/Topic.png" alt="phum-topic">
+          <p  id = "story-date">14.02.2016</p>
+          <p  id = "story-place">JJ GREEN</p>
+          <img id= "profile-pic" src="../img/phum-story/Profile.jpg" alt="menu">
+          <p  id = "story-name">PHUM VIPHURIT</p>
+          <div class = "s pointer">
+            <img id= "share-icon" src="../img/icon/Share.png" alt="menu">
+            <p  id = "cont-share">SHARE THIS STORY</p>
+          </div>
+        </div>
     </div>
     <div class ="content">
       ..dlf
