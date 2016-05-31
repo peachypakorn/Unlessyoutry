@@ -172,7 +172,33 @@ img#ibanner{
 	max-width: 15%;
 	-webkit-filter: grayscale(100%) brightness(200%);
 }
+/*out to other web*/
+#fb{
+	position: absolute;
+	top: 95%;	
+	left: 43%;
+		width: 3%;
+	min-width: 3%;
+	max-width: 3%;	
+}
+#ig{
+	position: absolute;
+	top: 95%;	
+	left: 54%;
+		width: 3.3%;
+	min-width: 3.3%;
+	max-width: 3.3%;	
+}
+#tw{
+	position: absolute;
+	top: 95%;	
+	left: 48.25%;
+		width: 3.5%;
+	min-width: 3.5%;
+	max-width: 3.5%;	
+}
 
+/*story part*/
 p#story-date{
 	position: absolute;
 	color: white;

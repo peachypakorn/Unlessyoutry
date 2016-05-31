@@ -12,7 +12,7 @@
     	<source src="./img/video/LandingVid.mp4" type="video/mp4">
 		</video>
 		<!-- <img class="absolute" src="../img/bg.gif" alt="touch"> -->
-		<a href="home.php">
+		<a href="story.php">
 		<img id="logoLanding" src="./img/header/Logo.png" alt="unless Logo">
 		</a>
 

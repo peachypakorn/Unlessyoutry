@@ -6,7 +6,8 @@
 	<link rel="stylesheet" type="text/css" href="./css/Leftbanner2.css">
 	<script src="./vender/typed/js/typed.js"></script>
 	<script src="./js/menu.js"></script>
-	<link rel="stylesheet" type="text/css" href="./css/home.css">
+	<!-- <link rel="stylesheet" type="text/css" href="./css/home.css"> -->
+	<link rel="stylesheet" type="text/css" href="./css/activities.css">
 	<link rel="stylesheet" type="text/css" href="./css/picture.css">
 	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
 
@@ -53,16 +54,6 @@
        			$("p#idea").css("color","white");
     								});
 
-	   		$("p#cont").click(function(){
-    			if($("div.in").is(":visible")){
-    				$("p#cont").animate({"margin-top": '+=100'});
-    				$("div.in").hide(100);
-    											}
-    			else{
-    				$("p#cont").animate({"margin-top": '-=100'});
-    				$("div.in").fadeIn(2500);
-    				}
-    		});
     	//pic JS Part
    	 		$(".pic").hover(function(){
     			$(this).find(".text").animate({
@@ -106,29 +97,17 @@
 			<img id= "menu"class="yellow pointer" src="./img/icon/Menu.png" alt="menu">
 			<img id = "profile" class="yellow" src="./img/icon/Profile.png" alt="prfile">
 			<p  id = "home">HOME</p>
-			<a href="activities.php">
-				<p  id = "act">ACTIVITIES</p>
-			</a>
-			<a href="activities.php">
-				<p  id = "idea">IDEAS</p>
-			</a>
-			<img id="logo1" src="./img/header/logo.png" alt="logoW">
-			<p id = "sen1">  YOU WILL NEVER UNDERSTAND WHAT IT'S LIKE,<br>WHAT IT'S FOR, HOW IT FEELS TO DO SOMETHING</p>
-			<p id = "hashtag">#UNLESSYOUTRY</p>
-			<div class = "h pointer">
-				<img id="video" src="./img/icon/Video.png" alt="video">
-				<p id = "watch">WATCH OUR VIDEO</p>
+			<p  id = "act">ACTIVITIES</p>
+			<p  id = "idea">IDEAS</p>
+			<img id="logo2" src="./img/header/Activities.png" alt="logoW">
+			<p id = "sen1-act">JANUARY - APRILL 2016</p>
+			<p id = "sen2-act">SO MANY THINGS ARE WAITING FOR YOU TO TRY<br>WE ARE UPDATING THE ACTIVITIES FROM SEVERAL<br>ORGANIZATIONS EVERY QUARTER</p>
+			<div class = "a pointer">
+				<img id="add-icon" src="./img/icon/Add.png" alt="video">
+				<p id = "add">ADD ACTIVITEIS</p>
 			</div>
-
-			<p class = "pointer" id = "cont">CONTACT</p>
-			<div class ="in">
-				<img id="address" src="./img/icon/Adr.png" alt="video">
-				<img id="phone" src="./img/icon/Phone.png" alt="video">
-				<img id="mail" src="./img/icon/Mail.png" alt="video">
-				<p id = "cont1">46 MOO 9 PANJASAP VILLAGE TAWEEWATTANA<br>
-								KANJANAPISEK ROAD 10170 BANGKOK</p>
-				<p id = "cont2">081-835-8398</p>
-				<p id = "cont3">UNLESSYOUTRY@GMAIL.COM</p>
+			<p id = "sen3-act">SO MANY THINGS ARE WAITING FOR YOU TO TRY<br>WE ARE UPDATING THE ACTIVITIES FROM SEVERAL</p>
+			
 			</div>
 			<img id="fb" class="yellow" src="./img/icon/Fb.png" alt="video">
 			<a href="https://www.instagram.com/unlessyoutry.campaign/" target="_blank">
