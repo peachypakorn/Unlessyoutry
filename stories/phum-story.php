@@ -82,8 +82,19 @@ $(document).ready(function(){
         <!-- <div> slfkf</div> -->
         <div class = "slideshow-container">
             <div class="mySlides ">
-              <img src="../img/phum-story/ex1.png" id = "ex1">
-              <img src="../img/phum-story/pic1.jpg" style="width:100%">
+                <img src="../img/phum-story/ex1.png" id = "ex1">
+                <img src="../img/phum-story/pic1.jpg" style="width:100%">
+            </div>
+            <div class="mySlides ">
+                <img src="../img/phum-story/pic3.jpg" style="width:100%">
+            </div>
+            <div class="mySlides ">
+                <img src="../img/phum-story/pic4.jpg" style="width:100%">
+            </div>
+            <div class="mySlides ">
+                <video autoplay loop poster controls style="width:100%" id="viral-video" >
+                    <source src="../img/phum-story/video.mp4" type= "video/mp4">
+                </video>
             </div>
         </div>
     </div>
