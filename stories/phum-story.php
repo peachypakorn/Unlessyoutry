@@ -105,9 +105,11 @@ $(document).ready(function(){
                   <span class="dot" onclick="currentSlide(4)"></span> 
               </div>
         </div>
-        <br>
-        <img src="../img/phum-story/text1.png" style="width:80%" id = "">  
-
+        
+        <img src="../img/phum-story/text1.png" id = "text1"> 
+        <img src="../img/icon/ScrollDown.png" id = "sc"> 
+        <img src="../img/icon/ScrollDownText.png" id = "sct"> 
+        <img src="../img/phum-story/text2.png" id = "text2">
     </div>
     <script>
         var slideIndex = 1;
