@@ -32,15 +32,18 @@
        			$("p#home").css("color","#FFAA21");
        			$("p#act").css("color","white");
        			$("p#idea").css("color","white");
-
+       		}, function(){
+       			$("p#home").css("color","white");
+       			$("p#act").css("color","#FFAA21");
+       			$("p#idea").css("color","white");
     								});
     		$("p#act").hover(function(){
        			$("p#home").css("color","white");
        			$("p#act").css("color","#FFAA21");
        			$("p#idea").css("color","white");
        		}, function(){
-       			$("p#home").css("color","#FFAA21");
-       			$("p#act").css("color","white");
+       			$("p#home").css("color","white");
+       			$("p#act").css("color","#FFAA21");
        			$("p#idea").css("color","white");
     								});
 
@@ -49,8 +52,8 @@
        			$("p#act").css("color","white");
        			$("p#idea").css("color","#FFAA21");
 	       }, function(){
-    	   		$("p#home").css("color","#FFAA21");
-       			$("p#act").css("color","white");
+    	   		$("p#home").css("color","#white");
+       			$("p#act").css("color","#FFAA21");
        			$("p#idea").css("color","white");
     								});
 
@@ -96,9 +99,17 @@
 			<div class = "clear-bg"></div>
 			<img id= "menu"class="yellow pointer" src="./img/icon/Menu.png" alt="menu">
 			<img id = "profile" class="yellow" src="./img/icon/Profile.png" alt="prfile">
-			<p  id = "home">HOME</p>
-			<p  id = "act">ACTIVITIES</p>
-			<p  id = "idea">IDEAS</p>
+			<a href="story.php">
+				<p  id = "home">HOME</p>
+			</a>
+			<p  class = "pointer"id = "act">ACTIVITIES</p>
+			<a href="idea.php">
+				<p  id = "idea">IDEAS</p>
+			</a>
+			<script>
+       			$("p#home").css("color","white");
+       			$("p#act").css("color","#FFAA21");
+			</script>
 			<img id="logo2" src="./img/header/Activities.png" alt="logoW">
 			<p id = "sen1-act">JANUARY - APRILL 2016</p>
 			<p id = "sen2-act">SO MANY THINGS ARE WAITING FOR YOU TO TRY<br>WE ARE UPDATING THE ACTIVITIES FROM SEVERAL<br>ORGANIZATIONS EVERY QUARTER</p>

@@ -105,11 +105,11 @@
 			<div class = "clear-bg"></div>
 			<img id= "menu"class="yellow pointer" src="./img/icon/Menu.png" alt="menu">
 			<img id = "profile" class="yellow" src="./img/icon/Profile.png" alt="prfile">
-			<p  id = "home">HOME</p>
+			<p  class = "pointer"id = "home">HOME</p>
 			<a href="activities.php">
 				<p  id = "act">ACTIVITIES</p>
 			</a>
-			<a href="activities.php">
+			<a href="idea.php">
 				<p  id = "idea">IDEAS</p>
 			</a>
 			<img id="logo1" src="./img/header/logo.png" alt="logoW">
