@@ -233,7 +233,6 @@ p#story-place{
 	left :41%;
 	font-size: 18px;
 }
-
 #profile-pic{
 	position: absolute;
 	margin-top: 52%;
@@ -251,7 +250,14 @@ p#story-name{
 	left :39.5%;
 	font-size: 13px;
 }
-	
+
+.p #profile-pic,p#story-name{
+	-webkit-transition: all 0.5s ease;
+    transition: all 0.5s ease; 
+}
+.p:hover p#story-name{
+color: #FFAA21;
+}	
 #share-icon {
 	position: absolute;
 	bottom: 5%;

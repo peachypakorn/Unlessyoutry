@@ -75,8 +75,10 @@ $(document).ready(function(){
           <img id="phum-topic" src="../img/phum-story/Topic.png" alt="phum-topic">
           <p  id = "story-date">14.02.2016</p>
           <p  id = "story-place">JJ GREEN</p>
-          <img id= "profile-pic" src="../img/phum-story/Profile.jpg" alt="menu">
-          <p  id = "story-name">PHUM VIPHURIT</p>
+          <a class = "p pointer">
+              <img id= "profile-pic" src="../img/phum-story/Profile.jpg" alt="menu">
+              <p  id = "story-name">PHUM VIPHURIT</p>
+          </a>
           <div class = "s pointer">
             <img id= "share-icon" src="../img/icon/Share.png" alt="menu">
             <p  id = "cont-share">SHARE THIS STORY</p>
@@ -124,6 +126,7 @@ $(document).ready(function(){
         showSlides(slideIndex);
         var vid = document.getElementById("story-vid");
         vid.currentTime = 2;
+        // $(ex1).fadeIn(3000);
 
         function plusSlides(n) {
             showSlides(slideIndex += n);
@@ -149,6 +152,12 @@ $(document).ready(function(){
           slides[slideIndex-1].style.display = "block"; 
           if(n!=2){
             vid.pause();
+          }
+          if(n==1){
+            $(ex1).fadeIn(900);
+          }
+          else{
+          $(ex1).hide(); 
           }
           dots[slideIndex-1].className += " active";
         }

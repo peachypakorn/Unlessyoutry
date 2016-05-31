@@ -130,12 +130,14 @@
 				<p id = "cont2">081-835-8398</p>
 				<p id = "cont3">UNLESSYOUTRY@GMAIL.COM</p>
 			</div>
-			<img id="fb" class="yellow" src="./img/icon/Fb.png" alt="video">
+			<a href ="https://www.facebook.com/unlessyoutry/" target="_blank">
+				<img id="fb" class="yellow" src="./img/icon/Fb.png" alt="fb">
+			</a>
 			<a href="https://www.instagram.com/unlessyoutry.campaign/" target="_blank">
-				<img id="ig" class="yellow" src="./img/icon/Ig.png" alt="video">
+				<img id="ig" class="yellow" src="./img/icon/Ig.png" alt="ig">
 			</a>
 			<a href="https://twitter.com/UnlessYouTryCP/" target="_blank">
-				<img id="tw" class="yellow" src="./img/icon/Tw.png" alt="video">
+				<img id="tw" class="yellow" src="./img/icon/Tw.png" alt="tw">
 			</a>
 			<script>
 				$("div.in").hide();
