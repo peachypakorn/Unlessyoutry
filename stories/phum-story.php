@@ -96,7 +96,7 @@ $(document).ready(function(){
             <div class="mySlides ">
                 <img src="../img/phum-story/pic4.jpg" style="width:100%">
             </div>
-              <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+              <a class="prev" onclick="plusSlides(-1)">T</a>
               <a class="next" onclick="plusSlides(1)">&#10095;</a>
               <div class = "dd" style="text-align:center">
                   <span class="dot" onclick="currentSlide(1)"></span> 
