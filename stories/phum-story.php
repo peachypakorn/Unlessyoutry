@@ -78,12 +78,17 @@ $(document).ready(function(){
         </div>
     </div>
     <div class ="content" style ="">
-        <p><br><br></p>
+        <br><br>
         <!-- <div> slfkf</div> -->
         <div class = "slideshow-container">
-            <div class="mySlides ">
+            <div class="mySlides">
                 <img src="../img/phum-story/ex1.png" id = "ex1">
                 <img src="../img/phum-story/pic1.jpg" style="width:100%">
+            </div>
+            <div class="mySlides ">
+                <video loop poster controls style="width:100%" id="story-vid" >
+                    <source src="../img/phum-story/video.mp4" type= "video/mp4">
+                </video>
             </div>
             <div class="mySlides ">
                 <img src="../img/phum-story/pic3.jpg" style="width:100%">
@@ -91,13 +96,53 @@ $(document).ready(function(){
             <div class="mySlides ">
                 <img src="../img/phum-story/pic4.jpg" style="width:100%">
             </div>
-            <div class="mySlides ">
-                <video autoplay loop poster controls style="width:100%" id="viral-video" >
-                    <source src="../img/phum-story/video.mp4" type= "video/mp4">
-                </video>
-            </div>
+              <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+              <a class="next" onclick="plusSlides(1)">&#10095;</a>
+              <div class = "dd" style="text-align:center">
+                  <span class="dot" onclick="currentSlide(1)"></span> 
+                  <span class="dot" onclick="currentSlide(2)"></span> 
+                  <span class="dot" onclick="currentSlide(3)"></span>
+                  <span class="dot" onclick="currentSlide(4)"></span> 
+              </div>
         </div>
+        <br>
+        <img src="../img/phum-story/text1.png" style="width:80%" id = "">  
+
     </div>
+    <script>
+        var slideIndex = 1;
+        showSlides(slideIndex);
+        var vid = document.getElementById("story-vid");
+        vid.currentTime = 2;
+
+        function plusSlides(n) {
+            showSlides(slideIndex += n);
+        }
+
+        function currentSlide(n) {
+          showSlides(slideIndex = n);
+        }
+
+        function showSlides(n) {
+          var i;
+          var slides = document.getElementsByClassName("mySlides");
+          var dots = document.getElementsByClassName("dot");
+          var vid = document.getElementById("story-vid");
+          if (n > slides.length) {slideIndex = 1} 
+          if (n < 1) {slideIndex = slides.length} ;
+          for (i = 0; i < slides.length; i++) {
+              slides[i].style.display = "none"; 
+          }
+          for (i = 0; i < dots.length; i++) {
+              dots[i].className = dots[i].className.replace(" active", "");
+          }
+          slides[slideIndex-1].style.display = "block"; 
+          if(n!=2){
+            vid.pause();
+          }
+          dots[slideIndex-1].className += " active";
+        }
+    </script>
 </body>
 
 </html>
