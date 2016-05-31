@@ -115,10 +115,9 @@
 			<p id = "sen2-act">SO MANY THINGS ARE WAITING FOR YOU TO TRY<br>WE ARE UPDATING THE ACTIVITIES FROM SEVERAL<br>ORGANIZATIONS EVERY QUARTER</p>
 			<div class = "a pointer">
 				<img id="add-icon" src="./img/icon/Add.png" alt="video">
-				<p id = "add">ADD ACTIVITEIS</p>
+				<p id = "add">ADD ACTIVITIES</p>
+				<p id = "sen3-act">SO MANY THINGS ARE WAITING FOR YOU TO TRY<br>WE ARE UPDATING THE ACTIVITIES FROM SEVERAL</p>
 			</div>
-			<p id = "sen3-act">SO MANY THINGS ARE WAITING FOR YOU TO TRY<br>WE ARE UPDATING THE ACTIVITIES FROM SEVERAL</p>
-			
 			</div>
 			<img id="fb" class="yellow" src="./img/icon/Fb.png" alt="video">
 			<a href="https://www.instagram.com/unlessyoutry.campaign/" target="_blank">

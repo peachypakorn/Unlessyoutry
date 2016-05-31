@@ -79,14 +79,14 @@ video.banner{
 video.banner2{
 	position: absolute;
 	background-position: left;
-	top: -2%;
+	top: -4%;
     left: -75%;
     width: 260%;
     min-width: 260%;
     max-width: 260%;
-    height: 105%;
-    min-height: 105%;
-    max-height: 105%;
+    height: 107%;
+    min-height: 107%;
+    max-height: 107%;
     z-index: -100;
     background: url(./img/video/LandingVid.png) no-repeat;
     background-size: cover;
