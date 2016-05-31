@@ -61,9 +61,15 @@ $(document).ready(function(){
           <div class = "clear-bg"></div>
           <img id= "menu"class="yellow pointer" src="../img/icon/Menu.png" alt="menu">
           <img id = "profile" class="yellow" src="../img/icon/Profile.png" alt="prfile">
-          <p  id = "home">HOME</p>
-          <p  id = "act">ACTIVITIES</p>
-          <p  id = "idea">IDEAS</p>
+          <a href="../story.php">
+            <p  id = "home">HOME</p>
+          </a>
+          <a href="../activities.php">
+            <p  class = "pointer"id = "act">ACTIVITIES</p>
+          </a>
+          <a href="../idea.php">
+            <p  id = "idea">IDEAS</p>
+          </a>
           <img id= "menu"class="yellow pointer" src="../img/icon/Menu.png" alt="menu">
           <img id="story-logo" src="../img/header/Story.png" alt="story-logo">
           <img id="phum-topic" src="../img/phum-story/Topic.png" alt="phum-topic">
@@ -96,7 +102,7 @@ $(document).ready(function(){
             <div class="mySlides ">
                 <img src="../img/phum-story/pic4.jpg" style="width:100%">
             </div>
-              <a class="prev" onclick="plusSlides(-1)">T</a>
+              <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
               <a class="next" onclick="plusSlides(1)">&#10095;</a>
               <div class = "dd" style="text-align:center">
                   <span class="dot" onclick="currentSlide(1)"></span> 
