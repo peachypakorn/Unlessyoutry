@@ -106,9 +106,11 @@ $(document).ready(function(){
               </div>
         </div>
         
-        <img src="../img/phum-story/text1.png" id = "text1"> 
+        <img src="../img/phum-story/text1.png" id = "text1">
+        <br><br> 
         <img src="../img/icon/ScrollDown.png" id = "sc"> 
         <img src="../img/icon/ScrollDownText.png" id = "sct"> 
+        <br><br>
         <img src="../img/phum-story/text2.png" id = "text2">
     </div>
     <script>
