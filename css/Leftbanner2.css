@@ -26,7 +26,7 @@ p{
 
 .left-banner{
 	position: fixed;
-	background: green;
+	background: black;
 	color: black;
 	left: 0%;
 	width: 40%;
@@ -50,8 +50,8 @@ p{
 
 .content{
 	position: relative;
-	background: black;
-	color: white;
+	background: white;
+	/*color: white;*/
 	left: 40%;
 	width: 60%;
     padding: 0px;
@@ -66,6 +66,24 @@ video.banner{
     width: 205%;
     min-width: 205%;
     max-width: 205%;
+    height: 105%;
+    min-height: 105%;
+    max-height: 105%;
+    z-index: -100;
+    background: url(./img/video/LandingVid.png) no-repeat;
+    background-size: cover;
+    /*overflow: hidden;*/
+    -webkit-filter: brightness(70%);
+    filter: brightness(70%); 
+}
+video.banner2{
+	position: absolute;
+	background-position: left;
+	top: -2%;
+    left: -75%;
+    width: 260%;
+    min-width: 260%;
+    max-width: 260%;
     height: 105%;
     min-height: 105%;
     max-height: 105%;
@@ -95,7 +113,7 @@ img#ibanner{
 }
 .clear-bg{
 	position: absolute;
-	background-color: red;
+	background-color: black;
 	left: 100%;
 	width: 150%;
 	min-width: 150%;;

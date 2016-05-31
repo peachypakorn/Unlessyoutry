@@ -5,7 +5,7 @@
 <link href="../header.php">
 <link rel="stylesheet" type="text/css" href="../css/Leftbanner2.css">
 <link rel="stylesheet" type="text/css" href="../css/phum-story.css">
-<!-- <link rel="stylesheet" type="text/css" href="./css/picture.css"> -->
+<link rel="stylesheet" type="text/css" href="../css/story-content.css">
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
 </head>
 
@@ -77,8 +77,15 @@ $(document).ready(function(){
           </div>
         </div>
     </div>
-    <div class ="content">
-      ..dlf
+    <div class ="content" style ="">
+        <p><br><br></p>
+        <!-- <div> slfkf</div> -->
+        <div class = "slideshow-container">
+            <div class="mySlides ">
+              <img src="../img/phum-story/ex1.png" id = "ex1">
+              <img src="../img/phum-story/pic1.jpg" style="width:100%">
+            </div>
+        </div>
     </div>
 </body>
 

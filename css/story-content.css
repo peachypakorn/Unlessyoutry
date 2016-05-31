@@ -1,0 +1,19 @@
+/* Slideshow container */
+.slideshow-container {
+  width: 90%;
+  /*max-width: 80%;*/
+  height: auto;
+  top: -20%;
+  left: 5%;
+  position: relative;
+  /*margin: 10%;*/
+  padding: center;
+  color: red;
+  z-index: 1;
+}
+
+#ex1{
+	position: absolute;
+	width: 30%;
+	margin: 2%;
+}
