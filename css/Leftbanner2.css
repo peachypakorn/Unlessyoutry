@@ -79,11 +79,11 @@ video.banner{
 video.banner2{
 	position: absolute;
 	background-position: left;
-	top: -4%;
+	top: -3%;
     left: -75%;
-    width: 260%;
-    min-width: 260%;
-    max-width: 260%;
+    width: 270%;
+    min-width: 270%;
+    max-width: 270%;
     height: 107%;
     min-height: 107%;
     max-height: 107%;
