@@ -115,9 +115,11 @@ $(document).ready(function(){
         </div>
         
         <img src="../img/phum-story/text1.png" id = "text1">
-        <br><br><br> 
-        <img src="../img/icon/ScrollDown.png" id = "sc"> 
-        <img src="../img/icon/ScrollDownText.png" id = "sct"> 
+        <br><br><br>
+        <div class = "sd"> 
+            <img src="../img/icon/ScrollDown.png" id = "sc"> 
+            <img src="../img/icon/ScrollDownText.png" id = "sct"> 
+        </div>
         <br><br>
         <img src="../img/phum-story/text2.png" id = "text2">
     </div>
