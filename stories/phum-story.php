@@ -157,7 +157,7 @@ $(document).ready(function(){
           for (i = 0; i < dots.length; i++) {
               dots[i].className = dots[i].className.replace(" active", "");
           }
-          slides[slideIndex-1].style.display = "inline";
+          slides[slideIndex-1].style.display = "block";
           if(n!=2){
             vid.pause();
           }
@@ -172,7 +172,7 @@ $(document).ready(function(){
           $(ex1).hide(); 
           }
           dots[slideIndex-1].className += " active";
-          setTimeout(function(){showSlides(slideIndex += 1, 2)}, t*1000);
+          setTimeout(function(){showSlides(slideIndex += 1, 5)}, t*1000);
         }
     </script>
 </body>
