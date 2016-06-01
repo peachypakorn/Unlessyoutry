@@ -95,19 +95,19 @@ $(document).ready(function(){
         <br><br>
         <!-- <div> slfkf</div> -->
         <div class = "slideshow-container">
-            <div class="mySlides">
+            <div class="mySlides move">
                 <img src="../img/phum-story/ex1.png" id = "ex1">
                 <img src="../img/phum-story/pic1.jpg" style="width:100%">
             </div>
-            <div class="mySlides ">
+            <div class="mySlides move ">
                 <video loop poster controls style="width:100%" id="story-vid" >
                     <source src="../img/phum-story/video.mp4" type= "video/mp4">
                 </video>
             </div>
-            <div class="mySlides ">
+            <div class="mySlides move">
                 <img src="../img/phum-story/pic3.jpg" style="width:100%">
             </div>
-            <div class="mySlides ">
+            <div class="mySlides move">
                 <img src="../img/phum-story/pic4.jpg" style="width:100%">
             </div>
               <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
@@ -127,24 +127,24 @@ $(document).ready(function(){
             <img src="../img/icon/ScrollDownText.png" id = "sct"> 
         </div>
         <br><br>
-        <img src="../img/phum-story/text2.png" id = "text2">
+        <img src="../img/phum-story/text2.png" id = "text2" class ="">
     </div>
     <script>
         var slideIndex = 1;
-        showSlides(slideIndex);
+        showSlides(slideIndex,5);
         var vid = document.getElementById("story-vid");
         vid.currentTime = 2;
         // $(ex1).fadeIn(3000);
 
         function plusSlides(n) {
-            showSlides(slideIndex += n);
+            showSlides(slideIndex += n,5);
         }
 
         function currentSlide(n) {
-          showSlides(slideIndex = n);
+          showSlides(slideIndex = n,5);
         }
 
-        function showSlides(n) {
+        function showSlides(n,t) {
           var i;
           var slides = document.getElementsByClassName("mySlides");
           var dots = document.getElementsByClassName("dot");
@@ -157,17 +157,22 @@ $(document).ready(function(){
           for (i = 0; i < dots.length; i++) {
               dots[i].className = dots[i].className.replace(" active", "");
           }
-          slides[slideIndex-1].style.display = "block"; 
+          slides[slideIndex-1].style.display = "inline";
           if(n!=2){
             vid.pause();
           }
-          if(n==1){
+          else{
+            vid.play();
+            t = 30;
+          }
+          if(n==1||n==5){
             $(ex1).fadeIn(900);
           }
           else{
           $(ex1).hide(); 
           }
           dots[slideIndex-1].className += " active";
+          setTimeout(function(){showSlides(slideIndex += 1, 2)}, t*1000);
         }
     </script>
 </body>

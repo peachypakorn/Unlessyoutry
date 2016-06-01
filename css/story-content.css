@@ -58,7 +58,7 @@
 }
 .dd{
 	position: absolute;
-	top: 92%;
+	top: 3%;
 	left: 90%;
 }
 /* The dots/bullets/indicators */
@@ -150,4 +150,22 @@
   80%, 90% 70% 60%{
   transform: translate3d(0, 0, 0);	
   }
+}
+
+/* Fading animation */
+.move {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 3s;
+  animation-name: fade;
+  animation-duration: 3s;
+}
+
+@-webkit-keyframes fade {
+  from {left:100%;} 
+  to {left:0%;}
+}
+
+@keyframes fade {
+  from {left:100%;} 
+  to {left:0%;}
 }
