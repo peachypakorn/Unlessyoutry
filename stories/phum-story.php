@@ -51,6 +51,12 @@ $(document).ready(function(){
        $("p#act").css("color","white");
        $("p#idea").css("color","white");
     });
+    $(window).scrollTop();
+    $(window).scroll(function(){
+        $("sd").animate({
+              opacity: '0'
+            },100);
+        });
 });
 </script>
 
