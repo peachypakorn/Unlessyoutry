@@ -20,22 +20,22 @@
 	position: absolute;
 	width: 30%;
 	margin: 2%;
-	-webkit-animation: fadein 4s ; /* Safari, Chrome and Opera > 12.1 */
-       	    animation: fadein 4s;
+	-webkit-animation: fadein 3s ; /* Safari, Chrome and Opera > 12.1 */
+       	    animation: fadein 3s;
     /*opacity: 0;*/
 }
 @keyframes fadein {
     0% { opacity: 0; }
-    30% { opacity: 1; }
-    75% { opacity: 1; }
+    30% { opacity: 0.33; }
+    75% { opacity: 0.66; }
     100% { opacity: 1; } 
 }
 
 /* Safari, Chrome and Opera > 12.1 */
 @-webkit-keyframes fadein {
     0% { opacity: 0; }
-    30% { opacity: 1; }
-    75% { opacity: 1; }
+    30% { opacity: 0.33; }
+    75% { opacity: 0.66; }
     100% { opacity: 1; } 
 }
 
@@ -88,23 +88,25 @@
 	margin: 5%;
 }
 #sc{
-	position: relative;
-	width: 5%;
+	position: fixed;
+	width: 2.5%;
+  bottom: 4.5%;
 	margin: 0%;
-	left:68%;
+	left:80%;
 	-webkit-animation: shake 5s ; /* Safari, Chrome and Opera > 12.1 */
     animation: shake 5s;
     animation-iteration-count: 20;
 }
 #sct{
-	position: relative;
-	width: 20%;
+	position: fixed;
+	width: 15%;
 	margin: 0%;
-	left:70%;
+  bottom: 5.5%;
+	left:83%;
 }
 .sd #sct{
-		-webkit-animation: fadein 7s ; /* Safari, Chrome and Opera > 12.1 */
-       	    animation: fadein 7s;
+		-webkit-animation: fadein 2s ; /* Safari, Chrome and Opera > 12.1 */
+       	    animation: fadein 2s;
 }
 
 #text2{
@@ -115,22 +117,22 @@
 }
 
 @keyframes shake {
-  10% , 50% {
+  10% ,50%{
     transform: translate3d(0, -2px, 0);
   }
   
   20%{
-    transform: translate3d(0, 4px, 0);
+    transform: translate3d(0, 3px, 0);
   }
 
-  30% {
+  30%{
     transform: translate3d(0,-4px, 0);
   }
 
-  40% {
-    transform: translate3d(0, 6px, 0);
+  40%{
+    transform: translate3d(0, 2px, 0);
   }
-  80%, 90% 70% 60%{
+  60%,100%{
   transform: translate3d(0, 0, 0);	
   }
 }

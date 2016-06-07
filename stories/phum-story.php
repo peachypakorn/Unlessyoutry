@@ -14,18 +14,18 @@
 // $("p").hide();
 $(document).ready(function(){
     $("img#menu").click(function(){
-    	if($("p#home").css("margin-left")=="-50px"){
+      if($("p#home").css("margin-left")=="-50px"){
         $("p#home").css("color","white");
-    		$("p#home").animate({"margin-left": '+=167'});
-    		$("p#act").animate({"margin-left": '+=342'});
-    		$("p#idea").animate({"margin-left": '+=507'});
-    	    	}
-    	else{
-    		$("p#home").animate({"margin-left": '-50'});
-    		$("p#act").animate({"margin-left": '-100'});
-    		$("p#idea").animate({"margin-left": '-100'});
-    	
-    	}
+        $("p#home").animate({"margin-left": '+=167'});
+        $("p#act").animate({"margin-left": '+=342'});
+        $("p#idea").animate({"margin-left": '+=507'});
+            }
+      else{
+        $("p#home").animate({"margin-left": '-50'});
+        $("p#act").animate({"margin-left": '-100'});
+        $("p#idea").animate({"margin-left": '-100'});
+      
+      }
     });
     $("p#home").hover(function(){
        $("p#home").css("color","#FFAA21");
@@ -47,17 +47,22 @@ $(document).ready(function(){
        $("p#act").css("color","white");
        $("p#idea").css("color","#FFAA21");
        }, function(){
-       	$("p#home").css("color","#FFAA21");
+        $("p#home").css("color","#FFAA21");
        $("p#act").css("color","white");
        $("p#idea").css("color","white");
-    });
-    $(window).scrollTop();
-    $(window).scroll(function(){
-        $("sd").animate({
-              opacity: '0'
-            },100);
-        });
+
 });
+  });
+$( window ).scroll(function() {
+    $( "#sct" ).animate({
+              opacity: '0'
+            },2000);
+    // $("#sc").css("animation-iteration-count" ,"0")
+    $("#sc").animate({
+              opacity: '0'
+            },2500);
+});
+
 </script>
 
 <body>
@@ -129,6 +134,7 @@ $(document).ready(function(){
         <img src="../img/phum-story/text2.png" id = "text2" class ="">
     </div>
     <script>
+     $("html, body").animate({ scrollTop: 0 }, "slow");
         var slideIndex = 1;
         var vid = document.getElementById("story-vid");
         var timer;
@@ -175,15 +181,19 @@ $(document).ready(function(){
           if(b==2)document.getElementById("slideshow-container").style.backgroundImage = "url('../img/phum-story/pic2.png')";
           if(b==3)document.getElementById("slideshow-container").style.backgroundImage = "url('../img/phum-story/pic3.jpg')";
           if(b==4)document.getElementById("slideshow-container").style.backgroundImage = "url('../img/phum-story/pic4.jpg')";
-          
-          slides[slideIndex-1].style.display = "block";
+          var send = slideIndex;
+            slides[slideIndex-1].style.display = "block";
           if(slideIndex==2){
             vid.play();
            setTimeout(function(){ document.getElementById("slideshow-container").style.backgroundImage = "none";},3000);
+              
              // alert(document.getElementById("slideshow-container").style.backgroundImage);
             time = 30;
+            if(vid.requestFullscreen){
+              time = vid.duration - vid.currentTime;
+            }
           }
-          if(slideIndex!=2){
+          else if(slideIndex!=2){
             vid.pause();
           }
           if(slideIndex==1){
@@ -196,7 +206,7 @@ $(document).ready(function(){
           // debugger;
           time = time * 1000;
           document.getElementById("story-place").textContent =time;
-          timer = setTimeout(function(){showSlides(slideIndex += 1, 5)}, time);
+          timer = setTimeout(function(){showSlides(slideIndex += 1,send, 5)}, time);
           
         }
     </script>
