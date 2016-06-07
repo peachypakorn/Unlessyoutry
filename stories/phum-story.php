@@ -91,10 +91,9 @@ $(document).ready(function(){
           </div>
         </div>
     </div>
-    <div class ="content" style ="">
+    <div class ="content">
         <br><br>
-        <!-- <div> slfkf</div> -->
-        <div class = "slideshow-container">
+        <div id = "slideshow-container" style = "background-color:black');">
             <div class="mySlides move">
                 <img src="../img/phum-story/ex1.png" id = "ex1">
                 <img src="../img/phum-story/pic1.jpg" style="width:100%">
@@ -131,48 +130,74 @@ $(document).ready(function(){
     </div>
     <script>
         var slideIndex = 1;
-        showSlides(slideIndex,5);
         var vid = document.getElementById("story-vid");
+        var timer;
         vid.currentTime = 2;
+        showSlides(slideIndex,0,5);
         // $(ex1).fadeIn(3000);
 
         function plusSlides(n) {
-            showSlides(slideIndex += n,5);
-        }
+            // document.getElementById("slideshow-container").reset();
+            clearTimeout(timer);
+            var b = slideIndex;
+            showSlides(slideIndex += n,b,10);
+            }
 
         function currentSlide(n) {
-          showSlides(slideIndex = n,5);
-        }
+           // document.getElementById("slideshow-container").reset();
+          clearTimeout(timer);
+          var b = slideIndex;
+          showSlides(slideIndex = n,b,10);
+          }
 
-        function showSlides(n,t) {
+        function showSlides(n,b,t) {
+          // clearTimeout(timer);
+          // var bg = document.getElementsByClassName("slideshow-container");
           var i;
+          var time = t;
           var slides = document.getElementsByClassName("mySlides");
           var dots = document.getElementsByClassName("dot");
           var vid = document.getElementById("story-vid");
           if (n > slides.length) {slideIndex = 1} 
           if (n < 1) {slideIndex = slides.length} ;
+
           for (i = 0; i < dots.length; i++) {
               dots[i].className = dots[i].className.replace(" active", "");
           }
+          // debugger;
           for (i = 0; i < slides.length; i++) {
               slides[i].style.display = "none"; 
           }
+          // $("#slideshow-container").css({"background-image":" url('../img/phum-story/ex1.png');"});
+           // alert(document.getElementById("slideshow-container").style.backgroundImage);
+          if(b==0)document.getElementById("slideshow-container").style.backgroundColor = "black";
+          if(b==1)document.getElementById("slideshow-container").style.backgroundImage = "url('../img/phum-story/pic1.jpg')";
+          if(b==2)document.getElementById("slideshow-container").style.backgroundImage = "url('../img/phum-story/pic2.png')";
+          if(b==3)document.getElementById("slideshow-container").style.backgroundImage = "url('../img/phum-story/pic3.jpg')";
+          if(b==4)document.getElementById("slideshow-container").style.backgroundImage = "url('../img/phum-story/pic4.jpg')";
+          
           slides[slideIndex-1].style.display = "block";
-          if(n!=2){
+          if(slideIndex==2){
+            vid.play();
+           setTimeout(function(){ document.getElementById("slideshow-container").style.backgroundImage = "none";},3000);
+             // alert(document.getElementById("slideshow-container").style.backgroundImage);
+            time = 30;
+          }
+          if(slideIndex!=2){
             vid.pause();
           }
-          else{
-            vid.play();
-            t = 30;
-          }
-          if(n==1||n==5){
+          if(slideIndex==1){
             $(ex1).fadeIn(900);
           }
           else{
           $(ex1).hide(); 
           }
           dots[slideIndex-1].className += " active";
-          setTimeout(function(){showSlides(slideIndex += 1, 5)}, t*1000);
+          // debugger;
+          time = time * 1000;
+          document.getElementById("story-place").textContent =time;
+          timer = setTimeout(function(){showSlides(slideIndex += 1, 5)}, time);
+          
         }
     </script>
 </body>

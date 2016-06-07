@@ -162,7 +162,7 @@
 					<p class = "text3" ><br><br><br>4-11.04.16</p>
 			</div>
 		<a>							
-		<a href="bonus-story.php">
+		<a href="./stories/bonus-story.php">
 			<div class="grow pic bw" id = "pic3">
 				<img  src="./img/homePic/Bonus.jpg" alt="Bonus">
 				<div class = "text"></div>

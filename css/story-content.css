@@ -1,5 +1,5 @@
 /* Slideshow container */
-.slideshow-container {
+#slideshow-container {
   width: 90%;
   /*max-width: 80%;*/
   height: auto;
@@ -11,6 +11,9 @@
   color: red;
   z-index: 1;
   overflow: hidden;
+  /*background-image: url('../img/phum-story/pic1.jpg');*/
+  background-size: cover;
+  background-color: black;
 }
 
 #ex1{
