@@ -5,7 +5,8 @@
 	<link href="header.php">
 	<link rel="stylesheet" type="text/css" href="./css/Leftbanner2.css">
 	<script src="./vender/typed/js/typed.js"></script>
-	<script src="./js/menu.js"></script>
+	<!--  <script src="./js/menu.js"></script> -->
+	<link rel="stylesheet" type="text/css" href="./css/categories.css">
 	<link rel="stylesheet" type="text/css" href="./css/home.css">
 	<link rel="stylesheet" type="text/css" href="./css/picture.css">
 	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
@@ -142,6 +143,16 @@
 			<script>
 				$("div.in").hide();
 			</script>
+			<p class = "rotate">CATEGORIES</p>
+			<div id = "cat">
+
+				<p id = "cat1">EDUCATION  </p>
+				<p id = "cat2">  SPORT  </p>
+				<p id = "cat3">  ADVANTURE  </p>
+				<p id = "cat4">  VOLUNTEER  </p>
+				<p id = "cat5">  ART&MUSIC  </p>
+				<p id = "cat6">  OTHER  </p>
+			</div>
 		</div>
 	</div>
 

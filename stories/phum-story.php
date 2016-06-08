@@ -56,11 +56,11 @@ $(document).ready(function(){
 $( window ).scroll(function() {
     $( "#sct" ).animate({
               opacity: '0'
-            },2000);
+            },1000);
     // $("#sc").css("animation-iteration-count" ,"0")
     $("#sc").animate({
               opacity: '0'
-            },2500);
+            },1500);
 });
 
 </script>
@@ -205,7 +205,7 @@ $( window ).scroll(function() {
           dots[slideIndex-1].className += " active";
           // debugger;
           time = time * 1000;
-          document.getElementById("story-place").textContent =time;
+          // document.getElementById("story-place").textContent =time;
           timer = setTimeout(function(){showSlides(slideIndex += 1,send, 5)}, time);
           
         }
