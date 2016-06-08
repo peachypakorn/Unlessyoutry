@@ -64,6 +64,277 @@
     				$("div.in").fadeIn(2500);
     				}
     		});
+		   	//categories bar
+		   	var p1 = document.getElementById("pic1");
+		   	var p2 = document.getElementById("pic2");
+		   	var p3 = document.getElementById("pic3");
+		   	var p4 = document.getElementById("pic4");
+		   	var p5 = document.getElementById("pic5");
+		   	var p6 = document.getElementById("pic6");
+		   	var p7 = document.getElementById("pic7");
+		   	var p8 = document.getElementById("pic8");
+		   	var p9 = document.getElementById("pic9");
+		   	var p10 = document.getElementById("pic10");
+		   	var p11 = document.getElementById("pic11");
+
+		   	
+		   	$("#cat1").click(function(){
+		   		// p1.toggle();
+		   		if (p8.style.display=="none"||p11.style.display=="none") {
+		   				p1.style.display = "none";
+				   		p2.style.display = "none";
+				   		p3.style.display = "none";
+				   		p4.style.display = "none";
+				   		p5.style.display = "none";
+				   		p6.style.display = "none";
+				   		p7.style.display = "none";
+				   		p8.style.display = "block";
+				   		p9.style.display = "none";
+				   		p10.style.display = "none";
+				   		p11.style.display = "block";
+		   		}
+		   		else if(p1.style.display =="none"||p2.style.display =="none"||p3.style.display =="none"||p4.style.display =="none"){
+				   		p1.style.display = "block";
+				   		p2.style.display = "block";
+				   		p3.style.display = "block";
+				   		p4.style.display = "block";
+				   		p5.style.display = "block";
+				   		p6.style.display = "block";
+				   		p7.style.display = "block";
+				   		p8.style.display = "block";
+				   		p9.style.display = "block";
+				   		p10.style.display = "block";
+				   		p11.style.display = "block";
+		   		}
+		   		else{
+		   				p1.style.display = "none";
+				   		p2.style.display = "none";
+				   		p3.style.display = "none";
+				   		p4.style.display = "none";
+				   		p5.style.display = "none";
+				   		p6.style.display = "none";
+				   		p7.style.display = "none";
+				   		p8.style.display = "block";
+				   		p9.style.display = "none";
+				   		p10.style.display = "none";
+				   		p11.style.display = "block";
+		   			}
+		   	});
+
+		   	$("#cat2").click(function(){
+		   		// p1.toggle();
+		   		if (p7.style.display=="none") {
+		   				p1.style.display = "none";
+				   		p2.style.display = "none";
+				   		p3.style.display = "none";
+				   		p4.style.display = "none";
+				   		p5.style.display = "none";
+				   		p6.style.display = "none";
+				   		p7.style.display = "block";
+				   		p8.style.display = "none";
+				   		p9.style.display = "none";
+				   		p10.style.display = "none";
+				   		p11.style.display = "none";
+		   		}
+		   		else if(p1.style.display =="none"||p2.style.display =="none"||p3.style.display =="none"||p4.style.display =="none"){
+				   		p1.style.display = "block";
+				   		p2.style.display = "block";
+				   		p3.style.display = "block";
+				   		p4.style.display = "block";
+				   		p5.style.display = "block";
+				   		p6.style.display = "block";
+				   		p7.style.display = "block";
+				   		p8.style.display = "block";
+				   		p9.style.display = "block";
+				   		p10.style.display = "block";
+				   		p11.style.display = "block";
+		   		}
+		   		else{
+		   				p1.style.display = "none";
+				   		p2.style.display = "none";
+				   		p3.style.display = "none";
+				   		p4.style.display = "none";
+				   		p5.style.display = "none";
+				   		p6.style.display = "none";
+				   		p7.style.display = "block";
+				   		p8.style.display = "none";
+				   		p9.style.display = "none";
+				   		p10.style.display = "none";
+				   		p11.style.display = "none";
+		   			}
+		   	});
+
+		   	$("#cat3").click(function(){
+		   		// p1.toggle();
+		   		if (p9.style.display=="none") {
+		   				p1.style.display = "none";
+				   		p2.style.display = "none";
+				   		p3.style.display = "none";
+				   		p4.style.display = "none";
+				   		p5.style.display = "none";
+				   		p6.style.display = "none";
+				   		p7.style.display = "none";
+				   		p8.style.display = "none";
+				   		p9.style.display = "block";
+				   		p10.style.display = "none";
+				   		p11.style.display = "none";
+		   		}
+		   		else if(p1.style.display =="none"||p2.style.display =="none"||p3.style.display =="none"||p4.style.display =="none"){
+				   		p1.style.display = "block";
+				   		p2.style.display = "block";
+				   		p3.style.display = "block";
+				   		p4.style.display = "block";
+				   		p5.style.display = "block";
+				   		p6.style.display = "block";
+				   		p7.style.display = "block";
+				   		p8.style.display = "block";
+				   		p9.style.display = "block";
+				   		p10.style.display = "block";
+				   		p11.style.display = "block";
+		   		}
+		   		else{
+		   				p1.style.display = "none";
+				   		p2.style.display = "none";
+				   		p3.style.display = "none";
+				   		p4.style.display = "none";
+				   		p5.style.display = "none";
+				   		p6.style.display = "none";
+				   		p7.style.display = "none";
+				   		p8.style.display = "none";
+				   		p9.style.display = "block";
+				   		p10.style.display = "none";
+				   		p11.style.display = "none";
+		   			}
+		   	});
+
+		   	$("#cat4").click(function(){
+		   		// p1.toggle();
+		   		if (p4.style.display=="none"||p5.style.display=="none") {
+		   				p1.style.display = "none";
+				   		p2.style.display = "none";
+				   		p3.style.display = "none";
+				   		p4.style.display = "none";
+				   		p5.style.display = "block";
+				   		p6.style.display = "block";
+				   		p7.style.display = "none";
+				   		p8.style.display = "none";
+				   		p9.style.display = "none";
+				   		p10.style.display = "none";
+				   		p11.style.display = "none";
+		   		}
+		   		else if(p1.style.display =="none"||p2.style.display =="none"||p3.style.display =="none"||p4.style.display =="none"){
+				   		p1.style.display = "block";
+				   		p2.style.display = "block";
+				   		p3.style.display = "block";
+				   		p4.style.display = "block";
+				   		p5.style.display = "block";
+				   		p6.style.display = "block";
+				   		p7.style.display = "block";
+				   		p8.style.display = "block";
+				   		p9.style.display = "block";
+				   		p10.style.display = "block";
+				   		p11.style.display = "block";
+		   		}
+		   		else{
+		   				p1.style.display = "none";
+				   		p2.style.display = "none";
+				   		p3.style.display = "none";
+				   		p4.style.display = "none";
+				   		p5.style.display = "block";
+				   		p6.style.display = "block";
+				   		p7.style.display = "none";
+				   		p8.style.display = "none";
+				   		p9.style.display = "none";
+				   		p10.style.display = "none";
+				   		p11.style.display = "none";
+		   			}
+		   	});
+
+		   	$("#cat5").click(function(){
+		   		// p1.toggle();
+		   		if (p1.style.display=="none"||p2.style.display=="none"||p3.style.display=="none"||p6.style.display=="none") {
+		   				p1.style.display = "block";
+				   		p2.style.display = "block";
+				   		p3.style.display = "block";
+				   		p4.style.display = "none";
+				   		p5.style.display = "none";
+				   		p6.style.display = "block";
+				   		p7.style.display = "none";
+				   		p8.style.display = "none";
+				   		p9.style.display = "none";
+				   		p10.style.display = "none";
+				   		p11.style.display = "none";
+		   		}
+		   		else if(p1.style.display =="none"||p2.style.display =="none"||p3.style.display =="none"||p4.style.display =="none"){
+				   		p1.style.display = "block";
+				   		p2.style.display = "block";
+				   		p3.style.display = "block";
+				   		p4.style.display = "block";
+				   		p5.style.display = "block";
+				   		p6.style.display = "block";
+				   		p7.style.display = "block";
+				   		p8.style.display = "block";
+				   		p9.style.display = "block";
+				   		p10.style.display = "block";
+				   		p11.style.display = "block";
+		   		}
+		   		else{
+		   				p1.style.display = "block";
+				   		p2.style.display = "block";
+				   		p3.style.display = "block";
+				   		p4.style.display = "none";
+				   		p5.style.display = "none";
+				   		p6.style.display = "block";
+				   		p7.style.display = "none";
+				   		p8.style.display = "none";
+				   		p9.style.display = "none";
+				   		p10.style.display = "none";
+				   		p11.style.display = "none";
+		   			}
+
+		   		$("#cat6").click(function(){
+		   		// p1.toggle();
+		   		if (p10.style.display=="none") {
+		   				p1.style.display = "none";
+				   		p2.style.display = "none";
+				   		p3.style.display = "none";
+				   		p4.style.display = "none";
+				   		p5.style.display = "none";
+				   		p6.style.display = "none";
+				   		p7.style.display = "none";
+				   		p8.style.display = "none";
+				   		p9.style.display = "none";
+				   		p10.style.display = "block";
+				   		p11.style.display = "none";
+		   		}
+		   		else if(p1.style.display =="none"||p2.style.display =="none"||p3.style.display =="none"||p4.style.display =="none"){
+				   		p1.style.display = "block";
+				   		p2.style.display = "block";
+				   		p3.style.display = "block";
+				   		p4.style.display = "block";
+				   		p5.style.display = "block";
+				   		p6.style.display = "block";
+				   		p7.style.display = "block";
+				   		p8.style.display = "block";
+				   		p9.style.display = "block";
+				   		p10.style.display = "block";
+				   		p11.style.display = "block";
+		   		}
+		   		else{
+		   				p1.style.display = "none";
+				   		p2.style.display = "none";
+				   		p3.style.display = "none";
+				   		p4.style.display = "none";
+				   		p5.style.display = "none";
+				   		p6.style.display = "none";
+				   		p7.style.display = "none";
+				   		p8.style.display = "none";
+				   		p9.style.display = "none";
+				   		p10.style.display = "block";
+				   		p11.style.display = "none";
+		   			}
+		   	});
+
     	//pic JS Part
    	 		$(".pic").hover(function(){
     			$(this).find(".text").animate({
@@ -146,12 +417,12 @@
 			<p class = "rotate">CATEGORIES</p>
 			<div id = "cat">
 
-				<p id = "cat1">EDUCATION  </p>
-				<p id = "cat2">  SPORT  </p>
-				<p id = "cat3">  ADVANTURE  </p>
-				<p id = "cat4">  VOLUNTEER  </p>
-				<p id = "cat5">  ART&MUSIC  </p>
-				<p id = "cat6">  OTHER  </p>
+				<p class = "pointer" id = "cat1">EDUCATION  </p>
+				<p class = "pointer" id = "cat2">  SPORT  </p>
+				<p class = "pointer" id = "cat3">  ADVANTURE  </p>
+				<p class = "pointer" id = "cat4">  VOLUNTEER  </p>
+				<p class = "pointer" id = "cat5">  ART&MUSIC  </p>
+				<p class = "pointer" id = "cat6">  OTHER  </p>
 			</div>
 		</div>
 	</div>
@@ -245,6 +516,21 @@
 					<p class = "text3" ><br><br><br>21-24.04.15</p>
 			</div>
 		</a>	
+
+		<script>
+		var pics = document.getElementsByClassName("pic");
+		 for (i = 0; i < pics.length; i++) {
+              // pics[i].style.display = "none"; 
+       //        pics[i].style.left = (Math.random()*100+100)+"%";
+       //        pics[i].style.marginTop = (Math.random()*100+100)+"%";
+       //        pics.animate({
+       //  			left: '0%',
+       //  			opacity: '1',
+       //  			margin: '0%'
+        			
+    			// });
+          }
+		</script>
 	</div>
 
 <!-- Video Modal Part -->
@@ -283,6 +569,8 @@
 		        modal.style.display = "none";
 		    }
 		}
+
+
 	</script>
 </body>
 </html>

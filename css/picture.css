@@ -25,9 +25,29 @@
   float: left;
    margin: 0px;
    padding: 0px;
-   overflow: hidden;
+   overflow: hidden;/*
+  -webkit-animation-name: flyin;
+  -webkit-animation-duration: 1s;
+  animation-name: flyin;
+  animation-duration: 1s;*/
  }
+@-webkit-keyframes flyin {
+  from { transform: translate3d(500px, 1200px, 0);} 
+  to {
+      -webkit-transform: translateY(0%);
+      -webkit-transform: translateX(0%);
 
+  }
+}
+
+@keyframes flyin {
+  from { transform: translate3d(500px, 1200px, 0);} 
+  to {
+      -webkit-transform: translateY(0%);
+      -webkit-transform: translateX(0%);
+
+  }
+}
  /*GROW*/
 .grow img {
   height: 100%;
