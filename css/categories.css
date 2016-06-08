@@ -27,8 +27,8 @@
 	/*padding-right: 12px;*/
 	overflow: hidden;
 	text-indent: 100%;
-	-webkit-animation: showin 2s ; /* Safari, Chrome and Opera > 12.1 */
-       	    animation: showin 2s;
+	-webkit-animation: showin 3s ; /* Safari, Chrome and Opera > 12.1 */
+       	    animation: showin 3s;
 }
 
 @keyframes showin {
@@ -36,7 +36,7 @@
     	width:6px;
     	text-indent: 0%;
     }
-    50% { 
+    30%, 40% { 
     	width:18%;
     	/*padding: 6px;*/
     	padding-left: 12px;
@@ -66,15 +66,15 @@
 	font-family: 'GothamBold';
 	overflow: hidden;
 	text-indent: 100%;
-		-webkit-animation: showin2 2.2s ; /* Safari, Chrome and Opera > 12.1 */
-       	    animation: showin2 2.2s;
+		-webkit-animation: showin2 3.2s ; /* Safari, Chrome and Opera > 12.1 */
+       	    animation: showin2 3.2s;
 	}
 @keyframes showin2 {
     0% {       	
     	width:6px;
     	text-indent: 0%;
     }
-    50% { 
+    27%,43% { 
     	width:12%;
     	/*padding: 6px;*/
     	padding-left: 12px;
@@ -104,8 +104,8 @@
 	font-family: 'GothamBold';
 	overflow: hidden;
 	text-indent: 100%;
-		-webkit-animation: showin3 2.3s ; /* Safari, Chrome and Opera > 12.1 */
-       	    animation: showin3 2.3s;
+		-webkit-animation: showin3 3.3s ; /* Safari, Chrome and Opera > 12.1 */
+       	    animation: showin3 3.3s;
 	
 
 }
@@ -114,7 +114,7 @@
     	width:6px;
     	text-indent: 0%;
     }
-    50% { 
+    25%,45% { 
     	width:18.6%;
     	/*padding: 6px;*/
     	padding-left: 12px;
@@ -144,8 +144,8 @@
 	font-family: 'GothamBold';
 	overflow: hidden;
 	text-indent: 100%;
-		-webkit-animation: showin4 2.6s ; /* Safari, Chrome and Opera > 12.1 */
-       	    animation: showin4 2.6s;
+		-webkit-animation: showin4 3.6s ; /* Safari, Chrome and Opera > 12.1 */
+       	    animation: showin4 3.6s;
 	
 }
 @keyframes showin4 {
@@ -153,7 +153,7 @@
     	width:6px;
     	text-indent: 0%;
     }
-    50% { 
+    23%, 47% { 
     	width:18.3%;
     	/*padding: 6px;*/
     	padding-left: 12px;
@@ -184,15 +184,15 @@
 	font-family: 'GothamBold';
 	overflow: hidden;
 	text-indent: 100%;
-		-webkit-animation: showin5 2.8s ; /* Safari, Chrome and Opera > 12.1 */
-       	    animation: showin5 2.8s;
+		-webkit-animation: showin5 3.8s ; /* Safari, Chrome and Opera > 12.1 */
+       	    animation: showin5 3.8s;
 	}
 	@keyframes showin5 {
     0% {       	
     	width:6px;
     	text-indent: 0%;
     }
-    50% { 
+    25%,50% { 
     	width:18%;
     	/*padding: 6px;*/
     	padding-left: 12px;
@@ -224,15 +224,15 @@
 	font-family: 'GothamBold';
 	overflow: hidden;
 	text-indent: 100%;
-		-webkit-animation: showin6 2.9s ; /* Safari, Chrome and Opera > 12.1 */
-       	    animation: showin6 2.9s;
+		-webkit-animation: showin6 3.9s ; /* Safari, Chrome and Opera > 12.1 */
+       	    animation: showin6 3.9s;
 	}
 	@keyframes showin6 {
     0% {       	
     	width:6px;
     	text-indent: 0%;
     }
-    50% { 
+    25%,52% { 
     	width:12.5%;
     	/*padding: 6px;*/
     	padding-left: 12px;
