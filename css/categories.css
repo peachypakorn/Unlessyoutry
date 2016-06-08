@@ -26,9 +26,11 @@
 	/*padding-left: 12px;*/
 	/*padding-right: 12px;*/
 	overflow: hidden;
-	text-indent: 100%;
+	text-indent: 2%;
 	-webkit-animation: showin 3s ; /* Safari, Chrome and Opera > 12.1 */
        	    animation: showin 3s;
+	-webkit-transition: all 0.3s ease;
+    transition: all 0.3s ease; 
 }
 
 @keyframes showin {
@@ -65,9 +67,11 @@
 	color: white;
 	font-family: 'GothamBold';
 	overflow: hidden;
-	text-indent: 100%;
+	text-indent: 2%;
 		-webkit-animation: showin2 3.2s ; /* Safari, Chrome and Opera > 12.1 */
        	    animation: showin2 3.2s;
+    -webkit-transition: all 0.3s ease;
+    transition: all 0.3s ease; 
 	}
 @keyframes showin2 {
     0% {       	
@@ -103,9 +107,12 @@
 	color: white;
 	font-family: 'GothamBold';
 	overflow: hidden;
-	text-indent: 100%;
+	text-indent: 2%;
 		-webkit-animation: showin3 3.3s ; /* Safari, Chrome and Opera > 12.1 */
        	    animation: showin3 3.3s;
+    -webkit-transition: all 0.3s ease;
+    transition: all 0.3s ease; 
+	
 	
 
 }
@@ -143,9 +150,12 @@
 	color: white;
 	font-family: 'GothamBold';
 	overflow: hidden;
-	text-indent: 100%;
+	text-indent: 2%;
 		-webkit-animation: showin4 3.6s ; /* Safari, Chrome and Opera > 12.1 */
        	    animation: showin4 3.6s;
+    -webkit-transition: all 0.3s ease;
+    transition: all 0.3s ease; 
+	
 	
 }
 @keyframes showin4 {
@@ -183,9 +193,12 @@
 	color: white;
 	font-family: 'GothamBold';
 	overflow: hidden;
-	text-indent: 100%;
+	text-indent: 2%;
 		-webkit-animation: showin5 3.8s ; /* Safari, Chrome and Opera > 12.1 */
        	    animation: showin5 3.8s;
+    -webkit-transition: all 0.3s ease;
+    transition: all 0.3s ease; 
+	
 	}
 	@keyframes showin5 {
     0% {       	
@@ -223,9 +236,12 @@
 	color: white;
 	font-family: 'GothamBold';
 	overflow: hidden;
-	text-indent: 100%;
+	text-indent: 2%;
 		-webkit-animation: showin6 3.9s ; /* Safari, Chrome and Opera > 12.1 */
        	    animation: showin6 3.9s;
+    -webkit-transition: all 0.3s ease;
+    transition: all 0.3s ease; 
+	
 	}
 	@keyframes showin6 {
     0% {       	
@@ -270,4 +286,52 @@ margin-top: 32px;
 left: -1.9%;
 font-family: 'GothamMed';
 font-size: 12px;
+}
+
+#cat1:hover{
+	    	width:18%;
+    	/*padding: 6px;*/
+    	padding-left: 12px;
+    	padding-right: 12px;
+    	text-indent: 0%;
+}
+
+#cat2:hover{
+	    	width:12%;
+    	/*padding: 6px;*/
+    	padding-left: 12px;
+    	padding-right: 12px;
+    	text-indent: 0%;
+}
+
+#cat3:hover{
+	    	width:18.8%;
+    	/*padding: 6px;*/
+    	padding-left: 12px;
+    	padding-right: 12px;
+    	text-indent: 0%;
+}
+
+#cat4:hover{
+	    	width:18.4%;
+    	/*padding: 6px;*/
+    	padding-left: 12px;
+    	padding-right: 12px;
+    	text-indent: 0%;
+}
+
+#cat5:hover{
+	    	width:18%;
+    	/*padding: 6px;*/
+    	padding-left: 12px;
+    	padding-right: 12px;
+    	text-indent: 0%;
+}
+
+#cat6:hover{
+	    	width:12%;
+    	/*padding: 6px;*/
+    	padding-left: 12px;
+    	padding-right: 12px;
+    	text-indent: 0%;
 }
