@@ -150,10 +150,10 @@
 
 				<p class = "pointer" id = "cat1"  onclick="showCat(1)">  EDUCATION  </p>
 				<p class = "pointer" id = "cat2"  onclick="showCat(2)">  SPORT  </p>
-				<p class = "pointer" id = "cat3" onmouseover="hoverup(18.8 ,this);" onmouseleave="normal(this);" onclick="showCat(3);">  ADVANTURE  </p>
-				<p class = "pointer" id = "cat4" onmouseover="hoverup(18.4 ,this)" onmouseleave="normal(this)" onclick="showCat(4)">  VOLUNTEER  </p>
-				<p class = "pointer" id = "cat5" onmouseover="hoverup(18 ,this)" onmouseleave="normal(this)" onclick="showCat(5)">  ART&MUSIC  </p>
-				<p class = "pointer" id = "cat6" onmouseover="hoverup(12 ,this)" onmouseleave="normal(this)" onclick="showCat(6)">  OTHER  </p>
+				<p class = "pointer" id = "cat3"  onclick="showCat(3)">  ADVANTURE  </p>
+				<p class = "pointer" id = "cat4"  onclick="showCat(4)">  VOLUNTEER  </p>
+				<p class = "pointer" id = "cat5"  onclick="showCat(5)">  ART&MUSIC  </p>
+				<p class = "pointer" id = "cat6"  onclick="showCat(6)">  OTHER  </p>
 			</div>
 		</div>
 	</div>
@@ -163,6 +163,7 @@
 			<div class="grow pic bw slideUp " id = "pic1">
 				<img  src="./img/homePic/Phum.jpg" alt="phumConcert">
 				<div class = "text"></div>
+				<div class = "cata"></div>
 					<p class = "text2" >     <br>PHUM<br>CONCERT</p>
 					<p class = "text3" ><br><br><br>15.03.16</p>
 			</div>
@@ -171,6 +172,7 @@
 			<div class="grow pic bw slideUp" id = "pic2">
 				<img  src="./img/homePic/Cindy.jpg" alt="Cindy">
 				<div class = "text"></div>
+				<div class = "cata"></div>
 					<p class = "text2" >KOREA<br>ART<br>TRIP</p>
 					<p class = "text3" ><br><br><br>4-11.04.16</p>
 			</div>
@@ -179,6 +181,7 @@
 			<div class="grow pic bw slideUp" id = "pic3">
 				<img  src="./img/homePic/Bonus.jpg" alt="Bonus">
 				<div class = "text"></div>
+				<div class = "cata"></div>
 					<p class = "text2" >HIGHER<br>LEVEL<br>DANCE</p>
 					<p class = "text3" ><br><br><br>18.02.16</p>
 				</div>
@@ -187,6 +190,7 @@
 			<div class="grow pic bw slideUp" id = "pic4">
 				<img  src="./img/homePic/Mitz.jpg" alt="midjungle">
 				<div class = "text"></div>
+				<div class = "cata"></div>
 					<p class = "text2" >WEIR<br>FOR<br>WILD</p>
 					<p class = "text3" ><br><br><br>28.02.16</p>
 			</div>
@@ -195,6 +199,7 @@
 			<div class="grow pic bw slideUp" id = "pic5">
 				<img  src="./img/homePic/Touch.jpg" alt="touch">
 				<div class = "text"></div>
+				<div class = "cata"></div>
 					<p class = "text2" >RURAL<br>TEACHER<br>#170</p>
 					<p class = "text3" ><br><br><br>7-10.01.16</p>
 			</div>						
@@ -203,6 +208,7 @@
 			<div class="grow pic bw slideUp"  id = "pic6">
 				<img  src="./img/homePic/Sun.jpg" alt="sunActing">
 				<div class = "text"></div>
+				<div class = "cata"></div>
 					<p class = "text2" >THE<br>OUTER<br>PROJECT</p>
 					<p class = "text3" ><br><br><br>1-31.01.16</p>
 			</div>
@@ -211,6 +217,7 @@
 			<div class="grow pic bw slideUp" id = "pic7">
 				<img  src="./img/homePic/PEP.jpg" alt="pep">
 				<div class = "text"></div>
+				<div class = "cata"></div>
 					<p class = "text2" >KOH<br>TAO<br>DIVING</p>
 					<p class = "text3" ><br><br><br>17.05.16</p>
 			</div>
@@ -219,6 +226,7 @@
 			<div class="grow pic bw slideUp" id = "pic8">
 				<img  src="./img/homePic/gino.jpg" alt="gino Russia">
 				<div class = "text"></div>
+				<div class = "cata"></div>
 					<p class = "text2" >AFS<br>AT<br>RUSSIA</p>
 					<p class = "text3" ><br><br><br>2014-2015</p>
 			</div>						
@@ -227,6 +235,7 @@
 			<div class="grow pic bw slideUp" id = "pic9">
 				<img  src="./img/homePic/Dew.jpg" alt="dewdewdew">
 				<div class = "text"></div>
+				<div class = "cata"></div>
 					<p class = "text2" >PHU<br>SOIDAOW<br>HIKING</p>
 					<p class = "text3" ><br><br><br>24-28.12.15</p>
 			</div>
@@ -235,6 +244,7 @@
 			<div class="grow pic bw slideUp" id = "pic10">
 				<img  src="./img/homePic/Oak.jpg" alt="camping">
 				<div class = "text"></div>
+				<div class = "cata"></div>
 					<p class = "text2" >AFS<br>MEDIA<br>MAN</p>
 					<p class = "text3" ><br><br><br>21-24.04.15</p>
 			</div>
@@ -243,6 +253,7 @@
 			<div class="grow pic bw slideUp" id = "pic11">
 				<img  src="./img/homePic/Nat.jpg" alt="TFT">
 				<div class = "text"></div>
+				<div class = "cata"></div>
 					<p class = "text2" >TEACH<br>FOR<br>THAI</p>
 					<p class = "text3" ><br><br><br>21-24.04.15</p>
 			</div>
