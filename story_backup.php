@@ -148,12 +148,12 @@
 			<p class = "rotate">CATEGORIES</p>
 			<div id = "cat">
 
-				<p class = "pointer" id = "cat1" onclick="showCat(1)">  EDUCATION  </p>
-				<p class = "pointer" id = "cat2" onclick="showCat(2)">  SPORT  </p>
-				<p class = "pointer" id = "cat3" onclick="showCat(3)">  ADVANTURE  </p>
-				<p class = "pointer" id = "cat4" onclick="showCat(4)">  VOLUNTEER  </p>
-				<p class = "pointer" id = "cat5" onclick="showCat(5)">  ART&MUSIC  </p>
-				<p class = "pointer" id = "cat6" onclick="showCat(6)">  OTHER  </p>
+				<p class = "pointer" id = "cat1"  onclick="showCat(1)">  EDUCATION  </p>
+				<p class = "pointer" id = "cat2"  onclick="showCat(2)">  SPORT  </p>
+				<p class = "pointer" id = "cat3" onmouseover="hoverup(18.8 ,this);" onmouseleave="normal(this);" onclick="showCat(3);">  ADVANTURE  </p>
+				<p class = "pointer" id = "cat4" onmouseover="hoverup(18.4 ,this)" onmouseleave="normal(this)" onclick="showCat(4)">  VOLUNTEER  </p>
+				<p class = "pointer" id = "cat5" onmouseover="hoverup(18 ,this)" onmouseleave="normal(this)" onclick="showCat(5)">  ART&MUSIC  </p>
+				<p class = "pointer" id = "cat6" onmouseover="hoverup(12 ,this)" onmouseleave="normal(this)" onclick="showCat(6)">  OTHER  </p>
 			</div>
 		</div>
 	</div>
@@ -294,20 +294,11 @@
 		}
 
 	   	//categories bar
-		   	var p1 = document.getElementById("pic1");
-		   	var p2 = document.getElementById("pic2");
-		   	var p3 = document.getElementById("pic3");
-		   	var p4 = document.getElementById("pic4");
-		   	var p5 = document.getElementById("pic5");
-		   	var p6 = document.getElementById("pic6");
-		   	var p7 = document.getElementById("pic7");
-		   	var p8 = document.getElementById("pic8");
-		   	var p9 = document.getElementById("pic9");
-		   	var p10 = document.getElementById("pic10");
-		   	var p11 = document.getElementById("pic11");
+
 		   	var pics = document.getElementsByClassName("pic");
 		   	var currentCat = 0;
 		   	var numpic = 0;
+		   	var h;
 		   	var cat =document.getElementById("cat1");;
 		   			for (i = 0; i < pics.length; i++) {
 		              		pics[i].style.display = "none"; 
@@ -317,7 +308,21 @@
               		pics[i].style.WebkitAnimation = "slideUp 0.7s 1";
 					pics[i].style.animation = "slideUp 0.7s 1";
           		}
+          	function hoverup(n,elem){
+          		// cat = document.getElementById("elem");
+          		elem.style.paddingLeft = "12px";
+				elem.style.paddingRight = "12px";
+				elem.style.textIndent = "0%";
+				elem.style.width = n+"%";
 
+          	}
+          	function normal(elem){
+          		// cat = document.getElementById("elem");
+          		elem.style.paddingLeft = "0px";
+				elem.style.paddingRight = "0px";
+				elem.style.textIndent = "1%";
+				elem.style.width ="6px";
+          	}
 		   	function shows(n){
 		   		// var pics = document.getElementsByClassName("pic");
 		   		var pos = n;
@@ -332,10 +337,11 @@
 		   	function showCat(n) {
 		   		// var pics = document.getElementsByClassName("pic");
 		   		// debugger;
-		   		cat.style.paddingLeft = "0px";
-				cat.style.paddingRight = "0px";
-				cat.style.textIndent = "1%";
-				cat.style.width = "6px";
+		  //  		cat.style.paddingLeft = "0px";
+				// cat.style.paddingRight = "0px";
+				// cat.style.textIndent = "1%";
+				// cat.style.width = "6px";
+				normal(cat);
 		   		if(currentCat==n){
 		   			for (i = 0; i < pics.length; i++) {
 		              		pics[i].style.display = "none"; 
@@ -384,9 +390,10 @@
 				   			cat = document.getElementById("cat6");
 				   			cat.style.width = "12%";
 				   						   		} 
-				   		cat.style.paddingLeft = "12px";
-				   		cat.style.paddingRight = "12px";
-				   		cat.style.textIndent = "0%";	
+				   		// cat.style.paddingLeft = "12px";
+				   		// cat.style.paddingRight = "12px";
+				   		// cat.style.textIndent = "0%";	
+				   		hoverup(cat.style.width,cat);
 				   		for (i = 0; i < pics.length; i++) {
 		              		pics[i].style.display = "none"; 
 		          		}
