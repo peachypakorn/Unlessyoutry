@@ -308,21 +308,15 @@
 		   	var pics = document.getElementsByClassName("pic");
 		   	var currentCat = 0;
 		   	var numpic = 0;
+		   	var cat =document.getElementById("cat1");;
 		   			for (i = 0; i < pics.length; i++) {
 		              		pics[i].style.display = "none"; 
 		          		}
 		   			for (i = 0; i < pics.length; i++) {
-		   				// alert(i);
 		   				doshow(i,i);
-		   				// numpic = i;
-              		// pics[i].style.display = "block"; 
-              			// alert(numpic);
               		pics[i].style.WebkitAnimation = "slideUp 0.7s 1";
 					pics[i].style.animation = "slideUp 0.7s 1";
           		}
-
-
-
 
 		   	function shows(n){
 		   		// var pics = document.getElementsByClassName("pic");
@@ -338,6 +332,10 @@
 		   	function showCat(n) {
 		   		// var pics = document.getElementsByClassName("pic");
 		   		// debugger;
+		   		cat.style.paddingLeft = "0px";
+				cat.style.paddingRight = "0px";
+				cat.style.textIndent = "1%";
+				cat.style.width = "6px";
 		   		if(currentCat==n){
 		   			for (i = 0; i < pics.length; i++) {
 		              		pics[i].style.display = "none"; 
@@ -355,13 +353,40 @@
 		   		}
 		   		else{
 				   		var picShow
-				   		if(n==1)picShow = new Array(8, 11);
-				   		else if(n==2) picShow = new Array(7,7);
-				   		else if(n==3) picShow = new Array(9,9);
-				   		else if(n==4) picShow = new Array(4,5);
-				   		else if(n==5) picShow = new Array(1,2,3,6);
-				   		else if(n==6) picShow = new Array(10,10);
-				   			
+				   		
+				   		if(n==1){
+				   			picShow = new Array(8, 11);
+				   			cat = document.getElementById("cat1");
+				   			cat.style.width = "18%";
+				   		}
+				   		else if(n==2) {
+				   			picShow = new Array(7,7);
+				   			cat = document.getElementById("cat2");
+				   			cat.style.width = "12%";
+				   		}
+				   		else if(n==3) {
+				   			picShow = new Array(9,9);
+				   			cat = document.getElementById("cat3");
+				   			cat.style.width = "18.8%";
+				   		}
+				   		else if(n==4){
+				   			picShow = new Array(4,5);
+				   			cat = document.getElementById("cat4");
+				   			cat.style.width = "18.4%";
+				   		} 
+				   		else if(n==5){
+				   			picShow = new Array(1,2,3,6);
+				   			cat = document.getElementById("cat5");
+				   			cat.style.width = "18%";
+				   		} 
+				   		else if(n==6){
+				   			picShow = new Array(10,10);
+				   			cat = document.getElementById("cat6");
+				   			cat.style.width = "12%";
+				   						   		} 
+				   		cat.style.paddingLeft = "12px";
+				   		cat.style.paddingRight = "12px";
+				   		cat.style.textIndent = "0%";	
 				   		for (i = 0; i < pics.length; i++) {
 		              		pics[i].style.display = "none"; 
 		          		}
