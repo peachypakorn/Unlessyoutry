@@ -327,8 +327,12 @@
 				   		for (i = 0; i < pics.length; i++) {
 		              		pics[i].style.display = "none"; 
 		          		}
+		          		// debugger;
 				   		for (i = 0; i < picShow.length; i++) {
+				   			
 				   			pics[picShow[i]-1].style.display = "block";
+				   			pics[picShow[i]-1].style.WebkitAnimation = "expandUp 0.7s 1";
+							pics[picShow[i]-1].style.animation = "expandUp 0.7s 1";
 				   		}
 		   		currentCat = n;
 		   		}
