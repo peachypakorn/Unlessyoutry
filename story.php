@@ -291,7 +291,7 @@
 				   		p10.style.display = "none";
 				   		p11.style.display = "none";
 		   			}
-
+		   	});
 		   		$("#cat6").click(function(){
 		   		// p1.toggle();
 		   		if (p10.style.display=="none") {
