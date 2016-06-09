@@ -307,11 +307,19 @@
 		   	var p11 = document.getElementById("pic11");
 		   	var pics = document.getElementsByClassName("pic");
 		   	var currentCat = 0;
+
+		   	function show(n){
+		   		var pics = document.getElementsByClassName("pic");
+		   		pics[i].style.display = "block"; 
+		   				   	}
+
 		   	function showCat(n) {
 		   		var pics = document.getElementsByClassName("pic");
+		   		debugger;
 		   		if(currentCat==n){
 		   			for (i = 0; i < pics.length; i++) {
-              		pics[i].style.display = "block"; 
+              		// pics[i].style.display = "block"; 
+              		setInterval(show(i),1000);
               		pics[i].style.WebkitAnimation = "expandUp 0.7s 1";
 					pics[i].style.animation = "expandUp 0.7s 1";
           		}
