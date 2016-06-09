@@ -80,6 +80,10 @@
         		$(this).find("p.text3").animate({
         			opacity: '1'
         		},1000);
+        		$(this).find(".cata").animate({
+        			left: '0%',
+        			opacity: '1'
+        		});
        		}, function(){
         		$(this).find("p.text2").animate({
         			opacity: '0'
@@ -93,6 +97,10 @@
 			        height: '43%',
 			        width: '43%'
     			});
+    			$(this).find(".cata").animate({
+        			left: '-3%',
+        			opacity: '0'
+        		});
 
     		});
 		});

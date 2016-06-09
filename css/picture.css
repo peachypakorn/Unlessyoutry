@@ -17,7 +17,7 @@
   position: relative;
   /*clip: rect(0px,280px,272px,30px);*/
   /*border: 0px solid #fff;  */
-  left: 0.004%; 
+  /*left: 0.004%; */
    width: 33.33%;
    height: 33.33%;
   min-height: 24.99%;
@@ -93,13 +93,13 @@ transform: scale(1.05);
 }
 .cata{
   position :absolute;
-  /*left: 100%;*/
+  left: -2.5%;
   top:  0%;
   overflow: hidden;
   width:2.5%;
   height:100%;
   background: red;
-  opacity:1; 
+  opacity:0; 
   z-index: 2;
 } 
 
