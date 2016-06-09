@@ -307,21 +307,33 @@
 		   	var p11 = document.getElementById("pic11");
 		   	var pics = document.getElementsByClassName("pic");
 		   	var currentCat = 0;
+		   	var numpic = 0;
+		   	function shows(n){
+		   		// var pics = document.getElementsByClassName("pic");
+		   		var pos = n;
+		   		// alert(n + " " + pos);
+		   		pics[pos].style.display = "block"; 
 
-		   	function show(n){
-		   		var pics = document.getElementsByClassName("pic");
-		   		pics[i].style.display = "block"; 
 		   				   	}
+		   	function doshow(n,m){
+		   		setTimeout(function(){shows(numpic=n);},m*150);
+              				   	}
 
 		   	function showCat(n) {
-		   		var pics = document.getElementsByClassName("pic");
-		   		debugger;
+		   		// var pics = document.getElementsByClassName("pic");
+		   		// debugger;
 		   		if(currentCat==n){
 		   			for (i = 0; i < pics.length; i++) {
+		              		pics[i].style.display = "none"; 
+		          		}
+		   			for (i = 0; i < pics.length; i++) {
+		   				// alert(i);
+		   				doshow(i,i);
+		   				// numpic = i;
               		// pics[i].style.display = "block"; 
-              		setInterval(show(i),1000);
-              		pics[i].style.WebkitAnimation = "expandUp 0.7s 1";
-					pics[i].style.animation = "expandUp 0.7s 1";
+              			// alert(numpic);
+              		pics[i].style.WebkitAnimation = "slideUp 0.7s 1";
+					pics[i].style.animation = "slideUp 0.7s 1";
           		}
           		currentCat=0;
 		   		}
@@ -339,10 +351,10 @@
 		          		}
 		          		// debugger;
 				   		for (i = 0; i < picShow.length; i++) {
-				   			
-				   			pics[picShow[i]-1].style.display = "block";
-				   			pics[picShow[i]-1].style.WebkitAnimation = "expandUp 0.7s 1";
-							pics[picShow[i]-1].style.animation = "expandUp 0.7s 1";
+				   			doshow(picShow[i]-1,i);
+				   			// pics[picShow[i]-1].style.display = "block";
+				   			pics[picShow[i]-1].style.WebkitAnimation = "slideUp 0.7s 1";
+							pics[picShow[i]-1].style.animation = "slideUp 0.7s 1";
 				   		}
 		   		currentCat = n;
 		   		}
