@@ -96,7 +96,7 @@ $( window ).scroll(function() {
           </div>
         </div>
     </div>
-    <div class ="content">
+    <div class ="content" style = "background:white">
         <br><br>
         <div id = "slideshow-container" style = "background-color:black');">
             <div class="mySlides move">
@@ -188,9 +188,12 @@ $( window ).scroll(function() {
            setTimeout(function(){ document.getElementById("slideshow-container").style.backgroundImage = "none";},3000);
               
              // alert(document.getElementById("slideshow-container").style.backgroundImage);
-            time = 30;
+            if(time == 10){
+              time = vid.duration-vid.currentTime;
+            }
+            else time = 30;
             if(vid.requestFullscreen){
-              time = vid.duration - vid.currentTime;
+              time = vid.duration - vid.currentTime-1;
             }
           }
           else if(slideIndex!=2){

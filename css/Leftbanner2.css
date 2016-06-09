@@ -51,12 +51,13 @@ p{
 
 .content{
 	position: relative;
-	background: white;
+	background: black;
 	/*color: white;*/
 	left: 40%;
 	width: 60%;
     padding: 0px;
-    margin: 0px;  
+    margin: 0px;
+    overflow: hidden;  
 }
 
 video.banner{

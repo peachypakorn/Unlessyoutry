@@ -10,7 +10,9 @@
     font-family: 'GothamBold';
     src: url('../vender/gothamFont/GOTHAM-BOLD.TTF');
 }
-
+#pic1{
+  visibility: hidden;
+}
 .pic {
   position: relative;
   /*clip: rect(0px,280px,272px,30px);*/
@@ -25,11 +27,17 @@
   float: left;
    margin: 0px;
    padding: 0px;
-   overflow: hidden;/*
+   overflow: hidden;
+   visibility: hidden;
+      /*
   -webkit-animation-name: flyin;
   -webkit-animation-duration: 1s;
   animation-name: flyin;
   animation-duration: 1s;*/
+ }
+ .delay{
+      -webkit-animation-delay: 1s; /* Chrome, Safari, Opera */
+    animation-delay: 1s;
  }
 @-webkit-keyframes flyin {
   from { transform: translate3d(500px, 1200px, 0);} 

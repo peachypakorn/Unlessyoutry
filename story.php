@@ -7,6 +7,7 @@
 	<script src="./vender/typed/js/typed.js"></script>
 	<!--  <script src="./js/menu.js"></script> -->
 	<link rel="stylesheet" type="text/css" href="./css/categories.css">
+	<link rel="stylesheet" type="text/css" href="./css/animations.css">
 	<link rel="stylesheet" type="text/css" href="./css/home.css">
 	<link rel="stylesheet" type="text/css" href="./css/picture.css">
 	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
@@ -76,8 +77,8 @@
 		   	var p9 = document.getElementById("pic9");
 		   	var p10 = document.getElementById("pic10");
 		   	var p11 = document.getElementById("pic11");
-
-		   	
+		   	var pics = document.getElementsByClassName("pic");
+		   	// p1.addClass()
 		   	$("#cat1").click(function(){
 		   		// p1.toggle();
 		   		if (p8.style.display=="none"||p11.style.display=="none") {
@@ -92,6 +93,7 @@
 				   		p9.style.display = "none";
 				   		p10.style.display = "none";
 				   		p11.style.display = "block";
+
 		   		}
 		   		else if(p1.style.display =="none"||p2.style.display =="none"||p3.style.display =="none"||p4.style.display =="none"){
 				   		p1.style.display = "block";
@@ -429,7 +431,7 @@
 
 	<div class = "content">
 		<a href="./stories/phum-story.php">
-			<div class="grow pic bw" id = "pic1">
+			<div class="grow pic bw delay expandUp" id = "pic1">
 				<img  src="./img/homePic/Phum.jpg" alt="phumConcert">
 				<div class = "text"></div>
 					<p class = "text2" >     <br>PHUM<br>CONCERT</p>
@@ -437,7 +439,7 @@
 			</div>
 		</a>
 		<a href="cindy-story.php">
-			<div class="grow pic bw" id = "pic2">
+			<div class="grow pic bw expandUp" id = "pic2">
 				<img  src="./img/homePic/Cindy.jpg" alt="Cindy">
 				<div class = "text"></div>
 					<p class = "text2" >KOREA<br>ART<br>TRIP</p>
@@ -445,7 +447,7 @@
 			</div>
 		<a>							
 		<a href="./stories/bonus-story.php">
-			<div class="grow pic bw" id = "pic3">
+			<div class="grow pic bw expandUp" id = "pic3">
 				<img  src="./img/homePic/Bonus.jpg" alt="Bonus">
 				<div class = "text"></div>
 					<p class = "text2" >HIGHER<br>LEVEL<br>DANCE</p>
@@ -453,7 +455,7 @@
 				</div>
 		</a>
 		<a href="mitz-story.php">
-			<div class="grow pic bw" id = "pic4">
+			<div class="grow pic bw expandUp" id = "pic4">
 				<img  src="./img/homePic/Mitz.jpg" alt="midjungle">
 				<div class = "text"></div>
 					<p class = "text2" >WEIR<br>FOR<br>WILD</p>
@@ -461,7 +463,7 @@
 			</div>
 		</a>
 		<a href="touch-story.php">
-			<div class="grow pic bw" id = "pic5">
+			<div class="grow pic bw expandUp" id = "pic5">
 				<img  src="./img/homePic/Touch.jpg" alt="touch">
 				<div class = "text"></div>
 					<p class = "text2" >RURAL<br>TEACHER<br>#170</p>
@@ -469,7 +471,7 @@
 			</div>						
 		</a>
 		<a href="sun-story.php">
-			<div class="grow pic bw" id = "pic6">
+			<div class="grow pic bw expandUp"  id = "pic6">
 				<img  src="./img/homePic/Sun.jpg" alt="sunActing">
 				<div class = "text"></div>
 					<p class = "text2" >THE<br>OUTER<br>PROJECT</p>
@@ -477,7 +479,7 @@
 			</div>
 		</a>
 		<a href="pep-story.php">
-			<div class="grow pic bw" id = "pic7">
+			<div class="grow pic bw expandUp" id = "pic7">
 				<img  src="./img/homePic/PEP.jpg" alt="pep">
 				<div class = "text"></div>
 					<p class = "text2" >KOH<br>TAO<br>DIVING</p>
@@ -485,7 +487,7 @@
 			</div>
 		</a>
 		<a href="gino-story.php">	
-			<div class="grow pic bw" id = "pic8">
+			<div class="grow pic bw expandUp" id = "pic8">
 				<img  src="./img/homePic/gino.jpg" alt="gino Russia">
 				<div class = "text"></div>
 					<p class = "text2" >AFS<br>AT<br>RUSSIA</p>
@@ -493,7 +495,7 @@
 			</div>						
 		</a>
 		<a href="dew-story.php">
-			<div class="grow pic bw" id = "pic9">
+			<div class="grow pic bw expandUp" id = "pic9">
 				<img  src="./img/homePic/Dew.jpg" alt="dewdewdew">
 				<div class = "text"></div>
 					<p class = "text2" >PHU<br>SOIDAOW<br>HIKING</p>
@@ -501,7 +503,7 @@
 			</div>
 		</a>
 		<a href="oak-story.php">
-			<div class="grow pic bw" id = "pic10">
+			<div class="grow pic bw expandUp" id = "pic10">
 				<img  src="./img/homePic/Oak.jpg" alt="camping">
 				<div class = "text"></div>
 					<p class = "text2" >AFS<br>MEDIA<br>MAN</p>
@@ -509,7 +511,7 @@
 			</div>
 		</a>
 		<a href="nat-story.php">
-			<div class="grow pic bw" id = "pic11">
+			<div class="grow pic bw expandUp" id = "pic11">
 				<img  src="./img/homePic/Nat.jpg" alt="TFT">
 				<div class = "text"></div>
 					<p class = "text2" >TEACH<br>FOR<br>THAI</p>
@@ -520,15 +522,7 @@
 		<script>
 		var pics = document.getElementsByClassName("pic");
 		 for (i = 0; i < pics.length; i++) {
-              // pics[i].style.display = "none"; 
-       //        pics[i].style.left = (Math.random()*100+100)+"%";
-       //        pics[i].style.marginTop = (Math.random()*100+100)+"%";
-       //        pics.animate({
-       //  			left: '0%',
-       //  			opacity: '1',
-       //  			margin: '0%'
-        			
-    			// });
+		 	// pics[i].find(".expandUp").style.animationDuration = 1.2 + (i * 0.2)+"s";
           }
 		</script>
 	</div>
