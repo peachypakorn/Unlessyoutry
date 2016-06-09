@@ -312,6 +312,8 @@
 		   		if(currentCat==n){
 		   			for (i = 0; i < pics.length; i++) {
               		pics[i].style.display = "block"; 
+              		pics[i].style.WebkitAnimation = "expandUp 0.7s 1";
+					pics[i].style.animation = "expandUp 0.7s 1";
           		}
           		currentCat=0;
 		   		}
