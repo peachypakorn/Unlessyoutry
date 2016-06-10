@@ -43,7 +43,14 @@
 	width: 45%;
 	min-width: 45%;
 	max-width: 45%;
-
+}
+#cindy-topic{
+	position: absolute;
+	margin-top: 23%;
+	left: 24%;
+	width: 52%;
+	min-width: 52%;
+	max-width: 52%;
 }
 
 #twoline-topic{
@@ -60,7 +67,7 @@ p#story-date{
 	position: absolute;
 	color: white;
 	margin-top: 31%;
-	left :41%;
+	left :42%;
 	font-size: 18px;
 }
 
@@ -69,7 +76,7 @@ p#story-place{
 	color: white;
 	font-family: 'GothamBold';
 	margin-top: 36%;
-	left :41%;
+	left :42%;
 	font-size: 18px;
 }
 
@@ -77,7 +84,7 @@ p.twoline-date{
 	position: absolute;
 	color: white;
 	margin-top: 38%;
-	left :41%;
+	left :42%;
 	font-size: 18px;
 }
 
@@ -86,7 +93,7 @@ p.twoline-place{
 	color: white;
 	font-family: 'GothamBold';
 	margin-top: 43%;
-	left :40.5%;
+	left :41.5%;
 	font-size: 18px;
 }
 
@@ -94,7 +101,7 @@ p.twoline-place{
 	position: absolute;
 	/*font-family: 'GothamMed';*/
 	font-size: 9.5px;
-	top: 87%;
+	top: 88.5%;
 	left: 25%;
 	opacity: 1;
  }

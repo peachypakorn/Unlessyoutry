@@ -226,7 +226,7 @@ p#story-name{
 	color: white;
 	font-family: 'GothamMed';
 	margin-top: 62.5%;
-	left :39.5%;
+	left :40.5%;
 	font-size: 13px;
 }
 
@@ -273,31 +273,31 @@ color: #FFAA21;
 
 .info-icon {
 	position: absolute;
-	bottom: 20%;
+	bottom: 15%;
 	left: 41%;
-	width: 4%;
-	min-width: 4%;
-	max-width: 4%;
+	width: 5%;
+	min-width: 5%;
+	max-width: 5%;
 	-webkit-filter: grayscale(100%) brightness(200%);
 }
 
 .friend-icon {
 	position: absolute;
-	bottom: 20%;
+	bottom: 15%;
 	left: 48%;
-	width: 4%;
-	min-width: 4%;
-	max-width: 4%;
+	width: 5%;
+	min-width: 5%;
+	max-width: 5%;
 	-webkit-filter: grayscale(100%) brightness(200%);
 }
 
 .link-icon {
 	position: absolute;
-	bottom: 20%;
+	bottom: 15%;
 	left: 55%;
-	width: 4%;
-	min-width: 4%;
-	max-width: 4%;
+	width: 5%;
+	min-width: 5%;
+	max-width: 5%;
 	-webkit-filter: grayscale(100%) brightness(200%);
 }
 
@@ -305,18 +305,18 @@ color: #FFAA21;
 	position: absolute;
 	color: #FFAA21;
 	font-family: 'GothamBold';
-	bottom: 15%;
-	left :39.5%;
+	bottom: 11%;
+	left :42%;
 	-webkit-filter: grayscale(100%) brightness(200%);
-
+	opacity: 0;
 }
 
 .friend-t{
 	position: absolute;
 	color: #FFAA21;
 	font-family: 'GothamBold';
-	bottom: 15%;
-	left :39.5%;
+	bottom: 11%;
+	left :42.5%;
 	-webkit-filter: grayscale(100%) brightness(200%);
 	opacity: 0;
 }
@@ -325,9 +325,9 @@ color: #FFAA21;
 	position: absolute;
 	color: #FFAA21;
 	font-family: 'GothamBold';
-	bottom: 15%;
-	left :39.5%;
+	bottom: 11%;
+	left :47%;
 	-webkit-filter: grayscale(100%) brightness(200%);
-	opacity: 0;
+	opacity: 1;
 
 }

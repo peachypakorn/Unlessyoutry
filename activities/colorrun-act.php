@@ -88,7 +88,7 @@ $( window ).scroll(function() {
           <p  class = "twoline-place">BANGKOK</p>
           <a class = "p pointer">
               <img id= "profile-pic" src="../img/act-com/colorrun-act/Profile.jpg" alt="menu">
-              <p  id = "story-name" style = "left:41.5%" >COLOR RUN</p>
+              <p  id = "story-name" style = "left:43%" >COLOR RUN</p>
           </a>
           <img class= "info-icon" src="../img/icon/Info.png" alt="info">
               <p  class = "info-t">INFORMATION</p>
@@ -96,7 +96,7 @@ $( window ).scroll(function() {
               <p  class = "friend-t">FIND FRIENDS</p>
           <img class= "link-icon" src="../img/icon/Link.png" alt="link">
               <p  class = "link-t">APPLY</p>
-          <p id = "act-text">SO MANY THINGS ARE WAITING FOR YOU TO TRY<br>WE ARE UPDATING THE ACTIVITIES FROM SEVERAL<br>ORGANIZATIONS EVERY QUARTER</p>
+          <p id = "act-text">SO MANY THINGS ARE WAITING FOR YOU TO TRY<br>WE ARE UPDATING THE ACTIVITIES FROM SEVERAL</p>
          
           <div class = "s pointer">
             <img id= "share-icon" src="../img/icon/Share.png" alt="share">
