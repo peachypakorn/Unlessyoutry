@@ -103,7 +103,7 @@
 	<div class = "left-banner">
 		<div class = "wrap">
 			<video autoplay loop poster muted="./img/video/LandingVid.png" id="bgvid" class = "banner2" >
-		    	  	<source src="./img/video/sun26.mp4" type= "video/mp4">
+		    	  	<source src="./img/video/sun21.mp4" type= "video/mp4">
 			</video>
 			<div class = "clear-bg"></div>
 			<img id= "menu"class="yellow pointer" src="./img/icon/Menu.png" alt="menu">
