@@ -154,7 +154,7 @@
 	</div>
 
 	<div class = "content">
-		<a href="./stories/phum-story.php">
+		<a href="./activities/colorrun-act.php">
 			<div class="grow pic bw slideUp" id = "pic1">
 				<img  src="./img/actPic/Act1.jpg" alt="phumConcert">
 				<div class = "text"></div>

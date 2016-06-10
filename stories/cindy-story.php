@@ -88,7 +88,7 @@ $( window ).scroll(function() {
           <p  id = "story-place" style = "left:37%">SEOUL, KOREA</p>
           <a class = "p pointer">
               <img id= "profile-pic" src="../img/story-com/cindy-story/Profile.jpg" alt="menu">
-              <p  id = "story-name">CINDY LAM</p>
+              <p  id = "story-name" style ="left :42%;" >CINDY LAM</p>
           </a>
           <div class = "s pointer">
             <img id= "share-icon" src="../img/icon/Share.png" alt="menu">

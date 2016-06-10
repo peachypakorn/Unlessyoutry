@@ -183,15 +183,7 @@ img#ibanner{
 	font-size: 15px;
 }
 
-#story-logo{
-	position: absolute;
-	margin-top: 15%;
-	left: 43.5%;
-	width: 13%;
-	min-width: 13%;
-	max-width: 13%;
-	-webkit-filter: grayscale(100%) brightness(200%);
-}
+
 /*out to other web*/
 #fb{
 	position: absolute;
@@ -219,22 +211,7 @@ img#ibanner{
 }
 
 /*story part*/
-p#story-date{
-	position: absolute;
-	color: white;
-	margin-top: 31%;
-	left :41%;
-	font-size: 18px;
-}
 
-p#story-place{
-	position: absolute;
-	color: white;
-	font-family: 'GothamBold';
-	margin-top: 36%;
-	left :41%;
-	font-size: 18px;
-}
 #profile-pic{
 	position: absolute;
 	margin-top: 52%;
@@ -291,5 +268,66 @@ color: #FFAA21;
 
 .s:hover #cont-share{
 	-webkit-filter: grayscale(0%) brightness(100%);
+
+}
+
+.info-icon {
+	position: absolute;
+	bottom: 20%;
+	left: 41%;
+	width: 4%;
+	min-width: 4%;
+	max-width: 4%;
+	-webkit-filter: grayscale(100%) brightness(200%);
+}
+
+.friend-icon {
+	position: absolute;
+	bottom: 20%;
+	left: 48%;
+	width: 4%;
+	min-width: 4%;
+	max-width: 4%;
+	-webkit-filter: grayscale(100%) brightness(200%);
+}
+
+.link-icon {
+	position: absolute;
+	bottom: 20%;
+	left: 55%;
+	width: 4%;
+	min-width: 4%;
+	max-width: 4%;
+	-webkit-filter: grayscale(100%) brightness(200%);
+}
+
+.info-t{
+	position: absolute;
+	color: #FFAA21;
+	font-family: 'GothamBold';
+	bottom: 15%;
+	left :39.5%;
+	-webkit-filter: grayscale(100%) brightness(200%);
+
+}
+
+.friend-t{
+	position: absolute;
+	color: #FFAA21;
+	font-family: 'GothamBold';
+	bottom: 15%;
+	left :39.5%;
+	-webkit-filter: grayscale(100%) brightness(200%);
+	opacity: 0;
+}
+
+.link-t{
+	position: absolute;
+	color: #FFAA21;
+	font-family: 'GothamBold';
+	bottom: 15%;
+	left :39.5%;
+	-webkit-filter: grayscale(100%) brightness(200%);
+	opacity: 0;
 
 }
