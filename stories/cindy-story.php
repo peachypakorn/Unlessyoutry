@@ -50,18 +50,19 @@ $(document).ready(function(){
         $("p#home").css("color","#FFAA21");
        $("p#act").css("color","white");
        $("p#idea").css("color","white");
-    });
-    
+
 });
+  });
 $( window ).scroll(function() {
     $( "#sct" ).animate({
               opacity: '0'
-            },2000);
+            },1000);
     // $("#sc").css("animation-iteration-count" ,"0")
     $("#sc").animate({
               opacity: '0'
-            },2500);
+            },1500);
 });
+
 </script>
 
 <body>
@@ -95,7 +96,7 @@ $( window ).scroll(function() {
           </div>
         </div>
     </div>
-    <div class ="content">
+    <div class ="content" style = "background:white">
         <br><br>
         <div id = "slideshow-container" style = "background-color:black');">
             <div class="mySlides move">
@@ -180,14 +181,20 @@ $( window ).scroll(function() {
           if(b==2)document.getElementById("slideshow-container").style.backgroundImage = "url('../img/phum-story/pic2.png')";
           if(b==3)document.getElementById("slideshow-container").style.backgroundImage = "url('../img/phum-story/pic3.jpg')";
           if(b==4)document.getElementById("slideshow-container").style.backgroundImage = "url('../img/phum-story/pic4.jpg')";
-          
-          slides[slideIndex-1].style.display = "block";
+          var send = slideIndex;
+            slides[slideIndex-1].style.display = "block";
           if(slideIndex==2){
             vid.play();
-           // setTimeout(function(){ document.getElementById("slideshow-container").style.backgroundImage = "none";},3000);
+           setTimeout(function(){ document.getElementById("slideshow-container").style.backgroundImage = "none";},3000);
               
              // alert(document.getElementById("slideshow-container").style.backgroundImage);
-            time = 30;
+            if(time == 10){
+              time = vid.duration-vid.currentTime;
+            }
+            else time = 30;
+            if(vid.requestFullscreen){
+              time = vid.duration - vid.currentTime-1;
+            }
           }
           else if(slideIndex!=2){
             vid.pause();
@@ -201,8 +208,8 @@ $( window ).scroll(function() {
           dots[slideIndex-1].className += " active";
           // debugger;
           time = time * 1000;
-          document.getElementById("story-place").textContent =time;
-          timer = setTimeout(function(){showSlides(slideIndex += 1, 5)}, time);
+          // document.getElementById("story-place").textContent =time;
+          timer = setTimeout(function(){showSlides(slideIndex += 1,send, 5)}, time);
           
         }
     </script>

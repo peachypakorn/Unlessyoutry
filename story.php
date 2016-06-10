@@ -176,7 +176,7 @@
 					<p class = "text3" ><br><br><br>15.03.16</p>
 			</div>
 		</a>
-		<a href="cindy-story.php">
+		<a href="./stories/cindy-story.php">
 			<div class="grow pic bw slideUp" id = "pic2">
 				<img  src="./img/homePic/Cindy.jpg" alt="Cindy">
 				<div class = "text"></div>
@@ -194,7 +194,7 @@
 					<p class = "text3" ><br><br><br>18.02.16</p>
 				</div>
 		</a>
-		<a href="mitz-story.php">
+		<a href="./stories/mitz-story.php">
 			<div class="grow pic bw slideUp" id = "pic4">
 				<img  src="./img/homePic/Mitz.jpg" alt="midjungle">
 				<div class = "text"></div>
@@ -203,7 +203,7 @@
 					<p class = "text3" ><br><br><br>28.02.16</p>
 			</div>
 		</a>
-		<a href="touch-story.php">
+		<a href="./stories/touch-story.php">
 			<div class="grow pic bw slideUp" id = "pic5">
 				<img  src="./img/homePic/Touch.jpg" alt="touch">
 				<div class = "text"></div>
@@ -212,7 +212,7 @@
 					<p class = "text3" ><br><br><br>7-10.01.16</p>
 			</div>						
 		</a>
-		<a href="sun-story.php">
+		<a href="./stories/sun-story.php">
 			<div class="grow pic bw slideUp"  id = "pic6">
 				<img  src="./img/homePic/Sun.jpg" alt="sunActing">
 				<div class = "text"></div>
@@ -221,7 +221,7 @@
 					<p class = "text3" ><br><br><br>1-31.01.16</p>
 			</div>
 		</a>
-		<a href="pep-story.php">
+		<a href="./stories/pep-story.php">
 			<div class="grow pic bw slideUp" id = "pic7">
 				<img  src="./img/homePic/PEP.jpg" alt="pep">
 				<div class = "text"></div>
@@ -230,7 +230,7 @@
 					<p class = "text3" ><br><br><br>17.05.16</p>
 			</div>
 		</a>
-		<a href="gino-story.php">	
+		<a href="./stories/gino-story.php">	
 			<div class="grow pic bw slideUp" id = "pic8">
 				<img  src="./img/homePic/gino.jpg" alt="gino Russia">
 				<div class = "text"></div>
@@ -239,7 +239,7 @@
 					<p class = "text3" ><br><br><br>2014-2015</p>
 			</div>						
 		</a>
-		<a href="dew-story.php">
+		<a href="./stories/dew-story.php">
 			<div class="grow pic bw slideUp" id = "pic9">
 				<img  src="./img/homePic/Dew.jpg" alt="dewdewdew">
 				<div class = "text"></div>
@@ -248,7 +248,7 @@
 					<p class = "text3" ><br><br><br>24-28.12.15</p>
 			</div>
 		</a>
-		<a href="oak-story.php">
+		<a href="">
 			<div class="grow pic bw slideUp" id = "pic10">
 				<img  src="./img/homePic/Oak.jpg" alt="camping">
 				<div class = "text"></div>
@@ -257,7 +257,7 @@
 					<p class = "text3" ><br><br><br>21-24.04.15</p>
 			</div>
 		</a>
-		<a href="nat-story.php">
+		<a href="">
 			<div class="grow pic bw slideUp" id = "pic11">
 				<img  src="./img/homePic/Nat.jpg" alt="TFT">
 				<div class = "text"></div>
