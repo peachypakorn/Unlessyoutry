@@ -281,9 +281,9 @@
 /* Internet Explorer */
 filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=3);
 position: fixed;
-top: 60%;
+top: 64%;
 margin-top: 25px;
-left: -1%;
+left: -1.5%;
 font-family: 'GothamMed';
 font-size: 12px;
 }
