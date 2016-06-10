@@ -157,7 +157,7 @@
 	<div class = "content">
 		<a href="./stories/phum-story.php">
 			<div class="grow pic bw slideUp" id = "pic1">
-				<img  src="./img/actPic/Act1.jpg" alt="phumConcert">
+				<img  src="./img/ideaPic/idea1.jpg" alt="phumConcert">
 				<div class = "text"></div>
 				<div class = "cata" style = "background:#E45641" ></div>
 					<p class = "text2" >BKK<br>COLOR<br>RUN</p>
@@ -166,7 +166,7 @@
 		</a>
 		<a href="cindy-story.php">
 			<div class="grow pic bw slideUp" id = "pic2">
-				<img  src="./img/actPic/Act2.jpg" alt="Cindy">
+				<img  src="./img/ideaPic/idea2.jpg" alt="Cindy">
 				<div class = "text"></div>
 				<div class = "cata" style = "background:#4EBC90" ></div>
 					<p class = "text2" >HUAY<br>MHEE<br>CAMP</p>
@@ -175,7 +175,7 @@
 		<a>							
 		<a href="bonus-story.php">
 			<div class="grow pic bw slideUp" id = "pic3">
-				<img  src="./img/actPic/Act3.jpg" alt="Bonus">
+				<img  src="./img/ideaPic/idea3.jpg" alt="Bonus">
 				<div class = "text"></div>
 				<div class = "cata" style = "background:#4EBC90" ></div>
 					<p class = "text2" >ICE<br>RIDE<br>2016</p>
@@ -184,7 +184,7 @@
 		</a>
 		<a href="mitz-story.php ">
 			<div class="grow pic bw slideUp" id = "pic4">
-				<img  src="./img/actPic/Act4.jpg" alt="midjungle">
+				<img  src="./img/ideaPic/idea4.jpg" alt="midjungle">
 				<div class = "text"></div>
 				<div class = "cata" style = "background:#F2AA4E" ></div>
 					<p class = "text2" >BIG<br>BUBBLE<br>DIVING</p>
@@ -193,7 +193,7 @@
 		</a>
 		<a href="touch-story.php">
 			<div class="grow pic bw slideUp" id = "pic5">
-				<img  src="./img/actPic/Act5.jpg" alt="touch">
+				<img  src="./img/ideaPic/idea5.jpg" alt="touch">
 				<div class = "text"></div>
 				<div class = "cata" style = "background:#F2AA4E" ></div>
 					<p class = "text2" > <br>MOKUJU<br>TREKKING</p>
@@ -202,7 +202,7 @@
 		</a>
 		<a href="sun-story.php">
 			<div class="grow pic bw slideUp" id = "pic6">
-				<img  src="./img/actPic/Act6.jpg" alt="sunActing">
+				<img  src="./img/ideaPic/idea6.jpg" alt="sunActing">
 				<div class = "text"></div>
 				<div class = "cata" style = "background:#ECE4C2" ></div>
 					<p class = "text2" >TEACH<br>FOR<br>THAI</p>
@@ -211,7 +211,7 @@
 		</a>
 		<a href="pep-story.php">
 			<div class="grow pic bw slideUp" id = "pic7">
-				<img  src="./img/actPic/Act7.jpg" alt="pep">
+				<img  src="./img/ideaPic/idea7.jpg" alt="pep">
 				<div class = "text"></div>
 				<div class = "cata" style = "background:#274763" ></div>
 					<p class = "text2" >IMAGINE<br>FOR A<br>CHANGE</p>
@@ -220,7 +220,7 @@
 		</a>
 		<a href="gino-story.php">	
 			<div class="grow pic bw slideUp" id = "pic8">
-				<img  src="./img/actPic/Act8.jpg" alt="gino Russia">
+				<img  src="./img/ideaPic/idea8.jpg" alt="gino Russia">
 				<div class = "text"></div>
 				<div class = "cata" style = "background:#1A9AAF" ></div>
 					<p class = "text2" >LITTLE<br>THREE<br>FRIENDS</p>
@@ -229,7 +229,7 @@
 		</a>
 		<a href="dew-story.php">
 			<div class="grow pic bw slideUp" id = "pic9">
-				<img  src="./img/actPic/Act9.jpg" alt="dewdewdew">
+				<img  src="./img/ideaPic/idea9.jpg" alt="dewdewdew">
 				<div class = "text"></div>
 				<div class = "cata" style = "background:#1A9AAF" ></div>
 					<p class = "text2" >BKK<br>DESIGN<br>TRAINING</p>
@@ -238,7 +238,7 @@
 		</a>
 		<a href="oak-story.php">
 			<div class="grow pic bw slideUp" id = "pic10">
-				<img  src="./img/actPic/Act10.jpg" alt="camping">
+				<img  src="./img/ideaPic/idea10.jpg" alt="camping">
 				<div class = "text"></div>
 				<div class = "cata" style = "background:#4EBC90" ></div>
 					<p class = "text2" >PLANT<br>MAN<br>GROVE</p>
