@@ -116,6 +116,13 @@
 	left:-17.5%;
 }
 
+#text2-c{
+  position: relative;
+  width: 90%;
+  margin: 5%;
+  /*left:-17.5%;*/
+}
+
 @keyframes shake {
   10% ,50%{
     transform: translate3d(0, -2px, 0);
