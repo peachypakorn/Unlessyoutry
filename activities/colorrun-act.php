@@ -55,7 +55,7 @@ $(document).ready(function(){
 
     });
 
-            $(".pic").hover(function(){
+    $(".pic").hover(function(){
           $(this).find(".friend-info").animate({
               left: '0%',
               opacity: '1',
@@ -67,7 +67,10 @@ $(document).ready(function(){
           });
 
 
-        });
+    });
+
+
+
   });
 $( window ).scroll(function() {
     $( "#sct" ).animate({
@@ -166,13 +169,11 @@ $( window ).scroll(function() {
     <div class = "content">
    
       <div class="grow-n pic slideUp" id = "pic1">
-          <!-- <div class="grow" > -->
-              <img class= " grow add-icon pointer" src="../img/icon/Add.png" alt="add">
-              <img class="profile-pic" src="../img/friend-pic/friend1.jpg" alt="friend1">
-          <!-- </div>     -->
-          
-        <!-- <img class = "friend-info" src="../img/friend-pic/info1.png" alt="friend-info1"> -->
-      </div>
+              <img class= " grow add-icon pointer" src="../img/icon/Add.png" alt="add" onclick = "joinAct('profilepic',1) ">
+              <img class= " grow delete-icon pointer" src="../img/icon/Delete.png" alt="delete" onclick = "joinAct('profilepic',2) ">
+              <img class="profilepic" src="../img/friend-pic/friend1.jpg" alt="friend1">
+              
+     </div>
    
     <a href="">
       <div class="grow pic bw slideUp" id = "pic2">
@@ -334,7 +335,25 @@ $( window ).scroll(function() {
         function doshow(n,m){
           setTimeout(function(){shows(numpic=n);},m*200);
                           }
-
+        function joinAct(elem,n){
+          // debugger;
+          var propic = document.getElementsByClassName(elem);
+          var add = document.getElementsByClassName("add-icon");
+          var del = document.getElementsByClassName("delete-icon");
+            if(n==1){
+              add[0].style.display = "none";
+              del[0].style.display = "block";
+              // propic[0s].style.display = "none";
+              propic[0].style.WebkitFilter = "grayscale(0%)";
+              propic[0].style.filter = "grayscale(0%)";
+            }
+            else if(n==2){
+              add[0].style.display = "block";
+              del[0].style.display = "none";
+              propic[0].style.WebkitFilter = "grayscale(100%)";
+              propic[0].style.filter = "grayscale(100%)";
+            }
+        }
        
     </script>
 </body>
