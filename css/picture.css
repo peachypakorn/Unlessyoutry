@@ -10,16 +10,14 @@
     font-family: 'GothamBold';
     src: url('../vender/gothamFont/GOTHAM-BOLD.TTF');
 }
-#pic1{
-  visibility: hidden;
-}
+
 .pic {
   position: relative;
   /*clip: rect(0px,280px,272px,30px);*/
   /*border: 0px solid #fff;  */
-  left: 0.004%; 
-   width: 33.33%;
-   height: 33.33%;
+  left: 0.003334%; 
+   width: 33.333%;
+   height: 33.333%;
   min-height: 24.99%;
   min-width:  24.99%;
   max-width: 49.99%;
@@ -90,8 +88,19 @@ transform: scale(1.05);
   height:43%;
   background:#000;
   opacity:0; 
-
+}
+.cata{
+  position :absolute;
+  left: -2.5%;
+  top:  0%;
+  overflow: hidden;
+  width:2.5%;
+  height:100%;
+  background: red;
+  opacity:0; 
+  z-index: 2;
 } 
+
 .text2{
    position :absolute;
     font-family: 'GothamBold';

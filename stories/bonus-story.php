@@ -67,7 +67,7 @@ $(document).ready(function(){
 <body>
     <div class = "left-banner">
         <div class = "wrap">
-          <img id="ibanner" src="../img/phum-story/banner.jpg" alt="phum-banner">
+          <img id="ibanner" src="../img/story-com/bonus-story/banner.jpg" alt="phum-banner">
           <div class = "clear-bg"></div>
           <img id= "menu"class="yellow pointer" src="../img/icon/Menu.png" alt="menu">
           <img id = "profile" class="yellow" src="../img/icon/Profile.png" alt="prfile">
@@ -82,11 +82,11 @@ $(document).ready(function(){
           </a>
           <img id= "menu"class="yellow pointer" src="../img/icon/Menu.png" alt="menu">
           <img id="story-logo" src="../img/header/Story.png" alt="story-logo">
-          <img id="phum-topic" src="../img/phum-story/Topic.png" alt="phum-topic">
+          <img id="phum-topic" src="../img/story-com/bonus-story/Topic.png" alt="phum-topic">
           <p  id = "story-date">14.02.2016</p>
           <p  id = "story-place">JJ GREEN</p>
           <a class = "p pointer">
-              <img id= "profile-pic" src="../img/phum-story/Profile.jpg" alt="menu">
+              <img id= "profile-pic" src="../img/story-com/bonus-story/Profile.jpg" alt="menu">
               <p  id = "story-name">PHUM VIPHURIT</p>
           </a>
           <div class = "s pointer">
@@ -99,8 +99,8 @@ $(document).ready(function(){
         <br><br>
     <div id="sliderFrame">
         <div id="slider">
-            <img class="pic" src="../img/phum-story/pic3.jpg" alt="Welcome to Menucool.com" />
-            <img class ="pic" src="../img/phum-story/pic1.jpg" >
+            <img class="pic" src="../img/story-com/bonus-story/pic3.jpg" alt="Welcome to Menucool.com" />
+            <img class ="pic" src="../img/story-com/bonus-story/pic1.jpg" >
             <img class ="pic" src="../vender/slider2/images/image-slider-3.jpg" alt="" />
             <img class ="pic" src="../vender/slider2/images/image-slider-4.jpg" alt="#htmlcaption" />
             <img class ="pic" src="../vender/slider2/images/image-slider-5.jpg" />
@@ -108,19 +108,19 @@ $(document).ready(function(){
       </div>
         <!-- <div class = "slideshow-container">
             <div class="mySlides move">
-                <img src="../img/phum-story/ex1.png" id = "ex1">
-                <img src="../img/phum-story/pic1.jpg" style="width:100%">
+                <img src="../img/story-com/bonus-story/ex1.png" id = "ex1">
+                <img src="../img/story-com/bonus-story/pic1.jpg" style="width:100%">
             </div>
             <div class="mySlides move ">
                 <video loop poster controls style="width:100%" id="story-vid" >
-                    <source src="../img/phum-story/video.mp4" type= "video/mp4">
+                    <source src="../img/story-com/bonus-story/video.mp4" type= "video/mp4">
                 </video>
             </div>
             <div class="mySlides move">
-                <img src="../img/phum-story/pic3.jpg" style="width:100%">
+                <img src="../img/story-com/bonus-story/pic3.jpg" style="width:100%">
             </div>
             <div class="mySlides move">
-                <img src="../img/phum-story/pic4.jpg" style="width:100%">
+                <img src="../img/story-com/bonus-story/pic4.jpg" style="width:100%">
             </div>
               <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
               <a class="next" onclick="plusSlides(1)">&#10095;</a>
@@ -132,14 +132,14 @@ $(document).ready(function(){
               </div>
         </div> -->
         
-        <img src="../img/phum-story/text1.png" id = "text1">
+        <img src="../img/story-com/bonus-story/text1.png" id = "text1">
         <br><br><br>
         <div class = "sd"> 
             <img src="../img/icon/ScrollDown.png" id = "sc"> 
             <img src="../img/icon/ScrollDownText.png" id = "sct"> 
         </div>
         <br><br>
-        <img src="../img/phum-story/text2.png" id = "text2" class ="">
+        <img src="../img/story-com/bonus-story/text2.png" id = "text2" class ="">
     </div>
     <script>
 

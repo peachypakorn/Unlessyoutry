@@ -8,6 +8,34 @@
 	-webkit-filter: grayscale(100%) brightness(200%);
 }
 
+#logo3{
+	position: absolute;
+	margin-top: 18%;
+	left: 40%;
+	width: 20%;
+	min-width: 20%;
+	max-width: 20%;
+	-webkit-filter: grayscale(100%) brightness(200%);
+}
+
+#story-logo{
+	position: absolute;
+	margin-top: 15%;
+	left: 43.5%;
+	width: 13%;
+	min-width: 13%;
+	max-width: 13%;
+	-webkit-filter: grayscale(100%) brightness(200%);
+}
+#act-logo{
+	position: absolute;
+	margin-top: 15%;
+	left: 41%;
+	width: 18%;
+	min-width: 18%;
+	max-width: 18%;
+	-webkit-filter: grayscale(100%) brightness(200%);
+}
 #phum-topic{
 	position: absolute;
 	margin-top: 23%;
@@ -15,6 +43,65 @@
 	width: 45%;
 	min-width: 45%;
 	max-width: 45%;
+}
+#cindy-topic{
+	position: absolute;
+	margin-top: 23%;
+	left: 24%;
+	width: 52%;
+	min-width: 52%;
+	max-width: 52%;
+}
+
+#twoline-topic{
+	position: absolute;
+	margin-top: 23%;
+	left: 32.5%;
+	width: 35%;
+	min-width: 35%;
+	max-width: 35%;
 
 }
 
+p#story-date{
+	position: absolute;
+	color: white;
+	margin-top: 31%;
+	left :42%;
+	font-size: 18px;
+}
+
+p#story-place{
+	position: absolute;
+	color: white;
+	font-family: 'GothamBold';
+	margin-top: 36%;
+	left :42%;
+	font-size: 18px;
+}
+
+p.twoline-date{
+	position: absolute;
+	color: white;
+	margin-top: 38%;
+	left :42%;
+	font-size: 18px;
+}
+
+p.twoline-place{
+	position: absolute;
+	color: white;
+	font-family: 'GothamBold';
+	margin-top: 43%;
+	left :41.5%;
+	font-size: 18px;
+}
+
+  #act-text{
+	position: absolute;
+	/*font-family: 'GothamMed';*/
+	font-size: 9.5px;
+	top: 88.5%;
+	left: 25%;
+	opacity: 1;
+ }
