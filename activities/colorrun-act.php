@@ -109,12 +109,12 @@ $( window ).scroll(function() {
               <img id= "profile-pic" src="../img/act-com/colorrun-act/Profile.jpg" alt="menu">
               <p  id = "story-name" style = "left:43%" >COLOR RUN</p>
           </a>
-          <img class= "info-icon pointer" src="../img/icon/Info.png" alt="info">
+          <img class= "yellow info-icon pointer" src="../img/icon/Info.png" alt="info" onclick ="showDisplay(0)">
               <p  class = "info-t">INFORMATION</p>
-          <img class= "friend-icon pointer" src="../img/icon/Friends.png" alt="friend">
-              <p  class = "friend-t">FIND FRIENDS</p>
-          <img class= "link-icon pointer" src="../img/icon/Link.png" alt="link">
-              <p  class = "link-t ">APPLY</p>
+          <img class= "yellow friend-icon pointer" src="../img/icon/Friends.png" alt="friend"  onclick ="showDisplay(1)">
+              <p  class = " friend-t">FIND FRIENDS</p>
+          <img class= "yellow link-icon pointer" src="../img/icon/Link.png" alt="link">
+              <p  class = " link-t ">APPLY</p>
           <p id = "act-text">SO MANY THINGS ARE WAITING FOR YOU TO TRY<br>WE ARE UPDATING THE ACTIVITIES FROM SEVERAL</p>
          
           <div class = "s pointer">
@@ -233,8 +233,8 @@ $( window ).scroll(function() {
         vid.currentTime = 2;
         showSlides(slideIndex,0,5);
         var content = document.getElementsByClassName("content");
-        content[0].style.display = "none";
-        clearTimeout(timer);
+        content[1].style.display = "none";
+        // clearTimeout(timer);
         // $(ex1).fadeIn(3000);
 
         function plusSlides(n) {
@@ -353,6 +353,28 @@ $( window ).scroll(function() {
               propic[0].style.WebkitFilter = "grayscale(100%)";
               propic[0].style.filter = "grayscale(100%)";
             }
+        }
+
+        function showDisplay(n){
+          if(n==0){
+             content[0].style.display = "block";
+             content[1].style.display = "none";
+             showSlides(slideIndex,0,5);
+          }
+          else if(n==1){
+             content[0].style.display = "none";
+             content[1].style.display = "block";
+             vid.pause();
+             clearTimeout(timer);
+             for (i = 0; i < pics.length; i++) {
+              pics[i].style.display = "none"; 
+                  }
+            for (i = 0; i < pics.length; i++) {
+              doshow(i,i);
+                  pics[i].style.WebkitAnimation = "slideUp 0.7s 1";
+          pics[i].style.animation = "slideUp 0.7s 1";
+              }
+          }
         }
        
     </script>

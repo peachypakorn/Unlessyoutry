@@ -49,9 +49,11 @@
 }
 .h:hover #video{
 -webkit-filter: grayscale(0%) brightness(100%);
+transform: scale(1.05);
 }
 .h:hover #watch{
 	-webkit-filter: grayscale(0%) brightness(100%);
+	transform: scale(1.02);
 	/*color: #FFAA21;*/
 }
 
@@ -65,6 +67,7 @@
 }
 #cont:hover{
 	color: #FFAA21;
+	transform: scale(1.01);
 }
 .in{
 	opacity: 1;

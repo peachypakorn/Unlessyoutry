@@ -81,6 +81,7 @@
 
 .active, .dot:hover {
   background-color: #FFAA21;
+  transform: scale(1.05);
 }
 
 #text1{

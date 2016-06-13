@@ -77,9 +77,11 @@
 }
 .a:hover #add-icon{
 -webkit-filter: grayscale(0%) brightness(100%);
+transform: scale(1.05);
 }
 .a:hover #add{
 	-webkit-filter: grayscale(0%) brightness(100%);
+	transform: scale(1.02);
 	/*color: #FFAA21;*/
 }
 .a:hover #sen3-act{

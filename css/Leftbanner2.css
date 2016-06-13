@@ -134,8 +134,7 @@ img#ibanner{
  
 .yellow:hover {
     -webkit-filter: grayscale(0%)brightness(100%);
-
-	
+    transform: scale(1.05);	
 }
 #menu {
 	position: absolute;
@@ -236,6 +235,7 @@ p#story-name{
 }
 .p:hover p#story-name{
 color: #FFAA21;
+ transform: scale(1.02);
 }	
 #share-icon {
 	position: absolute;
@@ -264,11 +264,12 @@ color: #FFAA21;
 
 .s:hover #share-icon{
 	-webkit-filter: grayscale(0%) brightness(100%);
+	transform: scale(1.05);
 	}
 
 .s:hover #cont-share{
 	-webkit-filter: grayscale(0%) brightness(100%);
-
+	transform: scale(1.02);
 }
 
 .info-icon {
@@ -338,25 +339,28 @@ color: #FFAA21;
 
 }
 
-.info-icon:hover{
+/*.info-icon:hover{
 	-webkit-filter: grayscale(0%) brightness(100%);
-}
+	transform: scale(1.05);
+}*/
 
 .info-icon:hover +.info-t {
 	opacity: 1;
 }
 
-.friend-icon:hover{
+/*.friend-icon:hover{
 	-webkit-filter: grayscale(0%) brightness(100%);
-}
+	transform: scale(1.05);
+}*/
 
 .friend-icon:hover +.friend-t {
 	opacity: 1;
 }
 
-.link-icon:hover{
+/*.link-icon:hover{
 	-webkit-filter: grayscale(0%) brightness(100%);
-}
+	transform: scale(1.05);
+}*/
 
 .link-icon:hover +.link-t {
 	opacity: 1;
