@@ -6,6 +6,8 @@
 <link rel="stylesheet" type="text/css" href="../css/Leftbanner2.css">
 <link rel="stylesheet" type="text/css" href="../css/phum-story.css">
 <link rel="stylesheet" type="text/css" href="../css/story-content.css">
+  <link rel="stylesheet" type="text/css" href="../css/picture.css">
+  <link rel="stylesheet" type="text/css" href="../css/animations.css">
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
 </head>
 
@@ -51,7 +53,21 @@ $(document).ready(function(){
        $("p#act").css("color","white");
        $("p#idea").css("color","white");
 
-});
+    });
+
+            $(".pic").hover(function(){
+          $(this).find(".friend-info").animate({
+              left: '0%',
+              opacity: '1',
+          });
+          }, function(){
+          $(this).find(".friend-info").animate({
+              left: '100%',
+              opacity: '0',
+          });
+
+
+        });
   });
 $( window ).scroll(function() {
     $( "#sct" ).animate({
@@ -90,12 +106,12 @@ $( window ).scroll(function() {
               <img id= "profile-pic" src="../img/act-com/colorrun-act/Profile.jpg" alt="menu">
               <p  id = "story-name" style = "left:43%" >COLOR RUN</p>
           </a>
-          <img class= "info-icon" src="../img/icon/Info.png" alt="info">
+          <img class= "info-icon pointer" src="../img/icon/Info.png" alt="info">
               <p  class = "info-t">INFORMATION</p>
-          <img class= "friend-icon" src="../img/icon/Friends.png" alt="friend">
+          <img class= "friend-icon pointer" src="../img/icon/Friends.png" alt="friend">
               <p  class = "friend-t">FIND FRIENDS</p>
-          <img class= "link-icon" src="../img/icon/Link.png" alt="link">
-              <p  class = "link-t">APPLY</p>
+          <img class= "link-icon pointer" src="../img/icon/Link.png" alt="link">
+              <p  class = "link-t ">APPLY</p>
           <p id = "act-text">SO MANY THINGS ARE WAITING FOR YOU TO TRY<br>WE ARE UPDATING THE ACTIVITIES FROM SEVERAL</p>
          
           <div class = "s pointer">
@@ -104,11 +120,12 @@ $( window ).scroll(function() {
           </div>
         </div>
     </div>
+
     <div class ="content" style = "background:white">
         <br><br>
         <div id = "slideshow-container" style = "background-color:black');">
             <div class="mySlides move">
-                <img src="../img/act-com/colorrun-act/ex1.png" id = "ex1">
+                <!-- <img src="../img/act-com/colorrun-act/ex1.png" id = "ex1"> -->
                 <img src="../img/act-com/colorrun-act/pic1.jpg" style="width:100%">
             </div>
             <div class="mySlides move ">
@@ -122,13 +139,17 @@ $( window ).scroll(function() {
             <div class="mySlides move">
                 <img src="../img/act-com/colorrun-act/pic4.jpg" style="width:100%">
             </div>
+            <div class="mySlides move">
+                <img src="../img/act-com/colorrun-act/pic5.jpg" style="width:100%">
+            </div>
               <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
               <a class="next" onclick="plusSlides(1)">&#10095;</a>
-              <div class = "dd" style="text-align:center">
+              <div class = "dd" style="left:87%">
                   <span class="dot" onclick="currentSlide(1)"></span> 
                   <span class="dot" onclick="currentSlide(2)"></span> 
                   <span class="dot" onclick="currentSlide(3)"></span>
-                  <span class="dot" onclick="currentSlide(4)"></span> 
+                  <span class="dot" onclick="currentSlide(4)"></span>
+                  <span class="dot" onclick="currentSlide(5)"></span> 
               </div>
         </div>
         
@@ -141,6 +162,64 @@ $( window ).scroll(function() {
         <br><br>
         <img src="../img/act-com/colorrun-act/text2.png" id = "text2-c" class ="">
     </div>
+
+    <div class = "content">
+    <a href="../profiles/touch.php">
+      <div class="grow pic bw slideUp" id = "pic1">
+        <img class="" src="../img/friend-pic/friend1.jpg" alt="friend1">
+        <img class = "friend-info" src="../img/friend-pic/info1.png" alt="friend-info1">
+      </div>
+    </a>
+    <a href="">
+      <div class="grow pic bw slideUp" id = "pic2">
+        <img class="" src="../img/friend-pic/friend2.jpg" alt="friend2">
+        <img class = "friend-info" src="../img/friend-pic/info2.png" alt="friend-info2">
+      </div>
+    </a>
+    <a href="">
+      <div class="grow pic bw slideUp" id = "pic3">
+        <img class="" src="../img/friend-pic/friend3.jpg" alt="friend3">
+        <img class = "friend-info" src="../img/friend-pic/info3.png" alt="friend-info3">
+      </div>
+    </a>
+    <a href="">
+      <div class="grow pic bw slideUp" id = "pic4">
+        <img class="" src="../img/friend-pic/friend4.jpg" alt="friend4">
+        <img class = "friend-info" src="../img/friend-pic/info4.png" alt="friend-info4">
+      </div>
+    </a>
+    <a href="">
+      <div class="grow pic bw slideUp" id = "pic5">
+        <img class="" src="../img/friend-pic/friend5.jpg" alt="friend5">
+        <img class = "friend-info" src="../img/friend-pic/info5.png" alt="friend-info5">
+      </div>
+    </a>
+    <a href="">
+      <div class="grow pic bw slideUp" id = "pic6">
+        <img class="" src="../img/friend-pic/friend6.jpg" alt="friend6">
+        <img class = "friend-info" src="../img/friend-pic/info6.png" alt="friend-info6">
+      </div>
+    </a>
+    <a href="">
+      <div class="grow pic bw slideUp" id = "pic7">
+        <img class="" src="../img/friend-pic/friend7.jpg" alt="friend7">
+        <img class = "friend-info" src="../img/friend-pic/info7.png" alt="friend-info7">
+      </div>
+    </a>    
+      <a href="">
+      <div class="grow pic bw slideUp" id = "pic8">
+        <img class="" src="../img/friend-pic/friend8.jpg" alt="friend8">
+        <img class = "friend-info" src="../img/friend-pic/info8.png" alt="friend-info8">
+      </div>
+    </a>
+    <a href="">
+      <div class="grow pic bw slideUp" id = "pic9">
+        <img class="" src="../img/friend-pic/friend9.jpg" alt="friend9">
+        <img class = "friend-info" src="../img/friend-pic/info9.png" alt="friend-info9">
+      </div>
+    </a>
+
+  </div>
     <script>
      $("html, body").animate({ scrollTop: 0 }, "slow");
         var slideIndex = 1;
@@ -148,6 +227,9 @@ $( window ).scroll(function() {
         var timer;
         vid.currentTime = 2;
         showSlides(slideIndex,0,5);
+        var content = document.getElementsByClassName("content");
+        content[0].style.display = "none";
+        clearTimeout(timer);
         // $(ex1).fadeIn(3000);
 
         function plusSlides(n) {
@@ -207,12 +289,12 @@ $( window ).scroll(function() {
           else if(slideIndex!=2){
             vid.pause();
           }
-          if(slideIndex==1){
-            $(ex1).fadeIn(900);
-          }
-          else{
-          $(ex1).hide(); 
-          }
+          // if(slideIndex==1){
+          //   $(ex1).fadeIn(900);
+          // }
+          // else{
+          // $(ex1).hide(); 
+          // }
           dots[slideIndex-1].className += " active";
           // debugger;
           time = time * 1000;
@@ -220,6 +302,36 @@ $( window ).scroll(function() {
           timer = setTimeout(function(){showSlides(slideIndex += 1,send, 5)}, time);
           
         }
+
+    </script>
+    <script >
+  var pics = document.getElementsByClassName("pic");
+        var currentCat = 0;
+        var numpic = 0;
+        var h;
+        var cat =document.getElementById("cat1");
+
+            for (i = 0; i < pics.length; i++) {
+                      pics[i].style.display = "none"; 
+                  }
+            for (i = 0; i < pics.length; i++) {
+              doshow(i,i);
+                  pics[i].style.WebkitAnimation = "slideUp 0.7s 1";
+          pics[i].style.animation = "slideUp 0.7s 1";
+              }
+
+        function shows(n){
+          // var pics = document.getElementsByClassName("pic");
+          var pos = n;
+          // alert(n + " " + pos);
+          pics[pos].style.display = "block"; 
+
+                  }
+        function doshow(n,m){
+          setTimeout(function(){shows(numpic=n);},m*200);
+                          }
+
+       
     </script>
 </body>
 

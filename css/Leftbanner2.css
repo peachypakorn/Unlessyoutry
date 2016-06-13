@@ -279,6 +279,8 @@ color: #FFAA21;
 	min-width: 5%;
 	max-width: 5%;
 	-webkit-filter: grayscale(100%) brightness(200%);
+		 -webkit-transition: all 0.5s ease;
+    		transition: all 0.5s ease; 
 }
 
 .friend-icon {
@@ -289,6 +291,8 @@ color: #FFAA21;
 	min-width: 5%;
 	max-width: 5%;
 	-webkit-filter: grayscale(100%) brightness(200%);
+		 -webkit-transition: all 0.5s ease;
+    		transition: all 0.5s ease; 
 }
 
 .link-icon {
@@ -299,6 +303,8 @@ color: #FFAA21;
 	min-width: 5%;
 	max-width: 5%;
 	-webkit-filter: grayscale(100%) brightness(200%);
+		 -webkit-transition: all 0.5s ease;
+    		transition: all 0.5s ease; 
 }
 
 .info-t{
@@ -328,6 +334,30 @@ color: #FFAA21;
 	bottom: 11%;
 	left :47%;
 	-webkit-filter: grayscale(100%) brightness(200%);
-	opacity: 1;
+	opacity: 0;
 
+}
+
+.info-icon:hover{
+	-webkit-filter: grayscale(0%) brightness(100%);
+}
+
+.info-icon:hover +.info-t {
+	opacity: 1;
+}
+
+.friend-icon:hover{
+	-webkit-filter: grayscale(0%) brightness(100%);
+}
+
+.friend-icon:hover +.friend-t {
+	opacity: 1;
+}
+
+.link-icon:hover{
+	-webkit-filter: grayscale(0%) brightness(100%);
+}
+
+.link-icon:hover +.link-t {
+	opacity: 1;
 }

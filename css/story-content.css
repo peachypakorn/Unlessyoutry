@@ -62,6 +62,7 @@
 }
 .dd{
 	position: absolute;
+  text-align:center;
 	top: 3%;
 	left: 90%;
 }
