@@ -84,7 +84,7 @@ $( window ).scroll(function() {
           <img id= "menu"class="yellow pointer" src="../img/icon/Menu.png" alt="menu">
           <img id="story-logo" src="../img/header/Story.png" alt="story-logo">
           <img id="phum-topic" src="../img/story-com/phum-story/Topic.png" alt="phum-topic">
-          <p  id = "story-date">14.02.2016</p>
+          <p  id = "story-date">15.03.2016</p>
           <p  id = "story-place">JJ GREEN</p>
           <a class = "p pointer">
               <img id= "profile-pic" src="../img/story-com/phum-story/Profile.jpg" alt="menu">

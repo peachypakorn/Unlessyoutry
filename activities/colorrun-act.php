@@ -276,6 +276,7 @@ $( window ).scroll(function() {
           if(b==2)document.getElementById("slideshow-container").style.backgroundImage = "url('../img/act-com/colorrun-act/pic2.png')";
           if(b==3)document.getElementById("slideshow-container").style.backgroundImage = "url('../img/act-com/colorrun-act/pic3.jpg')";
           if(b==4)document.getElementById("slideshow-container").style.backgroundImage = "url('../img/act-com/colorrun-act/pic4.jpg')";
+          if(b==5)document.getElementById("slideshow-container").style.backgroundImage = "url('../img/act-com/colorrun-act/pic5.jpg')";
           var send = slideIndex;
             slides[slideIndex-1].style.display = "block";
           if(slideIndex==2){

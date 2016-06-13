@@ -1,14 +1,12 @@
 <!DOCTYPE html>
 <html>
 <head>
+<?php include '../header.php';?>
 <link href="../header.php">
 <link rel="stylesheet" type="text/css" href="../css/Leftbanner2.css">
 <link rel="stylesheet" type="text/css" href="../css/phum-story.css">
 <link rel="stylesheet" type="text/css" href="../css/story-content.css">
-<!-- slider -->
-    <link href="../vender/slider2/themes/1/js-image-slider.css" rel="stylesheet" type="text/css" />
-    <script src="../vender/slider2/themes/1/js-image-slider.js" type="text/javascript"></script>
-    <link href="../vender/slider2/generic.css" rel="stylesheet" type="text/css" /><link rel="stylesheet" type="text/css" href="../css/slider.css">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
 </head>
 
 <script>
@@ -52,16 +50,19 @@ $(document).ready(function(){
         $("p#home").css("color","#FFAA21");
        $("p#act").css("color","white");
        $("p#idea").css("color","white");
-    });
-    $(window).scrollTop();
-    $(window).scroll(function(){
-        $("sd").animate({
+
+});
+  });
+$( window ).scroll(function() {
+    $( "#sct" ).animate({
               opacity: '0'
-            },100);
-        });
+            },1000);
+    // $("#sc").css("animation-iteration-count" ,"0")
+    $("#sc").animate({
+              opacity: '0'
+            },1500);
 });
 
- 
 </script>
 
 <body>
@@ -82,12 +83,12 @@ $(document).ready(function(){
           </a>
           <img id= "menu"class="yellow pointer" src="../img/icon/Menu.png" alt="menu">
           <img id="story-logo" src="../img/header/Story.png" alt="story-logo">
-          <img id="phum-topic" src="../img/story-com/bonus-story/Topic.png" alt="phum-topic">
-          <p  id = "story-date">14.02.2016</p>
-          <p  id = "story-place">JJ GREEN</p>
+          <img id="bonus-topic" src="../img/story-com/bonus-story/Topic.png" alt="phum-topic">
+          <p  class = "twoline-date">14.02.2016</p>
+          <p  class = "twoline-place" style ="left:25%">THUMMASART UNIVERSITY</p>
           <a class = "p pointer">
               <img id= "profile-pic" src="../img/story-com/bonus-story/Profile.jpg" alt="menu">
-              <p  id = "story-name">PHUM VIPHURIT</p>
+              <p  id = "story-name" style ="left:37.5%" >BONUS JINJUTHA</p>
           </a>
           <div class = "s pointer">
             <img id= "share-icon" src="../img/icon/Share.png" alt="menu">
@@ -95,20 +96,11 @@ $(document).ready(function(){
           </div>
         </div>
     </div>
-    <div class ="content">
+    <div class ="content" style = "background:white">
         <br><br>
-    <div id="sliderFrame">
-        <div id="slider">
-            <img class="pic" src="../img/story-com/bonus-story/pic3.jpg" alt="Welcome to Menucool.com" />
-            <img class ="pic" src="../img/story-com/bonus-story/pic1.jpg" >
-            <img class ="pic" src="../vender/slider2/images/image-slider-3.jpg" alt="" />
-            <img class ="pic" src="../vender/slider2/images/image-slider-4.jpg" alt="#htmlcaption" />
-            <img class ="pic" src="../vender/slider2/images/image-slider-5.jpg" />
-        </div>
-      </div>
-        <!-- <div class = "slideshow-container">
+        <div id = "slideshow-container" style = "background-color:black');">
             <div class="mySlides move">
-                <img src="../img/story-com/bonus-story/ex1.png" id = "ex1">
+                <!-- <img src="../img/story-com/bonus-story/ex1.png" id = "ex1"> -->
                 <img src="../img/story-com/bonus-story/pic1.jpg" style="width:100%">
             </div>
             <div class="mySlides move ">
@@ -122,15 +114,19 @@ $(document).ready(function(){
             <div class="mySlides move">
                 <img src="../img/story-com/bonus-story/pic4.jpg" style="width:100%">
             </div>
+            <div class="mySlides move">
+                <img src="../img/story-com/bonus-story/pic5.jpg" style="width:100%">
+            </div>
               <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
               <a class="next" onclick="plusSlides(1)">&#10095;</a>
-              <div class = "dd" style="text-align:center">
+              <div class = "dd " style="left:87%">
                   <span class="dot" onclick="currentSlide(1)"></span> 
                   <span class="dot" onclick="currentSlide(2)"></span> 
                   <span class="dot" onclick="currentSlide(3)"></span>
                   <span class="dot" onclick="currentSlide(4)"></span> 
+                  <span class="dot" onclick="currentSlide(5)"></span> 
               </div>
-        </div> -->
+        </div>
         
         <img src="../img/story-com/bonus-story/text1.png" id = "text1">
         <br><br><br>
@@ -139,10 +135,88 @@ $(document).ready(function(){
             <img src="../img/icon/ScrollDownText.png" id = "sct"> 
         </div>
         <br><br>
-        <img src="../img/story-com/bonus-story/text2.png" id = "text2" class ="">
+        <img src="../img/story-com/bonus-story/text2.png" id = "text2-c" class ="">
     </div>
     <script>
+     $("html, body").animate({ scrollTop: 0 }, "slow");
+        var slideIndex = 1;
+        var vid = document.getElementById("story-vid");
+        var timer;
+        vid.currentTime = 2;
+        showSlides(slideIndex,0,5);
+        // $(ex1).fadeIn(3000);
 
+        function plusSlides(n) {
+            // document.getElementById("slideshow-container").reset();
+            clearTimeout(timer);
+            var b = slideIndex;
+            showSlides(slideIndex += n,b,10);
+            }
+
+        function currentSlide(n) {
+           // document.getElementById("slideshow-container").reset();
+          clearTimeout(timer);
+          var b = slideIndex;
+          showSlides(slideIndex = n,b,10);
+          }
+
+        function showSlides(n,b,t) {
+          // clearTimeout(timer);
+          // var bg = document.getElementsByClassName("slideshow-container");
+          var i;
+          var time = t;
+          var slides = document.getElementsByClassName("mySlides");
+          var dots = document.getElementsByClassName("dot");
+          var vid = document.getElementById("story-vid");
+          if (n > slides.length) {slideIndex = 1} 
+          if (n < 1) {slideIndex = slides.length} ;
+
+          for (i = 0; i < dots.length; i++) {
+              dots[i].className = dots[i].className.replace(" active", "");
+          }
+          // debugger;
+          for (i = 0; i < slides.length; i++) {
+              slides[i].style.display = "none"; 
+          }
+          // $("#slideshow-container").css({"background-image":" url('../img/story-com/bonus-story/ex1.png');"});
+           // alert(document.getElementById("slideshow-container").style.backgroundImage);
+          if(b==0)document.getElementById("slideshow-container").style.backgroundColor = "black";
+          if(b==1)document.getElementById("slideshow-container").style.backgroundImage = "url('../img/story-com/bonus-story/pic1.jpg')";
+          if(b==2)document.getElementById("slideshow-container").style.backgroundImage = "url('../img/story-com/bonus-story/pic2.png')";
+          if(b==3)document.getElementById("slideshow-container").style.backgroundImage = "url('../img/story-com/bonus-story/pic3.jpg')";
+          if(b==4)document.getElementById("slideshow-container").style.backgroundImage = "url('../img/story-com/bonus-story/pic4.jpg')";
+          if(b==5)document.getElementById("slideshow-container").style.backgroundImage = "url('../img/story-com/bonus-story/pic5.jpg')";
+          var send = slideIndex;
+            slides[slideIndex-1].style.display = "block";
+          if(slideIndex==2){
+            vid.play();
+           setTimeout(function(){ document.getElementById("slideshow-container").style.backgroundImage = "none";},3000);
+              
+             // alert(document.getElementById("slideshow-container").style.backgroundImage);
+            if(time == 10){
+              time = vid.duration-vid.currentTime;
+            }
+            else time = 30;
+            if(vid.requestFullscreen){
+              time = vid.duration - vid.currentTime-1;
+            }
+          }
+          else if(slideIndex!=2){
+            vid.pause();
+          }
+          // if(slideIndex==1){
+          //   $(ex1).fadeIn(900);
+          // }
+          // else{
+          // $(ex1).hide(); 
+          // }
+          dots[slideIndex-1].className += " active";
+          // debugger;
+          time = time * 1000;
+          // document.getElementById("story-place").textContent =time;
+          timer = setTimeout(function(){showSlides(slideIndex += 1,send, 5)}, time);
+          
+        }
     </script>
 </body>
 

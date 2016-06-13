@@ -83,7 +83,7 @@ $( window ).scroll(function() {
           </a>
           <img id= "menu"class="yellow pointer" src="../img/icon/Menu.png" alt="menu">
           <img id="story-logo" src="../img/header/Story.png" alt="story-logo">
-          <img id="cindy-topic" stylr = "width" src="../img/story-com/cindy-story/Topic.png" alt="phum-topic">
+          <img id="cindy-topic" style = "width" src="../img/story-com/cindy-story/Topic.png" alt="phum-topic">
           <p  id = "story-date" style = "left:41%">4-11.04.2016</p>
           <p  id = "story-place" style = "left:37.5%">SEOUL, KOREA</p>
           <a class = "p pointer">

@@ -60,6 +60,14 @@
 	width: 35%;
 	min-width: 35%;
 	max-width: 35%;
+}
+#bonus-topic{
+	position: absolute;
+	margin-top: 23%;
+	left: 33%;
+	width: 40%;
+	min-width: 40%;
+	max-width: 40%;
 
 }
 
