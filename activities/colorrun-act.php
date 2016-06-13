@@ -164,12 +164,16 @@ $( window ).scroll(function() {
     </div>
 
     <div class = "content">
-    <a href="../profiles/touch.php">
-      <div class="grow pic bw slideUp" id = "pic1">
-        <img class="" src="../img/friend-pic/friend1.jpg" alt="friend1">
-        <img class = "friend-info" src="../img/friend-pic/info1.png" alt="friend-info1">
+   
+      <div class="grow-n pic slideUp" id = "pic1">
+          <!-- <div class="grow" > -->
+              <img class= " grow add-icon pointer" src="../img/icon/Add.png" alt="add">
+              <img class="profile-pic" src="../img/friend-pic/friend1.jpg" alt="friend1">
+          <!-- </div>     -->
+          
+        <!-- <img class = "friend-info" src="../img/friend-pic/info1.png" alt="friend-info1"> -->
       </div>
-    </a>
+   
     <a href="">
       <div class="grow pic bw slideUp" id = "pic2">
         <img class="" src="../img/friend-pic/friend2.jpg" alt="friend2">

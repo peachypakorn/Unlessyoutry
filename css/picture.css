@@ -18,10 +18,10 @@
   left: 0.003334%; 
    width: 33.333%;
    height: 33.333%;
-  min-height: 24.99%;
+/*  min-height: 24.99%;
   min-width:  24.99%;
   max-width: 49.99%;
-  max-height: 49.99%;
+  max-height: 49.99%;*/
   float: left;
    margin: 0px;
    padding: 0px;
@@ -37,7 +37,11 @@
       -webkit-animation-delay: 1s; /* Chrome, Safari, Opera */
     animation-delay: 1s;
  }
-
+.grow-n img {
+  height: 100%;
+  width:  100%;
+  
+}
  /*GROW*/
 .grow img {
   height: 100%;
@@ -120,4 +124,29 @@ transform: scale(1.05);
   opacity: 0;
 }
 
+.add-icon{
+  position: absolute;
+  left:40%;
+  top: 40%;
+  width: 20% !important;
+  height: 20% !important;
+  -webkit-filter: grayscale(100%) brightness(200%) !important;
+  z-index: 2;
+       -webkit-transition: all 0.5s ease;
+        transition: all 0.5s ease; 
+}
+
+.add-icon:hover{
+     -webkit-filter: grayscale(0%) brightness(100%) !important;
+      transform: scale(1.05);
+}
+.profile-pic{
+    -webkit-filter: grayscale(100%);
+       -webkit-transition: all 0.5s ease;
+        transition: all 0.5s ease; 
+}
+.add-icon:hover +.profile-pic{
+  -webkit-filter: grayscale(0%) !important ;
+  transform: scale(1.05);
+}
 
