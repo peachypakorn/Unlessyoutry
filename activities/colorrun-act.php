@@ -193,7 +193,7 @@ $( window ).scroll(function() {
           <p  class = "twoline-place">BANGKOK</p>
           <a class = "p pointer">
               <img id= "profile-pic" src="../img/act-com/colorrun-act/Profile.jpg" alt="menu">
-              <p  id = "story-name" style = "left:43%" >COLOR RUN</p>
+              <p  id = "story-name" >COLOR RUN</p>
           </a>
           <img class= "yellow info-icon pointer" src="../img/icon/Info.png" alt="info" onclick ="showDisplay(0)">
               <p  class = "info-t">INFORMATION</p>

@@ -189,11 +189,11 @@ $( window ).scroll(function() {
           <img id= "menu"class="yellow pointer" src="../img/icon/Menu.png" alt="menu">
           <img id="act-logo" src="../img/header/Activities.png " style = "opacity:0.7" alt="act-logo">
           <img id="twoline-topic" src="../img/act-com/iceride-act/Topic.png" alt="colorrun">
-          <p  class = "twoline-date">05.01.2016</p>
-          <p  class = "twoline-place">BANGKOK</p>
+          <p  id = "story-date">05.01.2016</p>
+          <p  id = "story-place">BANGKOK</p>
           <a class = "p pointer">
               <img id= "profile-pic" src="../img/act-com/iceride-act/Profile.jpg" alt="menu">
-              <p  id = "story-name" style = "left:43%" >COLOR RUN</p>
+              <p  id = "story-name" >ICE RIDE</p>
           </a>
           <img class= "yellow info-icon pointer" src="../img/icon/Info.png" alt="info" onclick ="showDisplay(0)">
               <p  class = "info-t">INFORMATION</p>
