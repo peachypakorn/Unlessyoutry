@@ -146,7 +146,7 @@
 
 				<p class = "pointer" id = "cat1"  onclick="showCat(1)">  EDUCATION  </p>
 				<p class = "pointer" id = "cat2"  onclick="showCat(2)">  SPORT  </p>
-				<p class = "pointer" id = "cat3"  onclick="showCat(3)">  ADVANTURE  </p>
+				<p class = "pointer" id = "cat3"  onclick="showCat(3)">  ADVENTURE  </p>
 				<p class = "pointer" id = "cat4"  onclick="showCat(4)">  VOLUNTEER  </p>
 				<p class = "pointer" id = "cat5"  onclick="showCat(5)">  ART&MUSIC  </p>
 				<p class = "pointer" id = "cat6"  onclick="showCat(6)">  OTHER  </p>

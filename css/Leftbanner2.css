@@ -151,7 +151,7 @@ img#ibannerh{
 }
  
 .yellow:hover {
-    -webkit-filter: grayscale(0%)brightness(100%);
+    -webkit-filter: grayscale(0%)brightness(100%)!important;
     transform: scale(1.05);	
 }
 #menu {

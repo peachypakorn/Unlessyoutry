@@ -59,14 +59,24 @@ $(document).ready(function(){
           $(this).find(".friend-info").animate({
               left: '0%',
               opacity: '1',
+          },100);
+          $(this).find(".friend-info").css({
+            "transform": "scale(1.00)",
+          });
+          $(this).find(".pro-pic").css({
+            "transform": "scale(1.05)",
           });
           }, function(){
           $(this).find(".friend-info").animate({
               left: '100%',
               opacity: '0',
           });
-
-
+          $(this).find(".friend-info").css({
+            "transform": "scale(1.00)",
+          });
+          $(this).find(".pro-pic").css({
+            "transform": "scale(1.00)",
+          });
     });
 
 
@@ -176,50 +186,50 @@ $( window ).scroll(function() {
      </div>
    
     <a href="">
-      <div class="grow pic bw slideUp" id = "pic2">
-        <img class="" src="../img/friend-pic/friend2.jpg" alt="friend2">
+      <div class=" pic grow bw slideUp" id = "pic2">
+        <img class="pro-pic" src="../img/friend-pic/friend2.jpg" alt="friend2">
         <img class = "friend-info" src="../img/friend-pic/info2.png" alt="friend-info2">
       </div>
     </a>
     <a href="">
       <div class="grow pic bw slideUp" id = "pic3">
-        <img class="" src="../img/friend-pic/friend3.jpg" alt="friend3">
+        <img class="pro-pic" src="../img/friend-pic/friend3.jpg" alt="friend3">
         <img class = "friend-info" src="../img/friend-pic/info3.png" alt="friend-info3">
       </div>
     </a>
     <a href="">
       <div class="grow pic bw slideUp" id = "pic4">
-        <img class="" src="../img/friend-pic/friend4.jpg" alt="friend4">
+        <img class="pro-pic" src="../img/friend-pic/friend4.jpg" alt="friend4">
         <img class = "friend-info" src="../img/friend-pic/info4.png" alt="friend-info4">
       </div>
     </a>
     <a href="">
       <div class="grow pic bw slideUp" id = "pic5">
-        <img class="" src="../img/friend-pic/friend5.jpg" alt="friend5">
+        <img class="pro-pic" src="../img/friend-pic/friend5.jpg" alt="friend5">
         <img class = "friend-info" src="../img/friend-pic/info5.png" alt="friend-info5">
       </div>
     </a>
     <a href="">
       <div class="grow pic bw slideUp" id = "pic6">
-        <img class="" src="../img/friend-pic/friend6.jpg" alt="friend6">
+        <img class="pro-pic" src="../img/friend-pic/friend6.jpg" alt="friend6">
         <img class = "friend-info" src="../img/friend-pic/info6.png" alt="friend-info6">
       </div>
     </a>
     <a href="">
       <div class="grow pic bw slideUp" id = "pic7">
-        <img class="" src="../img/friend-pic/friend7.jpg" alt="friend7">
+        <img class="pro-pic" src="../img/friend-pic/friend7.jpg" alt="friend7">
         <img class = "friend-info" src="../img/friend-pic/info7.png" alt="friend-info7">
       </div>
     </a>    
       <a href="">
       <div class="grow pic bw slideUp" id = "pic8">
-        <img class="" src="../img/friend-pic/friend8.jpg" alt="friend8">
+        <img class="pro-pic" src="../img/friend-pic/friend8.jpg" alt="friend8">
         <img class = "friend-info" src="../img/friend-pic/info8.png" alt="friend-info8">
       </div>
     </a>
     <a href="">
       <div class="grow pic bw slideUp" id = "pic9">
-        <img class="" src="../img/friend-pic/friend9.jpg" alt="friend9">
+        <img class="pro-pic" src="../img/friend-pic/friend9.jpg" alt="friend9">
         <img class = "friend-info" src="../img/friend-pic/info9.png" alt="friend-info9">
       </div>
     </a>
@@ -229,11 +239,17 @@ $( window ).scroll(function() {
      $("html, body").animate({ scrollTop: 0 }, "slow");
         var slideIndex = 1;
         var vid = document.getElementById("story-vid");
+        // var info = document.getElementsByClassName("info-icon");
+        // var friend = document.getElementsByClassName("friend-icons");
+        $(".info-icon").css({
+          "-webkit-filter": "grayscale(0%) brightness(100%)",
+        });
         var timer;
         vid.currentTime = 2;
         showSlides(slideIndex,0,5);
         var content = document.getElementsByClassName("content");
         content[1].style.display = "none";
+
         // clearTimeout(timer);
         // $(ex1).fadeIn(3000);
 
@@ -361,12 +377,24 @@ $( window ).scroll(function() {
              content[0].style.display = "block";
              content[1].style.display = "none";
              showSlides(slideIndex,0,5);
+             $(".info-icon").css({
+          "-webkit-filter": "grayscale(0%) brightness(100%)",
+        });
+             $(".friend-icon").css({
+          "-webkit-filter": "grayscale(100%) brightness(200%)",
+              });
           }
           else if(n==1){
              content[0].style.display = "none";
              content[1].style.display = "block";
              vid.pause();
              clearTimeout(timer);
+             $(".friend-icon").css({
+          "-webkit-filter": "grayscale(0%) brightness(100%)",
+              });
+             $(".info-icon").css({
+          "-webkit-filter": "grayscale(100%) brightness(200%)",
+              });
              for (i = 0; i < pics.length; i++) {
               pics[i].style.display = "none"; 
                   }
