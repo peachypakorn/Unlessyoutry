@@ -79,8 +79,84 @@ $(document).ready(function(){
           });
     });
 
+        $(".info-icon").hover(function(){
+          $(this).css({
+            "-webkit-filter": "grayscale(0%) brightness(100%)",
+          });
+          $(".friend-icon").css({
+            "-webkit-filter": "grayscale(100%) brightness(200%)",
+          });
+          }, function(){
+            if(page==0){
+          $(this).css({
+            "-webkit-filter": "grayscale(0%) brightness(100%)",
+          });
+          $(".friend-icon").css({
+            "-webkit-filter": "grayscale(100%) brightness(200%)",
+          });
+          }
+          else{
+           $(this).css({
+            "-webkit-filter": "grayscale(100%) brightness(200%)",
+          });
+          $(".friend-icon").css({
+            "-webkit-filter": "grayscale(0%) brightness(100%)",
+          }); 
+          }
+          });
 
+          $(".friend-icon").hover(function(){
+          $(".info-icon").css({
+            "-webkit-filter": "grayscale(100%) brightness(200%)",
+          });
+          $(".friend-icon").css({
+            "-webkit-filter": "grayscale(0%) brightness(100%)",
+          });
+          }, function(){
+            if(page==0){
+          $(".info-icon").css({
+            "-webkit-filter": "grayscale(0%) brightness(100%)",
+          });
+          $(".friend-icon").css({
+            "-webkit-filter": "grayscale(100%) brightness(200%)",
+          });
+          }
+          else{
+           $(".info-icon").css({
+            "-webkit-filter": "grayscale(100%) brightness(200%)",
+          });
+          $(".friend-icon").css({
+            "-webkit-filter": "grayscale(0%) brightness(100%)",
+          }); 
+          }
+          });
 
+      $(".link-icon").hover(function(){
+          $(".info-icon").css({
+            "-webkit-filter": "grayscale(100%) brightness(200%)",
+          });
+          $(".friend-icon").css({
+            "-webkit-filter": "grayscale(100%) brightness(200%)",
+          });
+          }, function(){
+            if(page==0){
+          $(".info-icon").css({
+            "-webkit-filter": "grayscale(0%) brightness(100%)",
+          });
+          $(".friend-icon").css({
+            "-webkit-filter": "grayscale(100%) brightness(200%)",
+          });
+          }
+          else{
+           $(".info-icon").css({
+            "-webkit-filter": "grayscale(100%) brightness(200%)",
+          });
+          $(".friend-icon").css({
+            "-webkit-filter": "grayscale(0%) brightness(100%)",
+          }); 
+          }
+          });
+    // });
   });
 $( window ).scroll(function() {
     $( "#sct" ).animate({
@@ -371,8 +447,9 @@ $( window ).scroll(function() {
               propic[0].style.filter = "grayscale(100%)";
             }
         }
-
+        var page =0;
         function showDisplay(n){
+          page = n;
           if(n==0){
              content[0].style.display = "block";
              content[1].style.display = "none";
