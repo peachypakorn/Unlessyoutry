@@ -163,7 +163,7 @@
 					<p class = "text3" ><br><br><br>05.01.16</p>
 			</div>
 		</a>
-		<a href="cindy-story.php">
+		<a href="">
 			<div class="grow pic bw slideUp" id = "pic2">
 				<img  src="./img/actPic/Act2.jpg" alt="Cindy">
 				<div class = "text"></div>
@@ -172,7 +172,7 @@
 					<p class = "text3" ><br><br><br>7-13.03.16</p>
 			</div>
 		<a>							
-		<a href="bonus-story.php">
+		<a href="./activities/iceride-act.php">
 			<div class="grow pic bw slideUp" id = "pic3">
 				<img  src="./img/actPic/Act3.jpg" alt="Bonus">
 				<div class = "text"></div>
