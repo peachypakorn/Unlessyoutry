@@ -68,7 +68,7 @@ $( window ).scroll(function() {
 <body>
     <div class = "left-banner">
         <div class = "wrap">
-          <img id="ibanner" src="../img/phum-story/banner.jpg" alt="phum-banner">
+          <img id="ibannerh" src="../img/story-com/sun-story/banner.jpg" alt="phum-banner">
           <div class = "clear-bg"></div>
           <img id= "menu"class="yellow pointer" src="../img/icon/Menu.png" alt="menu">
           <img id = "profile" class="yellow" src="../img/icon/Profile.png" alt="prfile">
@@ -83,12 +83,12 @@ $( window ).scroll(function() {
           </a>
           <img id= "menu"class="yellow pointer" src="../img/icon/Menu.png" alt="menu">
           <img id="story-logo" src="../img/header/Story.png" alt="story-logo">
-          <img id="phum-topic" src="../img/phum-story/Topic.png" alt="phum-topic">
-          <p  id = "story-date">14.02.2016</p>
-          <p  id = "story-place">JJ GREEN</p>
+          <img id="twoline-topic" src="../img/story-com/sun-story/Topic.png" alt="phum-topic">
+          <p  class = "twoline-date">1-31.01.2016</p>
+          <p  class = "twoline-place">THUMMASART UNIVERSITY</p>
           <a class = "p pointer">
-              <img id= "profile-pic" src="../img/phum-story/Profile.jpg" alt="menu">
-              <p  id = "story-name">PHUM VIPHURIT</p>
+              <img id= "profile-pic" src="../img/story-com/sun-story/Profile.jpg" alt="menu">
+              <p  id = "story-name">TAWAN SUNSUNSUN</p>
           </a>
           <div class = "s pointer">
             <img id= "share-icon" src="../img/icon/Share.png" alt="menu">
@@ -100,38 +100,44 @@ $( window ).scroll(function() {
         <br><br>
         <div id = "slideshow-container" style = "background-color:black');">
             <div class="mySlides move">
-                <img src="../img/phum-story/ex1.png" id = "ex1">
-                <img src="../img/phum-story/pic1.jpg" style="width:100%">
+                <!-- <img src="../img/story-com/sun-story/ex1.png" id = "ex1"> -->
+                <img src="../img/story-com/sun-story/pic1.jpg" style="width:100%">
             </div>
             <div class="mySlides move ">
-                <video loop poster controls style="width:100%" id="story-vid" >
-                    <source src="../img/phum-story/video.mp4" type= "video/mp4">
+              <a class = "space2"><br></a>
+                <video loop poster controls style="width:100%;height:100%" id="story-vid" >
+                    <source src="../img/story-com/sun-story/video.mp4" type= "video/mp4">
                 </video>
+                <a class = "space"><br><br></a>
             </div>
             <div class="mySlides move">
-                <img src="../img/phum-story/pic3.jpg" style="width:100%">
+                <img src="../img/story-com/sun-story/pic3.jpg" style="width:100%">
             </div>
             <div class="mySlides move">
-                <img src="../img/phum-story/pic4.jpg" style="width:100%">
+                <img src="../img/story-com/sun-story/pic4.jpg" style="width:100%">
+            </div>
+            <div class="mySlides move">
+                <img src="../img/story-com/sun-story/pic5.jpg" style="width:100%">
             </div>
               <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
               <a class="next" onclick="plusSlides(1)">&#10095;</a>
-              <div class = "dd" style="text-align:center">
+              <div class = "dd " style="left:87%">
                   <span class="dot" onclick="currentSlide(1)"></span> 
                   <span class="dot" onclick="currentSlide(2)"></span> 
                   <span class="dot" onclick="currentSlide(3)"></span>
                   <span class="dot" onclick="currentSlide(4)"></span> 
+                  <span class="dot" onclick="currentSlide(5)"></span> 
               </div>
         </div>
         
-        <img src="../img/phum-story/text1.png" id = "text1">
+        <img src="../img/story-com/sun-story/text1.png" id = "text1">
         <br><br><br>
         <div class = "sd"> 
             <img src="../img/icon/ScrollDown.png" id = "sc"> 
             <img src="../img/icon/ScrollDownText.png" id = "sct"> 
         </div>
         <br><br>
-        <img src="../img/phum-story/text2.png" id = "text2" class ="">
+        <img src="../img/story-com/sun-story/text2.png" id = "text2-c" class ="">
     </div>
     <script>
      $("html, body").animate({ scrollTop: 0 }, "slow");
@@ -174,13 +180,18 @@ $( window ).scroll(function() {
           for (i = 0; i < slides.length; i++) {
               slides[i].style.display = "none"; 
           }
-          // $("#slideshow-container").css({"background-image":" url('../img/phum-story/ex1.png');"});
+          // $("#slideshow-container").css({"background-image":" url('../img/story-com/sun-story/ex1.png');"});
            // alert(document.getElementById("slideshow-container").style.backgroundImage);
           if(b==0)document.getElementById("slideshow-container").style.backgroundColor = "black";
-          if(b==1)document.getElementById("slideshow-container").style.backgroundImage = "url('../img/phum-story/pic1.jpg')";
-          if(b==2)document.getElementById("slideshow-container").style.backgroundImage = "url('../img/phum-story/pic2.png')";
-          if(b==3)document.getElementById("slideshow-container").style.backgroundImage = "url('../img/phum-story/pic3.jpg')";
-          if(b==4)document.getElementById("slideshow-container").style.backgroundImage = "url('../img/phum-story/pic4.jpg')";
+          if(b==1)document.getElementById("slideshow-container").style.backgroundImage = "url('../img/story-com/sun-story/pic1.jpg')";
+          if(b==2)document.getElementById("slideshow-container").style.backgroundImage = "url('../img/story-com/sun-story/pic2.png')";
+          if(b==3)document.getElementById("slideshow-container").style.backgroundImage = "url('../img/story-com/sun-story/pic3.jpg')";
+          if(b==4)document.getElementById("slideshow-container").style.backgroundImage = "url('../img/story-com/sun-story/pic4.jpg')";
+          if(b==5)document.getElementById("slideshow-container").style.backgroundImage = "url('../img/story-com/sun-story/pic5.jpg')";
+          if(slideIndex==2){
+            document.getElementById("slideshow-container").style.backgroundColor = "black";
+            document.getElementById("slideshow-container").style.backgroundImage = "none";
+            }
           var send = slideIndex;
             slides[slideIndex-1].style.display = "block";
           if(slideIndex==2){
@@ -199,12 +210,12 @@ $( window ).scroll(function() {
           else if(slideIndex!=2){
             vid.pause();
           }
-          if(slideIndex==1){
-            $(ex1).fadeIn(900);
-          }
-          else{
-          $(ex1).hide(); 
-          }
+          // if(slideIndex==1){
+          //   $(ex1).fadeIn(900);
+          // }
+          // else{
+          // $(ex1).hide(); 
+          // }
           dots[slideIndex-1].className += " active";
           // debugger;
           time = time * 1000;

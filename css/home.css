@@ -13,11 +13,11 @@
 #hashtag{
 	position: absolute;
 	font-family: 'GothamMed';
-	margin-top: 55.75%;
+	margin-top: 54.75%;
 		left :50%;
 	text-align: center;
 	margin-right: -50%;
-	transform: translate(-50%, -50%);
+	transform: translate(-50%, 0);
 }
 
 #sen1{
@@ -43,7 +43,10 @@
 	position: absolute;
 	font-family: 'GothamMed';
 	margin-top: 68%;
-	left: 40%;
+	left :50%;
+	text-align: center;
+	margin-right: -50%;
+	transform: translate(-50%, 0);
 	color: #FFAA21;
 	-webkit-filter: grayscale(100%) brightness(200%);
 }
@@ -61,6 +64,7 @@ transform: scale(1.05);
 .h:hover #watch{
 	-webkit-filter: grayscale(0%) brightness(100%);
 	transform: scale(1.02);
+	transform: translate(-50%, 0);
 	/*color: #FFAA21;*/
 }
 
@@ -68,13 +72,17 @@ transform: scale(1.05);
 	position: fixed;
 	font-family: 'GothamMed';
 	top: 92%;
-	left: 18%;
+		left :20%;
+	text-align: center;
+	margin-right: -80%;
+	transform: translate(-50%, 0);
 	 -webkit-transition: all 0.3s ease;
     		transition: all 0.3s ease; 
 }
 #cont:hover{
 	color: #FFAA21;
 	transform: scale(1.01);
+	transform: translate(-50%, 0);	
 }
 .in{
 	opacity: 1;

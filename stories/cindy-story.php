@@ -84,11 +84,11 @@ $( window ).scroll(function() {
           <img id= "menu"class="yellow pointer" src="../img/icon/Menu.png" alt="menu">
           <img id="story-logo" src="../img/header/Story.png" alt="story-logo">
           <img id="cindy-topic" style = "width" src="../img/story-com/cindy-story/Topic.png" alt="phum-topic">
-          <p  id = "story-date" style = "left:41%">4-11.04.2016</p>
-          <p  id = "story-place" style = "left:37.5%">SEOUL, KOREA</p>
+          <p  id = "story-date" >4-11.04.2016</p>
+          <p  id = "story-place" >SEOUL, KOREA</p>
           <a class = "p pointer">
               <img id= "profile-pic" src="../img/story-com/cindy-story/Profile.jpg" alt="menu">
-              <p  id = "story-name" style ="left :43%;" >CINDY LAM</p>
+              <p  id = "story-name">CINDY LAM</p>
           </a>
           <div class = "s pointer">
             <img id= "share-icon" src="../img/icon/Share.png" alt="menu">

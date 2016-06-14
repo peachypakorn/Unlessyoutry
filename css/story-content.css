@@ -15,7 +15,12 @@
   background-size: cover;
   background-color: black;
 }
-
+.space{
+  font-size: 32px;
+}
+.space2{
+  font-size: 35px;
+}
 #ex1{
 	position: absolute;
 	width: 30%;

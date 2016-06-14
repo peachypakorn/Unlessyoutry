@@ -52,6 +52,14 @@
 	min-width: 52%;
 	max-width: 52%;
 }
+#dew-topic{
+	position: absolute;
+	margin-top: 23%;
+	left: 29%;
+	width: 42%;
+	min-width: 42%;
+	max-width: 42%;
+}
 
 #twoline-topic{
 	position: absolute;
@@ -71,6 +79,16 @@
 
 }
 
+#gino-topic{
+	position: absolute;
+	margin-top: 23%;
+	left: 35%;
+	width: 30%;
+	min-width: 30%;
+	max-width: 30%;
+
+}
+
 p#story-date{
 	position: absolute;
 	text-align: center;
@@ -78,7 +96,7 @@ p#story-date{
 	margin-top: 31%;
 	left :50%;
 	margin-right: -50%;
-	transform: translate(-50%, -50%);
+	transform: translate(-50%, 0%);
 	font-size: 18px;
 }
 
@@ -90,7 +108,7 @@ p#story-place{
 	margin-top: 36%;
 	left :50%;
 	margin-right: -50%;
-	transform: translate(-50%, -50%);
+	transform: translate(-50%, 0%);
 	font-size: 18px;
 }
 
@@ -98,7 +116,9 @@ p.twoline-date{
 	position: absolute;
 	color: white;
 	margin-top: 38%;
-	left :42%;
+		left :50%;
+	margin-right: -50%;
+	transform: translate(-50%, 0%);
 	font-size: 18px;
 }
 
@@ -107,7 +127,9 @@ p.twoline-place{
 	color: white;
 	font-family: 'GothamBold';
 	margin-top: 43%;
-	left :41.5%;
+	left :50%;
+	margin-right: -50%;
+	transform: translate(-50%, 0%);
 	font-size: 18px;
 }
 

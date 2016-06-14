@@ -85,10 +85,10 @@ $( window ).scroll(function() {
           <img id="story-logo" src="../img/header/Story.png" alt="story-logo">
           <img id="cindy-topic" style = "width" src="../img/story-com/mitz-story/Topic.png" alt="phum-topic">
           <p  id = "story-date" >28.02.2016</p>
-          <p  id = "story-place" style = "left:37.5%">SEOUL, KOREA!!!!!!!!!!!!!!</p>
+          <p  id = "story-place" >SEOUL, KOREA!!!!!!!!!!!!!!</p>
           <a class = "p pointer">
               <img id= "profile-pic" src="../img/story-com/mitz-story/Profile.jpg" alt="menu">
-              <p  id = "story-name" style ="left :43%;" >CINDY LAM!!!!!!!!!!!!!!!</p>
+              <p  id = "story-name">MITZ LAM!!!!!!!!!!!!!!!</p>
           </a>
           <div class = "s pointer">
             <img id= "share-icon" src="../img/icon/Share.png" alt="menu">

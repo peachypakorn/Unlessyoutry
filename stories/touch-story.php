@@ -68,7 +68,7 @@ $( window ).scroll(function() {
 <body>
     <div class = "left-banner">
         <div class = "wrap">
-          <img id="ibannerh" src="../img/story-com/touch-story/banner.jpg" alt="phum-banner">
+          <img id="ibannerh" style = "left:-35%" src="../img/story-com/touch-story/banner.jpg" alt="phum-banner">
           <div class = "clear-bg"></div>
           <img id= "menu"class="yellow pointer" src="../img/icon/Menu.png" alt="menu">
           <img id = "profile" class="yellow" src="../img/icon/Profile.png" alt="prfile">
@@ -84,11 +84,11 @@ $( window ).scroll(function() {
           <img id= "menu"class="yellow pointer" src="../img/icon/Menu.png" alt="menu">
           <img id="story-logo" src="../img/header/Story.png" alt="story-logo">
           <img id="twoline-topic" src="../img/story-com/touch-story/Topic.png" alt="phum-topic">
-          <p  class = "twoline-date">14.02.2016</p>
-          <p  class = "twoline-place" style ="left:25%">THUMMASART UNIVERSITY</p>
+          <p  class = "twoline-date">7-10.01.2016</p>
+          <p  class = "twoline-place">HUAY KUK, CHIANGRAI</p>
           <a class = "p pointer">
               <img id= "profile-pic" src="../img/story-com/touch-story/Profile.jpg" alt="menu">
-              <p  id = "story-name" style ="left:37.5%" >BONUS JINJUTHA</p>
+              <p  id = "story-name">THEERAT WATTANAKIJRUNGROJ</p>
           </a>
           <div class = "s pointer">
             <img id= "share-icon" src="../img/icon/Share.png" alt="menu">
