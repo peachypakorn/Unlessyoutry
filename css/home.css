@@ -13,16 +13,22 @@
 #hashtag{
 	position: absolute;
 	font-family: 'GothamMed';
-	margin-top: 54.75%;
-	left: 40.5%;
+	margin-top: 55.75%;
+		left :50%;
+	text-align: center;
+	margin-right: -50%;
+	transform: translate(-50%, -50%);
 }
 
 #sen1{
 	position: absolute;
-	margin-top: 49%;
+	margin-top: 51%;
 	text-align: center;
-	left: 19%;
 	width: 30em;
+		left :50%;
+	text-align: center;
+	margin-right: -50%;
+	transform: translate(-50%, -50%);
 }
 #video{
 	position: absolute;

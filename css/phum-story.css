@@ -73,18 +73,24 @@
 
 p#story-date{
 	position: absolute;
+	text-align: center;
 	color: white;
 	margin-top: 31%;
-	left :42%;
+	left :50%;
+	margin-right: -50%;
+	transform: translate(-50%, -50%);
 	font-size: 18px;
 }
 
 p#story-place{
 	position: absolute;
+	text-align: center;s
 	color: white;
 	font-family: 'GothamBold';
 	margin-top: 36%;
-	left :42%;
+	left :50%;
+	margin-right: -50%;
+	transform: translate(-50%, -50%);
 	font-size: 18px;
 }
 

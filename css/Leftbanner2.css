@@ -242,8 +242,12 @@ p#story-name{
 	position: absolute;
 	color: white;
 	font-family: 'GothamMed';
-	margin-top: 62.5%;
-	left :40.5%;
+	margin-top: 64.5%;
+	left :50%;
+	text-align: center;
+	margin-right: -50%;
+	transform: translate(-50%, -50%);
+
 	font-size: 13px;
 }
 
@@ -253,7 +257,7 @@ p#story-name{
 }
 .p:hover p#story-name{
 color: #FFAA21;
- transform: scale(1.02);
+ /*transform: scale(1.02);*/
 }	
 #share-icon {
 	position: absolute;
@@ -269,8 +273,11 @@ color: #FFAA21;
 	position: absolute;
 	color: #FFAA21;
 	font-family: 'GothamMed';
-	bottom: 1%;
-	left :39.5%;
+	bottom: 0%;
+	left :50%;
+	text-align: center;
+	margin-right: -50%;
+	transform: translate(-50%, -50%);
 	-webkit-filter: grayscale(100%) brightness(200%);
 
 }
@@ -288,6 +295,7 @@ color: #FFAA21;
 .s:hover #cont-share{
 	-webkit-filter: grayscale(0%) brightness(100%);
 	transform: scale(1.02);
+	transform: translate(-50%, -50%);
 }
 
 .info-icon {

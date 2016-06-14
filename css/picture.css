@@ -127,10 +127,10 @@ transform: scale(1.05);
 
 .add-icon{
   position: absolute;
-  left:40%;
-  top: 40%;
-  width: 20% !important;
-  height: 20% !important;
+  left:45%;
+  top: 45%;
+  width: 10% !important;
+  height: 10% !important;
   -webkit-filter: grayscale(100%) brightness(200%) !important;
   z-index: 2;
        -webkit-transition: all 0.5s ease;
@@ -153,10 +153,10 @@ transform: scale(1.05);
 
 .delete-icon{
   position: absolute;
-  left:40%;
-  top: 40%;
-  width: 20% !important;
-  height: 20% !important;
+  left:45%;
+  top: 45%;
+  width: 10% !important;
+  height: 10% !important;
   -webkit-filter: grayscale(100%) brightness(200%) !important;
   z-index: 2;
   display: none;
