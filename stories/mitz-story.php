@@ -68,7 +68,7 @@ $( window ).scroll(function() {
 <body>
     <div class = "left-banner">
         <div class = "wrap">
-          <img id="ibannerh" src="../img/story-com/mitz-story/banner.jpg" alt="phum-banner">
+          <img id="ibannerh" style ="top:-15%" src="../img/story-com/mitz-story/banner.jpg" alt="phum-banner">
           <div class = "clear-bg"></div>
           <img id= "menu"class="yellow pointer" src="../img/icon/Menu.png" alt="menu">
           <img id = "profile" class="yellow" src="../img/icon/Profile.png" alt="prfile">
