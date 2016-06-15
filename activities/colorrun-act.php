@@ -254,12 +254,18 @@ $( window ).scroll(function() {
 
     <div class = "content">
    
-      <div class="grow-n pic slideUp" id = "pic1">
+           <div class="grow-n pic slideUp" id = "pic1">
               <img class= " grow add-icon pointer" src="../img/icon/Add.png" alt="add" onclick = "joinAct('profilepic',1) ">
               <img class= " grow delete-icon pointer" src="../img/icon/Delete.png" alt="delete" onclick = "joinAct('profilepic',2) ">
-              <img class="profilepic" src="../img/friend-pic/friend1.jpg" alt="friend1">
+              <img class="profilepic" src="../img/friend-pic/Touch.jpg" alt="friend0">
               
      </div>
+   <a href="">
+      <div class=" pic grow bw slideUp" id = "pic1">
+        <img class="pro-pic" src="../img/friend-pic/friend1.jpg" alt="friend1">
+        <img class = "friend-info" src="../img/friend-pic/info1.png" alt="friend-info1">
+      </div>
+    </a>
    
     <a href="">
       <div class=" pic grow bw slideUp" id = "pic2">

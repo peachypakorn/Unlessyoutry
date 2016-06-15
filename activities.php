@@ -181,7 +181,7 @@
 					<p class = "text3" ><br><br><br>28.02.16</p>
 				</div>
 		</a>
-		<a href="mitz-story.php ">
+		<a href="./activities/bigbubble-act.php ">
 			<div class="grow pic bw slideUp" id = "pic4">
 				<img  src="./img/actPic/Act4.jpg" alt="midjungle">
 				<div class = "text"></div>
