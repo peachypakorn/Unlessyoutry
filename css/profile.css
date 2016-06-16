@@ -1,3 +1,16 @@
+@font-face {
+    font-family: 'GothamMed';
+    src: url('../vender/gothamFont/GOTHAM-MEDIUM.TTF');
+}
+@font-face {
+    font-family: 'GothamLight';
+    src: url('../vender/gothamFont/GOTHAM-LIGHT.TTF');
+}
+@font-face {
+    font-family: 'GothamBold';
+    src: url('../vender/gothamFont/GOTHAM-BOLD.TTF');
+}
+
 .div40{
 	position: relative;
 	width: 68.4%;
@@ -65,5 +78,34 @@
 }
 #friend-list{
 	width: 100%;
-	
+
+}
+#ref-info{
+	width: 90%;
+	height: auto;
+	margin:5%;
+	margin-top:4%; 
+	z-index: 10;
+}
+#ref{
+	font-family: "GothamBold";
+	color:#FFAA21;
+	text-align: left;
+	margin: 5%;
+
+	font-size: 18px;
+}
+
+#pos-ref{
+	position: absolute;
+	height: 2.5%;
+	margin-top: -3%;
+	margin-left: 7%;
+}
+
+#neg-ref{
+	position: absolute;
+	height: 2.5%;
+	margin-top: -3%;
+	margin-left: 30%;
 }

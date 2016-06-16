@@ -229,9 +229,7 @@ $( window ).scroll(function() {
                       <img  src="../img/profile-com/touch-profile/p12.jpg" alt="touch1">
                   </div>
               </div>
-
         </div>
-
     </div>
 
     <div class ="content" style = "background:black" >
@@ -245,6 +243,19 @@ $( window ).scroll(function() {
         </div>
     </div>
   
+    <div class ="content" style = "background:black" >
+        <div class = "div40" style = "background:white">
+            <p id = "ref">REFERECNES</p>
+            <img id="pos-ref"  src="../img/profile-com/touch-profile/pos-ref.png" alt="infomation">   
+            <img id="neg-ref"  src="../img/profile-com/touch-profile/neg-ref.png" alt="infomation">   
+            <img id="ref-info"  src="../img/profile-com/touch-profile/ref.png" alt="infomation">   
+            <br><br><br>
+        </div>
+        <div class = "div20">
+            <img id="friend-list"  src="../img/profile-com/touch-profile/friend-list.png" alt="infomation">
+        </div>
+    </div>
+
     <script>
      $("html, body").animate({ scrollTop: 0 }, "slow");
      $("#profile").css({
@@ -265,7 +276,7 @@ $( window ).scroll(function() {
         setTimeout(function(){ showSlides(9,0,3);},6000);
         var content = document.getElementsByClassName("content");
         content[0].style.display = "none";
-
+        content[1].style.display = "none";
         function sshows(n){
           var pos = n;
           // alert(n + " " + pos);
