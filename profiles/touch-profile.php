@@ -6,6 +6,7 @@
 <link rel="stylesheet" type="text/css" href="../css/Leftbanner2.css">
 <link rel="stylesheet" type="text/css" href="../css/phum-story.css">
 <link rel="stylesheet" type="text/css" href="../css/story-content.css">
+<link rel="stylesheet" type="text/css" href="../css/profile.css">
   <link rel="stylesheet" type="text/css" href="../css/picture.css">
   <link rel="stylesheet" type="text/css" href="../css/animations.css">
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
@@ -128,6 +129,7 @@ $( window ).scroll(function() {
         <div class = "wrap">
           <img id="ibanner-touch" src="../img/profile-com/touch-profile/banner.jpg" alt="phum-banner">
           <div class = "clear-bg"></div>
+          <div class="bg"></div>
           <img id= "menu"class="yellow pointer" src="../img/icon/Menu.png" alt="menu">
           <img id = "profile" class="yellow" src="../img/icon/Profile.png" alt="prfile">
 
@@ -174,7 +176,14 @@ $( window ).scroll(function() {
       </a>
         </div>
     </div>
-
+    
+    <div class ="content" style = "background:black" >
+        <div class = "div40" style = "background:white">
+            <div class="bg"></div>
+            <img id="profile-info"  src="../img/profile-com/touch-profile/Info.png" alt="infomation">   
+            <br><br><br>
+        </div>
+    </div>
   
     <script>
      $("html, body").animate({ scrollTop: 0 }, "slow");
