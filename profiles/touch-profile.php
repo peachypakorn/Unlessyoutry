@@ -255,6 +255,44 @@ $( window ).scroll(function() {
             <img id="friend-list"  src="../img/profile-com/touch-profile/friend-list.png" alt="infomation">
         </div>
     </div>
+    <div class ="content" style = "background:black" >
+      <div class=" pic grow bw slideUp pointer" id = "pic1">
+        <img class="pro-pic" src="../img/profile-com/touch-profile/p1.jpg" alt="friend1">
+      </div>
+      <div class=" pic grow bw slideUp pointer" id = "pic2">
+        <img class="pro-pic" src="../img/profile-com/touch-profile/p2.jpg" alt="friend1">
+      </div>
+      <div class=" pic grow bw slideUp pointer" id = "pic3">
+        <img class="pro-pic" src="../img/profile-com/touch-profile/p3.jpg" alt="friend1">
+      </div>
+      <div class=" pic grow bw slideUp pointer" id = "pic4">
+        <img class="pro-pic" src="../img/profile-com/touch-profile/p4.jpg" alt="friend1">
+      </div>
+      <div class=" pic grow bw slideUp pointer" id = "pic5">
+        <img class="pro-pic" src="../img/profile-com/touch-profile/p5.jpg" alt="friend1">
+      </div>
+      <div class=" pic grow bw slideUp pointer" id = "pic6">
+        <img class="pro-pic" src="../img/profile-com/touch-profile/p6.jpg" alt="friend1">
+      </div>
+      <div class=" pic grow bw slideUp pointer" id = "pic7">
+        <img class="pro-pic" src="../img/profile-com/touch-profile/p7.jpg" alt="friend1">
+      </div>
+      <div class=" pic grow bw slideUp pointer" id = "pic8">
+        <img class="pro-pic" src="../img/profile-com/touch-profile/p8.jpg" alt="friend1">
+      </div>
+      <div class=" pic grow bw slideUp pointer" id = "pic9">
+        <img class="pro-pic" src="../img/profile-com/touch-profile/p9.jpg" alt="friend1">
+      </div>
+      <div class=" pic grow bw slideUp pointer" id = "pic10">
+        <img class="pro-pic" src="../img/profile-com/touch-profile/p10.jpg" alt="friend1">
+      </div>
+      <div class=" pic grow bw slideUp pointer" id = "pic11">
+        <img class="pro-pic" src="../img/profile-com/touch-profile/p11.jpg" alt="friend1">
+      </div>
+      <div class=" pic grow bw slideUp pointer" id = "pic12">
+        <img class="pro-pic" src="../img/profile-com/touch-profile/p12.jpg" alt="friend1">
+      </div>
+    </div>
 
     <script>
      $("html, body").animate({ scrollTop: 0 }, "slow");
@@ -265,9 +303,12 @@ $( window ).scroll(function() {
           "-webkit-filter": "grayscale(0%) brightness(100%)",
         });
         var slideIndex =0;
+        var timer1;
+        var timer2;
+        var timer3;
         var bg ;
         var gal = document.getElementsByClassName("gal");
-        debugger;
+        // debugger;
         for(i = 0; i < 3; i++)gal[i].display ="none";
         for(i = 0; i < 3; i++)start(i,i);
   
@@ -275,8 +316,10 @@ $( window ).scroll(function() {
         setTimeout(function(){ showSlides(5,0,2);},5000);
         setTimeout(function(){ showSlides(9,0,3);},6000);
         var content = document.getElementsByClassName("content");
-        content[0].style.display = "none";
+        content[3].style.display = "none";
         content[1].style.display = "none";
+        content[2].style.display = "none";
+        document.getElementsByClassName("bg")[0].style.display="none";
         function sshows(n){
           var pos = n;
           // alert(n + " " + pos);
@@ -319,14 +362,21 @@ $( window ).scroll(function() {
           slides[n-1].style.display = "block";
           // document.getElementById("story-place").textContent =t;
           var send = n;
-          timer = setTimeout(function(){showSlides(n += 1,send, t)}, 6000+t*534+n*100);
-          
+
+          if(t==1){
+            timer1 = setTimeout(function(){showSlides(n += 1,send, t)}, 6000+t*534+n*100);
+            } 
+          if(t==2){
+            timer2 = setTimeout(function(){showSlides(n += 1,send, t)}, 6000+t*534+n*100);
+            }
+          if(t==3){
+            timer3 = setTimeout(function(){showSlides(n += 1,send, t)}, 6000+t*534+n*100);
+            }
         }
 
     </script>
     <script >
-  var pics = document.getElementsByClassName("pic");
-        var currentCat = 0;
+        var pics = document.getElementsByClassName("pic");
         var numpic = 0;
         var h;
         var cat =document.getElementById("cat1");
@@ -337,7 +387,7 @@ $( window ).scroll(function() {
             for (i = 0; i < pics.length; i++) {
               doshow(i,i);
                   pics[i].style.WebkitAnimation = "slideUp 0.7s 1";
-          pics[i].style.animation = "slideUp 0.7s 1";
+                  pics[i].style.animation = "slideUp 0.7s 1";
               }
 
         function shows(n){
@@ -348,51 +398,119 @@ $( window ).scroll(function() {
 
                   }
         function doshow(n,m){
-          setTimeout(function(){shows(numpic=n);},m*200);
+          setTimeout(function(){shows(numpic=n);},m*300);
                           }
-        function joinAct(elem,n){
-          // debugger;
-          var propic = document.getElementsByClassName(elem);
-          var add = document.getElementsByClassName("add-icon");
-          var del = document.getElementsByClassName("delete-icon");
-            if(n==1){
-              add[0].style.display = "none";
-              del[0].style.display = "block";
-              // propic[0s].style.display = "none";
-              propic[0].style.WebkitFilter = "grayscale(0%)";
-              propic[0].style.filter = "grayscale(0%)";
-            }
-            else if(n==2){
-              add[0].style.display = "block";
-              del[0].style.display = "none";
-              propic[0].style.WebkitFilter = "grayscale(100%)";
-              propic[0].style.filter = "grayscale(100%)";
-            }
-        }
+        
         var page =0;
         function showDisplay(n){
           page = n;
           if(n==0){
              content[0].style.display = "block";
              content[1].style.display = "none";
-             showSlides(slideIndex,0,5);
-             $(".info-icon").css({
+             content[2].style.display = "none";
+             content[3].style.display = "none";
+             
+             $("#me-icon").css({
           "-webkit-filter": "grayscale(0%) brightness(100%)",
         });
-             $(".friend-icon").css({
+             $("#chat-icon").css({
           "-webkit-filter": "grayscale(100%) brightness(200%)",
               });
+             $("#ref-icon").css({
+          "-webkit-filter": "grayscale(100%) brightness(200%)",
+              });
+             $("#photo-icon").css({
+          "-webkit-filter": "grayscale(100%) brightness(200%)",
+              });
+
+            for(i = 0; i < 3; i++)gal[i].display ="none";
+            for(i = 0; i < 3; i++)start(i,i);
+  
+        setTimeout(function(){ showSlides(1,0,1);},4000);
+        setTimeout(function(){ showSlides(5,0,2);},5000);
+        setTimeout(function(){ showSlides(9,0,3);},6000);
+
           }
           else if(n==1){
              content[0].style.display = "none";
              content[1].style.display = "block";
-             vid.pause();
-             clearTimeout(timer);
-             $(".friend-icon").css({
+             content[2].style.display = "none";
+             content[3].style.display = "none";
+            document.getElementsByClassName("bg")[0].style.display="block";
+             clearTimeout(timer1);
+             clearTimeout(timer2);
+             clearTimeout(timer3);
+             $("#me-icon").css({
+          "-webkit-filter": "grayscale(100%) brightness(200%)",
+               });
+             $("#chat-icon").css({
           "-webkit-filter": "grayscale(0%) brightness(100%)",
               });
-             $(".info-icon").css({
+             $("#ref-icon").css({
           "-webkit-filter": "grayscale(100%) brightness(200%)",
+              });
+             $("#photo-icon").css({
+          "-webkit-filter": "grayscale(100%) brightness(200%)",
+              });
+          //    for (i = 0; i < pics.length; i++) {
+          //     pics[i].style.display = "none"; 
+          //         }
+          //   for (i = 0; i < pics.length; i++) {
+          //     doshow(i,i);
+          //         pics[i].style.WebkitAnimation = "slideUp 0.7s 1";
+          // pics[i].style.animation = "slideUp 0.7s 1";
+          //     }
+          }
+          else if(n==2){
+             content[0].style.display = "none";
+             content[1].style.display = "none";
+             content[2].style.display = "block";
+             content[3].style.display = "none";
+            document.getElementsByClassName("bg")[0].style.display="block";
+             clearTimeout(timer1);
+             clearTimeout(timer2);
+             clearTimeout(timer3);
+             $("#me-icon").css({
+          "-webkit-filter": "grayscale(100%) brightness(200%)",
+               });
+             $("#chat-icon").css({
+          "-webkit-filter": "grayscale(100%) brightness(200%)",
+              });
+             $("#ref-icon").css({
+          "-webkit-filter": "grayscale(0%) brightness(100%)",
+              });
+             $("#photo-icon").css({
+          "-webkit-filter": "grayscale(100%) brightness(200%)",
+              });
+          //    for (i = 0; i < pics.length; i++) {
+          //     pics[i].style.display = "none"; 
+          //         }
+          //   for (i = 0; i < pics.length; i++) {
+          //     doshow(i,i);
+          //         pics[i].style.WebkitAnimation = "slideUp 0.7s 1";
+          // pics[i].style.animation = "slideUp 0.7s 1";
+          //     }
+          }
+          else if(n==3){
+             content[0].style.display = "none";
+             content[1].style.display = "none";
+             content[2].style.display = "none";
+             content[3].style.display = "block";
+            document.getElementsByClassName("bg")[0].style.display="none";
+             clearTimeout(timer1);
+             clearTimeout(timer2);
+             clearTimeout(timer3);
+             $("#me-icon").css({
+          "-webkit-filter": "grayscale(100%) brightness(200%)",
+               });
+             $("#chat-icon").css({
+          "-webkit-filter": "grayscale(100%) brightness(200%)",
+              });
+             $("#ref-icon").css({
+          "-webkit-filter": "grayscale(100%) brightness(200%)",
+              });
+             $("#photo-icon").css({
+          "-webkit-filter": "grayscale(0%) brightness(100%)",
               });
              for (i = 0; i < pics.length; i++) {
               pics[i].style.display = "none"; 
