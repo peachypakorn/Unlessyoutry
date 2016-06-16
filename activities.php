@@ -163,7 +163,15 @@
 					<p class = "text3" ><br><br><br>05.01.16</p>
 			</div>
 		</a>
-	
+		<a href="./activities/bigbubble-act.php ">
+			<div class="grow pic bw slideUp" id = "pic4">
+				<img  src="./img/actPic/Act4.jpg" alt="midjungle">
+				<div class = "text"></div>
+				<div class = "cata" style = "background:#F2AA4E" ></div>
+					<p class = "text2" >BIG<br>BUBBLE<br>DIVING</p>
+					<p class = "text3" ><br><br><br>17-21.01.16</p>
+			</div>
+		</a>	
 		<a href="./activities/iceride-act.php">
 			<div class="grow pic bw slideUp" id = "pic3">
 				<img  src="./img/actPic/Act3.jpg" alt="Bonus">
@@ -173,16 +181,6 @@
 					<p class = "text3" ><br><br><br>28.02.16</p>
 				</div>
 		</a>
-		<a href="./activities/bigbubble-act.php ">
-			<div class="grow pic bw slideUp" id = "pic4">
-				<img  src="./img/actPic/Act4.jpg" alt="midjungle">
-				<div class = "text"></div>
-				<div class = "cata" style = "background:#F2AA4E" ></div>
-					<p class = "text2" >BIG<br>BUBBLE<br>DIVING</p>
-					<p class = "text3" ><br><br><br>17-21.01.16</p>
-			</div>
-		</a>
-
 			<div class="grow pic bw slideUp pointer" id = "pic2">
 				<img  src="./img/actPic/Act2.jpg" alt="Cindy">
 				<div class = "text"></div>
