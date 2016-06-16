@@ -183,6 +183,18 @@ $( window ).scroll(function() {
             <img id="profile-info"  src="../img/profile-com/touch-profile/Info.png" alt="infomation">   
             <br><br><br>
         </div>
+         <div class = "div20"   >
+              <div class="grow gal bw slideUp " id = "pic1">
+                <img  src="../img/profile-com/touch-profile/p1.jpg" alt="phumConcert">
+              </div>
+              <div class="grow gal bw slideUp " id = "pic1">
+                <img  src="../img/profile-com/touch-profile/p5.jpg" alt="phumConcert">
+              </div>
+              <div class="grow gal bw slideUp " id = "pic1">
+                <img  src="../img/profile-com/touch-profile/p5.jpg" alt="phumConcert">
+              </div>
+        </div>
+
     </div>
   
     <script>
@@ -190,40 +202,15 @@ $( window ).scroll(function() {
      $("#profile").css({
                    "-webkit-filter": "grayscale(0%) brightness(100%)"
               });
-         
-        var slideIndex = 1;
-        var vid = document.getElementById("story-vid");
-        // var info = document.getElementsByClassName("info-icon");
-        // var friend = document.getElementsByClassName("friend-icons");
-        $(".info-icon").css({
+     $("#me-icon").css({
           "-webkit-filter": "grayscale(0%) brightness(100%)",
         });
-        var timer;
-        vid.currentTime = 2;
+     var slideIndex =0;
         showSlides(slideIndex,0,5);
         var content = document.getElementsByClassName("content");
         content[1].style.display = "none";
 
-        // clearTimeout(timer);
-        // $(ex1).fadeIn(3000);
-
-        function plusSlides(n) {
-            // document.getElementById("slideshow-container").reset();
-            clearTimeout(timer);
-            var b = slideIndex;
-            showSlides(slideIndex += n,b,10);
-            }
-
-        function currentSlide(n) {
-           // document.getElementById("slideshow-container").reset();
-          clearTimeout(timer);
-          var b = slideIndex;
-          showSlides(slideIndex = n,b,10);
-          }
-
         function showSlides(n,b,t) {
-          // clearTimeout(timer);
-          // var bg = document.getElementsByClassName("slideshow-container");
           var i;
           var time = t;
           var slides = document.getElementsByClassName("mySlides");
