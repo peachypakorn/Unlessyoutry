@@ -146,6 +146,22 @@ img#ibannerh{
     -webkit-filter: brightness(60%);
     filter: brightness(60%); 
 }
+img#ibanner-touch{
+	position: absolute;
+	background-position: left;
+	top: -2%;
+    left: -2%;
+    width: 104%;
+    min-width: 104%;
+    max-width: 104%;
+    height: 104%;
+    min-height: 104%;
+    max-height: 104%;
+    z-index: -100;
+    overflow: hidden;
+    -webkit-filter: brightness(60%);
+    filter: brightness(60%); 
+}
 .clear-bg{
 	position: absolute;
 	background-color: black;
@@ -247,10 +263,25 @@ img#ibannerh{
 #profile-pic{
 	position: absolute;
 	margin-top: 52%;
-	left: 45%;
+	left :50%;
+	text-align: center;
+	margin-right: -50%;
+	transform: translate(-50%, 0%);
 	width: 10%;
 	min-width: 10%;
 	max-width: 10%;
+	-webkit-filter: brightness(125%);
+}
+#profile-pic-p{
+	position: absolute;
+	margin-top: 20%;
+	left :50%;
+	text-align: center;
+	margin-right: -50%;
+	transform: translate(-50%, 0%);
+	width: 30%;
+	min-width: 30%;
+	max-width: 30%;
 	-webkit-filter: brightness(125%);
 }
 p#story-name{
@@ -261,7 +292,7 @@ p#story-name{
 	left :50%;
 	text-align: center;
 	margin-right: -50%;
-	transform: translate(-50%, -50%);
+	transform: translate(-50%, 0%);
 
 	font-size: 13px;
 }
