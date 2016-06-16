@@ -144,7 +144,7 @@ $( window ).scroll(function() {
           </a>
       
           <img id= "profile-pic-p" src="../img/profile-com/touch-profile/Profile.jpg" alt="menu">
-          <p  id = "story-place" style = "margin-top:52%">THEERAT<br>WATTANAKIJRUNGROJ</p>
+          <p  id = "story-place" style = "margin-top:48%">THEERAT<br>WATTANAKIJRUNGROJ</p>
           <div class = "icons">
               <img class= "yellow icon center pointer" id= "me-icon" src="../img/icon/Me.png" alt="info" onclick ="showDisplay(0)">
               <p  class = "icon-text">OVERALL</p>
@@ -183,16 +183,53 @@ $( window ).scroll(function() {
             <img id="profile-info"  src="../img/profile-com/touch-profile/Info.png" alt="infomation">   
             <br><br><br>
         </div>
-         <div class = "div20"   >
-              <div class="grow gal bw slideUp " id = "pic1">
-                <img  src="../img/profile-com/touch-profile/p1.jpg" alt="phumConcert">
+         <div class = "div20">
+              <div class="grow-n gal bw slideUp " id = "pic1">
+                  <!-- <img class ="backg" src="../img/profile-com/touch-profile/p1.jpg"> -->
+                  <div class="mySlides move fix-size">
+                      <img  src="../img/profile-com/touch-profile/p1.jpg" alt="touch1">
+                  </div>
+                  <div class="mySlides move fix-size">
+                      <img  src="../img/profile-com/touch-profile/p2.jpg" alt="touch1">
+                  </div>
+                  <div class="mySlides move fix-size">
+                      <img  src="../img/profile-com/touch-profile/p3.jpg" alt="touch1">
+                  </div>
+                  <div class="mySlides move fix-size">
+                      <img  src="../img/profile-com/touch-profile/p4.jpg" alt="touch1">
+                  </div>
               </div>
-              <div class="grow gal bw slideUp " id = "pic1">
-                <img  src="../img/profile-com/touch-profile/p5.jpg" alt="phumConcert">
+              <div class="grow-n gal bw slideUp " id = "pic2">
+                  <!-- <img class ="backg" src="../img/profile-com/touch-profile/p1.jpg"> -->
+                  <div class="mySlides move fix-size">
+                      <img  src="../img/profile-com/touch-profile/p5.jpg" alt="touch1">
+                  </div>
+                  <div class="mySlides move fix-size">
+                      <img  src="../img/profile-com/touch-profile/p6.jpg" alt="touch1">
+                  </div>
+                  <div class="mySlides move fix-size">
+                      <img  src="../img/profile-com/touch-profile/p7.jpg" alt="touch1">
+                  </div>
+                  <div class="mySlides move fix-size">
+                      <img  src="../img/profile-com/touch-profile/p8.jpg" alt="touch1">
+                  </div>
               </div>
-              <div class="grow gal bw slideUp " id = "pic1">
-                <img  src="../img/profile-com/touch-profile/p9.jpg" alt="phumConcert">
+              <div class="grow-n gal bw slideUp " id = "pic3">
+                  <!-- <img class ="backg" src="../img/profile-com/touch-profile/p1.jpg"> -->
+                  <div class="mySlides move fix-size">
+                      <img  src="../img/profile-com/touch-profile/p9.jpg" alt="touch1">
+                  </div>
+                  <div class="mySlides move fix-size">
+                      <img  src="../img/profile-com/touch-profile/p10.jpg" alt="touch1">
+                  </div>
+                  <div class="mySlides move fix-size">
+                      <img  src="../img/profile-com/touch-profile/p11.jpg" alt="touch1">
+                  </div>
+                  <div class="mySlides move fix-size">
+                      <img  src="../img/profile-com/touch-profile/p12.jpg" alt="touch1">
+                  </div>
               </div>
+
         </div>
 
     </div>
@@ -205,64 +242,48 @@ $( window ).scroll(function() {
      $("#me-icon").css({
           "-webkit-filter": "grayscale(0%) brightness(100%)",
         });
-     var slideIndex =0;
-        showSlides(slideIndex,0,5);
+        var slideIndex =0;
+        var bg ;
+        var gal = document.getElementsByClassName("gal");
+        showSlides(1,0,1);
+        // showSlides(5,0,2)
+        setTimeout(function(){ showSlides(5,0,2);},1000);
+        setTimeout(function(){ showSlides(9,0,3);},2000);
         var content = document.getElementsByClassName("content");
         content[1].style.display = "none";
 
         function showSlides(n,b,t) {
+        var imgPath = new Array(
+          "url('../img/profile-com/touch-profile/p1.jpg')",
+          "url('../img/profile-com/touch-profile/p2.jpg')",
+          "url('../img/profile-com/touch-profile/p3.jpg')",
+          "url('../img/profile-com/touch-profile/p4.jpg')",
+          "url('../img/profile-com/touch-profile/p5.jpg')",
+          "url('../img/profile-com/touch-profile/p6.jpg')",
+          "url('../img/profile-com/touch-profile/p7.jpg')",
+          "url('../img/profile-com/touch-profile/p8.jpg')",
+          "url('../img/profile-com/touch-profile/p9.jpg')",
+          "url('../img/profile-com/touch-profile/p10.jpg')",
+          "url('../img/profile-com/touch-profile/p11.jpg')",
+          "url('../img/profile-com/touch-profile/p12.jpg')"
+          );
           var i;
-          var time = t;
           var slides = document.getElementsByClassName("mySlides");
-          var dots = document.getElementsByClassName("dot");
-          var vid = document.getElementById("story-vid");
-          if (n > slides.length) {slideIndex = 1} 
-          if (n < 1) {slideIndex = slides.length} ;
-
-          for (i = 0; i < dots.length; i++) {
-              dots[i].className = dots[i].className.replace(" active", "");
-          }
           // debugger;
-          for (i = 0; i < slides.length; i++) {
+          if (n > 4*t) {n = 4*(t-1)+1} 
+          // if (n < 4*(t-1)) {n = slides.length} ;
+          // debugger;
+          var a = imgPath[1];
+          // gal[t-1].style.backgroundImage = "none";
+
+          for (i = 0+((t-1)*4); i < 4*t; i++) {
               slides[i].style.display = "none"; 
           }
-          // $("#slideshow-container").css({"background-image":" url('../img/act-com/colorrun-act/ex1.png');"});
-           // alert(document.getElementById("slideshow-container").style.backgroundImage);
-          if(b==0)document.getElementById("slideshow-container").style.backgroundColor = "black";
-          if(b==1)document.getElementById("slideshow-container").style.backgroundImage = "url('../img/act-com/colorrun-act/pic1.jpg')";
-          if(b==2)document.getElementById("slideshow-container").style.backgroundImage = "url('../img/act-com/colorrun-act/pic2.png')";
-          if(b==3)document.getElementById("slideshow-container").style.backgroundImage = "url('../img/act-com/colorrun-act/pic3.jpg')";
-          if(b==4)document.getElementById("slideshow-container").style.backgroundImage = "url('../img/act-com/colorrun-act/pic4.jpg')";
-          if(b==5)document.getElementById("slideshow-container").style.backgroundImage = "url('../img/act-com/colorrun-act/pic5.jpg')";
-          var send = slideIndex;
-            slides[slideIndex-1].style.display = "block";
-          if(slideIndex==2){
-            vid.play();
-           setTimeout(function(){ document.getElementById("slideshow-container").style.backgroundImage = "none";},3000);
-              
-             // alert(document.getElementById("slideshow-container").style.backgroundImage);
-            if(time == 10){
-              time = vid.duration-vid.currentTime;
-            }
-            else time = 30;
-            if(vid.requestFullscreen){
-              time = vid.duration - vid.currentTime-1;
-            }
-          }
-          else if(slideIndex!=2){
-            vid.pause();
-          }
-          // if(slideIndex==1){
-          //   $(ex1).fadeIn(900);
-          // }
-          // else{
-          // $(ex1).hide(); 
-          // }
-          dots[slideIndex-1].className += " active";
-          // debugger;
-          time = time * 1000;
-          // document.getElementById("story-place").textContent =time;
-          timer = setTimeout(function(){showSlides(slideIndex += 1,send, 5)}, time);
+           setTimeout(function(){ gal[t-1].style.backgroundImage = imgPath[n-1];},3000);
+          slides[n-1].style.display = "block";
+          document.getElementById("story-place").textContent =t;
+          var send = n;
+          timer = setTimeout(function(){showSlides(n += 1,send, t)}, 6000+t*534+n*100);
           
         }
 

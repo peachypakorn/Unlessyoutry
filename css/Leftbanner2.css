@@ -279,9 +279,9 @@ img#ibanner-touch{
 	text-align: center;
 	margin-right: -50%;
 	transform: translate(-50%, 0%);
-	width: 30%;
-	min-width: 30%;
-	max-width: 30%;
+	width: 25%;
+	min-width: 25%;
+	max-width: 25%;
 	-webkit-filter: brightness(125%);
 }
 p#story-name{

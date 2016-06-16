@@ -1,6 +1,6 @@
 .div40{
 	position: relative;
-	width: 68.667%;
+	width: 68.4%;
 	/*height: 100%;*/
 	overflow:hidden;
 }
@@ -25,9 +25,9 @@
 	position: absolute;
 	background-color: white;
 	left: 100%;
-	width: 100%;
-	min-width: 100%;;
-	max-width: 100%;;
+	width: 102.5%;
+	min-width: 102.5%;;
+	max-width: 102.5%;;
 	height: 120%;
 	min-height: 120%;
 	max-height: 120%;
@@ -40,4 +40,18 @@
 	overflow: hidden;
 	top:0.0001%;
 	height: 33.3333%;
+	background-repeat:no-repeat;
+	background-size: 100% 100%;
+}
+.backg{
+	position: absolute;
+	/*left: 0%;*/
+	/*top:0%;*/
+	z-index: -100;
+	width: 100%!important;
+	height: 33.3333%!important;
+}
+.fix-size{
+	width: 100%!important;
+	height: 100%!important;
 }
