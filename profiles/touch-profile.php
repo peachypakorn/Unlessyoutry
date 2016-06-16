@@ -425,7 +425,7 @@ $( window ).scroll(function() {
 
             for(i = 0; i < 3; i++)gal[i].display ="none";
             for(i = 0; i < 3; i++)start(i,i);
-  
+        gal[t-1].style.backgroundImage = "none";
         setTimeout(function(){ showSlides(1,0,1);},4000);
         setTimeout(function(){ showSlides(5,0,2);},5000);
         setTimeout(function(){ showSlides(9,0,3);},6000);
