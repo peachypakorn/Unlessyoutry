@@ -38,4 +38,6 @@
 .gal{
 	width: 100%;
 	overflow: hidden;
+	top:0.0001%;
+	height: 33.3333%;
 }

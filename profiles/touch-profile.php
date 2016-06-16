@@ -191,7 +191,7 @@ $( window ).scroll(function() {
                 <img  src="../img/profile-com/touch-profile/p5.jpg" alt="phumConcert">
               </div>
               <div class="grow gal bw slideUp " id = "pic1">
-                <img  src="../img/profile-com/touch-profile/p5.jpg" alt="phumConcert">
+                <img  src="../img/profile-com/touch-profile/p9.jpg" alt="phumConcert">
               </div>
         </div>
 
