@@ -233,6 +233,17 @@ $( window ).scroll(function() {
         </div>
 
     </div>
+
+    <div class ="content" style = "background:black" >
+        <div class = "div40" style = "background:white">
+            <div class="bg"></div>
+            <img id="chat-log"  src="../img/profile-com/touch-profile/chat.png" alt="infomation">   
+            <br><br><br>
+        </div>
+        <div class = "div20">
+            <img id="friend-list"  src="../img/profile-com/touch-profile/friend-list.png" alt="infomation">
+        </div>
+    </div>
   
     <script>
      $("html, body").animate({ scrollTop: 0 }, "slow");
@@ -253,7 +264,7 @@ $( window ).scroll(function() {
         setTimeout(function(){ showSlides(5,0,2);},5000);
         setTimeout(function(){ showSlides(9,0,3);},6000);
         var content = document.getElementsByClassName("content");
-        content[1].style.display = "none";
+        content[0].style.display = "none";
 
         function sshows(n){
           var pos = n;
@@ -295,7 +306,7 @@ $( window ).scroll(function() {
           }
            setTimeout(function(){ gal[t-1].style.backgroundImage = imgPath[n-1];},3000);
           slides[n-1].style.display = "block";
-          document.getElementById("story-place").textContent =t;
+          // document.getElementById("story-place").textContent =t;
           var send = n;
           timer = setTimeout(function(){showSlides(n += 1,send, t)}, 6000+t*534+n*100);
           

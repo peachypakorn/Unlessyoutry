@@ -56,3 +56,14 @@
 	width: 100%!important;
 	height: 100%!important;
 }
+
+#chat-log{
+	position: fixed;
+	left: 40%;
+	width: 41.1%;
+	height: 97%;
+}
+#friend-list{
+	width: 100%;
+	
+}
