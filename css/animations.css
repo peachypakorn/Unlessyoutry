@@ -94,6 +94,8 @@ slideUp
 	visibility: visible !important;			
 }
 
+
+
 @keyframes slideUp {
 	0% {
 		transform: translateY(100%);

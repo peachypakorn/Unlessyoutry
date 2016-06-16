@@ -184,7 +184,7 @@ $( window ).scroll(function() {
             <br><br><br>
         </div>
          <div class = "div20">
-              <div class="grow-n gal bw slideUp " id = "pic1">
+              <div class="grow-n gal bw slideUp2 " id = "pic1">
                   <!-- <img class ="backg" src="../img/profile-com/touch-profile/p1.jpg"> -->
                   <div class="mySlides move fix-size">
                       <img  src="../img/profile-com/touch-profile/p1.jpg" alt="touch1">
@@ -199,7 +199,7 @@ $( window ).scroll(function() {
                       <img  src="../img/profile-com/touch-profile/p4.jpg" alt="touch1">
                   </div>
               </div>
-              <div class="grow-n gal bw slideUp " id = "pic2">
+              <div class="grow-n gal bw slideUp2 " id = "pic2">
                   <!-- <img class ="backg" src="../img/profile-com/touch-profile/p1.jpg"> -->
                   <div class="mySlides move fix-size">
                       <img  src="../img/profile-com/touch-profile/p5.jpg" alt="touch1">
@@ -214,7 +214,7 @@ $( window ).scroll(function() {
                       <img  src="../img/profile-com/touch-profile/p8.jpg" alt="touch1">
                   </div>
               </div>
-              <div class="grow-n gal bw slideUp " id = "pic3">
+              <div class="grow-n gal bw slideUp2 " id = "pic3">
                   <!-- <img class ="backg" src="../img/profile-com/touch-profile/p1.jpg"> -->
                   <div class="mySlides move fix-size">
                       <img  src="../img/profile-com/touch-profile/p9.jpg" alt="touch1">
@@ -245,12 +245,26 @@ $( window ).scroll(function() {
         var slideIndex =0;
         var bg ;
         var gal = document.getElementsByClassName("gal");
-        showSlides(1,0,1);
-        // showSlides(5,0,2)
-        setTimeout(function(){ showSlides(5,0,2);},1000);
-        setTimeout(function(){ showSlides(9,0,3);},2000);
+        debugger;
+        for(i = 0; i < 3; i++)gal[i].display ="none";
+        for(i = 0; i < 3; i++)start(i,i);
+  
+        setTimeout(function(){ showSlides(1,0,1);},4000);
+        setTimeout(function(){ showSlides(5,0,2);},5000);
+        setTimeout(function(){ showSlides(9,0,3);},6000);
         var content = document.getElementsByClassName("content");
         content[1].style.display = "none";
+
+        function sshows(n){
+          var pos = n;
+          // alert(n + " " + pos);
+          gal[pos].style.display = "block"; 
+
+                  }
+        function start(n,m){
+          setTimeout(function(){sshows(numpic=n);},m*900);
+                          }
+
 
         function showSlides(n,b,t) {
         var imgPath = new Array(
