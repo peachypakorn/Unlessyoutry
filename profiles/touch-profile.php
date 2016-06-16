@@ -246,13 +246,21 @@ $( window ).scroll(function() {
     <div class ="content" style = "background:black" >
         <div class = "div40" style = "background:white">
             <p id = "ref">REFERECNES</p>
-            <img id="pos-ref"  src="../img/profile-com/touch-profile/pos-ref.png" alt="infomation">   
-            <img id="neg-ref"  src="../img/profile-com/touch-profile/neg-ref.png" alt="infomation">   
+            <img id="pos-ref" class="pointer"  src="../img/profile-com/touch-profile/pos-ref.png" alt="infomation" onclick ="showRef(0);">   
+            <img id="neg-ref" class = "pointer" src="../img/profile-com/touch-profile/neg-ref.png" alt="infomation" onclick ="showRef(1);">   
             <img id="ref-info"  src="../img/profile-com/touch-profile/ref.png" alt="infomation">   
             <br><br><br>
         </div>
         <div class = "div20">
-            <img id="friend-list"  src="../img/profile-com/touch-profile/friend-list.png" alt="infomation">
+              <div class="grow-n pic-ref bw slideUp " id = "pic1">
+                 <img  src="../img/homePic/Cindy.jpg" alt="touch1">
+              </div>
+               <div class="grow-n pic-ref bw slideUp3 " id = "pic1">
+                 <img  src="../img/homePic/Nat.jpg" alt="touch1">
+              </div>
+               <div class="grow-n pic-ref bw slideUp4 " id = "pic1">
+                 <img  src="../img/homePic/Sun.jpg" alt="touch1">
+              </div>
         </div>
     </div>
     <div class ="content" style = "background:black" >
@@ -425,7 +433,7 @@ $( window ).scroll(function() {
 
             for(i = 0; i < 3; i++)gal[i].display ="none";
             for(i = 0; i < 3; i++)start(i,i);
-        gal[t-1].style.backgroundImage = "none";
+        // gal[t-1].style.backgroundImage = "none";
         setTimeout(function(){ showSlides(1,0,1);},4000);
         setTimeout(function(){ showSlides(5,0,2);},5000);
         setTimeout(function(){ showSlides(9,0,3);},6000);
@@ -452,14 +460,7 @@ $( window ).scroll(function() {
              $("#photo-icon").css({
           "-webkit-filter": "grayscale(100%) brightness(200%)",
               });
-          //    for (i = 0; i < pics.length; i++) {
-          //     pics[i].style.display = "none"; 
-          //         }
-          //   for (i = 0; i < pics.length; i++) {
-          //     doshow(i,i);
-          //         pics[i].style.WebkitAnimation = "slideUp 0.7s 1";
-          // pics[i].style.animation = "slideUp 0.7s 1";
-          //     }
+
           }
           else if(n==2){
              content[0].style.display = "none";
@@ -482,14 +483,7 @@ $( window ).scroll(function() {
              $("#photo-icon").css({
           "-webkit-filter": "grayscale(100%) brightness(200%)",
               });
-          //    for (i = 0; i < pics.length; i++) {
-          //     pics[i].style.display = "none"; 
-          //         }
-          //   for (i = 0; i < pics.length; i++) {
-          //     doshow(i,i);
-          //         pics[i].style.WebkitAnimation = "slideUp 0.7s 1";
-          // pics[i].style.animation = "slideUp 0.7s 1";
-          //     }
+
           }
           else if(n==3){
              content[0].style.display = "none";
@@ -521,6 +515,30 @@ $( window ).scroll(function() {
           pics[i].style.animation = "slideUp 0.7s 1";
               }
           }
+        }
+
+        function showRef(n){
+            if(n==0){
+                document.getElementById("ref-info").style.opacity = 1;
+                // $("#ref-info").;
+                $("#pos-ref").css({
+                  "-webkit-filter": "grayscale(0%) brightness(100%)",
+                });
+                $("#neg-ref").css({
+                  "-webkit-filter": "grayscale(100%) brightness(0%)",
+                });
+              }
+            else {
+                document.getElementById("ref-info").style.opacity = 0;
+                // $("#ref-info").hide();
+                $("#pos-ref").css({
+                  "-webkit-filter": "grayscale(100%) brightness(0%)",
+                });
+                $("#neg-ref").css({
+                  "-webkit-filter": "grayscale(0%) brightness(100%)",
+                });
+            
+            }
         }
        
     </script>

@@ -55,7 +55,7 @@
 	height: 33.3333%;
 	background-repeat:no-repeat;
 	background-size: 100% 100%;
-	display: none;
+	/*display: none;*/
 }
 .backg{
 	position: absolute;
@@ -101,6 +101,9 @@
 	height: 2.5%;
 	margin-top: -3%;
 	margin-left: 7%;
+	/*-webkit-filter: grayscale(0%) brightness(100%)*/
+	 -webkit-transition: all 0.5s ease;
+    		transition: all 0.5s ease; 
 }
 
 #neg-ref{
@@ -108,4 +111,23 @@
 	height: 2.5%;
 	margin-top: -3%;
 	margin-left: 30%;
+	-webkit-filter: grayscale(100%) brightness(0%);
+	 -webkit-transition: all 0.5s ease;
+    		transition: all 0.5s ease; 
+}
+#pos-ref:hover{
+-webkit-filter: grayscale(0%) brightness(100%)!important;
+transform: scale(1.02);
+}
+#neg-ref:hover{
+-webkit-filter: grayscale(0%) brightness(100%)!important;
+transform: scale(1.02);
+}
+.pic-ref{
+	width: 100%;
+	overflow: hidden;
+	top:0.0001%;
+	height: 33.3333%;
+	background-repeat:no-repeat;
+	background-size: 100% 100%;
 }
