@@ -58,7 +58,10 @@ video#landinglogo{
 p {
   position: absolute;
   	top: 28%;
-	left: 33%;
+	left: 50%;
+  text-align: center;
+  margin-right: -50%;
+  transform: translate(-50%, 0);
   color: white; 
   font-family: 'GothamMed';
   font-size: 15px;

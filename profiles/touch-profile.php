@@ -80,12 +80,15 @@ $(document).ready(function(){
     });
 
         $(".info-icon").hover(function(){
-          $(this).css({
-            "-webkit-filter": "grayscale(0%) brightness(100%)",
-          });
-          $(".friend-icon").css({
+          $("chat-icon").css({
             "-webkit-filter": "grayscale(100%) brightness(200%)",
           });
+          $(".ref-icon").css({
+            "-webkit-filter": "grayscale(100%) brightness(200%)",
+          });
+          $(".photo-icon").css({
+            "-webkit-filter": "grayscale(100%) brightness(200%)",
+          });          
           }, function(){
             if(page==0){
           $(this).css({
@@ -105,57 +108,7 @@ $(document).ready(function(){
           }
           });
 
-          $(".friend-icon").hover(function(){
-          $(".info-icon").css({
-            "-webkit-filter": "grayscale(100%) brightness(200%)",
-          });
-          $(".friend-icon").css({
-            "-webkit-filter": "grayscale(0%) brightness(100%)",
-          });
-          }, function(){
-            if(page==0){
-          $(".info-icon").css({
-            "-webkit-filter": "grayscale(0%) brightness(100%)",
-          });
-          $(".friend-icon").css({
-            "-webkit-filter": "grayscale(100%) brightness(200%)",
-          });
-          }
-          else{
-           $(".info-icon").css({
-            "-webkit-filter": "grayscale(100%) brightness(200%)",
-          });
-          $(".friend-icon").css({
-            "-webkit-filter": "grayscale(0%) brightness(100%)",
-          }); 
-          }
-          });
 
-      $(".link-icon").hover(function(){
-          $(".info-icon").css({
-            "-webkit-filter": "grayscale(100%) brightness(200%)",
-          });
-          $(".friend-icon").css({
-            "-webkit-filter": "grayscale(100%) brightness(200%)",
-          });
-          }, function(){
-            if(page==0){
-          $(".info-icon").css({
-            "-webkit-filter": "grayscale(0%) brightness(100%)",
-          });
-          $(".friend-icon").css({
-            "-webkit-filter": "grayscale(100%) brightness(200%)",
-          });
-          }
-          else{
-           $(".info-icon").css({
-            "-webkit-filter": "grayscale(100%) brightness(200%)",
-          });
-          $(".friend-icon").css({
-            "-webkit-filter": "grayscale(0%) brightness(100%)",
-          }); 
-          }
-          });
     // });
   });
 $( window ).scroll(function() {
@@ -177,6 +130,7 @@ $( window ).scroll(function() {
           <div class = "clear-bg"></div>
           <img id= "menu"class="yellow pointer" src="../img/icon/Menu.png" alt="menu">
           <img id = "profile" class="yellow" src="../img/icon/Profile.png" alt="prfile">
+
           <a href="../story.php">
             <p  id = "home">HOME</p>
           </a>
@@ -186,29 +140,48 @@ $( window ).scroll(function() {
           <a href="../idea.php">
             <p  id = "idea">IDEAS</p>
           </a>
-          <img id= "menu"class="yellow pointer" src="../img/icon/Menu.png" alt="menu">
-          <a class = "p pointer">
-              <img id= "profile-pic-p" src="../img/profile-com/touch-profile/Profile.jpg" alt="menu">
-          </a>
+      
+          <img id= "profile-pic-p" src="../img/profile-com/touch-profile/Profile.jpg" alt="menu">
           <p  id = "story-place" style = "margin-top:52%">THEERAT<br>WATTANAKIJRUNGROJ</p>
-          <img class= "yellow info-icon pointer" src="../img/icon/Info.png" alt="info" onclick ="showDisplay(0)">
-              <p  class = "info-t">INFORMATION</p>
-          <img class= "yellow friend-icon pointer" src="../img/icon/Friends.png" alt="friend"  onclick ="showDisplay(1)">
-              <p  class = " friend-t">FIND FRIENDS</p>
-          <img class= "yellow link-icon pointer" src="../img/icon/Link.png" alt="link">
-              <p  class = " link-t ">APPLY</p>
-          <p id = "act-text">SO MANY THINGS ARE WAITING FOR YOU TO TRY<br>WE ARE UPDATING THE ACTIVITIES FROM SEVERAL</p>
-         
-          <div class = "s pointer">
-            <img id= "share-icon" src="../img/icon/Share.png" alt="share">
-            <p  id = "cont-share">SHARE THIS STORY</p>
+          <div class = "icons">
+              <img class= "yellow icon center pointer" id= "me-icon" src="../img/icon/Me.png" alt="info" onclick ="showDisplay(0)">
+              <p  class = "icon-text">OVERALL</p>
           </div>
+          <div class = "icons">
+              <img class= "yellow icon center pointer" id= "chat-icon" src="../img/icon/Chat.png" alt="chat"  onclick ="showDisplay(1)">
+              <p  class = " icon-text">CHAT</p>
+          </div>
+          <div class = "icons">
+              <img class= "yellow icon center pointer" id= "ref-icon" src="../img/icon/Ref.png" alt="ref" onclick ="showDisplay(2)">
+              <p  class = " icon-text ">REFERENCE</p>
+          </div>
+          <div class = "icons">
+              <img class= "yellow icon center pointer" id= "photo-icon" src="../img/icon/Photos.png" alt="photo" onclick ="showDisplay(3)">
+              <p  class = " icon-text ">GALLERY</p>  
+          </div>
+          
+          <p id = "act-text" style = "top:86%">SO MANY THINGS ARE WAITING FOR YOU TO TRY<br>WE ARE UPDATING THE ACTIVITIES FROM SEVERAL<br>SO MANY THINGS ARE WAITING FOR YOU TO TRY</p>
+         
+          <p class = "center" id = "my-con">MY CONTACTS</p>  
+      <a href ="https://www.facebook.com/unlessyoutry/" target="_blank">
+        <img id="fb" class="yellow" src="../img/icon/Fb.png" alt="fb">
+      </a>
+      <a href="https://www.instagram.com/unlessyoutry.campaign/" target="_blank">
+        <img id="ig" class="yellow" src="../img/icon/Ig.png" alt="ig">
+      </a>
+      <a href="https://twitter.com/UnlessYouTryCP/" target="_blank">
+        <img id="tw" class="yellow" src="../img/icon/Tw.png" alt="tw">
+      </a>
         </div>
     </div>
 
   
     <script>
      $("html, body").animate({ scrollTop: 0 }, "slow");
+     $("#profile").css({
+                   "-webkit-filter": "grayscale(0%) brightness(100%)"
+              });
+         
         var slideIndex = 1;
         var vid = document.getElementById("story-vid");
         // var info = document.getElementsByClassName("info-icon");
