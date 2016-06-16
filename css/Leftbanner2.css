@@ -385,7 +385,11 @@ color: #FFAA21;
 	opacity: 0;
 
 }
-
+.center {
+	left :50%;
+	margin-right: -50%;
+	transform: translate(-50%, 0%);
+}
 /*.info-icon:hover{
 	-webkit-filter: grayscale(0%) brightness(100%);
 	transform: scale(1.05);

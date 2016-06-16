@@ -120,7 +120,7 @@
        			$("p#act").css("color","#FFAA21");
 			</script>
 			<img id="logo2" src="./img/header/Activities.png" alt="logoW">
-			<p id = "sen1-act">JANUARY - APRILL 2016</p>
+			<p id = "sen1-act" class = "center">JANUARY - APRILL 2016</p>
 			<p id = "sen2-act">SO MANY THINGS ARE WAITING FOR YOU TO TRY<br>WE ARE UPDATING THE ACTIVITIES FROM SEVERAL<br>ORGANIZATIONS EVERY QUARTER</p>
 			<div class = "a pointer">
 				<img id="add-icon" src="./img/icon/Add.png" alt="video">
@@ -163,15 +163,7 @@
 					<p class = "text3" ><br><br><br>05.01.16</p>
 			</div>
 		</a>
-		<a href="">
-			<div class="grow pic bw slideUp" id = "pic2">
-				<img  src="./img/actPic/Act2.jpg" alt="Cindy">
-				<div class = "text"></div>
-				<div class = "cata" style = "background:#4EBC90" ></div>
-					<p class = "text2" >HUAY<br>MHEE<br>CAMP</p>
-					<p class = "text3" ><br><br><br>7-13.03.16</p>
-			</div>
-		<a>							
+	
 		<a href="./activities/iceride-act.php">
 			<div class="grow pic bw slideUp" id = "pic3">
 				<img  src="./img/actPic/Act3.jpg" alt="Bonus">
@@ -190,61 +182,63 @@
 					<p class = "text3" ><br><br><br>17-21.01.16</p>
 			</div>
 		</a>
-		<a href="touch-story.php">
-			<div class="grow pic bw slideUp" id = "pic5">
+
+			<div class="grow pic bw slideUp pointer" id = "pic2">
+				<img  src="./img/actPic/Act2.jpg" alt="Cindy">
+				<div class = "text"></div>
+				<div class = "cata" style = "background:#4EBC90" ></div>
+					<p class = "text2" >HUAY<br>MHEE<br>CAMP</p>
+					<p class = "text3" ><br><br><br>7-13.03.16</p>
+			</div>
+		
+			<div class="grow pic bw slideUp pointer" id = "pic5">
 				<img  src="./img/actPic/Act5.jpg" alt="touch">
 				<div class = "text"></div>
 				<div class = "cata" style = "background:#F2AA4E" ></div>
 					<p class = "text2" > <br>MOKUJU<br>TREKKING</p>
 					<p class = "text3" ><br><br><br>22-26.01.16</p>
 			</div>						
-		</a>
-		<a href="sun-story.php">
-			<div class="grow pic bw slideUp" id = "pic6">
+
+			<div class="grow pic bw slideUp pointer" id = "pic6">
 				<img  src="./img/actPic/Act6.jpg" alt="sunActing">
 				<div class = "text"></div>
 				<div class = "cata" style = "background:#ECE4C2" ></div>
 					<p class = "text2" >TEACH<br>FOR<br>THAI</p>
 					<p class = "text3" ><br><br><br>2015-2016</p>
 			</div>
-		</a>
-		<a href="pep-story.php">
-			<div class="grow pic bw slideUp" id = "pic7">
+
+			<div class="grow pic bw slideUp pointer" id = "pic7">
 				<img  src="./img/actPic/Act7.jpg" alt="pep">
 				<div class = "text"></div>
 				<div class = "cata" style = "background:#274763" ></div>
 					<p class = "text2" >IMAGINE<br>FOR A<br>CHANGE</p>
 					<p class = "text3" ><br><br><br>5-7.04.16</p>
 			</div>
-		</a>
-		<a href="gino-story.php">	
-			<div class="grow pic bw slideUp" id = "pic8">
+
+			<div class="grow pic bw slideUp pointer" id = "pic8">
 				<img  src="./img/actPic/Act8.jpg" alt="gino Russia">
 				<div class = "text"></div>
 				<div class = "cata" style = "background:#1A9AAF" ></div>
 					<p class = "text2" >LITTLE<br>THREE<br>FRIENDS</p>
 					<p class = "text3" ><br><br><br>17.03.16</p>
 			</div>						
-		</a>
-		<a href="dew-story.php">
-			<div class="grow pic bw slideUp" id = "pic9">
+
+			<div class="grow pic bw slideUp pointer" id = "pic9">
 				<img  src="./img/actPic/Act9.jpg" alt="dewdewdew">
 				<div class = "text"></div>
 				<div class = "cata" style = "background:#1A9AAF" ></div>
 					<p class = "text2" >BKK<br>DESIGN<br>TRAINING</p>
 					<p class = "text3" ><br><br><br>1.02.16</p>
 			</div>
-		</a>
-		<a href="oak-story.php">
-			<div class="grow pic bw slideUp" id = "pic10">
+
+			<div class="grow pic bw slideUp pointer" id = "pic10">
 				<img  src="./img/actPic/Act10.jpg" alt="camping">
 				<div class = "text"></div>
 				<div class = "cata" style = "background:#4EBC90" ></div>
 					<p class = "text2" >PLANT<br>MAN<br>GROVE</p>
 					<p class = "text3" ><br><br><br>14.04.16</p>
 			</div>
-		</a>
-	
+
 	</div>
 
 <!-- Video Modal Part -->

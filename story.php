@@ -221,15 +221,6 @@
 					<p class = "text3" ><br><br><br>1-31.01.16</p>
 			</div>
 		</a>
-		<a href="./stories/pep-story.php">
-			<div class="grow pic bw slideUp" id = "pic7">
-				<img  src="./img/homePic/PEP.jpg" alt="pep">
-				<div class = "text"></div>
-				<div class = "cata" style = "background:#E45641" ></div>
-					<p class = "text2" >KOH<br>TAO<br>DIVING</p>
-					<p class = "text3" ><br><br><br>17.05.16</p>
-			</div>
-		</a>
 		<a href="./stories/gino-story.php">	
 			<div class="grow pic bw slideUp" id = "pic8">
 				<img  src="./img/homePic/gino.jpg" alt="gino Russia">
@@ -248,24 +239,31 @@
 					<p class = "text3" ><br><br><br>24-28.12.15</p>
 			</div>
 		</a>
-		<a href="">
-			<div class="grow pic bw slideUp" id = "pic10">
+
+			<div class="grow pic bw slideUp pointer" id = "pic7">
+				<img  src="./img/homePic/PEP.jpg" alt="pep">
+				<div class = "text"></div>
+				<div class = "cata" style = "background:#E45641" ></div>
+					<p class = "text2" >KOH<br>TAO<br>DIVING</p>
+					<p class = "text3" ><br><br><br>17.05.16</p>
+			</div>
+
+			<div class="grow pic bw slideUp pointer" id = "pic10">
 				<img  src="./img/homePic/Oak.jpg" alt="camping">
 				<div class = "text"></div>
 				<div class = "cata" style = "background:#274763" ></div>
 					<p class = "text2" >AFS<br>MEDIA<br>MAN</p>
 					<p class = "text3" ><br><br><br>21-24.04.15</p>
 			</div>
-		</a>
-		<a href="">
-			<div class="grow pic bw slideUp" id = "pic11">
+		
+			<div class="grow pic bw slideUp pointer" id = "pic11">
 				<img  src="./img/homePic/Nat.jpg" alt="TFT">
 				<div class = "text"></div>
 				<div class = "cata" style = "background:#ECE4C2" ></div>
 					<p class = "text2" >TEACH<br>FOR<br>THAI</p>
 					<p class = "text3" ><br><br><br>21-24.04.15</p>
 			</div>
-		</a>	
+		
 
 		<script>
 		var pics = document.getElementsByClassName("pic");

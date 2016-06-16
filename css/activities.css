@@ -35,21 +35,27 @@
 	font-family: 'GothamMed';
 	font-size: 20px;
 	margin-top: 30%;
-	left: 27%;
+	left :50%;
+	margin-right: -50%;
+	transform: translate(-50%, 0%);
 }
  #sen2-act{
 	position: absolute;
 	/*font-family: 'GothamMed';*/
 	/*font-size: 20px;*/
 	margin-top: 37%;
-	left: 23%;
+	left :50%;
+	margin-right: -50%;
+	transform: translate(-50%, 0%);
  }
   #sen3-act{
 	position: absolute;
 	/*font-family: 'GothamMed';*/
 	font-size: 9.5px;
 	top: 90.5%;
-	left: 27%;
+	left :50%;
+	margin-right: -50%;
+	transform: translate(-50%, 0%);
 	opacity: 0;
  }
 
@@ -66,7 +72,9 @@
 	position: absolute;
 	font-family: 'GothamMed';
 	top: 88%;
-	left: 42%;
+		left :50%;
+	margin-right: -50%;
+	transform: translate(-50%, 0%);
 	color: #FFAA21;
 	-webkit-filter: grayscale(100%) brightness(200%);
 }
@@ -82,6 +90,7 @@ transform: scale(1.05);
 .a:hover #add{
 	-webkit-filter: grayscale(0%) brightness(100%);
 	transform: scale(1.02);
+	transform: translate(-50%, 0%);
 	/*color: #FFAA21;*/
 }
 .a:hover #sen3-act{

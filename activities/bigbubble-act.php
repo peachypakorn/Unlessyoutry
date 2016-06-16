@@ -189,11 +189,11 @@ $( window ).scroll(function() {
           <img id= "menu"class="yellow pointer" src="../img/icon/Menu.png" alt="menu">
           <img id="act-logo" src="../img/header/Activities.png " style = "opacity:0.7" alt="act-logo">
           <img id="twoline-topic" src="../img/act-com/bigbubble-act/Topic.png" alt="colorrun">
-          <p  id = "story-date">28.02.2016</p>
-          <p  id = "story-place">BANGKOK</p>
+          <p  class = "twoline-date">17-21.01.2016</p>
+          <p  class = "twoline-place">KOR TAO,THAILAND</p>
           <a class = "p pointer">
               <img id= "profile-pic" src="../img/act-com/bigbubble-act/Profile.jpg" alt="menu">
-              <p  id = "story-name" >GREENPEACE</p>
+              <p  id = "story-name" >BIGBUBBLE</p>
           </a>
           <img class= "yellow info-icon pointer" src="../img/icon/Info.png" alt="info" onclick ="showDisplay(0)">
               <p  class = "info-t">INFORMATION</p>
@@ -317,7 +317,7 @@ $( window ).scroll(function() {
     <script>
      $("html, body").animate({ scrollTop: 0 }, "slow");
         var slideIndex = 1;
-        var vid = document.getElementById("story-vid");
+        // var vid = document.getElementById("story-vid");
         // var info = document.getElementsByClassName("info-icon");
         // var friend = document.getElementsByClassName("friend-icons");
         $(".info-icon").css({
@@ -467,7 +467,7 @@ $( window ).scroll(function() {
           else if(n==1){
              content[0].style.display = "none";
              content[1].style.display = "block";
-             vid.pause();
+             // vid.pause();
              clearTimeout(timer);
              $(".friend-icon").css({
           "-webkit-filter": "grayscale(0%) brightness(100%)",
