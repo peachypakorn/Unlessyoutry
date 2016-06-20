@@ -104,9 +104,11 @@ $( window ).scroll(function() {
                 <img src="../img/story-com/phum-story/pic1.jpg" style="width:100%">
             </div>
             <div class="mySlides move ">
-                <video loop poster controls style="width:100%" id="story-vid" >
-                    <source src="../img/story-com/phum-story/video.mp4" type= "video/mp4">
-                </video>
+                
+                    <video loop poster controls id="story-vid" style="width:100%" >
+                        <source src="../img/story-com/phum-story/video.mp4"  type= "video/mp4">
+                    </video>
+             
             </div>
             <div class="mySlides move">
                 <img src="../img/story-com/phum-story/pic3.jpg" style="width:100%">
@@ -176,7 +178,10 @@ $( window ).scroll(function() {
           }
           // $("#slideshow-container").css({"background-image":" url('../img/story-com/phum-story/ex1.png');"});
            // alert(document.getElementById("slideshow-container").style.backgroundImage);
-          if(b==0)document.getElementById("slideshow-container").style.backgroundColor = "black";
+          if(b==0){
+            document.getElementById("slideshow-container").style.backgroundColor = "black";
+            document.getElementById("story-vid").style.marginBottom = "-5px";
+          }
           if(b==1)document.getElementById("slideshow-container").style.backgroundImage = "url('../img/story-com/phum-story/pic1.jpg')";
           if(b==2)document.getElementById("slideshow-container").style.backgroundImage = "url('../img/story-com/phum-story/pic2.png')";
           if(b==3)document.getElementById("slideshow-container").style.backgroundImage = "url('../img/story-com/phum-story/pic3.jpg')";
