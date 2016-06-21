@@ -56,7 +56,7 @@ $(document).ready(function(){
 
     });
 
-    $(".pic").hover(function(){
+    $(".f-list").hover(function(){
           $(this).find(".friend-info").animate({
               left: '0%',
               opacity: '1',
@@ -66,6 +66,7 @@ $(document).ready(function(){
           });
           $(this).find(".pro-pic").css({
             "transform": "scale(1.05)",
+            "-webkit-filter": "grayscale(0%) brightness(100%)",
           });
           }, function(){
           $(this).find(".friend-info").animate({
@@ -77,6 +78,7 @@ $(document).ready(function(){
           });
           $(this).find(".pro-pic").css({
             "transform": "scale(1.00)",
+            "-webkit-filter": "grayscale(100%)"
           });
     });
 
@@ -232,17 +234,23 @@ $( window ).scroll(function() {
         </div>
     </div>
 
+    <!-- chat part -->
     <div class ="content" style = "background:black display:none" >
         <div class = "div40" style = "background:white">
-            <div class="bg"></div>
-            <img id="chat-log"  src="../img/profile-com/touch-profile/chat.png" alt="infomation">   
+          <!--   <div class="bg"></div> -->
+            <!-- <img id="chat-log"  src="../img/profile-com/touch-profile/chat.png" alt="infomation">    -->
             <br><br><br>
         </div>
         <div class = "div20">
-            <img id="friend-list"  src="../img/profile-com/touch-profile/friend-list.png" alt="infomation">
+      <div class=" f-list grow slideUp pointer" id = "pic1" onclick = "chat(0)">
+        <img class=" bw pro-pic" src="../img/friend-pic/friend1.jpg" alt="friend1">
+        <div class = "friend-info"><br><br><br>DOJI</div>
+        <div class = "online"></div>
+      </div>
         </div>
     </div>
   
+  <!-- reference -->
     <div class ="content" style = "background:black display:none" >
         <div class = "div40" style = "background:white">
             <p id = "ref">REFERECNES</p>
@@ -263,6 +271,8 @@ $( window ).scroll(function() {
               </div>
         </div>
     </div>
+
+    <!-- gallery -->
     <div class ="content" style = "background:black; display:none" >
       <div class=" pic grow bw slideUp pointer" id = "pic1">
         <img class="pro-pic" src="../img/profile-com/touch-profile/p1.jpg" alt="friend1">
@@ -336,8 +346,8 @@ $( window ).scroll(function() {
         gal[2].style.WebkitAnimation = "fade 3s 1";
         gal[2].style.animation = "fade 3s 1";
         for(i = 0; i < 4; i++){
-          content[i].style.WebkitAnimation = "fadein 2s 1";
-          content[i].style.animation = "fadein 2s 1";
+          if(i!=1)content[i].style.WebkitAnimation = "fadein 2s 1";
+          if(i!=1)content[i].style.animation = "fadein 2s 1";
         }
         setAnimate();     
         setTimeout(function(){ showSlides(1,0,1);},1000);
