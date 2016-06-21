@@ -320,6 +320,8 @@ $( window ).scroll(function() {
         var bg ;
         var first =true;
         var mover = document.getElementsByClassName("move2");
+        document.getElementById("ref-info").style.animation = "fadein 2s 1";
+        document.getElementById("ref-info").style.WebkitAnimation = "fadein 2s 1";
         // debugger;
         var gal = document.getElementsByClassName("gal");
         var content = document.getElementsByClassName("content");
@@ -580,8 +582,10 @@ $( window ).scroll(function() {
 
         function showRef(n){
             if(n==0){
-                document.getElementById("ref-info").style.opacity = 1;
-                // $("#ref-info").;
+                // document.getElementById("ref-info").style.opacity = 1;
+                $("#ref-info").animate({
+                  "opacity":"1"
+                },700);
                 $("#pos-ref").css({
                   "-webkit-filter": "grayscale(0%) brightness(100%)",
                 });
@@ -590,8 +594,11 @@ $( window ).scroll(function() {
                 });
               }
             else {
-                document.getElementById("ref-info").style.opacity = 0;
-                // $("#ref-info").hide();
+                // document.getElementById("ref-info").style.opacity = 0;
+                // document.getElementById("ref-info").style.display = "none";
+                $("#ref-info").animate({
+                  "opacity":"0"
+                },300);
                 $("#pos-ref").css({
                   "-webkit-filter": "grayscale(100%) brightness(0%)",
                 });

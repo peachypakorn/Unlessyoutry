@@ -98,7 +98,8 @@
 
 #pos-ref{
 	position: absolute;
-	height: 2.5%;
+	height: 2.5%!important;
+
 	margin-top: -3%;
 	margin-left: 7%;
 	/*-webkit-filter: grayscale(0%) brightness(100%)*/
