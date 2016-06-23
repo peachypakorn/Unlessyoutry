@@ -172,3 +172,42 @@ top: 60%;
 	border-radius: 50px;
 
 }
+
+#chat-p{
+	position: relative;
+	height: 20%;
+	background-color: #DFDFDF;
+}
+
+#chat-pic{
+	/*position: absolute;*/
+	margin: 2%;
+	width: 19%;
+	height: auto;
+}
+
+#chat-name{
+	position: absolute;
+	top:20%;
+	left: 23%;
+	font-family: "GothamBold";
+	font-size: 16px;
+	color: black;
+}
+#vp{
+	position: absolute;
+	top:38%;
+	left: 23%;
+	/*font-family: "GothamBold";*/
+	font-size: 12px;
+	color: black;
+}
+#chat-content{
+	position: fixed;
+	background-color: white;
+	overflow: scroll;
+	overflow-x: hidden;
+	/*margin-right: -33.3%;*/
+	width: 41%!important;
+	height: 68%;
+}

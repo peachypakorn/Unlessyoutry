@@ -239,7 +239,17 @@ $( window ).scroll(function() {
         <div class = "div40" style = "background:white">
           <!--   <div class="bg"></div> -->
             <!-- <img id="chat-log"  src="../img/profile-com/touch-profile/chat.png" alt="infomation">    -->
-            <br><br><br>
+            <!-- <br><br><br> -->
+            <div id = "chat-p">
+              <img id="chat-pic" src="../img/friend-pic/friend1.jpg" alt="friend1">
+              <p id ="chat-name">DOJO NOPHNAN</p>
+              <p id ="vp">VIEW PROFILE</p>
+            </div>
+            <div id = "chat-content">
+
+            </div>
+            <form>
+            </form>
         </div>
         <div class = "div20">
       <div class=" f-list grow slideUp pointer" id = "pic1" onclick = "chat(0)">
