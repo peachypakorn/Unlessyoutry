@@ -233,7 +233,7 @@ $( window ).scroll(function() {
                       <form>
                         <textarea id="chatbox" ></textarea>
                       </form>
-                      <img class= "yellow send pointer" src="../img/icon/Link.png" alt="ref" onclick ="showDisplay(2)">
+                      <img class= "yellow send pointer" src="../img/icon/Link.png" alt="ref" onclick ="addtext()">
                 </div>
             </div>
 
@@ -313,7 +313,7 @@ $( window ).scroll(function() {
         <img class="pro-pic" src="../img/profile-com/touch-profile/p12.jpg" alt="friend1">
       </div>
     </div>
-
+    <script type="text/javascript" src="../js/addtext.js"></script>
     <script>
      $("html, body").animate({ scrollTop: 0 }, "slow");
      $("#profile").css({
