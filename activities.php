@@ -356,12 +356,12 @@
 				   			cat.style.width = "12%";
 				   		}
 				   		else if(n==3) {
-				   			picShow = new Array(4,5);
+				   			picShow = new Array(2,5);
 				   			cat = document.getElementById("cat3");
 				   			cat.style.width = "18.8%";
 				   		}
 				   		else if(n==4){
-				   			picShow = new Array(2,3,10);
+				   			picShow = new Array(4,3,10);
 				   			cat = document.getElementById("cat4");
 				   			cat.style.width = "18.4%";
 				   		} 

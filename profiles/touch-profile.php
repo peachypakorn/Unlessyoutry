@@ -82,34 +82,7 @@ $(document).ready(function(){
           });
     });
 
-        $(".info-icon").hover(function(){
-          $("chat-icon").css({
-            "-webkit-filter": "grayscale(100%) brightness(200%)",
-          });
-          $(".ref-icon").css({
-            "-webkit-filter": "grayscale(100%) brightness(200%)",
-          });
-          $(".photo-icon").css({
-            "-webkit-filter": "grayscale(100%) brightness(200%)",
-          });          
-          }, function(){
-            if(page==0){
-          $(this).css({
-            "-webkit-filter": "grayscale(0%) brightness(100%)",
-          });
-          $(".friend-icon").css({
-            "-webkit-filter": "grayscale(100%) brightness(200%)",
-          });
-          }
-          else{
-           $(this).css({
-            "-webkit-filter": "grayscale(100%) brightness(200%)",
-          });
-          $(".friend-icon").css({
-            "-webkit-filter": "grayscale(0%) brightness(100%)",
-          }); 
-          }
-          });
+       
 
 
     // });
@@ -125,7 +98,7 @@ $( window ).scroll(function() {
 });
 
 </script>
-
+<script src ="../js/profile_cursor.js"></script>
 <body>
     <div class = "left-banner">
         <div class = "wrap">
@@ -240,16 +213,23 @@ $( window ).scroll(function() {
           <!--   <div class="bg"></div> -->
             <!-- <img id="chat-log"  src="../img/profile-com/touch-profile/chat.png" alt="infomation">    -->
             <!-- <br><br><br> -->
-            <div id = "chat-p">
-              <img id="chat-pic" src="../img/friend-pic/friend1.jpg" alt="friend1">
-              <p id ="chat-name">DOJO NOPHNAN</p>
-              <p id ="vp">VIEW PROFILE</p>
+            <div id = "chat-com">
+                  <div id = "chat-p">
+                      <img id="chat-pic" src="../img/friend-pic/friend1.jpg" alt="friend1">
+                      <p id ="chat-name">DOJO NOPHNAN</p>
+                      <p id ="vp">VIEW PROFILE</p>
+                </div>
+                <div id = "chat-content">
+                </div>
+                <!-- <br>sss<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>sss<br> -->
+                <div id = "chattype">
+                      <form>
+                        <textarea id="chatbox" ></textarea>
+                      </form>
+                      <img class= "yellow send pointer" src="../img/icon/Link.png" alt="ref" onclick ="showDisplay(2)">
+                </div>
             </div>
-            <div id = "chat-content">
 
-            </div>
-            <form>
-            </form>
         </div>
         <div class = "div20">
       <div class=" f-list grow slideUp pointer" id = "pic1" onclick = "chat(0)">
@@ -347,7 +327,7 @@ $( window ).scroll(function() {
         var content = document.getElementsByClassName("content");
         for(i = 0; i < 4; i++)content[i].style.display = "none";
         for(i = 0; i < 3; i++)gal[i].display ="none";
-        content[0].style.display = "block";
+        content[1].style.display = "block";
         document.getElementsByClassName("bg")[0].style.display="block";
         gal[0].style.WebkitAnimation = "fade 1s 1";
         gal[0].style.animation = "fade 1s 1";
