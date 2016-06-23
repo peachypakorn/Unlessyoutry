@@ -220,8 +220,15 @@ $( window ).scroll(function() {
                       <p id ="vp">VIEW PROFILE</p>
                 </div>
                 <div id = "chat-content">
+                      <form>
+                        <div class = "chat-text">Hello, How are you?</div>
+                        <br>
+                        <div class = "chat-text">I would link to know you.อิอิ</div>
+                        <br>
+                        <div class = "chat-reply">I would link to know you.อิอิ</div>
+                      </form>
                 </div>
-                <!-- <br>sss<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>sss<br> -->
+                
                 <div id = "chattype">
                       <form>
                         <textarea id="chatbox" ></textarea>
@@ -232,11 +239,16 @@ $( window ).scroll(function() {
 
         </div>
         <div class = "div20">
-      <div class=" f-list grow slideUp pointer" id = "pic1" onclick = "chat(0)">
-        <img class=" bw pro-pic" src="../img/friend-pic/friend1.jpg" alt="friend1">
-        <div class = "friend-info"><br><br><br>DOJI</div>
-        <div class = "online"></div>
-      </div>
+            <div class=" f-list grow slideUp pointer" id = "fri1" onclick = "chat(0)">
+                <img class=" bw pro-pic" src="../img/friend-pic/friend1.jpg" alt="friend1">
+                <div class = "friend-info"><br><br>DOJI<br>NOPHNAN</div>
+                <div class = "online"></div>
+            </div>
+            <div class=" f-list grow slideUp pointer" id = "fri2" onclick = "chat(1)">
+                <img class=" bw pro-pic" src="../img/friend-pic/friend4.jpg" alt="friend4">
+                <div class = "friend-info"><br><br>PLOY<br>TANTANA</div>
+                <div class = "online"></div>
+            </div>
         </div>
     </div>
   

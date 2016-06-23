@@ -253,3 +253,23 @@ top: 60%;
 	bottom: 3.5%;
 	right: 20.5%;
 }
+
+.chat-text{
+	background-color: #DFDFDF;
+	display: inline-block;
+	position: relative;
+	padding: 10px;
+	margin: 10px;
+	margin-bottom:0px;
+	border-radius: 7px;
+}
+.chat-reply{
+	background-color: #FFAA21;
+	display: inline-block;
+	position: relative;
+	padding: 10px;
+	margin: 10px;
+	margin-bottom:0px;
+	border-radius: 7px;
+	float: right;
+}
