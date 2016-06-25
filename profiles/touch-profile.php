@@ -339,7 +339,7 @@ $( window ).scroll(function() {
         var content = document.getElementsByClassName("content");
         for(i = 0; i < 4; i++)content[i].style.display = "none";
         for(i = 0; i < 3; i++)gal[i].display ="none";
-        content[1].style.display = "block";
+        content[0].style.display = "block";
         document.getElementsByClassName("bg")[0].style.display="block";
         gal[0].style.WebkitAnimation = "fade 1s 1";
         gal[0].style.animation = "fade 1s 1";

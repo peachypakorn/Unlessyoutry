@@ -10,7 +10,7 @@ function addtext(){
 		var newReply = document.createElement('div');
 		var newline = document.createElement("div");
 		// newline.className = 'chat-reply';
-		newline.style.padding = "100px";
+		newline.style.padding = "0px";
 		newReply.className = 'chat-reply';
 		newReply.textContent = value;
 		// newline.textContent  = "";

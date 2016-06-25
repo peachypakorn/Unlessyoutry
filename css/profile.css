@@ -206,6 +206,7 @@ top: 60%;
 	position: fixed;
 	background-color: white;
 	width: 41%;
+	left:40%;
 	height: 100%;
 	/*border: 2px solid red;*/
 }
