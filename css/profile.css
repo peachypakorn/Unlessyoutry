@@ -221,9 +221,7 @@ top: 60%;
 	/*margin-right: -33.3%;*/
 
 }
-::-webkit-scrollbar { 
-    display: none; 
-}
+
 
 #chattype{
 	position: relative;

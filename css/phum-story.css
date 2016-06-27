@@ -133,14 +133,3 @@ p.twoline-place{
 	font-size: 18px;
 }
 
-  #act-text{
-	position: absolute;
-	/*font-family: 'GothamMed';*/
-	font-size: 9.5px;
-	top: 88.5%;
-	left :50%;
-	margin-right: -50%;
-	transform: translate(-50%, 0%);
-	text-align: center;
-	opacity: 1;
- }

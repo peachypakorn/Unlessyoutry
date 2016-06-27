@@ -79,84 +79,6 @@ $(document).ready(function(){
           });
     });
 
-        $(".info-icon").hover(function(){
-          $(this).css({
-            "-webkit-filter": "grayscale(0%) brightness(100%)",
-          });
-          $(".friend-icon").css({
-            "-webkit-filter": "grayscale(100%) brightness(200%)",
-          });
-          }, function(){
-            if(page==0){
-          $(this).css({
-            "-webkit-filter": "grayscale(0%) brightness(100%)",
-          });
-          $(".friend-icon").css({
-            "-webkit-filter": "grayscale(100%) brightness(200%)",
-          });
-          }
-          else{
-           $(this).css({
-            "-webkit-filter": "grayscale(100%) brightness(200%)",
-          });
-          $(".friend-icon").css({
-            "-webkit-filter": "grayscale(0%) brightness(100%)",
-          }); 
-          }
-          });
-
-          $(".friend-icon").hover(function(){
-          $(".info-icon").css({
-            "-webkit-filter": "grayscale(100%) brightness(200%)",
-          });
-          $(".friend-icon").css({
-            "-webkit-filter": "grayscale(0%) brightness(100%)",
-          });
-          }, function(){
-            if(page==0){
-          $(".info-icon").css({
-            "-webkit-filter": "grayscale(0%) brightness(100%)",
-          });
-          $(".friend-icon").css({
-            "-webkit-filter": "grayscale(100%) brightness(200%)",
-          });
-          }
-          else{
-           $(".info-icon").css({
-            "-webkit-filter": "grayscale(100%) brightness(200%)",
-          });
-          $(".friend-icon").css({
-            "-webkit-filter": "grayscale(0%) brightness(100%)",
-          }); 
-          }
-          });
-
-      $(".link-icon").hover(function(){
-          $(".info-icon").css({
-            "-webkit-filter": "grayscale(100%) brightness(200%)",
-          });
-          $(".friend-icon").css({
-            "-webkit-filter": "grayscale(100%) brightness(200%)",
-          });
-          }, function(){
-            if(page==0){
-          $(".info-icon").css({
-            "-webkit-filter": "grayscale(0%) brightness(100%)",
-          });
-          $(".friend-icon").css({
-            "-webkit-filter": "grayscale(100%) brightness(200%)",
-          });
-          }
-          else{
-           $(".info-icon").css({
-            "-webkit-filter": "grayscale(100%) brightness(200%)",
-          });
-          $(".friend-icon").css({
-            "-webkit-filter": "grayscale(0%) brightness(100%)",
-          }); 
-          }
-          });
-    // });
   });
 $( window ).scroll(function() {
     $( "#sct" ).animate({
@@ -169,7 +91,7 @@ $( window ).scroll(function() {
 });
 
 </script>
-
+<script src="../js/menu_act.js"></script>
 <body>
     <div class = "left-banner">
         <div class = "wrap">
@@ -201,7 +123,9 @@ $( window ).scroll(function() {
               <p  class = " friend-t">FIND FRIENDS</p>
           <img class= "yellow link-icon pointer" src="../img/icon/Link.png" alt="link">
               <p  class = " link-t ">APPLY</p>
-          <p id = "act-text">SO MANY THINGS ARE WAITING FOR YOU TO TRY<br>WE ARE UPDATING THE ACTIVITIES FROM SEVERAL</p>
+          <p id = "act-text1">PROVIDE ALL DETAILS OF THE ACTIVITIES SUCH <br>AS OBJECTIVES, TIME TABLE, COST, PREPARATION, ETC.</p>
+          <p id = "act-text2">LOOK FOR FRIENDS WHO INTERESTED IN SAME ACTIVITY;<br> CHAT THEM AND GO OUT TOGETHER.</p>
+          <p id = "act-text3">LINK TO REGISTRATION PAGE</p>
          
           <div class = "s pointer">
             <img id= "share-icon" src="../img/icon/Share.png" alt="share">
@@ -466,6 +390,18 @@ $( window ).scroll(function() {
              $(".friend-icon").css({
           "-webkit-filter": "grayscale(100%) brightness(200%)",
               });
+             $(".info-t").css({
+              "opacity":"1",
+             });
+             $(".friend-t").css({
+              "opacity":"0",
+             });
+             $("#act-text1").css({
+              "opacity":"1",
+             });
+             $("#act-text2").css({
+              "opacity":"0",
+             });
           }
           else if(n==1){
              content[0].style.display = "none";
@@ -478,6 +414,18 @@ $( window ).scroll(function() {
              $(".info-icon").css({
           "-webkit-filter": "grayscale(100%) brightness(200%)",
               });
+            $(".info-t").css({
+              "opacity":"0",
+             });
+            $(".friend-t").css({
+              "opacity":"1",
+             });
+             $("#act-text1").css({
+              "opacity":"0",
+             });
+             $("#act-text2").css({
+              "opacity":"1",
+             });
              for (i = 0; i < pics.length; i++) {
               pics[i].style.display = "none"; 
                   }

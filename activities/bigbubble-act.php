@@ -417,7 +417,7 @@ $( window ).scroll(function() {
                   }
             for (i = 0; i < pics.length; i++) {
               doshow(i,i);
-                  pics[i].style.WebkitAnimation = "slideUp 0.7s 1";
+          pics[i].style.WebkitAnimation = "slideUp 0.7s 1";
           pics[i].style.animation = "slideUp 0.7s 1";
               }
 
@@ -463,6 +463,9 @@ $( window ).scroll(function() {
              $(".friend-icon").css({
           "-webkit-filter": "grayscale(100%) brightness(200%)",
               });
+             $(".info-t").css({
+              "opacity":"1",
+             });
           }
           else if(n==1){
              content[0].style.display = "none";

@@ -122,11 +122,11 @@
 			</script>
 			<img id="logo3" src="./img/header/Idea.png" alt="logoW">
 			<p id = "sen1-act">FEBRUARY - JULY 2015</p>
-			<p id = "sen2-act">SO MANY THINGS ARE WAITING FOR YOU TO TRY<br>WE ARE UPDATING THE ACTIVITIES FROM SEVERAL<br>ORGANIZATIONS EVERY QUARTER</p>
+			<p id = "sen2-act">SOME GREAT IDES ARE JUST TOO BIG <br>FOR A PERSON TO DO, SO WE PROVIDE YOU<br> A SPACE TO SHARE THEM WITH OTHERS.</p>
 			<div class = "a pointer">
 				<img id="add-icon" src="./img/icon/Add.png" alt="video">
 				<p id = "add" >ADD IDEAS</p>
-				<p id = "sen3-act">SO MANY THINGS ARE WAITING FOR YOU TO TRY<br>WE ARE UPDATING THE ACTIVITIES FROM SEVERAL</p>
+				<p id = "sen3-act">SHARE YOUR IDEA;<br> YOUR IDEA WILL APPEAR ON THE PAGE AFTER WE APPROVED</p>
 			</div>
 			</div>
 			<a href ="https://www.facebook.com/unlessyoutry/" target="_blank">
