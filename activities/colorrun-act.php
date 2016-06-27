@@ -332,34 +332,7 @@ $( window ).scroll(function() {
         }
 
     </script>
-    <script >
-  var pics = document.getElementsByClassName("pic");
-        var currentCat = 0;
-        var numpic = 0;
-        var h;
-        var cat =document.getElementById("cat1");
-
-            for (i = 0; i < pics.length; i++) {
-                      pics[i].style.display = "none"; 
-                  }
-            for (i = 0; i < pics.length; i++) {
-              doshow(i,i);
-                  pics[i].style.WebkitAnimation = "slideUp 0.7s 1";
-          pics[i].style.animation = "slideUp 0.7s 1";
-              }
-
-        function shows(n){
-          // var pics = document.getElementsByClassName("pic");
-          var pos = n;
-          // alert(n + " " + pos);
-          pics[pos].style.display = "block"; 
-
-                  }
-        function doshow(n,m){
-          setTimeout(function(){shows(numpic=n);},m*200);
-                          }
-              
-    </script>
+    
     <script src="../js/joinact.js"></script>
 </body>
 

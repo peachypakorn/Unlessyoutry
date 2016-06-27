@@ -1,3 +1,31 @@
+  var pics = document.getElementsByClassName("pic");
+        var currentCat = 0;
+        var numpic = 0;
+        var h;
+        debugger;
+        var cat =document.getElementById("cat1");
+
+            for (i = 0; i < pics.length; i++) {
+                      pics[i].style.display = "none"; 
+                  }
+            for (i = 0; i < pics.length; i++) {
+              doshow(i,i+1);
+                  pics[i].style.WebkitAnimation = "slideUp 0.7s 1";
+          pics[i].style.animation = "slideUp 0.7s 1";
+              }
+          function shows(n){
+          // var pics = document.getElementsByClassName("pic");
+          var pos = n;
+          // alert(n + " " + pos);
+          pics[pos].style.display = "block"; 
+
+                  }
+        function doshow(n,m){
+          setTimeout(function(){shows(numpic=n);},m*200);
+
+        }
+
+
 function joinAct(elem,n){
           // debugger;
           var propic = document.getElementsByClassName(elem);
@@ -19,6 +47,7 @@ function joinAct(elem,n){
         }
         var page =0;
         function showDisplay(n){
+
           page = n;
           if(n==0){
              content[0].style.display = "block";
@@ -76,3 +105,6 @@ function joinAct(elem,n){
               }
           }
         }
+
+
+       
