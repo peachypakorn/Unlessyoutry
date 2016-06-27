@@ -121,11 +121,11 @@
 			</script>
 			<img id="logo2" src="./img/header/Activities.png" alt="logoW">
 			<p id = "sen1-act" class = "center">JANUARY - APRILL 2016</p>
-			<p id = "sen2-act">SO MANY THINGS ARE WAITING FOR YOU TO TRY<br>WE ARE UPDATING THE ACTIVITIES FROM SEVERAL<br>ORGANIZATIONS EVERY QUARTER</p>
+			<p id = "sen2-act">SO MANY THINGS ARE WAITING FOR YOU TO TRY<br>WE ARE UPDATING THE ACTIVITIES FROM SEVERAL<br>ORGANIZATIONS EVERY QUARTER.</p>
 			<div class = "a pointer">
 				<img id="add-icon" src="./img/icon/Add.png" alt="video">
 				<p id = "add">ADD ACTIVITIES</p>
-				<p id = "sen3-act">PROMOTE YOUR ACTIVITIES;<br> YOUR ACTIVITY WILL APPEAR ON THE PAGE AFTER WE APPROVED.</p>
+				<p id = "sen3-act">PROMOTE YOUR ACTIVITY;<br> YOUR ACTIVITY WILL APPEAR ON THE PAGE AFTER WE APPROVED.</p>
 			</div>
 			</div>
 			<a href ="https://www.facebook.com/unlessyoutry/" target="_blank">

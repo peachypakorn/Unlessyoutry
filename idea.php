@@ -126,7 +126,7 @@
 			<div class = "a pointer">
 				<img id="add-icon" src="./img/icon/Add.png" alt="video">
 				<p id = "add" >ADD IDEAS</p>
-				<p id = "sen3-act">SHARE YOUR IDEA;<br> YOUR IDEA WILL APPEAR ON THE PAGE AFTER WE APPROVED</p>
+				<p id = "sen3-act">SHARE YOUR IDEA;<br> YOUR IDEA WILL APPEAR ON THE PAGE AFTER WE APPROVED.</p>
 			</div>
 			</div>
 			<a href ="https://www.facebook.com/unlessyoutry/" target="_blank">

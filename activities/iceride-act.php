@@ -101,9 +101,9 @@ $( window ).scroll(function() {
               <p  class = " friend-t">FIND FRIENDS</p>
           <img class= "yellow link-icon pointer" src="../img/icon/Link.png" alt="link">
               <p  class = " link-t ">APPLY</p>
-                    <p id = "act-text1">PROVIDE ALL DETAILS OF THE ACTIVITIES SUCH <br>AS OBJECTIVES, TIME TABLE, COST, PREPARATION, ETC.</p>
+                    <p id = "act-text1">PROVIDE ALL DETAILS OF THE ACTIVITIES SUCH AS <br>OBJECTIVES, TIME TABLE, COST, PREPARATION, ETC.</p>
                     <p id = "act-text2">LOOK FOR FRIENDS WHO INTERESTED IN SAME ACTIVITY;<br> CHAT THEM AND GO OUT TOGETHER.</p>
-                    <p id = "act-text3">LINK TO REGISTRATION PAGE</p>
+                    <p id = "act-text3">LINK TO REGISTRATION PAGE.</p>
           <div class = "s pointer">
             <img id= "share-icon" src="../img/icon/Share.png" alt="share">
             <p  id = "cont-share">SHARE THIS STORY</p>

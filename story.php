@@ -126,7 +126,7 @@
 				<p  id = "idea">IDEAS</p>
 			</a>
 			<img id="logo1" src="./img/header/logo.png" alt="logoW">
-			<p id = "sen1"> A COMMUNITY WHERE COLLEGE STUDENTS<br> CAN READ UNPRICED STORIES, FIND ACTIVITIES,<br> AND SHARE THEIR IDEAS.</p>
+			<p id = "sen1"> A COMMUNITY WHERE COLLEGE STUDENTS<br> CAN READ INSPIRED STORIES, FIND ACTIVITIES,<br> AND SHARE THEIR IDEAS.</p>
 			
 			<p id = "hashtag">#UNLESSYOUTRY</p>
 			<div class = "h pointer">
