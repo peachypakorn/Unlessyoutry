@@ -55,31 +55,6 @@ $(document).ready(function(){
 
     });
 
-    $(".pic").hover(function(){
-          $(this).find(".friend-info").animate({
-              left: '0%',
-              opacity: '1',
-          },100);
-          $(this).find(".friend-info").css({
-            "transform": "scale(1.00)",
-          });
-          $(this).find(".pro-pic").css({
-            "transform": "scale(1.05)",
-          });
-          }, function(){
-          $(this).find(".friend-info").animate({
-              left: '100%',
-              opacity: '0',
-          });
-          $(this).find(".friend-info").css({
-            "transform": "scale(1.00)",
-          });
-          $(this).find(".pro-pic").css({
-            "transform": "scale(1.00)",
-          });
-    });
-
-       
     // });
   });
 $( window ).scroll(function() {
@@ -94,6 +69,7 @@ $( window ).scroll(function() {
 
 </script>
 <script src="../js/menu_act.js"></script>
+<script src="../js/join-act.js"></script>
 <body>
     <div class = "left-banner">
         <div class = "wrap">
@@ -178,11 +154,12 @@ $( window ).scroll(function() {
     <div class = "content">
    
       <div class="grow-n pic slideUp" id = "pic1">
+              <img class= " grow delete-icon pointer" src="../img/icon/Close.png" alt="delete" onclick = "joinAct('profilepic',2) ">
               <img class= " grow add-icon pointer" src="../img/icon/Add.png" alt="add" onclick = "joinAct('profilepic',1) ">
-              <img class= " grow delete-icon pointer" src="../img/icon/Delete.png" alt="delete" onclick = "joinAct('profilepic',2) ">
               <img class="profilepic" src="../img/friend-pic/Touch.jpg" alt="friend0">
-              
-     </div>
+              <p id = "join-text" class ="center">INTERESTED</p>
+              <p id = "join-info" class ="center">ADD YOURSELF INTO THE LIST</p>
+      </div>
    <a href="">
       <div class=" pic grow bw slideUp" id = "pic1">
         <img class="pro-pic" src="../img/friend-pic/friend1.jpg" alt="friend1">
@@ -335,7 +312,7 @@ $( window ).scroll(function() {
         var currentCat = 0;
         var numpic = 0;
         var h;
-        debugger;
+        // debugger;
         var cat =document.getElementById("cat1");
 
             for (i = 0; i < pics.length; i++) {
@@ -359,25 +336,25 @@ $( window ).scroll(function() {
         }
 
 
-function joinAct(elem,n){
-          // debugger;
-          var propic = document.getElementsByClassName(elem);
-          var add = document.getElementsByClassName("add-icon");
-          var del = document.getElementsByClassName("delete-icon");
-            if(n==1){
-              add[0].style.display = "none";
-              del[0].style.display = "block";
-              // propic[0s].style.display = "none";
-              propic[0].style.WebkitFilter = "grayscale(0%)";
-              propic[0].style.filter = "grayscale(0%)";
-            }
-            else if(n==2){
-              add[0].style.display = "block";
-              del[0].style.display = "none";
-              propic[0].style.WebkitFilter = "grayscale(100%)";
-              propic[0].style.filter = "grayscale(100%)";
-            }
-        }
+// function joinAct(elem,n){
+//           // debugger;
+//           var propic = document.getElementsByClassName(elem);
+//           var add = document.getElementsByClassName("add-icon");
+//           var del = document.getElementsByClassName("delete-icon");
+//             if(n==1){
+//               add[0].style.display = "none";
+//               del[0].style.display = "block";
+//               // propic[0s].style.display = "none";
+//               propic[0].style.WebkitFilter = "grayscale(0%)";
+//               propic[0].style.filter = "grayscale(0%)";
+//             }
+//             else if(n==2){
+//               add[0].style.display = "block";
+//               del[0].style.display = "none";
+//               propic[0].style.WebkitFilter = "grayscale(100%)";
+//               propic[0].style.filter = "grayscale(100%)";
+//             }
+//         }
         var page =0;
         function showDisplay(n){
 

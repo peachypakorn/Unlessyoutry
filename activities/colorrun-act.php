@@ -55,29 +55,7 @@ $(document).ready(function(){
 
     });
 
-    $(".pic").hover(function(){
-          $(this).find(".friend-info").animate({
-              left: '0%',
-              opacity: '1',
-          },100);
-          $(this).find(".friend-info").css({
-            "transform": "scale(1.00)",
-          });
-          $(this).find(".pro-pic").css({
-            "transform": "scale(1.05)",
-          });
-          }, function(){
-          $(this).find(".friend-info").animate({
-              left: '100%',
-              opacity: '0',
-          });
-          $(this).find(".friend-info").css({
-            "transform": "scale(1.00)",
-          });
-          $(this).find(".pro-pic").css({
-            "transform": "scale(1.00)",
-          });
-    });
+
 
   });
 $( window ).scroll(function() {
@@ -92,6 +70,7 @@ $( window ).scroll(function() {
 
 </script>
 <script src="../js/menu_act.js"></script>
+<script src="../js/join-act.js"></script>
 <body>
     <div class = "left-banner">
         <div class = "wrap">
@@ -180,9 +159,10 @@ $( window ).scroll(function() {
    
            <div class="grow-n pic slideUp" id = "pic1">
               <img class= " grow add-icon pointer" src="../img/icon/Add.png" alt="add" onclick = "joinAct('profilepic',1) ">
-              <img class= " grow delete-icon pointer" src="../img/icon/Delete.png" alt="delete" onclick = "joinAct('profilepic',2) ">
+              <img class= " grow delete-icon pointer" src="../img/icon/Close.png" alt="delete" onclick = "joinAct('profilepic',2) ">
               <img class="profilepic" src="../img/friend-pic/Touch.jpg" alt="friend0">
-              
+              <p id = "join-text" class ="center">INTERESTED</p>
+              <p id = "join-info" class ="center">ADD YOURSELF INTO THE LIST</p>
      </div>
    <a href="">
       <div class=" pic grow bw slideUp" id = "pic1">

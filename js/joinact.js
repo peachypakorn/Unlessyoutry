@@ -2,7 +2,7 @@
         var currentCat = 0;
         var numpic = 0;
         var h;
-        debugger;
+        // debugger;
         var cat =document.getElementById("cat1");
 
             for (i = 0; i < pics.length; i++) {
@@ -26,25 +26,7 @@
         }
 
 
-function joinAct(elem,n){
-          // debugger;
-          var propic = document.getElementsByClassName(elem);
-          var add = document.getElementsByClassName("add-icon");
-          var del = document.getElementsByClassName("delete-icon");
-            if(n==1){
-              add[0].style.display = "none";
-              del[0].style.display = "block";
-              // propic[0s].style.display = "none";
-              propic[0].style.WebkitFilter = "grayscale(0%)";
-              propic[0].style.filter = "grayscale(0%)";
-            }
-            else if(n==2){
-              add[0].style.display = "block";
-              del[0].style.display = "none";
-              propic[0].style.WebkitFilter = "grayscale(100%)";
-              propic[0].style.filter = "grayscale(100%)";
-            }
-        }
+
         var page =0;
         function showDisplay(n){
 
