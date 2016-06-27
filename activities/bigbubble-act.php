@@ -79,83 +79,7 @@ $(document).ready(function(){
           });
     });
 
-        $(".info-icon").hover(function(){
-          $(this).css({
-            "-webkit-filter": "grayscale(0%) brightness(100%)",
-          });
-          $(".friend-icon").css({
-            "-webkit-filter": "grayscale(100%) brightness(200%)",
-          });
-          }, function(){
-            if(page==0){
-          $(this).css({
-            "-webkit-filter": "grayscale(0%) brightness(100%)",
-          });
-          $(".friend-icon").css({
-            "-webkit-filter": "grayscale(100%) brightness(200%)",
-          });
-          }
-          else{
-           $(this).css({
-            "-webkit-filter": "grayscale(100%) brightness(200%)",
-          });
-          $(".friend-icon").css({
-            "-webkit-filter": "grayscale(0%) brightness(100%)",
-          }); 
-          }
-          });
-
-          $(".friend-icon").hover(function(){
-          $(".info-icon").css({
-            "-webkit-filter": "grayscale(100%) brightness(200%)",
-          });
-          $(".friend-icon").css({
-            "-webkit-filter": "grayscale(0%) brightness(100%)",
-          });
-          }, function(){
-            if(page==0){
-          $(".info-icon").css({
-            "-webkit-filter": "grayscale(0%) brightness(100%)",
-          });
-          $(".friend-icon").css({
-            "-webkit-filter": "grayscale(100%) brightness(200%)",
-          });
-          }
-          else{
-           $(".info-icon").css({
-            "-webkit-filter": "grayscale(100%) brightness(200%)",
-          });
-          $(".friend-icon").css({
-            "-webkit-filter": "grayscale(0%) brightness(100%)",
-          }); 
-          }
-          });
-
-      $(".link-icon").hover(function(){
-          $(".info-icon").css({
-            "-webkit-filter": "grayscale(100%) brightness(200%)",
-          });
-          $(".friend-icon").css({
-            "-webkit-filter": "grayscale(100%) brightness(200%)",
-          });
-          }, function(){
-            if(page==0){
-          $(".info-icon").css({
-            "-webkit-filter": "grayscale(0%) brightness(100%)",
-          });
-          $(".friend-icon").css({
-            "-webkit-filter": "grayscale(100%) brightness(200%)",
-          });
-          }
-          else{
-           $(".info-icon").css({
-            "-webkit-filter": "grayscale(100%) brightness(200%)",
-          });
-          $(".friend-icon").css({
-            "-webkit-filter": "grayscale(0%) brightness(100%)",
-          }); 
-          }
-          });
+       
     // });
   });
 $( window ).scroll(function() {
@@ -169,7 +93,7 @@ $( window ).scroll(function() {
 });
 
 </script>
-
+<script src="../js/menu_act.js"></script>
 <body>
     <div class = "left-banner">
         <div class = "wrap">
@@ -201,8 +125,9 @@ $( window ).scroll(function() {
               <p  class = " friend-t">FIND FRIENDS</p>
           <img class= "yellow link-icon pointer" src="../img/icon/Link.png" alt="link">
               <p  class = " link-t ">APPLY</p>
-          <p id = "act-text">SO MANY THINGS ARE WAITING FOR YOU TO TRY<br>WE ARE UPDATING THE ACTIVITIES FROM SEVERAL</p>
-         
+          <p id = "act-text1">PROVIDE ALL DETAILS OF THE ACTIVITIES SUCH <br>AS OBJECTIVES, TIME TABLE, COST, PREPARATION, ETC.</p>
+          <p id = "act-text2">LOOK FOR FRIENDS WHO INTERESTED IN SAME ACTIVITY;<br> CHAT THEM AND GO OUT TOGETHER.</p>
+          <p id = "act-text3">LINK TO REGISTRATION PAGE</p>
           <div class = "s pointer">
             <img id= "share-icon" src="../img/icon/Share.png" alt="share">
             <p  id = "cont-share">SHARE THIS STORY</p>
@@ -405,7 +330,7 @@ $( window ).scroll(function() {
         }
 
     </script>
-    <script >
+    <script>
   var pics = document.getElementsByClassName("pic");
         var currentCat = 0;
         var numpic = 0;
@@ -431,65 +356,10 @@ $( window ).scroll(function() {
         function doshow(n,m){
           setTimeout(function(){shows(numpic=n);},m*200);
                           }
-        function joinAct(elem,n){
-          // debugger;
-          var propic = document.getElementsByClassName(elem);
-          var add = document.getElementsByClassName("add-icon");
-          var del = document.getElementsByClassName("delete-icon");
-            if(n==1){
-              add[0].style.display = "none";
-              del[0].style.display = "block";
-              // propic[0s].style.display = "none";
-              propic[0].style.WebkitFilter = "grayscale(0%)";
-              propic[0].style.filter = "grayscale(0%)";
-            }
-            else if(n==2){
-              add[0].style.display = "block";
-              del[0].style.display = "none";
-              propic[0].style.WebkitFilter = "grayscale(100%)";
-              propic[0].style.filter = "grayscale(100%)";
-            }
-        }
-        var page =0;
-        function showDisplay(n){
-          page = n;
-          if(n==0){
-             content[0].style.display = "block";
-             content[1].style.display = "none";
-             showSlides(slideIndex,0,5);
-             $(".info-icon").css({
-          "-webkit-filter": "grayscale(0%) brightness(100%)",
-        });
-             $(".friend-icon").css({
-          "-webkit-filter": "grayscale(100%) brightness(200%)",
-              });
-             $(".info-t").css({
-              "opacity":"1",
-             });
-          }
-          else if(n==1){
-             content[0].style.display = "none";
-             content[1].style.display = "block";
-             // vid.pause();
-             clearTimeout(timer);
-             $(".friend-icon").css({
-          "-webkit-filter": "grayscale(0%) brightness(100%)",
-              });
-             $(".info-icon").css({
-          "-webkit-filter": "grayscale(100%) brightness(200%)",
-              });
-             for (i = 0; i < pics.length; i++) {
-              pics[i].style.display = "none"; 
-                  }
-            for (i = 0; i < pics.length; i++) {
-              doshow(i,i);
-                  pics[i].style.WebkitAnimation = "slideUp 0.7s 1";
-          pics[i].style.animation = "slideUp 0.7s 1";
-              }
-          }
-        }
+ 
        
     </script>
+        <script src="../js/joinact.js"></script>
 </body>
 
 </html>
