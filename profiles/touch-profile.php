@@ -137,7 +137,7 @@ $( window ).scroll(function() {
               <p  class = " icon-text ">GALLERY</p>  
           </div>
           
-          <p id = "act-text" style = "top:86%">SO MANY THINGS ARE WAITING FOR YOU TO TRY<br>WE ARE UPDATING THE ACTIVITIES FROM SEVERAL<br>SO MANY THINGS ARE WAITING FOR YOU TO TRY</p>
+          <p id = "act-text1" style = "top:86%">SO MANY THINGS ARE WAITING FOR YOU TO TRY<br>WE ARE UPDATING THE ACTIVITIES FROM SEVERAL<br>SO MANY THINGS ARE WAITING FOR YOU TO TRY</p>
          
           <p class = "center" id = "my-con">MY CONTACTS</p>  
       <a href ="https://www.facebook.com/unlessyoutry/" target="_blank">

@@ -71,7 +71,9 @@ $( window ).scroll(function() {
           <img id="ibannerh"style ="top:-10%;left: -35%;" style = "top:-15%" src="../img/story-com/touch-story/banner.jpg" alt="phum-banner">
           <div class = "clear-bg"></div>
           <img id= "menu"class="yellow pointer" src="../img/icon/Menu.png" alt="menu">
-          <img id = "profile" class="yellow" src="../img/icon/Profile.png" alt="prfile">
+          <a href = "../profiles/touch-profile.php">
+              <img id = "profile" class="yellow" src="../img/icon/Profile.png" alt="prfile">
+          </a>
           <a href="../story.php">
             <p  id = "home">HOME</p>
           </a>
@@ -86,9 +88,9 @@ $( window ).scroll(function() {
           <img id="twoline-topic" src="../img/story-com/touch-story/Topic.png" alt="phum-topic">
           <p  class = "twoline-date">7-10.01.2016</p>
           <p  class = "twoline-place">HUAY KUK, CHIANGRAI</p>
-          <a class = "p pointer">
+          <a class = "p pointer" href = "../profiles/touch-profile.php">
               <img id= "profile-pic" src="../img/story-com/touch-story/Profile.jpg" alt="menu">
-              <p  id = "story-name">THEERAT WATTANAKIJRUNGROJ</p>
+              <p  id = "story-name">THEERAT<br> WATTANAKIJRUNGROJ</p>
           </a>
           <div class = "s pointer">
             <img id= "share-icon" src="../img/icon/Share.png" alt="menu">

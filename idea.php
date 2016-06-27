@@ -107,7 +107,9 @@
 			</video>
 			<div class = "clear-bg"></div>
 			<img id= "menu"class="yellow pointer" src="./img/icon/Menu.png" alt="menu">
-			<img id = "profile" class="yellow" src="./img/icon/Profile.png" alt="prfile">
+			<a href = "./profiles/touch-profile.php">
+				<img id = "profile" class="yellow" src="./img/icon/Profile.png" alt="prfile">
+			</a>
 			<a href="story.php">
 				<p  id = "home">HOME</p>
 			</a>
