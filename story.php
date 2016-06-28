@@ -292,7 +292,8 @@
 		  	<source src="./img/video/viral2.mp4" type= "video/mp4">
 		</video>
 		<p class = "center" id = "viral-text2">VIRAL 2 : JUST TRY</p>
-		<img class="yellow close-modal" src="./img/icon/Close.png" alt="close">
+		<img class="yellow close-modal pointer" src="./img/icon/Close.png" alt="close">
+		<img class="yellow back-modal pointer" src="./img/icon/Back.png" alt="back">
 	</div>
 
 	<script>
@@ -311,6 +312,9 @@
 		var btn = document.getElementById("video");
 // Get the <span> element that closes the modal
 		var span = document.getElementsByClassName("close-modal")[0];
+		var back = document.getElementsByClassName("back-modal")[0];
+		var vidTimer1;
+		var vidTimer2;
 		viralvid.pause();
 		viralvid2.pause();
 // When the user clicks on the button, open the modal 
@@ -320,18 +324,55 @@
 		    // viralvid.currentTime = 0;
 		}
 		function playvid(n){
-			
+			debugger;
+				back.style.display = "block";
+			 $(".modal").css("background-color","rgba(0,0,0,1)");
+			if(n==1){
+				viralvid.style.display = "block";
+				viralvid.play();
+				viralvid.currentTime = 0;
+				vidTimer1 =setTimeout(function(){
+					viralvid.style.display = "none";
+					viralvid.pause();
+					},49000); 
+			}
+			else{
+				viralvid2.style.display = "block";
+				viralvid2.play();
+				viralvid2.currentTime = 0;
+				vidTimer2 =setTimeout(function(){
+					viralvid2.style.display = "none";
+					viralvid2.pause();
+					},49000); 
+			}
+		}
+		back.onclick = function(){
+			$("#myModal").css("background-color","rgba(0,0,0,0.8)");
+			viralvid.pause();
+		    viralvid2.pause();
+		    viralvid.style.display = "none";
+		    viralvid2.style.display = "none";
+		    back.style.display = "none";
 		}
 // When the user clicks on <span> (x), close the modal
 		span.onclick = function() {
+			$("#myModal").css("background-color","rgba(0,0,0,0.8)");
 		    modal.style.display = "none";
 		    viralvid.pause();
-		    viralvid.currentTime = 0;
+		    viralvid2.pause();
+		    viralvid.style.display = "none";
+		    viralvid2.style.display = "none";
+		    // viralvid.currentTime = 0;
 		}
 // When the user clicks anywhere outside of the modal, close it
 		window.onclick = function(event) {
 		    if (event.target == modal) {
+		    	$("#myModal").css("background-color","rgba(0,0,0,0.8)");
 		        modal.style.display = "none";
+		    viralvid.pause();
+		    viralvid2.pause();
+		    viralvid.style.display = "none";
+		    viralvid2.style.display = "none";
 		    }
 		}
 
