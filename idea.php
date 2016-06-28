@@ -124,7 +124,7 @@
 			</script>
 			<img id="logo3" src="./img/header/Idea.png" alt="logoW">
 			<p id = "sen1-act">FEBRUARY - JULY 2015</p>
-			<p id = "sen2-act">SOME GREAT IDES ARE JUST TOO BIG <br>FOR A PERSON TO DO, SO WE PROVIDE YOU<br> A SPACE TO SHARE THEM WITH OTHERS.</p>
+			<p id = "sen2-act">SOME GREAT IDES ARE JUST TOO BIG <br>FOR A PERSON TO DO, SO WE PROVIDE <br>YOU A SPACE TO SHARE THEM WITH OTHERS.</p>
 			<div class = "a pointer">
 				<img id="add-icon" src="./img/icon/Add.png" alt="video">
 				<p id = "add" >ADD IDEAS</p>
@@ -161,7 +161,7 @@
 			<div class="grow pic bw slideUp" id = "pic1">
 				<img  src="./img/ideaPic/idea1.jpg" alt="phumConcert">
 				<div class = "text"></div>
-				<div class = "cata" style = "background:#E45641" ></div>
+				<div class = "cata" style = "background:#F2AA4E" ></div>
 					<p class = "text2" >MEDI<br>TATING<br>TREKKING</p>
 					<p class = "text3" ><br><br><br>2-8.02.16</p>
 			</div>
@@ -170,7 +170,7 @@
 			<div class="grow pic bw slideUp" id = "pic2">
 				<img  src="./img/ideaPic/idea2.jpg" alt="Cindy">
 				<div class = "text"></div>
-				<div class = "cata" style = "background:#4EBC90" ></div>
+				<div class = "cata" style = "background:#E45641" ></div>
 					<p class = "text2" ><br>HEALTHY<br>RUN</p>
 					<p class = "text3" ><br><br><br>N.D</p>
 			</div>
@@ -178,7 +178,7 @@
 			<div class="grow pic bw slideUp" id = "pic3">
 				<img  src="./img/ideaPic/idea3.jpg" alt="Bonus">
 				<div class = "text"></div>
-				<div class = "cata" style = "background:#4EBC90" ></div>
+				<div class = "cata" style = "background:#1A9AAF" ></div>
 					<p class = "text2" >SONG<br>OF THE<br>BLIND</p>
 					<p class = "text3" ><br><br><br>15.03.16</p>
 				</div>
@@ -186,7 +186,7 @@
 			<div class="grow pic bw slideUp pointer" id = "pic4">
 				<img  src="./img/ideaPic/idea4.jpg" alt="midjungle">
 				<div class = "text"></div>
-				<div class = "cata" style = "background:#F2AA4E" ></div>
+				<div class = "cata" style = "background:#4EBC90" ></div>
 					<p class = "text2" >TRIBAL<br>ART<br>TEACHER</p>
 					<p class = "text3" ><br><br><br>N.D</p>
 			</div>
@@ -194,7 +194,7 @@
 			<div class="grow pic bw slideUp pointer" id = "pic5">
 				<img  src="./img/ideaPic/idea5.jpg" alt="touch">
 				<div class = "text"></div>
-				<div class = "cata" style = "background:#F2AA4E" ></div>
+				<div class = "cata" style = "background:#4EBC90" ></div>
 					<p class = "text2" >DRINK<br>FOR<br>DONATION</p>
 					<p class = "text3" ><br><br><br>21.03.16</p>
 			</div>						
@@ -202,7 +202,7 @@
 			<div class="grow pic bw slideUp pointer" id = "pic6">
 				<img  src="./img/ideaPic/idea6.jpg" alt="sunActing">
 				<div class = "text"></div>
-				<div class = "cata" style = "background:#ECE4C2" ></div>
+				<div class = "cata" style = "background:#4EBC90" ></div>
 					<p class = "text2" >CLEAN<br>THE<br>OCEAN</p>
 					<p class = "text3" ><br><br><br>1-5.04.16</p>
 			</div>
@@ -210,7 +210,7 @@
 			<div class="grow pic bw slideUp pointer" id = "pic7">
 				<img  src="./img/ideaPic/idea7.jpg" alt="pep">
 				<div class = "text"></div>
-				<div class = "cata" style = "background:#274763" ></div>
+				<div class = "cata" style = "background:#1A9AAF" ></div>
 					<p class = "text2" >SCHOOL<br>WALL<br>PAINTING</p>
 					<p class = "text3" ><br><br><br>14.04.16</p>
 			</div>
@@ -218,7 +218,7 @@
 			<div class="grow pic bw slideUp pointer" id = "pic8">
 				<img  src="./img/ideaPic/idea8.jpg" alt="gino Russia">
 				<div class = "text"></div>
-				<div class = "cata" style = "background:#1A9AAF" ></div>
+				<div class = "cata" style = "background:#4EBC90" ></div>
 					<p class = "text2" >THE<br>TRASH<br>HEROS</p>
 					<p class = "text3" ><br><br><br>10.05.16</p>
 			</div>						
@@ -242,44 +242,6 @@
 		</a> -->
 	
 	</div>
-
-<!-- Video Modal Part -->
-	<div id="myModal" class="modal">
-		<video autoplay loop poster controls="./img/video/LandingVid.png" id="viral-video" >
-		  	<source src="./img/video/viral.mp4" type= "video/mp4">
-		</video>
-		<img class="yellow close-modal" src="./img/icon/Close.png" alt="close">
-	</div>
-
-	<script>
-	//modal part
-		var viralvid = document.getElementById("viral-video"); 
-// Get the modal
-		var modal = document.getElementById('myModal');
-// Get the button that opens the modal
-		var btn = document.getElementById("video");
-// Get the <span> element that closes the modal
-		var span = document.getElementsByClassName("close-modal")[0];
-		viralvid.pause();
-// When the user clicks on the button, open the modal 
-		btn.onclick = function() {
-		    modal.style.display = "block";
-		    viralvid.play();
-		    viralvid.currentTime = 0;
-		}
-// When the user clicks on <span> (x), close the modal
-		span.onclick = function() {
-		    modal.style.display = "none";
-		    viralvid.pause();
-		    viralvid.currentTime = 0;
-		}
-// When the user clicks anywhere outside of the modal, close it
-		window.onclick = function(event) {
-		    if (event.target == modal) {
-		        modal.style.display = "none";
-		    }
-		}
-	</script>
 
 	<script>
 	//categories bar
@@ -350,32 +312,32 @@
 				   		var picShow
 				   		
 				   		if(n==1){
-				   			picShow = new Array(6,6);
+				   			picShow = new Array(0);
 				   			cat = document.getElementById("cat1");
 				   			cat.style.width = "18%";
 				   		}
 				   		else if(n==2) {
-				   			picShow = new Array(1,1);
+				   			picShow = new Array(2,2);
 				   			cat = document.getElementById("cat2");
 				   			cat.style.width = "12%";
 				   		}
 				   		else if(n==3) {
-				   			picShow = new Array(4,5);
+				   			picShow = new Array(1,1);
 				   			cat = document.getElementById("cat3");
 				   			cat.style.width = "18.8%";
 				   		}
 				   		else if(n==4){
-				   			picShow = new Array(2,3,10);
+				   			picShow = new Array(4,5,6,8);
 				   			cat = document.getElementById("cat4");
 				   			cat.style.width = "18.4%";
 				   		} 
 				   		else if(n==5){
-				   			picShow = new Array(8,9);
+				   			picShow = new Array(3,7,9);
 				   			cat = document.getElementById("cat5");
 				   			cat.style.width = "18%";
 				   		} 
 				   		else if(n==6){
-				   			picShow = new Array(7,7);
+				   			picShow = new Array(0);
 				   			cat = document.getElementById("cat6");
 				   			cat.style.width = "12%";
 				   						   		} 

@@ -93,7 +93,7 @@ $( window ).scroll(function() {
           <img id="twoline-topic" src="../img/act-com/iceride-act/Topic.png" alt="colorrun">
           <p  id = "story-date">28.02.2016</p>
           <p  id = "story-place">BANGKOK</p>
-          <a class = "p pointer">
+          <a class = "p pointer" href ="http://www.greenpeace.org/international/en/" target="_blank">
               <img id= "profile-pic" src="../img/act-com/iceride-act/Profile.png" alt="menu">
               <p  id = "story-name" >GREENPEACE</p>
           </a>
@@ -101,8 +101,10 @@ $( window ).scroll(function() {
               <p  class = "info-t">INFORMATION</p>
           <img class= "yellow friend-icon pointer" src="../img/icon/Friends.png" alt="friend"  onclick ="showDisplay(1)">
               <p  class = " friend-t">FIND FRIENDS</p>
-          <img class= "yellow link-icon pointer" src="../img/icon/Link.png" alt="link">
-              <p  class = " link-t ">APPLY</p>
+          <a class = "p pointer" href ="https://actionnetwork.org/events/835817a135809dbc7ea2930e0e797dd8afa3ab6a/edit" target="_blank">
+              <img class= "yellow link-icon pointer" src="../img/icon/Link.png" alt="link">
+          </a> 
+          <p  class = " link-t ">APPLY</p>
                     <p id = "act-text1">PROVIDE ALL DETAILS OF THE ACTIVITIES SUCH AS <br>OBJECTIVES, TIME TABLE, COST, PREPARATION, ETC.</p>
                     <p id = "act-text2">LOOK FOR FRIENDS WHO INTERESTED IN SAME ACTIVITY;<br> CHAT THEM AND GO OUT TOGETHER.</p>
                     <p id = "act-text3">LINK TO REGISTRATION PAGE.</p>

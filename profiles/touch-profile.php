@@ -276,43 +276,53 @@ $( window ).scroll(function() {
 
     <!-- gallery -->
     <div class ="content" style = "background:black; display:none" >
-      <div class=" pic grow bw slideUp pointer" id = "pic1">
-        <img class="pro-pic" src="../img/profile-com/touch-profile/p1.jpg" alt="friend1">
+      <div class="pic grow bw slideUp pointer" id = "pic1">
+        <img class="gal pro-pic" src="../img/profile-com/touch-profile/p1.jpg" alt="friend1" onclick = "showModal(1)">
       </div>
-      <div class=" pic grow bw slideUp pointer" id = "pic2">
-        <img class="pro-pic" src="../img/profile-com/touch-profile/p2.jpg" alt="friend1">
+      <div class="pic grow bw slideUp pointer" id = "pic2">
+        <img class="gal pro-pic" src="../img/profile-com/touch-profile/p2.jpg" alt="friend1"  onclick = "showModal(2)">
       </div>
-      <div class=" pic grow bw slideUp pointer" id = "pic3">
-        <img class="pro-pic" src="../img/profile-com/touch-profile/p3.jpg" alt="friend1">
+      <div class="pic grow bw slideUp pointer" id = "pic3">
+        <img class="gal pro-pic" src="../img/profile-com/touch-profile/p3.jpg" alt="friend1"  onclick = "showModal(3)">
       </div>
-      <div class=" pic grow bw slideUp pointer" id = "pic4">
-        <img class="pro-pic" src="../img/profile-com/touch-profile/p4.jpg" alt="friend1">
+      <div class="pic grow bw slideUp pointer" id = "pic4">
+        <img class="gal pro-pic" src="../img/profile-com/touch-profile/p4.jpg" alt="friend1" onclick = "showModal(4)">
       </div>
-      <div class=" pic grow bw slideUp pointer" id = "pic5">
-        <img class="pro-pic" src="../img/profile-com/touch-profile/p5.jpg" alt="friend1">
+      <div class="pic grow bw slideUp pointer" id = "pic5">
+        <img class="gal pro-pic" src="../img/profile-com/touch-profile/p5.jpg" alt="friend1" onclick = "showModal(5)">
       </div>
-      <div class=" pic grow bw slideUp pointer" id = "pic6">
-        <img class="pro-pic" src="../img/profile-com/touch-profile/p6.jpg" alt="friend1">
+      <div class="pic grow bw slideUp pointer" id = "pic6">
+        <img class="gal pro-pic" src="../img/profile-com/touch-profile/p6.jpg" alt="friend1" onclick = "showModal(6)">
       </div>
-      <div class=" pic grow bw slideUp pointer" id = "pic7">
-        <img class="pro-pic" src="../img/profile-com/touch-profile/p7.jpg" alt="friend1">
+      <div class="pic grow bw slideUp pointer" id = "pic7">
+        <img class="gal pro-pic" src="../img/profile-com/touch-profile/p7.jpg" alt="friend1" onclick = "showModal(7)">
       </div>
-      <div class=" pic grow bw slideUp pointer" id = "pic8">
-        <img class="pro-pic" src="../img/profile-com/touch-profile/p8.jpg" alt="friend1">
+      <div class="pic grow bw slideUp pointer" id = "pic8">
+        <img class="gal pro-pic" src="../img/profile-com/touch-profile/p8.jpg" alt="friend1" onclick = "showModal(8)">
       </div>
-      <div class=" pic grow bw slideUp pointer" id = "pic9">
-        <img class="pro-pic" src="../img/profile-com/touch-profile/p9.jpg" alt="friend1">
+      <div class="pic grow bw slideUp pointer" id = "pic9">
+        <img class="gal pro-pic" src="../img/profile-com/touch-profile/p9.jpg" alt="friend1" onclick = "showModal(9)">
       </div>
-      <div class=" pic grow bw slideUp pointer" id = "pic10">
-        <img class="pro-pic" src="../img/profile-com/touch-profile/p10.jpg" alt="friend1">
+      <div class="pic grow bw slideUp pointer" id = "pic10">
+        <img class="gal pro-pic" src="../img/profile-com/touch-profile/p10.jpg" alt="friend1" onclick = "showModal(10)">
       </div>
-      <div class=" pic grow bw slideUp pointer" id = "pic11">
-        <img class="pro-pic" src="../img/profile-com/touch-profile/p11.jpg" alt="friend1">
+      <div class="pic grow bw slideUp pointer" id = "pic11">
+        <img class="gal pro-pic" src="../img/profile-com/touch-profile/p11.jpg" alt="friend1" onclick = "showModal(11)">
       </div>
-      <div class=" pic grow bw slideUp pointer" id = "pic12">
-        <img class="pro-pic" src="../img/profile-com/touch-profile/p12.jpg" alt="friend1">
+      <div class="pic grow bw slideUp pointer" id = "pic12">
+        <img class="gal pro-pic" src="../img/profile-com/touch-profile/p12.jpg" alt="friend1" onclick = "showModal(12)">
       </div>
     </div>
+
+    <!-- Video Modal Part --> 
+    <div id = "background-modal">
+    </div>
+      <div id="myGal" class="modal-gal">
+        <img class="yellow close-modal" src="../img/icon/Close.png" alt="close">
+        <!-- <img class="big-pic" src="../img/profile-com/touch-profile/p12.jpg" alt="friend1"> -->
+      </div>
+
+    <script src="../js/modal-gal.js"></script>
     <script type="text/javascript" src="../js/addtext.js"></script>
     <script>
      $("html, body").animate({ scrollTop: 0 }, "slow");
@@ -463,6 +473,8 @@ $( window ).scroll(function() {
         }
 
         function showDisplay(n){
+          modal.style.display = "none";
+          bgModal.style.display = "none";
           first = false;
           clearTimeout(timer1);
           timer1 = null;

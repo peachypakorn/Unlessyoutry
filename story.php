@@ -110,8 +110,8 @@
 <body>
 	<div class = "left-banner">
 		<div class = "wrap">
-			<video autoplay loop poster muted="./img/video/LandingVid.png" id="bgvid" class = "banner" >
-		    	  	<source src="./img/video/mainVideo20.mp4" type= "video/mp4">
+			<video autoplay loop poster muted="./img/video/LandingVid.png" id="bgvid" class = "banner22" >
+		    	  	<source src="./img/video/mainVideo22.mp4" type= "video/mp4">
 			</video>
 			<div class = "clear-bg"></div>
 			<img id= "menu"class="yellow pointer" src="./img/icon/Menu.png" alt="menu">
@@ -278,15 +278,33 @@
 
 <!-- Video Modal Part -->
 	<div id="myModal" class="modal">
-		<video autoplay loop poster controls="./img/video/LandingVid.png" id="viral-video" >
-		  	<source src="./img/video/viral.mp4" type= "video/mp4">
+		<video autoplay loop poster controls="./img/video/LandingVid.png" id="viral-video" class = "viral-vid" >
+		  	<source src="./img/video/viral1.mp4" type= "video/mp4">
 		</video>
+		<video autoplay loop poster controls="./img/video/LandingVid.png" id="viral-video2" class = "viral-vid">
+		  	<source src="./img/video/viral2.mp4" type= "video/mp4">
+		</video>
+		<video autoplay loop poster muted="./img/video/LandingVid.png" id="vid-ex1" class = "ex-vid pointer"onclick = "playvid(1)" >
+		  	<source src="./img/video/viral1.mp4" type= "video/mp4">
+		</video>
+		<p class = "center" id = "viral-text1">VIRAL 1 : JUST SWIM</p>
+		<video autoplay loop poster muted="./img/video/LandingVid.png" id="vid-ex2" class = "ex-vid pointer" onclick = "playvid(2)">
+		  	<source src="./img/video/viral2.mp4" type= "video/mp4">
+		</video>
+		<p class = "center" id = "viral-text2">VIRAL 2 : JUST TRY</p>
 		<img class="yellow close-modal" src="./img/icon/Close.png" alt="close">
 	</div>
 
 	<script>
 	//modal part
-		var viralvid = document.getElementById("viral-video"); 
+		var viralvid = document.getElementById("viral-video");
+		var viralvid2 = document.getElementById("viral-video2"); 
+		viralvid2.style.display = "none";
+		viralvid.style.display = "none";
+		// setTimeout(function(){
+			// viralvid.style.display = "none";
+		// 	viralvid.style.display = "block";
+		// },49000); 
 // Get the modal
 		var modal = document.getElementById('myModal');
 // Get the button that opens the modal
@@ -294,11 +312,15 @@
 // Get the <span> element that closes the modal
 		var span = document.getElementsByClassName("close-modal")[0];
 		viralvid.pause();
+		viralvid2.pause();
 // When the user clicks on the button, open the modal 
 		btn.onclick = function() {
 		    modal.style.display = "block";
-		    viralvid.play();
-		    viralvid.currentTime = 0;
+		    // viralvid.play();
+		    // viralvid.currentTime = 0;
+		}
+		function playvid(n){
+			
 		}
 // When the user clicks on <span> (x), close the modal
 		span.onclick = function() {

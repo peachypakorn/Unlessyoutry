@@ -2,6 +2,7 @@
 var text = document.getElementById("chatbox");
 var chatcon = document.getElementById("chat-content");
 var value;
+
 function addtext(){
 		// debugger;
 		if(text.value!=""){

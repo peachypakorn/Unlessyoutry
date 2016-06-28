@@ -93,7 +93,7 @@ $( window ).scroll(function() {
           <img id="twoline-topic" src="../img/act-com/bigbubble-act/Topic.png" alt="colorrun">
           <p  class = "twoline-date">17-21.01.2016</p>
           <p  class = "twoline-place">KOR TAO,THAILAND</p>
-          <a class = "p pointer">
+          <a class = "p pointer" href ="http://bigbubble.info/" target="_blank">
               <img id= "profile-pic" src="../img/act-com/bigbubble-act/Profile.jpg" alt="menu">
               <p  id = "story-name" >BIGBUBBLE</p>
           </a>
@@ -101,7 +101,9 @@ $( window ).scroll(function() {
               <p  class = "info-t">INFORMATION</p>
           <img class= "yellow friend-icon pointer" src="../img/icon/Friends.png" alt="friend"  onclick ="showDisplay(1)">
               <p  class = " friend-t">FIND FRIENDS</p>
-          <img class= "yellow link-icon pointer" src="../img/icon/Link.png" alt="link">
+          <a class = "p pointer" href ="http://bigbubble.info/pricelist/" target="_blank">
+              <img class= "yellow link-icon pointer" src="../img/icon/Link.png" alt="link">
+          </a> 
               <p  class = " link-t ">APPLY</p>
           <p id = "act-text1">PROVIDE ALL DETAILS OF THE ACTIVITIES SUCH AS<br> OBJECTIVES, TIME TABLE, COST, PREPARATION, ETC.</p>
           <p id = "act-text2">LOOK FOR FRIENDS WHO INTERESTED IN SAME ACTIVITY;<br> CHAT THEM AND GO OUT TOGETHER.</p>

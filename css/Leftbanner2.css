@@ -60,7 +60,24 @@ p{
     margin: 0px;
     overflow: hidden;  
 }
-
+video.banner22{
+	position: absolute;
+	background-position: left;
+	top: -5%;
+    left: -100%;
+    width: 320%;
+    min-width: 320%;
+    max-width: 320%;
+    height: 105%;
+    min-height: 105%;
+    max-height: 105%;
+    z-index: -100;
+    background: url(./img/video/LandingVid.png) no-repeat;
+    background-size: cover;
+    /*overflow: hidden;*/
+    -webkit-filter: brightness(70%);
+    filter: brightness(70%); 
+}
 video.banner{
 	position: absolute;
 	background-position: left;

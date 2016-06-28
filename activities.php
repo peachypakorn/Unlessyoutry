@@ -241,43 +241,6 @@
 
 	</div>
 
-<!-- Video Modal Part -->
-	<div id="myModal" class="modal">
-		<video autoplay loop poster controls="./img/video/LandingVid.png" id="viral-video" >
-		  	<source src="./img/video/viral.mp4" type= "video/mp4">
-		</video>
-		<img class="yellow close-modal" src="./img/icon/Close.png" alt="close">
-	</div>
-
-	<script>
-	//modal part
-		var viralvid = document.getElementById("viral-video"); 
-// Get the modal
-		var modal = document.getElementById('myModal');
-// Get the button that opens the modal
-		var btn = document.getElementById("video");
-// Get the <span> element that closes the modal
-		var span = document.getElementsByClassName("close-modal")[0];
-		viralvid.pause();
-// When the user clicks on the button, open the modal 
-		btn.onclick = function() {
-		    modal.style.display = "block";
-		    viralvid.play();
-		    viralvid.currentTime = 0;
-		}
-// When the user clicks on <span> (x), close the modal
-		span.onclick = function() {
-		    modal.style.display = "none";
-		    viralvid.pause();
-		    viralvid.currentTime = 0;
-		}
-// When the user clicks anywhere outside of the modal, close it
-		window.onclick = function(event) {
-		    if (event.target == modal) {
-		        modal.style.display = "none";
-		    }
-		}
-	</script>
 
 	<script>
 	//categories bar
