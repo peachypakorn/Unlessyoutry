@@ -217,9 +217,9 @@ $( window ).scroll(function() {
                   <div id = "chat-p">
                       <img id="chat-pic" src="../img/friend-pic/friend1.jpg" alt="friend1">
                       <p id ="chat-name">DOJO NOPHNAN</p>
-                      <p id ="vp">VIEW PROFILE</p>
+                      <p id ="vp" class = "pointer">VIEW PROFILE</p>
                 </div>
-                <div id = "chat-content">
+                <div class = "chat-content">
                       <form>
                         <div class = "chat-text">Hello, How are you?</div>
                         <br>
@@ -302,12 +302,12 @@ You should go and love yourself</textarea>
 
         </div>
         <div class = "div20">
-            <div class=" f-list grow slideUp pointer" id = "fri1" onclick = "chat(0)">
+            <div class=" f-list grow slideUp pointer" id = "fri1" onclick = "chat(1,1,'DOJO NOPHNAN')">
                 <img class=" bw pro-pic" src="../img/friend-pic/friend1.jpg" alt="friend1">
                 <div class = "friend-info"><br><br>DOJI<br>NOPHNAN</div>
                 <div class = "online"></div>
             </div>
-            <div class=" f-list grow slideUp pointer" id = "fri2" onclick = "chat(1)">
+            <div class=" f-list grow slideUp pointer" id = "fri2" onclick = "chat(2,4,'PLOY TANTANA')">
                 <img class=" bw pro-pic" src="../img/friend-pic/friend4.jpg" alt="friend4">
                 <div class = "friend-info"><br><br>PLOY<br>TANTANA</div>
                 <div class = "online"></div>
