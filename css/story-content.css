@@ -6,17 +6,28 @@
   top: -20%;
   left: 5%;
   position: relative;
-  /*margin: 10%;*/
-  padding: center;
+  
   color: red;
   z-index: 1;
   overflow: hidden;
   /*background-image: url('../img/phum-story/pic1.jpg');*/
   background-size: cover;
   background-color: black;
+  border-width: 1px;
+  border-color: black;
+}
+/*::-webkit-scrollbar { 
+    display: none; 
+}*/
+.mySlides{
+  
+  /*margin-right: -5px!important;*/
 }
 #story-vid{
   margin-bottom: -5px;
+  padding: -2px;
+  /*margin-right: -5px;*/
+  /*width: 102%!important;*/
 }
 
 .space{

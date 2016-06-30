@@ -149,7 +149,7 @@ $(document).ready(function(){
             "-webkit-filter": "grayscale(0%) brightness(100%)",
           }); 
             $(".friend-t").css({
-               "opacity":"0",
+               "opacity":"1",
              } );
             $("#act-text2").css({
               "opacity":"1",

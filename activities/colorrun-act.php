@@ -168,56 +168,56 @@ $( window ).scroll(function() {
               <p id = "join-text" class ="center">INTERESTED</p>
               <p id = "join-info" class ="center">ADD YOURSELF INTO THE LIST</p>
      </div>
-   <a href="">
+   <a class = "pointer">
       <div class=" pic grow bw slideUp" id = "pic1">
         <img class="pro-pic" src="../img/friend-pic/friend1.jpg" alt="friend1">
         <img class = "friend-info" src="../img/friend-pic/info1.png" alt="friend-info1">
       </div>
     </a>
    
-    <a href="">
+    <a class = "pointer">
       <div class=" pic grow bw slideUp" id = "pic2">
         <img class="pro-pic" src="../img/friend-pic/friend2.jpg" alt="friend2">
         <img class = "friend-info" src="../img/friend-pic/info2.png" alt="friend-info2">
       </div>
     </a>
-    <a href="">
+    <a class = "pointer">
       <div class="grow pic bw slideUp" id = "pic3">
         <img class="pro-pic" src="../img/friend-pic/friend3.jpg" alt="friend3">
         <img class = "friend-info" src="../img/friend-pic/info3.png" alt="friend-info3">
       </div>
     </a>
-    <a href="">
+    <a class = "pointer">
       <div class="grow pic bw slideUp" id = "pic4">
         <img class="pro-pic" src="../img/friend-pic/friend4.jpg" alt="friend4">
         <img class = "friend-info" src="../img/friend-pic/info4.png" alt="friend-info4">
       </div>
     </a>
-    <a href="">
+    <a class = "pointer">
       <div class="grow pic bw slideUp" id = "pic5">
         <img class="pro-pic" src="../img/friend-pic/friend5.jpg" alt="friend5">
         <img class = "friend-info" src="../img/friend-pic/info5.png" alt="friend-info5">
       </div>
     </a>
-    <a href="">
+    <a class = "pointer">
       <div class="grow pic bw slideUp" id = "pic6">
         <img class="pro-pic" src="../img/friend-pic/friend6.jpg" alt="friend6">
         <img class = "friend-info" src="../img/friend-pic/info6.png" alt="friend-info6">
       </div>
     </a>
-    <a href="">
+    <a class = "pointer">
       <div class="grow pic bw slideUp" id = "pic7">
         <img class="pro-pic" src="../img/friend-pic/friend7.jpg" alt="friend7">
         <img class = "friend-info" src="../img/friend-pic/info7.png" alt="friend-info7">
       </div>
     </a>    
-      <a href="">
+      <a class = "pointer">
       <div class="grow pic bw slideUp" id = "pic8">
         <img class="pro-pic" src="../img/friend-pic/friend8.jpg" alt="friend8">
         <img class = "friend-info" src="../img/friend-pic/info8.png" alt="friend-info8">
       </div>
     </a>
-    <a href="">
+    <a class = "pointer">
       <div class="grow pic bw slideUp" id = "pic9">
         <img class="pro-pic" src="../img/friend-pic/friend9.jpg" alt="friend9">
         <img class = "friend-info" src="../img/friend-pic/info9.png" alt="friend-info9">

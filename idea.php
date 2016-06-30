@@ -271,7 +271,7 @@
           		// cat = document.getElementById("elem");
           		elem.style.paddingLeft = "0px";
 				elem.style.paddingRight = "0px";
-				elem.style.textIndent = "1%";
+				elem.style.textIndent = "2%";
 				elem.style.width ="6px";
           	}
 		   	function shows(n){
@@ -284,16 +284,12 @@
 		   	function doshow(n,m){
 		   		setTimeout(function(){shows(numpic=n);},m*150);
               				   	}
-
+var check = true;
 		   	function showCat(n) {
-		   		// var pics = document.getElementsByClassName("pic");
-		   		// debugger;
-		  //  		cat.style.paddingLeft = "0px";
-				// cat.style.paddingRight = "0px";
-				// cat.style.textIndent = "1%";
-				// cat.style.width = "6px";
-				normal(cat);
+		   			   		normal(cat);
+ 		
 		   		if(currentCat==n){
+		   			check = false; 
 		   			for (i = 0; i < pics.length; i++) {
 		              		pics[i].style.display = "none"; 
 		          		}
@@ -307,8 +303,11 @@
 					pics[i].style.animation = "slideUp 0.7s 1";
           		}
           		currentCat=0;
+          		vidTimer1 =setTimeout(function(){
+					check = true;
+					},2300);
 		   		}
-		   		else{
+		   		else if(check){
 				   		var picShow
 				   		
 				   		if(n==1){

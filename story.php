@@ -278,20 +278,20 @@
 
 <!-- Video Modal Part -->
 	<div id="myModal" class="modal">
-		<video autoplay loop poster controls="./img/video/LandingVid.png" id="viral-video" class = "viral-vid" >
+		<video autoplay loop poster ="./img/video/LandingVid.png" id="viral-video" class = "viral-vid" >
 		  	<source src="./img/video/viral1.mp4" type= "video/mp4">
 		</video>
-		<video autoplay loop poster controls="./img/video/LandingVid.png" id="viral-video2" class = "viral-vid">
+		<video autoplay loop poster ="./img/video/LandingVid.png" id="viral-video2" class = "viral-vid">
 		  	<source src="./img/video/viral2.mp4" type= "video/mp4">
 		</video>
 		<video autoplay loop poster muted="./img/video/LandingVid.png" id="vid-ex1" class = "ex-vid pointer"onclick = "playvid(1)" >
-		  	<source src="./img/video/viral1.mp4" type= "video/mp4">
+		  	<source src="./img/video/viral1-s.mp4" type= "video/mp4">
 		</video>
-		<p class = "center" id = "viral-text1">VIRAL 1 : JUST SWIM</p>
+		<p class = "center" id = "viral-text1">VIRAL 1 : THE SCUBA DIVING</p>
 		<video autoplay loop poster muted="./img/video/LandingVid.png" id="vid-ex2" class = "ex-vid pointer" onclick = "playvid(2)">
-		  	<source src="./img/video/viral2.mp4" type= "video/mp4">
+		  	<source src="./img/video/viral2-s.mp4" type= "video/mp4">
 		</video>
-		<p class = "center" id = "viral-text2">VIRAL 2 : JUST TRY</p>
+		<p class = "center" id = "viral-text2">VIRAL 2 : THE MUAY THAI</p>
 		<img class="yellow close-modal pointer" src="./img/icon/Close.png" alt="close">
 		<img class="yellow back-modal pointer" src="./img/icon/Back.png" alt="back">
 	</div>
@@ -334,6 +334,7 @@
 				vidTimer1 =setTimeout(function(){
 					viralvid.style.display = "none";
 					viralvid.pause();
+					$(".modal").css("background-color","rgba(0,0,0,0.8)");
 					},49000); 
 			}
 			else{
@@ -343,11 +344,12 @@
 				vidTimer2 =setTimeout(function(){
 					viralvid2.style.display = "none";
 					viralvid2.pause();
+					$(".modal").css("background-color","rgba(0,0,0,0.8)");
 					},49000); 
 			}
 		}
 		back.onclick = function(){
-			$("#myModal").css("background-color","rgba(0,0,0,0.8)");
+			 $(".modal").css("background-color","rgba(0,0,0,0.8)");
 			viralvid.pause();
 		    viralvid2.pause();
 		    viralvid.style.display = "none";
@@ -356,7 +358,7 @@
 		}
 // When the user clicks on <span> (x), close the modal
 		span.onclick = function() {
-			$("#myModal").css("background-color","rgba(0,0,0,0.8)");
+			 $(".modal").css("background-color","rgba(0,0,0,0.8)");
 		    modal.style.display = "none";
 		    viralvid.pause();
 		    viralvid2.pause();
@@ -367,7 +369,7 @@
 // When the user clicks anywhere outside of the modal, close it
 		window.onclick = function(event) {
 		    if (event.target == modal) {
-		    	$("#myModal").css("background-color","rgba(0,0,0,0.8)");
+		    	 $(".modal").css("background-color","rgba(0,0,0,0.8)");
 		        modal.style.display = "none";
 		    viralvid.pause();
 		    viralvid2.pause();
@@ -403,7 +405,7 @@
           		// cat = document.getElementById("elem");
           		elem.style.paddingLeft = "0px";
 				elem.style.paddingRight = "0px";
-				elem.style.textIndent = "1%";
+				elem.style.textIndent = "2%";
 				elem.style.width ="6px";
           	}
 		   	function shows(n){
@@ -411,21 +413,18 @@
 		   		var pos = n;
 		   		// alert(n + " " + pos);
 		   		pics[pos].style.display = "block"; 
-
+		   		// clearTimeout(check);
 		   				   	}
+		   	var check = true;
 		   	function doshow(n,m){
 		   		setTimeout(function(){shows(numpic=n);},m*150);
               				   	}
 
 		   	function showCat(n) {
-		   		// var pics = document.getElementsByClassName("pic");
-		   		// debugger;
-		  //  		cat.style.paddingLeft = "0px";
-				// cat.style.paddingRight = "0px";
-				// cat.style.textIndent = "1%";
-				// cat.style.width = "6px";
-				normal(cat);
+		   		normal(cat);
+ 		
 		   		if(currentCat==n){
+		   			check = false; 
 		   			for (i = 0; i < pics.length; i++) {
 		              		pics[i].style.display = "none"; 
 		          		}
@@ -439,22 +438,25 @@
 					pics[i].style.animation = "slideUp 0.7s 1";
           		}
           		currentCat=0;
+          		vidTimer1 =setTimeout(function(){
+					check = true;
+					},2300);
 		   		}
-		   		else{
+		   		else if(check){
 				   		var picShow
 				   		
 				   		if(n==1){
-				   			picShow = new Array(8, 11);
+				   			picShow = new Array(7, 11);
 				   			cat = document.getElementById("cat1");
 				   			cat.style.width = "18%";
 				   		}
 				   		else if(n==2) {
-				   			picShow = new Array(7,7);
+				   			picShow = new Array(9,9);
 				   			cat = document.getElementById("cat2");
 				   			cat.style.width = "12%";
 				   		}
 				   		else if(n==3) {
-				   			picShow = new Array(9,9);
+				   			picShow = new Array(8,8);
 				   			cat = document.getElementById("cat3");
 				   			cat.style.width = "18.8%";
 				   		}

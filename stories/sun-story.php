@@ -90,7 +90,7 @@ $( window ).scroll(function() {
           <p  class = "twoline-place">THUMMASART UNIVERSITY</p>
           <a class = "p pointer">
               <img id= "profile-pic" src="../img/story-com/sun-story/Profile.jpg" alt="menu">
-              <p  id = "story-name">TAWAN SUNSUNSUN</p>
+              <p  id = "story-name">TAWAN HIRUNYAPONG</p>
           </a>
           <div class = "s pointer">
             <img id= "share-icon" src="../img/icon/Share.png" alt="menu">

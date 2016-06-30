@@ -87,7 +87,7 @@ $( window ).scroll(function() {
           <img id="story-logo" src="../img/header/Story.png" alt="story-logo">
           <img id="cindy-topic" style = "width" src="../img/story-com/mitz-story/Topic.png" alt="phum-topic">
           <p  id = "story-date" >28.02.2016</p>
-          <p  id = "story-place" >SEOUL, KOREA!!!!!!!!!!!!!!</p>
+          <p  id = "story-place" >NONTHABURI,THAILAND</p>
           <a class = "p pointer">
               <img id= "profile-pic" src="../img/story-com/mitz-story/Profile.jpg" alt="menu">
               <p  id = "story-name">MIZZY PANNA</p>
