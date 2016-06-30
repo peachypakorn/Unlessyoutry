@@ -3,7 +3,7 @@ var text = document.getElementById("chatbox");
 var chatcon = document.getElementById("chat-content");
 var value;
 var length;
-var output;
+var output = "";
 function addtext(){
 		// debugger;
 		if(text.value!=""){
@@ -18,9 +18,10 @@ function addtext(){
 		// newline.className = 'chat-reply';
 		newReply.className = 'chat-reply';
 		if(length>45){
-			var row = (int)length/45;
+			var row = length/45;
 			for (i = 0; i < row; i++){
-				output+= value.substr(i*45,45)+" ";
+				if(row)
+				output+= value.substr(i*32,32)+" ";
 			}
 			newReply.style.width = "45%";
 			
@@ -28,6 +29,7 @@ function addtext(){
 		}
 		else output = value;
 		newReply.textContent = output;
+		output="";
 		// newline.textContent  = "";
 		// chatcon.writeln("");
 		// chatcon.appendChild(newline);
