@@ -268,9 +268,14 @@ top: 60%;
 	position: relative;
 	padding: 10px;
 	margin: 10px;
-	margin-bottom:0px;
+	margin-bottom:10px;
 	border-radius: 7px;
 	float: right;
+	clear: right;
+	overflow: visible;
+	/*height: 20%;*/
+	/*width: 10%;*/
+
 }
 
 ::-webkit-scrollbar { 

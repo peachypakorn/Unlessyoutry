@@ -317,9 +317,16 @@
 		var vidTimer2;
 		viralvid.pause();
 		viralvid2.pause();
+		
 // When the user clicks on the button, open the modal 
 		btn.onclick = function() {
 		    modal.style.display = "block";
+		    modal.style.animation = "fadein 1s 1";
+       		modal.style.WebkitAnimation = "fadein 1s 1";
+       		 viralvid.style.animation = "fadein 0.5s 1";
+       		viralvid.style.WebkitAnimation = "fadein 0.5s 1";
+       		 viralvid2.style.animation = "fadein 0.5s 1";
+       		viralvid2.style.WebkitAnimation = "fadein 0.5s 1";
 		    // viralvid.play();
 		    // viralvid.currentTime = 0;
 		}

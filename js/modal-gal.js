@@ -21,6 +21,8 @@
 		"../img/profile-com/touch-profile/p12.jpg"
 
 			);
+        modal.style.animation = "fadein 1s 1";
+        modal.style.WebkitAnimation = "fadein 1s 1";
 		var big_pic = document.createElement('img');
 		   	big_pic.className  = "big-pic";
 // When the user clicks on the button, open the modal 

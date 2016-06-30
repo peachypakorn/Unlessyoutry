@@ -239,7 +239,10 @@ $( window ).scroll(function() {
         showSlides(slideIndex,0,5);
         var content = document.getElementsByClassName("content");
         content[1].style.display = "none";
-
+        content[1].style.animation = "fadein 2s 1";
+        content[1].style.WebkitAnimation = "fadein 2s 1";
+                content[0].style.animation = "fadein 2s 1";
+        content[0].style.WebkitAnimation = "fadein 2s 1";
         // clearTimeout(timer);
         // $(ex1).fadeIn(3000);
 

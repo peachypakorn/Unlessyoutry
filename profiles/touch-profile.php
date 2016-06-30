@@ -140,10 +140,10 @@ $( window ).scroll(function() {
           <p id = "act-text1" style = "top:86%">SO MANY THINGS ARE WAITING FOR YOU TO TRY<br>WE ARE UPDATING THE ACTIVITIES FROM SEVERAL<br>SO MANY THINGS ARE WAITING FOR YOU TO TRY</p>
          
           <p class = "center" id = "my-con">MY CONTACTS</p>  
-      <a href ="https://www.facebook.com/unlessyoutry/" target="_blank">
+      <a href ="https://www.facebook.com/profile.php?id=100001930668790&fref=ts" target="_blank">
         <img id="fb" class="yellow" src="../img/icon/Fb.png" alt="fb">
       </a>
-      <a href="https://www.instagram.com/unlessyoutry.campaign/" target="_blank">
+      <a href="https://www.instagram.com/touchhhh/" target="_blank">
         <img id="ig" class="yellow" src="../img/icon/Ig.png" alt="ig">
       </a>
       <a href="https://twitter.com/UnlessYouTryCP/" target="_blank">
@@ -225,7 +225,9 @@ $( window ).scroll(function() {
                         <br>
                         <div class = "chat-text">I would link to know you.อิอิ</div>
                         <br>
-                        <div class = "chat-reply">I would link to know you.อิอิ</div>
+                        <div class = "chat-reply">My name is Touch</div>
+                        <br>
+                        <div class = "chat-reply">Nice to meet you!</div>
                       </form>
                 </div>
                 
@@ -255,9 +257,11 @@ $( window ).scroll(function() {
   <!-- reference -->
     <div class ="content" style = "background:black display:none" >
         <div class = "div40" style = "background:white">
-            <p id = "ref">REFERECNES</p>
-            <img id="pos-ref" class="pointer"  src="../img/profile-com/touch-profile/pos-ref.png" alt="infomation" onclick ="showRef(0);">   
-            <img id="neg-ref" class = "pointer" src="../img/profile-com/touch-profile/neg-ref.png" alt="infomation" onclick ="showRef(1);">   
+            <div class = "fix-top">
+                <p id = "ref">REFERECNES</p>
+                <img id="pos-ref" class="pointer"  src="../img/profile-com/touch-profile/pos-ref.png" alt="infomation" onclick ="showRef(0);">   
+                <img id="neg-ref" class = "pointer" src="../img/profile-com/touch-profile/neg-ref.png" alt="infomation" onclick ="showRef(1);">   
+            </div>
             <img id="ref-info"  src="../img/profile-com/touch-profile/ref.png" alt="infomation">   
             <br><br><br>
         </div>
@@ -318,7 +322,7 @@ $( window ).scroll(function() {
     <div id = "background-modal">
     </div>
       <div id="myGal" class="modal-gal">
-        <img class="yellow close-modal" src="../img/icon/Close.png" alt="close">
+        <img class="yellow close-modal pointer" src="../img/icon/Close.png" alt="close">
         <!-- <img class="big-pic" src="../img/profile-com/touch-profile/p12.jpg" alt="friend1"> -->
       </div>
 
@@ -344,6 +348,7 @@ $( window ).scroll(function() {
         var mover = document.getElementsByClassName("move2");
         document.getElementById("ref-info").style.animation = "fadein 2s 1";
         document.getElementById("ref-info").style.WebkitAnimation = "fadein 2s 1";
+
         // debugger;
         var gal = document.getElementsByClassName("gal");
         var content = document.getElementsByClassName("content");

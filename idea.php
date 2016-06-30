@@ -157,7 +157,7 @@
 	</div>
 
 	<div class = "content">
-		<a href="">
+		<a class="pointer">
 			<div class="grow pic bw slideUp" id = "pic1">
 				<img  src="./img/ideaPic/idea1.jpg" alt="phumConcert">
 				<div class = "text"></div>
@@ -166,7 +166,7 @@
 					<p class = "text3" ><br><br><br>2-8.02.16</p>
 			</div>
 		</a>
-		<a href=" ">
+		<a class = "pointer">
 			<div class="grow pic bw slideUp" id = "pic2">
 				<img  src="./img/ideaPic/idea2.jpg" alt="Cindy">
 				<div class = "text"></div>
@@ -175,7 +175,7 @@
 					<p class = "text3" ><br><br><br>N.D</p>
 			</div>
 		<a>							
-			<div class="grow pic bw slideUp" id = "pic3">
+			<div class="grow pic bw slideUp pointer" id = "pic3">
 				<img  src="./img/ideaPic/idea3.jpg" alt="Bonus">
 				<div class = "text"></div>
 				<div class = "cata" style = "background:#1A9AAF" ></div>
