@@ -256,7 +256,7 @@
 				<div class = "text"></div>
 				<div class = "cata" style = "background:#274763" ></div>
 					<p class = "text2" >AFS<br>MEDIA<br>MAN</p>
-					<p class = "text3" ><br><br><br>21-24.04.15</p>
+					<p class = "text3" ><br><br><br>21-24.04.16</p>
 			</div>
 		
 			<div class="grow pic bw slideUp pointer" id = "pic11">
@@ -264,7 +264,7 @@
 				<div class = "text"></div>
 				<div class = "cata" style = "background:#ECE4C2" ></div>
 					<p class = "text2" >TEACH<br>FOR<br>THAI</p>
-					<p class = "text3" ><br><br><br>21-24.04.15</p>
+					<p class = "text3" ><br><br><br>2014-2016</p>
 			</div>
 		
 
@@ -279,19 +279,19 @@
 <!-- Video Modal Part -->
 	<div id="myModal" class="modal">
 		<video autoplay loop poster ="./img/video/LandingVid.png" id="viral-video" class = "viral-vid" >
-		  	<source src="./img/video/viral1.mp4" type= "video/mp4">
-		</video>
-		<video autoplay loop poster ="./img/video/LandingVid.png" id="viral-video2" class = "viral-vid">
 		  	<source src="./img/video/viral2.mp4" type= "video/mp4">
 		</video>
-		<video autoplay loop poster muted="./img/video/LandingVid.png" id="vid-ex1" class = "ex-vid pointer"onclick = "playvid(1)" >
-		  	<source src="./img/video/viral1-s.mp4" type= "video/mp4">
+		<video autoplay loop poster ="./img/video/LandingVid.png" id="viral-video2" class = "viral-vid">
+		  	<source src="./img/video/viral1.mp4" type= "video/mp4">
 		</video>
-		<p class = "center" id = "viral-text1">VIRAL 1 : THE SCUBA DIVING</p>
-		<video autoplay loop poster muted="./img/video/LandingVid.png" id="vid-ex2" class = "ex-vid pointer" onclick = "playvid(2)">
+		<video autoplay loop poster muted="./img/video/LandingVid.png" id="vid-ex1" class = "ex-vid pointer"onclick = "playvid(1)" >
 		  	<source src="./img/video/viral2-s.mp4" type= "video/mp4">
 		</video>
-		<p class = "center" id = "viral-text2">VIRAL 2 : THE MUAY THAI</p>
+		<p class = "center" id = "viral-text1">VIRAL 1 : THE BOXER</p>
+		<video autoplay loop poster muted="./img/video/LandingVid.png" id="vid-ex2" class = "ex-vid pointer" onclick = "playvid(2)">
+		  	<source src="./img/video/viral1-s.mp4" type= "video/mp4">
+		</video>
+		<p class = "center" id = "viral-text2">VIRAL 2 : THE DIVER</p>
 		<img class="yellow close-modal pointer" src="./img/icon/Close.png" alt="close">
 		<img class="yellow back-modal pointer" src="./img/icon/Back.png" alt="back">
 	</div>
@@ -447,7 +447,7 @@
           		currentCat=0;
           		vidTimer1 =setTimeout(function(){
 					check = true;
-					},2300);
+					},1700);
 		   		}
 		   		else if(check){
 				   		var picShow

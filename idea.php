@@ -305,7 +305,7 @@ var check = true;
           		currentCat=0;
           		vidTimer1 =setTimeout(function(){
 					check = true;
-					},2300);
+					},1400);
 		   		}
 		   		else if(check){
 				   		var picShow
