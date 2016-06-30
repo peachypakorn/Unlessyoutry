@@ -21,7 +21,7 @@ function addtext(){
 			var row = length/45;
 			for (i = 0; i < row; i++){
 				if(row)
-				output+= value.substr(i*32,32)+" ";
+				output+= value.substr(i*28,28)+" ";
 			}
 			newReply.style.width = "45%";
 			
@@ -36,8 +36,8 @@ function addtext(){
 		chatcon.appendChild(newline);
 		
 		chatcon.appendChild(newReply);
-		$("html, body").animate({ scrollTop: $(document).height() }, "slow");
-							}
+		$('#chat-content').scrollTop($('#chat-content')[0].scrollHeight);
+	}
 }
 
 
