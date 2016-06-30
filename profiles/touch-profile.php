@@ -223,7 +223,7 @@ $( window ).scroll(function() {
                       <form>
                         <div class = "chat-text">Hello, How are you?</div>
                         <br>
-                        <div class = "chat-text">I would link to know you.อิอิ</div>
+                        <div class = "chat-text">I would link to know you.</div>
                         <br>
                         <div class = "chat-reply">My name is Touch</div>
                         <br>
@@ -233,68 +233,7 @@ $( window ).scroll(function() {
                 
                 <div id = "chattype">
                       <form>
-                        <textarea id="chatbox" >All the times that you rain on my parade
-And all the clubs you get in using my name
-You think you broke my heart
-Ohhh girl for goodness sake
-You think I'm crying
-Oh my ohhh, well I ain't!
-
-And I didn't wanna write a song
-'Cause I didn't want anyone thinking I still care, I don't
-But, you still hit my phone up
-And baby I be moving on
-
-And I think you should be somethin' I don't wanna hold back
-Maybe you should know that
-My mama don't like you and she like's everyone
-And I never like to admit that I was wrong
-And I've been so caught up in my job
-Didn't see what's going on
-But now I know
-I'm better sleeping on my own
-
-
-'Cause if you like the way you look that much
-Ohhhh baby you should go and love yourself
-And if you think that I'm still holdin' on to somethin'
-You should go and love yourself
-
-When you told me that you hated my friends
-The only problem was with you and not them
-And every time you told me my opinion was wrong
-And tried to make me forget where I came from
-
-And I didn't wanna write a song
-Cause I didn't want anyone thinking I still care, I don't
-But, you still hit my phone up
-And baby I be moving on
-And I think you should be somethin' I don't wanna hold back
-Maybe you should know that
-My mama don't like you and she like's everyone
-And I never like to admit that I was wrong
-And I've been so caught up in my job, didn't see what's going on
-And now I know, I'm better sleeping on my own
-
-'Cause if you like the way you look that much
-Oh baby you should go and love yourself
-And if you think that I'm still holdin' on to somethin'
-You should go and love yourself
-
-For all the times that you made me feel small
-I fell in love now I fear nothin' at all
-I never felt so low when I was vulnerable
-Was I a fool to let you break down my walls?
-
-'Cause if you like the way you look that much
-Ohhhh baby you should go and love yourself
-And if you think that I'm still holdin' on to somethin'
-You should go and love yourself
-
-'Cause if you like the way you look that much
-Ohhhh baby you should go and love yourself
-And if you think that I'm still holdin' on to somethin'
-You should go and love yourself</textarea>
+                        <textarea id="chatbox" >UNLESS YOU TRY.</textarea>
                       </form>
                       <img class= "yellow send pointer" src="../img/icon/Link.png" alt="ref" onclick ="addtext()">
                 </div>
@@ -303,7 +242,7 @@ You should go and love yourself</textarea>
         </div>
         <div class = "div20">
             <div class=" f-list grow slideUp pointer" id = "fri1" onclick = "chat(1,1,'DOJO NOPHNAN')">
-                <img class=" bw pro-pic" src="../img/friend-pic/friend1.jpg" alt="friend1">
+                <img class=" bw pro-pic " src="../img/friend-pic/friend1.jpg" alt="friend1">
                 <div class = "friend-info"><br><br>DOJI<br>NOPHNAN</div>
                 <div class = "online"></div>
             </div>
@@ -312,6 +251,58 @@ You should go and love yourself</textarea>
                 <div class = "friend-info"><br><br>PLOY<br>TANTANA</div>
                 <div class = "online"></div>
             </div>
+            <div class=" f-list grow slideUp pointer" id = "fri2" onclick = "chat(3,5,'SINE SOPITA')">
+                <img class=" bw pro-pic" src="../img/friend-pic/friend5.jpg" alt="friend4">
+                <div class = "friend-info"><br><br>SINE<br>SOPITA</div>
+                <div class = "online"></div>
+            </div>
+            <div class=" f-list grow slideUp pointer" id = "fri2" onclick = "chat(4,2,'O CHIISANUPONG')">
+                <img class=" bw pro-pic" src="../img/friend-pic/friend2.jpg" alt="friend4">
+                <div class = "friend-info"><br><br>O<br>CHIISANUPONG</div>
+                <div class = "online"></div>
+            </div>
+            <div class=" f-list grow slideUp pointer" id = "fri2" onclick = "chat(5,6,'SUN TAWAN')">
+                <img class=" bw pro-pic" src="../img/friend-pic/friend6.jpg" alt="friend4">
+                <div class = "friend-info"><br><br>SUN<br>TAWAN</div>
+                <div class = "online"></div>
+            </div>
+            <div class=" f-list grow slideUp pointer" id = "fri2" onclick = "chat(6,3,'PEACHY PAKORN')">
+                <img class=" bw pro-pic" src="../img/friend-pic/friend3.jpg" alt="friend4">
+                <div class = "friend-info"><br><br>PEACHY<br>PAKORN</div>
+                <div class = "online"></div>
+            </div>
+            <div class=" f-list grow slideUp pointer" id = "fri2" onclick = "chat(7,7,'WIN ACHAWIN')">
+                <img class=" bw pro-pic" src="../img/friend-pic/friend7.jpg" alt="friend4">
+                <div class = "friend-info"><br><br>WIN<br>ACHAWIN</div>
+                <div class = "online"></div>
+            </div>
+            <div class=" f-list grow slideUp pointer" id = "fri2" onclick = "chat(8,8,'WIN WASIN')">
+                <img class=" bw pro-pic" src="../img/friend-pic/friend8.jpg" alt="friend4">
+                <div class = "friend-info"><br><br>WIN<br>WASIN</div>
+                <div class = "online"></div>
+            </div>
+            <div class=" f-list grow slideUp pointer" id = "fri2" onclick = "chat(9,9,'YOK JADE')">
+                <img class=" bw pro-pic" src="../img/friend-pic/friend9.jpg" alt="friend4">
+                <div class = "friend-info"><br><br>YOK<br>JADE</div>
+                <div class = "online"></div>
+            </div>
+            <div class=" f-list grow slideUp pointer" id = "fri2" onclick = "chat(10,10,'CINDY LAM')">
+                <img class=" bw pro-pic" src="../img/homePic/Cindy.jpg" alt="friend4">
+                <div class = "friend-info"><br><br>CINDY<br>LAM</div>
+                <div class = "online" style ="background-color:#AFAFAF"></div>
+            </div>
+            <div class=" f-list grow slideUp pointer" id = "fri2" onclick = "chat(11,11,'BONUS BNS')">
+                <img class=" bw pro-pic" src="../img/homePic/Bonus.jpg" alt="friend4">
+                <div class = "friend-info"><br><br>BONUS<br>BNS</div>
+                <div class = "online" style ="background-color:#AFAFAF"></div>
+            </div>
+            <div class=" f-list grow slideUp pointer" id = "fri2" onclick = "chat(12,12,'NAT YUTTHAKRIT')">
+                <img class=" bw pro-pic" src="../img/homePic/NAT.jpg" alt="friend4">
+                <div class = "friend-info"><br><br>NAT<br>YUTTHAKRIT</div>
+                <div class = "online" style ="background-color:#AFAFAF"></div>
+            </div>
+
+
         </div>
     </div>
   
@@ -534,6 +525,7 @@ You should go and love yourself</textarea>
                           }
         
         var page =0;
+        var list = document.getElementsByClassName("f-list");
         function set_true(){
             first = true;
         }
@@ -609,7 +601,15 @@ You should go and love yourself</textarea>
              $("#photo-icon").css({
           "-webkit-filter": "grayscale(100%) brightness(200%)",
               });
-
+             
+                  for (i = 0; i < list.length; i++){
+                    list[i].style.display = "none";
+                  }
+                  for (i = 0; i < list.length; i++){
+                    slist(i,i);
+                  }
+                          
+          
           }
           else if(n==2&&page!=2){
              content[0].style.display = "none";
@@ -698,7 +698,15 @@ You should go and love yourself</textarea>
             
             }
         }
-       
+                          function showlist(n){
+                            var pos = n;
+                            // alert(n + " " + pos);
+                            list[pos].style.display = "block"; 
+
+                                    }
+                          function slist(n,m){
+                            setTimeout(function(){showlist(n);},m*150);
+                                            }
     </script>
 </body>
 
