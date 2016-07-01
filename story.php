@@ -279,10 +279,10 @@
 <!-- Video Modal Part -->
 	<div id="myModal" class="modal">
 		<video autoplay loop poster ="./img/video/LandingVid.png" id="viral-video" class = "viral-vid" >
-		  	<source src="./img/video/viral2.mp4" type= "video/mp4">
+		  	<source src="./img/video/viral2720.mp4" type= "video/mp4">
 		</video>
 		<video autoplay loop poster ="./img/video/LandingVid.png" id="viral-video2" class = "viral-vid">
-		  	<source src="./img/video/viral1.mp4" type= "video/mp4">
+		  	<source src="./img/video/viral1720.mp4" type= "video/mp4">
 		</video>
 		<video autoplay loop poster muted="./img/video/LandingVid.png" id="vid-ex1" class = "ex-vid pointer"onclick = "playvid(1)" >
 		  	<source src="./img/video/viral2-s.mp4" type= "video/mp4">
