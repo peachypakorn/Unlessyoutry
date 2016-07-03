@@ -87,7 +87,7 @@ $( window ).scroll(function() {
           <img id="story-logo" src="../img/header/Story.png" alt="story-logo">
           <img id="twoline-topic" src="../img/story-com/sun-story/Topic.png" alt="phum-topic">
           <p  class = "twoline-date">1-31.01.2016</p>
-          <p  class = "twoline-place">THUMMASART UNIVERSITY</p>
+          <p  class = "twoline-place">THUMMASAT UNIVERSITY</p>
           <a class = "p pointer">
               <img id= "profile-pic" src="../img/story-com/sun-story/Profile.jpg" alt="menu">
               <p  id = "story-name">TAWAN HIRUNYAPONG</p>

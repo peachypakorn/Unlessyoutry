@@ -122,7 +122,7 @@
        			$("p#act").css("color","#FFAA21");
 			</script>
 			<img id="logo2" src="./img/header/Activities.png" alt="logoW">
-			<p id = "sen1-act" class = "center">JANUARY - APRILL 2016</p>
+			<p id = "sen1-act" class = "center">JANUARY - APRIL 2016</p>
 			<p id = "sen2-act">SO MANY THINGS ARE WAITING FOR YOU TO TRY<br>WE ARE UPDATING THE ACTIVITIES FROM SEVERAL<br>ORGANIZATIONS EVERY QUARTER.</p>
 			<div class = "a pointer">
 				<img id="add-icon" src="./img/icon/Add.png" alt="video">
